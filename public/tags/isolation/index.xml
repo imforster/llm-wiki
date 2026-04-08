@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Isolation on LLM Wiki — Agentic AI Landscape</title><link>https://imforster.github.io/llm-wiki/tags/isolation/</link><description>Recent content in Isolation on LLM Wiki — Agentic AI Landscape</description><generator>Hugo</generator><language>en-us</language><atom:link href="https://imforster.github.io/llm-wiki/tags/isolation/index.xml" rel="self" type="application/rss+xml"/><item><title/><link>https://imforster.github.io/llm-wiki/docs/concepts/agent/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://imforster.github.io/llm-wiki/docs/concepts/agent/</guid><description>&lt;h1 id="agent"&gt;Agent&lt;a class="anchor" href="#agent"&gt;#&lt;/a&gt;&lt;/h1&gt;
+&lt;p&gt;In &lt;a href="https://imforster.github.io/llm-wiki/docs/entities/scion/"&gt;scion&lt;/a&gt;, an Agent is an isolated process running an LLM + &lt;a href="https://imforster.github.io/llm-wiki/docs/concepts/harness/"&gt;harness&lt;/a&gt; loop against a task. It is the fundamental unit of execution.&lt;/p&gt;
+&lt;h2 id="properties"&gt;Properties&lt;a class="anchor" href="#properties"&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Each agent has:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Identity&lt;/strong&gt;: Unique name, container ID, and (in hosted mode) a UUID and URL-safe slug&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Home directory&lt;/strong&gt;: Mounted at &lt;code&gt;/home/&amp;lt;user&amp;gt;&lt;/code&gt; — contains harness config, credentials, &lt;code&gt;agent-info.json&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Workspace&lt;/strong&gt;: Mounted at &lt;code&gt;/workspace&lt;/code&gt; — a dedicated git worktree or cloned repo&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Template&lt;/strong&gt;: The &lt;a href="https://imforster.github.io/llm-wiki/docs/concepts/template/"&gt;template&lt;/a&gt; blueprint that seeded its configuration&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Harness&lt;/strong&gt;: The LLM-specific adapter (Claude, Gemini, OpenCode, Codex)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="state-model"&gt;State Model&lt;a class="anchor" href="#state-model"&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;See &lt;a href="https://imforster.github.io/llm-wiki/docs/concepts/agent-state-model/"&gt;agent-state-model&lt;/a&gt; for the full three-dimensional state tracking system.&lt;/p&gt;</description></item></channel></rss>

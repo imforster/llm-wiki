@@ -67,3 +67,9 @@ Source: https://github.com/danielmiessler/Personal_AI_Infrastructure — persona
 
 ## [2026-04-08] query | Key Insights: The Agentic AI Landscape
 Synthesized 10 key insights from all 8 sources in the wiki. Filed as analysis: [[key-insights-agentic-landscape]]. Covers: three architectural philosophies, the autonomy-interaction spectrum, emerging open standards, progressive disclosure consensus, memory as unsolved frontier, git as universal coordination, skill hierarchy crystallization, security trust models, the personal AI vision, and what's missing.
+
+## [2026-04-08] ingest | How to Evaluate AI Agent Skills Without Relying on Vibes
+Source: Article by JP Caparas — practical guide to skill evaluation with three-tier framework and economics. Created 2 wiki pages, updated 1:
+- Source: [[evaluating-agent-skills-caparas]]
+- Concepts: [[skill-evaluation]]
+- Updated: [[key-insights-agentic-landscape]] — enriched evaluation gap (insight #10) with reference to this framework

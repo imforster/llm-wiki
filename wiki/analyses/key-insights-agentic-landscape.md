@@ -132,7 +132,7 @@ The coding agent landscape may be a proving ground for a broader pattern: **pers
 
 Gaps visible across the entire wiki:
 
-- **Evaluation**: No standard way to measure whether a skill, pattern, or agent configuration actually works better than alternatives. The [[ten-pillars-agentic-skill-design]] paper explicitly acknowledges this — its benefits are "anticipated, not proven."
+- **Evaluation**: No standard way to measure whether a skill, pattern, or agent configuration actually works better than alternatives. The [[ten-pillars-agentic-skill-design]] paper explicitly acknowledges this — its benefits are "anticipated, not proven." The [[evaluating-agent-skills-caparas]] article proposes a three-tier framework (deterministic → LLM-as-judge → human review) with concrete economics, but no tool in this wiki has fully implemented it yet.
 - **Conflict resolution**: When multiple agents make conflicting changes, or when memory contradicts new information, there's no standard resolution mechanism.
 - **Cost modeling**: No tool provides clear cost-per-task estimates. PAI tracks signals but doesn't model costs. The Ten Pillars framework notes this gap.
 - **Non-code domains**: Almost everything is optimized for software development. The [[llm-wiki-pattern]] and [[pai]] gesture toward broader applications, but tooling lags.

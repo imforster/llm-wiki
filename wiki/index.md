@@ -10,6 +10,7 @@
 | [[claude-code-docs]] | Claude Code documentation — agentic coding tool by Anthropic | 2026-04-07 |
 | [[anthropic-skills-repo]] | Anthropic skills repository & Agent Skills open standard specification | 2026-04-07 |
 | [[ten-pillars-agentic-skill-design]] | Research paper: ten-pillar framework for agentic skill design (Forster) | 2026-04-08 |
+| [[evaluating-agent-skills-caparas]] | Practical guide to skill evaluation — three-tier framework with economics (Caparas) | 2026-04-08 |
 | [[fabric-github]] | Fabric: open-source framework with 251+ curated AI prompt patterns (Miessler) | 2026-04-08 |
 | [[personal-ai-infrastructure]] | PAI: personalized AI platform built on Claude Code — memory, skills, goals (Miessler) | 2026-04-08 |
 
@@ -38,6 +39,7 @@
 | [[agent-skills-standard]] | Open standard (agentskills.io) for packaging reusable agent capabilities | 2 |
 | [[context-management]] | Strategies for managing limited context windows in multi-skill pipelines | 2 |
 | [[prompt-engineering-patterns]] | CoT, ReAct, Reflexion, composable strategies, and other prompting techniques | 2 |
+| [[skill-evaluation]] | Three-tier framework for measuring agent skill quality (deterministic → LLM-judge → human) | 2 |
 | [[grove]] | Project workspace where agents live (.scion directory) | 1 |
 | [[harness]] | Adapter for LLM tools (Gemini, Claude, OpenCode, Codex) into Scion | 1 |
 | [[hub]] | Central control plane for hosted/distributed Scion deployments | 1 |

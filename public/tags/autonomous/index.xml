@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Autonomous on LLM Wiki — Agentic AI Landscape</title><link>https://imforster.github.io/llm-wiki/tags/autonomous/</link><description>Recent content in Autonomous on LLM Wiki — Agentic AI Landscape</description><generator>Hugo</generator><language>en-us</language><atom:link href="https://imforster.github.io/llm-wiki/tags/autonomous/index.xml" rel="self" type="application/rss+xml"/><item><title/><link>https://imforster.github.io/llm-wiki/docs/concepts/frontier-agent/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://imforster.github.io/llm-wiki/docs/concepts/frontier-agent/</guid><description>&lt;h1 id="frontier-agent"&gt;Frontier Agent&lt;a class="anchor" href="#frontier-agent"&gt;#&lt;/a&gt;&lt;/h1&gt;
+&lt;p&gt;A term coined by &lt;a href="https://imforster.github.io/llm-wiki/docs/entities/aws/"&gt;aws&lt;/a&gt; for a new class of AI agents with three defining characteristics:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;Autonomous&lt;/strong&gt;: Direct them towards a goal, and they figure out how to achieve it&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Massively scalable&lt;/strong&gt;: Able to perform multiple concurrent tasks and distribute work across agents&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Work independently&lt;/strong&gt;: Operating for hours or days without intervention&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id="distinction-from-regular-agents"&gt;Distinction from Regular Agents&lt;a class="anchor" href="#distinction-from-regular-agents"&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Regular AI agents can plan and execute multi-step tasks with some autonomy. Frontier agents go further — they&amp;rsquo;re designed for long-running, independent operation at scale, not just responding to individual prompts or short interactive sessions.&lt;/p&gt;</description></item></channel></rss>

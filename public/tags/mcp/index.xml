@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Mcp on LLM Wiki — Agentic AI Landscape</title><link>https://imforster.github.io/llm-wiki/tags/mcp/</link><description>Recent content in Mcp on LLM Wiki — Agentic AI Landscape</description><generator>Hugo</generator><language>en-us</language><atom:link href="https://imforster.github.io/llm-wiki/tags/mcp/index.xml" rel="self" type="application/rss+xml"/><item><title/><link>https://imforster.github.io/llm-wiki/docs/concepts/kiro-powers/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://imforster.github.io/llm-wiki/docs/concepts/kiro-powers/</guid><description>&lt;h1 id="kiro-powers"&gt;Kiro Powers&lt;a class="anchor" href="#kiro-powers"&gt;#&lt;/a&gt;&lt;/h1&gt;
+&lt;p&gt;Specialized packages that enhance existing &lt;a href="https://imforster.github.io/llm-wiki/docs/entities/kiro/"&gt;kiro&lt;/a&gt; agents with prebuilt expertise for specific development tasks.&lt;/p&gt;
+&lt;h2 id="contents"&gt;Contents&lt;a class="anchor" href="#contents"&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Curated MCP servers&lt;/li&gt;
+&lt;li&gt;Steering files&lt;/li&gt;
+&lt;li&gt;Hooks&lt;/li&gt;
+&lt;li&gt;Can be dynamically loaded on demand&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="purpose"&gt;Purpose&lt;a class="anchor" href="#purpose"&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Focus on providing domain-specific knowledge and best practices. Distinct from the &lt;a href="https://imforster.github.io/llm-wiki/docs/entities/kiro/"&gt;kiro&lt;/a&gt; autonomous agent — Powers enhance agents with expertise, while the autonomous agent is the execution engine that works independently.&lt;/p&gt;
+&lt;h2 id="see-also"&gt;See Also&lt;a class="anchor" href="#see-also"&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://imforster.github.io/llm-wiki/docs/entities/kiro/"&gt;kiro&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://imforster.github.io/llm-wiki/docs/concepts/frontier-agent/"&gt;frontier-agent&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</description></item></channel></rss>

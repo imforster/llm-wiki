@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Specification on LLM Wiki — Agentic AI Landscape</title><link>https://imforster.github.io/llm-wiki/tags/specification/</link><description>Recent content in Specification on LLM Wiki — Agentic AI Landscape</description><generator>Hugo</generator><language>en-us</language><atom:link href="https://imforster.github.io/llm-wiki/tags/specification/index.xml" rel="self" type="application/rss+xml"/><item><title/><link>https://imforster.github.io/llm-wiki/docs/concepts/agent-skills-standard/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://imforster.github.io/llm-wiki/docs/concepts/agent-skills-standard/</guid><description>&lt;h1 id="agent-skills-standard"&gt;Agent Skills Standard&lt;a class="anchor" href="#agent-skills-standard"&gt;#&lt;/a&gt;&lt;/h1&gt;
+&lt;p&gt;An open standard (agentskills.io) for packaging reusable capabilities that AI agents can load dynamically. Initiated by &lt;a href="https://imforster.github.io/llm-wiki/docs/entities/anthropic/"&gt;anthropic&lt;/a&gt;, designed for cross-tool compatibility.&lt;/p&gt;
+&lt;h2 id="specification"&gt;Specification&lt;a class="anchor" href="#specification"&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;A skill is a directory with a &lt;code&gt;SKILL.md&lt;/code&gt; file:&lt;/p&gt;
+&lt;pre tabindex="0"&gt;&lt;code&gt;skill-name/
+├── SKILL.md # Required: YAML frontmatter + markdown instructions
+├── scripts/ # Optional: executable code
+├── references/ # Optional: documentation
+├── assets/ # Optional: templates, resources&lt;/code&gt;&lt;/pre&gt;&lt;h3 id="required-frontmatter"&gt;Required Frontmatter&lt;a class="anchor" href="#required-frontmatter"&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;name&lt;/code&gt;: Max 64 chars, lowercase + hyphens, must match directory name&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;description&lt;/code&gt;: Max 1024 chars, what it does and when to use it&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="optional-frontmatter"&gt;Optional Frontmatter&lt;a class="anchor" href="#optional-frontmatter"&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;license&lt;/code&gt;, &lt;code&gt;compatibility&lt;/code&gt;, &lt;code&gt;metadata&lt;/code&gt;, &lt;code&gt;allowed-tools&lt;/code&gt; (experimental)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="progressive-disclosure"&gt;Progressive Disclosure&lt;a class="anchor" href="#progressive-disclosure"&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;The key design principle — skills scale without blowing up context:&lt;/p&gt;</description></item><item><title/><link>https://imforster.github.io/llm-wiki/docs/sources/anthropic-skills-repo/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://imforster.github.io/llm-wiki/docs/sources/anthropic-skills-repo/</guid><description>&lt;h1 id="anthropic-skills-repository--agent-skills-spec"&gt;Anthropic Skills Repository &amp;amp; Agent Skills Spec&lt;a class="anchor" href="#anthropic-skills-repository--agent-skills-spec"&gt;#&lt;/a&gt;&lt;/h1&gt;
+&lt;p&gt;&lt;a href="../../raw/anthropic-skills-repo.md"&gt;Original&lt;/a&gt; | &lt;a href="https://github.com/anthropics/skills"&gt;GitHub&lt;/a&gt; | &lt;a href="https://agentskills.io/specification"&gt;Spec&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id="summary"&gt;Summary&lt;a class="anchor" href="#summary"&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;a href="https://imforster.github.io/llm-wiki/docs/entities/anthropic/"&gt;anthropic&lt;/a&gt;&amp;rsquo;s official skills repository for Claude, plus the &lt;a href="https://imforster.github.io/llm-wiki/docs/concepts/agent-skills-standard/"&gt;agent-skills-standard&lt;/a&gt; specification. Skills are folders of instructions, scripts, and resources that Claude loads dynamically. The repo contains 17 skills across creative, technical, enterprise, and document categories — including the production document skills that power Claude.ai&amp;rsquo;s file capabilities.&lt;/p&gt;
+&lt;h2 id="key-takeaways"&gt;Key Takeaways&lt;a class="anchor" href="#key-takeaways"&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Agent Skills is an open standard&lt;/strong&gt;: Defined at agentskills.io, not Anthropic-proprietary. Designed for cross-tool compatibility. &lt;a href="https://imforster.github.io/llm-wiki/docs/entities/claude-code/"&gt;claude-code&lt;/a&gt; extends it with invocation control, subagent execution, and dynamic context injection.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Progressive disclosure is the core design principle&lt;/strong&gt;: Metadata (~100 tokens) loaded at startup for all skills. Full instructions (&amp;lt;5000 tokens recommended) loaded only when activated. Resources loaded only when needed. This is how skills scale without blowing up context.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;SKILL.md is the only required file&lt;/strong&gt;: YAML frontmatter (name + description) + markdown instructions. Optional: scripts/, references/, assets/ directories. Keep under 500 lines.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Document skills are production code&lt;/strong&gt;: The docx, pdf, pptx, xlsx skills power Claude.ai&amp;rsquo;s document capabilities. Source-available (not open source) — shared as reference for complex skill patterns.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Plugin marketplace for Claude Code&lt;/strong&gt;: &lt;code&gt;/plugin marketplace add anthropics/skills&lt;/code&gt; registers the repo. Skills installable individually.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Partner ecosystem emerging&lt;/strong&gt;: Notion has published skills for Claude. The &lt;code&gt;allowed-tools&lt;/code&gt; field (experimental) hints at future tool-level permission control per skill.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="see-also"&gt;See Also&lt;a class="anchor" href="#see-also"&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://imforster.github.io/llm-wiki/docs/concepts/agent-skills-standard/"&gt;agent-skills-standard&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://imforster.github.io/llm-wiki/docs/entities/claude-code/"&gt;claude-code&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://imforster.github.io/llm-wiki/docs/entities/anthropic/"&gt;anthropic&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://imforster.github.io/llm-wiki/docs/concepts/mcp-protocol/"&gt;mcp-protocol&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</description></item></channel></rss>

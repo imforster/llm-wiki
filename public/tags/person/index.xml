@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Person on LLM Wiki — Agentic AI Landscape</title><link>https://imforster.github.io/llm-wiki/tags/person/</link><description>Recent content in Person on LLM Wiki — Agentic AI Landscape</description><generator>Hugo</generator><language>en-us</language><atom:link href="https://imforster.github.io/llm-wiki/tags/person/index.xml" rel="self" type="application/rss+xml"/><item><title/><link>https://imforster.github.io/llm-wiki/docs/entities/andrej-karpathy/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://imforster.github.io/llm-wiki/docs/entities/andrej-karpathy/</guid><description>&lt;h1 id="andrej-karpathy"&gt;Andrej Karpathy&lt;a class="anchor" href="#andrej-karpathy"&gt;#&lt;/a&gt;&lt;/h1&gt;
+&lt;p&gt;AI researcher and educator. Former Director of AI at Tesla, founding member of OpenAI. Known for neural network education (cs231n, Zero to Hero series) and practical AI tooling.&lt;/p&gt;
+&lt;h2 id="relevant-work"&gt;Relevant Work&lt;a class="anchor" href="#relevant-work"&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://imforster.github.io/llm-wiki/docs/sources/llm-wiki-karpathy/"&gt;llm-wiki-karpathy&lt;/a&gt; — The LLM Wiki pattern: using LLMs to incrementally build and maintain personal knowledge bases. The foundational idea behind this wiki.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="see-also"&gt;See Also&lt;a class="anchor" href="#see-also"&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://imforster.github.io/llm-wiki/docs/concepts/llm-wiki-pattern/"&gt;llm-wiki-pattern&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</description></item><item><title/><link>https://imforster.github.io/llm-wiki/docs/entities/daniel-miessler/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://imforster.github.io/llm-wiki/docs/entities/daniel-miessler/</guid><description>&lt;h1 id="daniel-miessler"&gt;Daniel Miessler&lt;a class="anchor" href="#daniel-miessler"&gt;#&lt;/a&gt;&lt;/h1&gt;
+&lt;p&gt;Security researcher and AI practitioner. Creator of &lt;a href="https://imforster.github.io/llm-wiki/docs/entities/fabric/"&gt;fabric&lt;/a&gt; and &lt;a href="https://imforster.github.io/llm-wiki/docs/entities/pai/"&gt;pai&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id="relevant-work"&gt;Relevant Work&lt;a class="anchor" href="#relevant-work"&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://imforster.github.io/llm-wiki/docs/entities/fabric/"&gt;fabric&lt;/a&gt; — Open-source framework with 251+ curated AI prompt patterns&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://imforster.github.io/llm-wiki/docs/entities/pai/"&gt;pai&lt;/a&gt; — Personal AI Infrastructure built on &lt;a href="https://imforster.github.io/llm-wiki/docs/entities/claude-code/"&gt;claude-code&lt;/a&gt;. Persistent memory, skills, goals, continuous learning.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The two projects are complementary: Fabric = patterns (what to ask AI). PAI = infrastructure (how the AI operates).&lt;/p&gt;
+&lt;h2 id="see-also"&gt;See Also&lt;a class="anchor" href="#see-also"&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://imforster.github.io/llm-wiki/docs/entities/fabric/"&gt;fabric&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://imforster.github.io/llm-wiki/docs/entities/pai/"&gt;pai&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://imforster.github.io/llm-wiki/docs/entities/claude-code/"&gt;claude-code&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</description></item></channel></rss>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Agent on LLM Wiki — Agentic AI Landscape</title><link>https://imforster.github.io/llm-wiki/tags/agent/</link><description>Recent content in Agent on LLM Wiki — Agentic AI Landscape</description><generator>Hugo</generator><language>en-us</language><atom:link href="https://imforster.github.io/llm-wiki/tags/agent/index.xml" rel="self" type="application/rss+xml"/><item><title/><link>https://imforster.github.io/llm-wiki/docs/concepts/agent-state-model/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://imforster.github.io/llm-wiki/docs/concepts/agent-state-model/</guid><description>&lt;h1 id="agent-state-model"&gt;Agent State Model&lt;a class="anchor" href="#agent-state-model"&gt;#&lt;/a&gt;&lt;/h1&gt;
+&lt;p&gt;&lt;a href="https://imforster.github.io/llm-wiki/docs/entities/scion/"&gt;scion&lt;/a&gt; tracks agent state across three dimensions:&lt;/p&gt;
+&lt;h2 id="phase-lifecycle"&gt;Phase (Lifecycle)&lt;a class="anchor" href="#phase-lifecycle"&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;The infrastructure lifecycle of the agent container:&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;created → provisioning → cloning → starting → running → stopping → stopped (or error)&lt;/code&gt;&lt;/p&gt;
+&lt;h2 id="activity-cognitive-state"&gt;Activity (Cognitive State)&lt;a class="anchor" href="#activity-cognitive-state"&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;What the agent is doing within the &lt;code&gt;running&lt;/code&gt; phase:&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;idle | thinking | executing | waiting_for_input | blocked | completed | limits_exceeded | offline&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Sticky activities&lt;/strong&gt;: &lt;code&gt;completed&lt;/code&gt;, &lt;code&gt;blocked&lt;/code&gt;, and &lt;code&gt;limits_exceeded&lt;/code&gt; persist until explicit restart or stop&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;blocked&lt;/strong&gt;: Set by agents themselves when waiting for an expected event (e.g., child agent completing) — prevents false stall detection&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;offline&lt;/strong&gt;: Occurs when heartbeat is lost, often due to auth token refresh failure. Fix: stop and restart the agent.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="detail-freeform-context"&gt;Detail (Freeform Context)&lt;a class="anchor" href="#detail-freeform-context"&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Freeform text about the current activity — tool name, message, task summary.&lt;/p&gt;</description></item><item><title/><link>https://imforster.github.io/llm-wiki/docs/concepts/agent/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://imforster.github.io/llm-wiki/docs/concepts/agent/</guid><description>&lt;h1 id="agent"&gt;Agent&lt;a class="anchor" href="#agent"&gt;#&lt;/a&gt;&lt;/h1&gt;
+&lt;p&gt;In &lt;a href="https://imforster.github.io/llm-wiki/docs/entities/scion/"&gt;scion&lt;/a&gt;, an Agent is an isolated process running an LLM + &lt;a href="https://imforster.github.io/llm-wiki/docs/concepts/harness/"&gt;harness&lt;/a&gt; loop against a task. It is the fundamental unit of execution.&lt;/p&gt;
+&lt;h2 id="properties"&gt;Properties&lt;a class="anchor" href="#properties"&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Each agent has:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Identity&lt;/strong&gt;: Unique name, container ID, and (in hosted mode) a UUID and URL-safe slug&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Home directory&lt;/strong&gt;: Mounted at &lt;code&gt;/home/&amp;lt;user&amp;gt;&lt;/code&gt; — contains harness config, credentials, &lt;code&gt;agent-info.json&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Workspace&lt;/strong&gt;: Mounted at &lt;code&gt;/workspace&lt;/code&gt; — a dedicated git worktree or cloned repo&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Template&lt;/strong&gt;: The &lt;a href="https://imforster.github.io/llm-wiki/docs/concepts/template/"&gt;template&lt;/a&gt; blueprint that seeded its configuration&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Harness&lt;/strong&gt;: The LLM-specific adapter (Claude, Gemini, OpenCode, Codex)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="state-model"&gt;State Model&lt;a class="anchor" href="#state-model"&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;See &lt;a href="https://imforster.github.io/llm-wiki/docs/concepts/agent-state-model/"&gt;agent-state-model&lt;/a&gt; for the full three-dimensional state tracking system.&lt;/p&gt;</description></item><item><title/><link>https://imforster.github.io/llm-wiki/docs/concepts/frontier-agent/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://imforster.github.io/llm-wiki/docs/concepts/frontier-agent/</guid><description>&lt;h1 id="frontier-agent"&gt;Frontier Agent&lt;a class="anchor" href="#frontier-agent"&gt;#&lt;/a&gt;&lt;/h1&gt;
+&lt;p&gt;A term coined by &lt;a href="https://imforster.github.io/llm-wiki/docs/entities/aws/"&gt;aws&lt;/a&gt; for a new class of AI agents with three defining characteristics:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;Autonomous&lt;/strong&gt;: Direct them towards a goal, and they figure out how to achieve it&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Massively scalable&lt;/strong&gt;: Able to perform multiple concurrent tasks and distribute work across agents&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Work independently&lt;/strong&gt;: Operating for hours or days without intervention&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id="distinction-from-regular-agents"&gt;Distinction from Regular Agents&lt;a class="anchor" href="#distinction-from-regular-agents"&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Regular AI agents can plan and execute multi-step tasks with some autonomy. Frontier agents go further — they&amp;rsquo;re designed for long-running, independent operation at scale, not just responding to individual prompts or short interactive sessions.&lt;/p&gt;</description></item><item><title/><link>https://imforster.github.io/llm-wiki/docs/concepts/template/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://imforster.github.io/llm-wiki/docs/concepts/template/</guid><description>&lt;h1 id="template"&gt;Template&lt;a class="anchor" href="#template"&gt;#&lt;/a&gt;&lt;/h1&gt;
+&lt;p&gt;In &lt;a href="https://imforster.github.io/llm-wiki/docs/entities/scion/"&gt;scion&lt;/a&gt;, a Template is a versioned blueprint for creating an &lt;a href="https://imforster.github.io/llm-wiki/docs/concepts/agent/"&gt;agent&lt;/a&gt;. It defines the base configuration, system prompt, tools, and initial state.&lt;/p&gt;
+&lt;h2 id="contents"&gt;Contents&lt;a class="anchor" href="#contents"&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;home/&lt;/code&gt; directory tree — copied into the agent&amp;rsquo;s home&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;scion-agent.json&lt;/code&gt; (or &lt;code&gt;.yaml&lt;/code&gt;) — specifies &lt;a href="https://imforster.github.io/llm-wiki/docs/concepts/harness/"&gt;harness&lt;/a&gt; type, env vars, volumes, command args, model overrides, container image, resource requirements&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="inheritance"&gt;Inheritance&lt;a class="anchor" href="#inheritance"&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Templates support inheritance via a &lt;code&gt;base&lt;/code&gt; field. Scion walks the chain and merges configurations bottom-up (base first, then overrides).&lt;/p&gt;
+&lt;h2 id="scopes"&gt;Scopes&lt;a class="anchor" href="#scopes"&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Project-level&lt;/strong&gt;: &lt;code&gt;.scion/templates/&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Global&lt;/strong&gt;: &lt;code&gt;~/.scion/templates/&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Hosted&lt;/strong&gt;: Can be scoped as global, grove, or user, with visibility controls (private, grove, public)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="management"&gt;Management&lt;a class="anchor" href="#management"&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;pre tabindex="0"&gt;&lt;code&gt;scion templates create
+scion templates clone
+scion templates list
+scion templates show
+scion templates update-default&lt;/code&gt;&lt;/pre&gt;&lt;h2 id="defaults"&gt;Defaults&lt;a class="anchor" href="#defaults"&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Scion ships default templates for each supported &lt;a href="https://imforster.github.io/llm-wiki/docs/concepts/harness/"&gt;harness&lt;/a&gt;: &lt;code&gt;gemini&lt;/code&gt;, &lt;code&gt;claude&lt;/code&gt;, &lt;code&gt;opencode&lt;/code&gt;, &lt;code&gt;codex&lt;/code&gt;. Users can create custom templates for specialized roles (e.g., &amp;ldquo;Security Auditor&amp;rdquo;, &amp;ldquo;React Specialist&amp;rdquo;).&lt;/p&gt;</description></item><item><title/><link>https://imforster.github.io/llm-wiki/docs/entities/kiro/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://imforster.github.io/llm-wiki/docs/entities/kiro/</guid><description>&lt;h1 id="kiro"&gt;Kiro&lt;a class="anchor" href="#kiro"&gt;#&lt;/a&gt;&lt;/h1&gt;
+&lt;p&gt;Kiro is an agentic IDE by &lt;a href="https://imforster.github.io/llm-wiki/docs/entities/aws/"&gt;aws&lt;/a&gt; for software development. It has three main surfaces:&lt;/p&gt;
+&lt;h2 id="kiro-ide"&gt;Kiro IDE&lt;a class="anchor" href="#kiro-ide"&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Interactive, synchronous collaboration on your local machine. Pair programming, suggestions, real-time code iteration. Spec-driven development.&lt;/p&gt;
+&lt;h2 id="kiro-cli"&gt;Kiro CLI&lt;a class="anchor" href="#kiro-cli"&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Custom agents as configuration files that customize Kiro&amp;rsquo;s behavior for specific workflows. Define tool access, permissions, and context. Pre-approve tools, reduce interruptions, optimize for specific tasks. Interactive, runs on your local machine.&lt;/p&gt;
+&lt;h2 id="kiro-autonomous-agent"&gt;Kiro Autonomous Agent&lt;a class="anchor" href="#kiro-autonomous-agent"&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;A &lt;a href="https://imforster.github.io/llm-wiki/docs/concepts/frontier-agent/"&gt;frontier-agent&lt;/a&gt; that works asynchronously in the background on complex, multi-step development tasks. Key capabilities:&lt;/p&gt;</description></item></channel></rss>

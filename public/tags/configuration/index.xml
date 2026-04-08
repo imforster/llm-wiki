@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Configuration on LLM Wiki — Agentic AI Landscape</title><link>https://imforster.github.io/llm-wiki/tags/configuration/</link><description>Recent content in Configuration on LLM Wiki — Agentic AI Landscape</description><generator>Hugo</generator><language>en-us</language><atom:link href="https://imforster.github.io/llm-wiki/tags/configuration/index.xml" rel="self" type="application/rss+xml"/><item><title/><link>https://imforster.github.io/llm-wiki/docs/concepts/template/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://imforster.github.io/llm-wiki/docs/concepts/template/</guid><description>&lt;h1 id="template"&gt;Template&lt;a class="anchor" href="#template"&gt;#&lt;/a&gt;&lt;/h1&gt;
+&lt;p&gt;In &lt;a href="https://imforster.github.io/llm-wiki/docs/entities/scion/"&gt;scion&lt;/a&gt;, a Template is a versioned blueprint for creating an &lt;a href="https://imforster.github.io/llm-wiki/docs/concepts/agent/"&gt;agent&lt;/a&gt;. It defines the base configuration, system prompt, tools, and initial state.&lt;/p&gt;
+&lt;h2 id="contents"&gt;Contents&lt;a class="anchor" href="#contents"&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;home/&lt;/code&gt; directory tree — copied into the agent&amp;rsquo;s home&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;scion-agent.json&lt;/code&gt; (or &lt;code&gt;.yaml&lt;/code&gt;) — specifies &lt;a href="https://imforster.github.io/llm-wiki/docs/concepts/harness/"&gt;harness&lt;/a&gt; type, env vars, volumes, command args, model overrides, container image, resource requirements&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="inheritance"&gt;Inheritance&lt;a class="anchor" href="#inheritance"&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Templates support inheritance via a &lt;code&gt;base&lt;/code&gt; field. Scion walks the chain and merges configurations bottom-up (base first, then overrides).&lt;/p&gt;
+&lt;h2 id="scopes"&gt;Scopes&lt;a class="anchor" href="#scopes"&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Project-level&lt;/strong&gt;: &lt;code&gt;.scion/templates/&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Global&lt;/strong&gt;: &lt;code&gt;~/.scion/templates/&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Hosted&lt;/strong&gt;: Can be scoped as global, grove, or user, with visibility controls (private, grove, public)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="management"&gt;Management&lt;a class="anchor" href="#management"&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;pre tabindex="0"&gt;&lt;code&gt;scion templates create
+scion templates clone
+scion templates list
+scion templates show
+scion templates update-default&lt;/code&gt;&lt;/pre&gt;&lt;h2 id="defaults"&gt;Defaults&lt;a class="anchor" href="#defaults"&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Scion ships default templates for each supported &lt;a href="https://imforster.github.io/llm-wiki/docs/concepts/harness/"&gt;harness&lt;/a&gt;: &lt;code&gt;gemini&lt;/code&gt;, &lt;code&gt;claude&lt;/code&gt;, &lt;code&gt;opencode&lt;/code&gt;, &lt;code&gt;codex&lt;/code&gt;. Users can create custom templates for specialized roles (e.g., &amp;ldquo;Security Auditor&amp;rdquo;, &amp;ldquo;React Specialist&amp;rdquo;).&lt;/p&gt;</description></item></channel></rss>

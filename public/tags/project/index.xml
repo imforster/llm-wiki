@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Project on LLM Wiki — Agentic AI Landscape</title><link>https://imforster.github.io/llm-wiki/tags/project/</link><description>Recent content in Project on LLM Wiki — Agentic AI Landscape</description><generator>Hugo</generator><language>en-us</language><atom:link href="https://imforster.github.io/llm-wiki/tags/project/index.xml" rel="self" type="application/rss+xml"/><item><title/><link>https://imforster.github.io/llm-wiki/docs/concepts/grove/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://imforster.github.io/llm-wiki/docs/concepts/grove/</guid><description>&lt;h1 id="grove"&gt;Grove&lt;a class="anchor" href="#grove"&gt;#&lt;/a&gt;&lt;/h1&gt;
+&lt;p&gt;In &lt;a href="https://imforster.github.io/llm-wiki/docs/entities/scion/"&gt;scion&lt;/a&gt;, a Grove is a project workspace where &lt;a href="https://imforster.github.io/llm-wiki/docs/concepts/agent/"&gt;agent&lt;/a&gt;s live. It corresponds to a &lt;code&gt;.scion&lt;/code&gt; directory on the filesystem.&lt;/p&gt;
+&lt;h2 id="scope"&gt;Scope&lt;a class="anchor" href="#scope"&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Project-level&lt;/strong&gt;: Located at the root of a git repository&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Global&lt;/strong&gt;: In the user&amp;rsquo;s home folder (&lt;code&gt;~/.scion&lt;/code&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="identification"&gt;Identification&lt;a class="anchor" href="#identification"&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Every grove has a unique Grove ID:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Git-backed groves&lt;/strong&gt;: Deterministic UUID v5 derived from namespace + normalized git URL — same repo always maps to same ID regardless of protocol&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Hub-native groves&lt;/strong&gt;: Random UUID v4&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="contents"&gt;Contents&lt;a class="anchor" href="#contents"&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;A grove contains:&lt;/p&gt;</description></item></channel></rss>

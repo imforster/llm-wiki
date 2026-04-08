@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Lifecycle on LLM Wiki — Agentic AI Landscape</title><link>https://imforster.github.io/llm-wiki/tags/lifecycle/</link><description>Recent content in Lifecycle on LLM Wiki — Agentic AI Landscape</description><generator>Hugo</generator><language>en-us</language><atom:link href="https://imforster.github.io/llm-wiki/tags/lifecycle/index.xml" rel="self" type="application/rss+xml"/><item><title/><link>https://imforster.github.io/llm-wiki/docs/concepts/agent-state-model/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://imforster.github.io/llm-wiki/docs/concepts/agent-state-model/</guid><description>&lt;h1 id="agent-state-model"&gt;Agent State Model&lt;a class="anchor" href="#agent-state-model"&gt;#&lt;/a&gt;&lt;/h1&gt;
+&lt;p&gt;&lt;a href="https://imforster.github.io/llm-wiki/docs/entities/scion/"&gt;scion&lt;/a&gt; tracks agent state across three dimensions:&lt;/p&gt;
+&lt;h2 id="phase-lifecycle"&gt;Phase (Lifecycle)&lt;a class="anchor" href="#phase-lifecycle"&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;The infrastructure lifecycle of the agent container:&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;created → provisioning → cloning → starting → running → stopping → stopped (or error)&lt;/code&gt;&lt;/p&gt;
+&lt;h2 id="activity-cognitive-state"&gt;Activity (Cognitive State)&lt;a class="anchor" href="#activity-cognitive-state"&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;What the agent is doing within the &lt;code&gt;running&lt;/code&gt; phase:&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;idle | thinking | executing | waiting_for_input | blocked | completed | limits_exceeded | offline&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Sticky activities&lt;/strong&gt;: &lt;code&gt;completed&lt;/code&gt;, &lt;code&gt;blocked&lt;/code&gt;, and &lt;code&gt;limits_exceeded&lt;/code&gt; persist until explicit restart or stop&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;blocked&lt;/strong&gt;: Set by agents themselves when waiting for an expected event (e.g., child agent completing) — prevents false stall detection&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;offline&lt;/strong&gt;: Occurs when heartbeat is lost, often due to auth token refresh failure. Fix: stop and restart the agent.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="detail-freeform-context"&gt;Detail (Freeform Context)&lt;a class="anchor" href="#detail-freeform-context"&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Freeform text about the current activity — tool name, message, task summary.&lt;/p&gt;</description></item></channel></rss>
