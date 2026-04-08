@@ -126,7 +126,7 @@ if overview_content.startswith("---"):
 else:
     overview_body = overview_content
 with open(os.path.join(CONTENT_DIR, "_index.md"), "w") as f:
-    f.write("---\ntitle: \"LLM Wiki\"\ntype: docs\nbookToc: true\n---\n\n")
+    f.write("---\ntitle: \"LLM Wiki\"\ntype: docs\nbookToc: true\naliases:\n  - /\n---\n\n")
     f.write(convert_wikilinks(overview_body))
 total += 1
 
