@@ -1,0 +1,5 @@
+site/public/
+site/resources/
+site/content/
+.obsidian/
+.DS_Store

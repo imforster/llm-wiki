@@ -1,0 +1,114 @@
+#!/usr/bin/env python3
+"""Convert wiki/ markdown to Hugo content/ and build the site."""
+
+import os
+import re
+import shutil
+import subprocess
+import sys
+
+WIKI_DIR = "wiki"
+SITE_DIR = "site"
+CONTENT_DIR = os.path.join(SITE_DIR, "content", "docs")
+SECTIONS = ["sources", "entities", "concepts", "analyses"]
+
+# --- Build slug→section lookup ---
+slug_map = {}
+for section in SECTIONS:
+    src = os.path.join(WIKI_DIR, section)
+    if not os.path.isdir(src):
+        continue
+    for f in os.listdir(src):
+        if f.endswith(".md"):
+            slug = f[:-3]
+            slug_map[slug] = f"{section}/{slug}"
+
+
+def convert_wikilinks(text):
+    """Replace [[slug]] with plain relative Hugo links."""
+    def replace(m):
+        slug = m.group(1)
+        target = slug_map.get(slug)
+        if target:
+            return f'[{slug}]({{{{< ref "/docs/{target}" >}}}})'
+        return f"**{slug}**"
+    return re.sub(r"\[\[([a-zA-Z0-9_-]+)\]\]", replace, text)
+
+
+# --- Clean and create output ---
+if os.path.exists(CONTENT_DIR):
+    shutil.rmtree(CONTENT_DIR)
+os.makedirs(CONTENT_DIR)
+
+section_meta = {
+    "analyses": (1, "💡"),
+    "concepts": (2, "🧠"),
+    "entities": (3, "📦"),
+    "sources":  (4, "📄"),
+}
+
+total = 0
+for section in SECTIONS:
+    src_dir = os.path.join(WIKI_DIR, section)
+    dest_dir = os.path.join(CONTENT_DIR, section)
+    os.makedirs(dest_dir, exist_ok=True)
+
+    weight, icon = section_meta[section]
+    title = section.capitalize()
+
+    with open(os.path.join(dest_dir, "_index.md"), "w") as f:
+        f.write(f"---\ntitle: \"{icon} {title}\"\nweight: {weight}\nbookCollapseSection: true\n---\n\n# {title}\n")
+    total += 1
+
+    if not os.path.isdir(src_dir):
+        continue
+
+    for fname in sorted(os.listdir(src_dir)):
+        if not fname.endswith(".md"):
+            continue
+        src_path = os.path.join(src_dir, fname)
+        dest_path = os.path.join(dest_dir, fname)
+
+        content = open(src_path).read()
+        # Only convert wikilinks in body, not in YAML frontmatter
+        if content.startswith("---"):
+            parts = content.split("---", 2)
+            if len(parts) >= 3:
+                converted = "---" + parts[1] + "---" + convert_wikilinks(parts[2])
+            else:
+                converted = convert_wikilinks(content)
+        else:
+            converted = convert_wikilinks(content)
+        with open(dest_path, "w") as f:
+            f.write(converted)
+        total += 1
+
+# --- Homepage from wiki/index.md ---
+index_content = open(os.path.join(WIKI_DIR, "index.md")).read()
+with open(os.path.join(CONTENT_DIR, "_index.md"), "w") as f:
+    f.write("---\ntitle: \"Wiki Index\"\ntype: docs\nbookToc: true\n---\n\n")
+    f.write(convert_wikilinks(index_content))
+total += 1
+
+# --- Log page ---
+meta_dir = os.path.join(CONTENT_DIR, "meta")
+os.makedirs(meta_dir, exist_ok=True)
+with open(os.path.join(meta_dir, "_index.md"), "w") as f:
+    f.write("---\ntitle: \"📋 Meta\"\nweight: 5\nbookCollapseSection: true\n---\n\n# Meta\n")
+total += 1
+
+log_content = open(os.path.join(WIKI_DIR, "log.md")).read()
+with open(os.path.join(meta_dir, "log.md"), "w") as f:
+    f.write("---\ntitle: \"Activity Log\"\nbookToc: false\n---\n\n")
+    f.write(convert_wikilinks(log_content))
+total += 1
+
+print(f"✅ Content generated: {total} pages")
+
+# --- Build ---
+result = subprocess.run(["hugo", "--minify"], cwd=SITE_DIR, capture_output=True, text=True)
+print(result.stdout)
+if result.returncode != 0:
+    print(result.stderr, file=sys.stderr)
+    sys.exit(result.returncode)
+print(f"✅ Site built at {SITE_DIR}/public/")
