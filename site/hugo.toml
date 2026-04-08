@@ -17,6 +17,11 @@ theme = 'hugo-book'
   url = "https://blog.imfsoftware.com"
   weight = 1
 
+[[menu.before]]
+  name = "🏠 Overview"
+  url = "/llm-wiki/docs/"
+  weight = 2
+
 [params.bookComments]
   enabled = false
 
