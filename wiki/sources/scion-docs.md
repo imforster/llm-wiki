@@ -8,7 +8,7 @@ tags: [multi-agent, orchestration, llm, google, containers, devtools]
 
 # Scion Documentation
 
-[Original](../../raw/scion-docs.md) | [Website](https://googlecloudplatform.github.io/scion)
+[Original](https://googlecloudplatform.github.io/scion) | [Raw](../../raw/scion-docs.md)
 
 ## Summary
 

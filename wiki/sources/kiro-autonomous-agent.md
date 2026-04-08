@@ -8,7 +8,7 @@ tags: [kiro, autonomous-agent, frontier-agent, aws, devtools]
 
 # Kiro Autonomous Agent Page
 
-[Original](../../raw/kiro-autonomous-agent.md) | [Website](https://kiro.dev/autonomous-agent/)
+[Original](https://kiro.dev/autonomous-agent/) | [Raw](../../raw/kiro-autonomous-agent.md)
 
 ## Summary
 

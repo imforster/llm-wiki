@@ -8,7 +8,7 @@ tags: [claude-code, anthropic, coding-agent, cli, devtools]
 
 # Claude Code Documentation
 
-[Original](../../raw/claude-code-docs.md) | [Website](https://code.claude.com/docs/en) | [GitHub](https://github.com/anthropics/claude-code)
+[Original](https://code.claude.com/docs/en) | [GitHub](https://github.com/anthropics/claude-code) | [Raw](../../raw/claude-code-docs.md)
 
 ## Summary
 

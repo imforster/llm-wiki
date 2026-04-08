@@ -8,7 +8,7 @@ tags: [skills, agent-skills, anthropic, open-standard, specification]
 
 # Anthropic Skills Repository & Agent Skills Spec
 
-[Original](../../raw/anthropic-skills-repo.md) | [GitHub](https://github.com/anthropics/skills) | [Spec](https://agentskills.io/specification)
+[Original](https://github.com/anthropics/skills) | [Spec](https://agentskills.io/specification) | [Raw](../../raw/anthropic-skills-repo.md)
 
 ## Summary
 

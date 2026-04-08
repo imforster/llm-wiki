@@ -8,7 +8,7 @@ tags: [pai, personal-ai, infrastructure, claude-code, memory, skills]
 
 # Personal AI Infrastructure (PAI)
 
-[Original](../../raw/personal-ai-infrastructure.md) | [GitHub](https://github.com/danielmiessler/Personal_AI_Infrastructure)
+[Original](https://github.com/danielmiessler/Personal_AI_Infrastructure) | [Raw](../../raw/personal-ai-infrastructure.md)
 
 Author: [[daniel-miessler]]
 

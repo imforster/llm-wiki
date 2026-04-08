@@ -8,7 +8,7 @@ tags: [llm-wiki, knowledge-management, pattern, methodology, meta]
 
 # LLM Wiki (Karpathy)
 
-[Original](../../raw/llm-wiki-karpathy.md) | [Gist](https://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f)
+[Original](https://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f) | [Raw](../../raw/llm-wiki-karpathy.md)
 
 Author: [[andrej-karpathy]]
 

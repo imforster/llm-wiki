@@ -8,7 +8,7 @@ tags: [fabric, patterns, prompts, open-source, cli]
 
 # Fabric GitHub Repository
 
-[Original](../../raw/fabric-github.md) | [GitHub](https://github.com/danielmiessler/fabric)
+[Original](https://github.com/danielmiessler/fabric) | [Raw](../../raw/fabric-github.md)
 
 Author: [[daniel-miessler]]
 

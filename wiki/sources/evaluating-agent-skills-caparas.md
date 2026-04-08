@@ -8,7 +8,7 @@ tags: [evaluation, testing, skills, methodology, evals]
 
 # How to Evaluate AI Agent Skills Without Relying on Vibes
 
-[Original](../../raw/evaluating-agent-skills-caparas.md)
+[Original](https://pub.towardsai.net/how-to-evaluate-ai-agent-skills-without-relying-on-vibes-9a5764ad18c4) | [Raw](../../raw/evaluating-agent-skills-caparas.md)
 
 Author: JP Caparas (building on OpenAI's "Testing Agent Skills Systematically with Evals")
 
