@@ -1,0 +1,26 @@
+baseURL = 'https://iforster.github.io/llm-wiki/'
+languageCode = 'en-us'
+title = 'LLM Wiki — Agentic AI Landscape'
+theme = 'hugo-book'
+
+[params]
+  BookTheme = 'auto'
+  BookToC = true
+  BookSection = 'docs'
+  BookRepo = 'https://github.com/iforster/llm-wiki'
+  BookSearch = true
+  BookDateFormat = 'January 2, 2006'
+
+[params.bookComments]
+  enabled = false
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+    [markup.goldmark.extensions]
+      strikethrough = true
+      table = true
+
+[outputs]
+  home = ['HTML', 'RSS', 'JSON']

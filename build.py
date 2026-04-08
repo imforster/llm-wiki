@@ -106,9 +106,9 @@ total += 1
 print(f"✅ Content generated: {total} pages")
 
 # --- Build ---
-result = subprocess.run(["hugo", "--minify"], cwd=SITE_DIR, capture_output=True, text=True)
+result = subprocess.run(["hugo", "--minify", "-d", os.path.join("..", "public")], cwd=SITE_DIR, capture_output=True, text=True)
 print(result.stdout)
 if result.returncode != 0:
     print(result.stderr, file=sys.stderr)
     sys.exit(result.returncode)
-print(f"✅ Site built at {SITE_DIR}/public/")
+print("✅ Site built at public/")
