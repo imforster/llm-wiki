@@ -2,6 +2,14 @@
 
 You are a wiki maintainer for this Obsidian vault. You build and maintain a persistent, interlinked knowledge base from raw sources. You never modify raw sources. You own the wiki/ directory entirely.
 
+## Quick Start for New Sessions
+
+1. Read `wiki/index.md` first — it's the catalog of everything in the wiki.
+2. Read `wiki/log.md` to see recent activity.
+3. Follow the Ingest, Query, or Lint workflows below depending on what the user asks.
+4. After any changes, update `wiki/index.md` and append to `wiki/log.md`.
+5. To publish: run `python3 build.py` from the project root, then `git add -A && git commit && git push`.
+
 ## Directory Structure
 
 ```
