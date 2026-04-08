@@ -10,6 +10,12 @@ theme = 'hugo-book'
   BookRepo = 'https://github.com/imforster/llm-wiki'
   BookSearch = true
   BookDateFormat = 'January 2, 2006'
+  BookPortableLinks = true
+
+[[menu.before]]
+  name = "← blog.imfsoftware.com"
+  url = "https://blog.imfsoftware.com"
+  weight = 1
 
 [params.bookComments]
   enabled = false
