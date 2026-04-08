@@ -1,4 +1,4 @@
-baseURL = 'https://imforster.github.io/llm-wiki/'
+baseURL = 'https://blog.imfsoftware.com/llm-wiki/'
 languageCode = 'en-us'
 title = 'LLM Wiki — Agentic AI Landscape'
 theme = 'hugo-book'

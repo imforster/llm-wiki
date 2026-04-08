@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Extensibility on LLM Wiki — Agentic AI Landscape</title><link>https://imforster.github.io/llm-wiki/tags/extensibility/</link><description>Recent content in Extensibility on LLM Wiki — Agentic AI Landscape</description><generator>Hugo</generator><language>en-us</language><atom:link href="https://imforster.github.io/llm-wiki/tags/extensibility/index.xml" rel="self" type="application/rss+xml"/><item><title/><link>https://imforster.github.io/llm-wiki/docs/concepts/agent-skills-standard/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://imforster.github.io/llm-wiki/docs/concepts/agent-skills-standard/</guid><description>&lt;h1 id="agent-skills-standard"&gt;Agent Skills Standard&lt;a class="anchor" href="#agent-skills-standard"&gt;#&lt;/a&gt;&lt;/h1&gt;
-&lt;p&gt;An open standard (agentskills.io) for packaging reusable capabilities that AI agents can load dynamically. Initiated by &lt;a href="https://imforster.github.io/llm-wiki/docs/entities/anthropic/"&gt;anthropic&lt;/a&gt;, designed for cross-tool compatibility.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Extensibility on LLM Wiki — Agentic AI Landscape</title><link>https://blog.imfsoftware.com/llm-wiki/tags/extensibility/</link><description>Recent content in Extensibility on LLM Wiki — Agentic AI Landscape</description><generator>Hugo</generator><language>en-us</language><atom:link href="https://blog.imfsoftware.com/llm-wiki/tags/extensibility/index.xml" rel="self" type="application/rss+xml"/><item><title/><link>https://blog.imfsoftware.com/llm-wiki/docs/concepts/agent-skills-standard/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://blog.imfsoftware.com/llm-wiki/docs/concepts/agent-skills-standard/</guid><description>&lt;h1 id="agent-skills-standard"&gt;Agent Skills Standard&lt;a class="anchor" href="#agent-skills-standard"&gt;#&lt;/a&gt;&lt;/h1&gt;
+&lt;p&gt;An open standard (agentskills.io) for packaging reusable capabilities that AI agents can load dynamically. Initiated by &lt;a href="https://blog.imfsoftware.com/llm-wiki/docs/entities/anthropic/"&gt;anthropic&lt;/a&gt;, designed for cross-tool compatibility.&lt;/p&gt;
 &lt;h2 id="specification"&gt;Specification&lt;a class="anchor" href="#specification"&gt;#&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;A skill is a directory with a &lt;code&gt;SKILL.md&lt;/code&gt; file:&lt;/p&gt;
 &lt;pre tabindex="0"&gt;&lt;code&gt;skill-name/
@@ -16,8 +16,8 @@
 &lt;li&gt;&lt;code&gt;license&lt;/code&gt;, &lt;code&gt;compatibility&lt;/code&gt;, &lt;code&gt;metadata&lt;/code&gt;, &lt;code&gt;allowed-tools&lt;/code&gt; (experimental)&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id="progressive-disclosure"&gt;Progressive Disclosure&lt;a class="anchor" href="#progressive-disclosure"&gt;#&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;The key design principle — skills scale without blowing up context:&lt;/p&gt;</description></item><item><title/><link>https://imforster.github.io/llm-wiki/docs/concepts/kiro-powers/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://imforster.github.io/llm-wiki/docs/concepts/kiro-powers/</guid><description>&lt;h1 id="kiro-powers"&gt;Kiro Powers&lt;a class="anchor" href="#kiro-powers"&gt;#&lt;/a&gt;&lt;/h1&gt;
-&lt;p&gt;Specialized packages that enhance existing &lt;a href="https://imforster.github.io/llm-wiki/docs/entities/kiro/"&gt;kiro&lt;/a&gt; agents with prebuilt expertise for specific development tasks.&lt;/p&gt;
+&lt;p&gt;The key design principle — skills scale without blowing up context:&lt;/p&gt;</description></item><item><title/><link>https://blog.imfsoftware.com/llm-wiki/docs/concepts/kiro-powers/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://blog.imfsoftware.com/llm-wiki/docs/concepts/kiro-powers/</guid><description>&lt;h1 id="kiro-powers"&gt;Kiro Powers&lt;a class="anchor" href="#kiro-powers"&gt;#&lt;/a&gt;&lt;/h1&gt;
+&lt;p&gt;Specialized packages that enhance existing &lt;a href="https://blog.imfsoftware.com/llm-wiki/docs/entities/kiro/"&gt;kiro&lt;/a&gt; agents with prebuilt expertise for specific development tasks.&lt;/p&gt;
 &lt;h2 id="contents"&gt;Contents&lt;a class="anchor" href="#contents"&gt;#&lt;/a&gt;&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;Curated MCP servers&lt;/li&gt;
@@ -26,22 +26,22 @@
 &lt;li&gt;Can be dynamically loaded on demand&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id="purpose"&gt;Purpose&lt;a class="anchor" href="#purpose"&gt;#&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;Focus on providing domain-specific knowledge and best practices. Distinct from the &lt;a href="https://imforster.github.io/llm-wiki/docs/entities/kiro/"&gt;kiro&lt;/a&gt; autonomous agent — Powers enhance agents with expertise, while the autonomous agent is the execution engine that works independently.&lt;/p&gt;
+&lt;p&gt;Focus on providing domain-specific knowledge and best practices. Distinct from the &lt;a href="https://blog.imfsoftware.com/llm-wiki/docs/entities/kiro/"&gt;kiro&lt;/a&gt; autonomous agent — Powers enhance agents with expertise, while the autonomous agent is the execution engine that works independently.&lt;/p&gt;
 &lt;h2 id="see-also"&gt;See Also&lt;a class="anchor" href="#see-also"&gt;#&lt;/a&gt;&lt;/h2&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href="https://imforster.github.io/llm-wiki/docs/entities/kiro/"&gt;kiro&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://imforster.github.io/llm-wiki/docs/concepts/frontier-agent/"&gt;frontier-agent&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</description></item><item><title/><link>https://imforster.github.io/llm-wiki/docs/concepts/plugin-system/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://imforster.github.io/llm-wiki/docs/concepts/plugin-system/</guid><description>&lt;h1 id="plugin-system"&gt;Plugin System&lt;a class="anchor" href="#plugin-system"&gt;#&lt;/a&gt;&lt;/h1&gt;
-&lt;p&gt;&lt;a href="https://imforster.github.io/llm-wiki/docs/entities/scion/"&gt;scion&lt;/a&gt; supports a plugin architecture built on &lt;code&gt;hashicorp/go-plugin&lt;/code&gt; for extending system capabilities. Plugins communicate over gRPC.&lt;/p&gt;
+&lt;li&gt;&lt;a href="https://blog.imfsoftware.com/llm-wiki/docs/entities/kiro/"&gt;kiro&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://blog.imfsoftware.com/llm-wiki/docs/concepts/frontier-agent/"&gt;frontier-agent&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</description></item><item><title/><link>https://blog.imfsoftware.com/llm-wiki/docs/concepts/plugin-system/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://blog.imfsoftware.com/llm-wiki/docs/concepts/plugin-system/</guid><description>&lt;h1 id="plugin-system"&gt;Plugin System&lt;a class="anchor" href="#plugin-system"&gt;#&lt;/a&gt;&lt;/h1&gt;
+&lt;p&gt;&lt;a href="https://blog.imfsoftware.com/llm-wiki/docs/entities/scion/"&gt;scion&lt;/a&gt; supports a plugin architecture built on &lt;code&gt;hashicorp/go-plugin&lt;/code&gt; for extending system capabilities. Plugins communicate over gRPC.&lt;/p&gt;
 &lt;h2 id="plugin-types"&gt;Plugin Types&lt;a class="anchor" href="#plugin-types"&gt;#&lt;/a&gt;&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;Message Broker Plugins&lt;/strong&gt;: Custom message delivery backends for agent notifications and structured messaging&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Agent Harness Plugins&lt;/strong&gt;: Custom &lt;a href="https://imforster.github.io/llm-wiki/docs/concepts/harness/"&gt;harness&lt;/a&gt; implementations that integrate new LLM tools without modifying the core codebase&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Agent Harness Plugins&lt;/strong&gt;: Custom &lt;a href="https://blog.imfsoftware.com/llm-wiki/docs/concepts/harness/"&gt;harness&lt;/a&gt; implementations that integrate new LLM tools without modifying the core codebase&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id="status"&gt;Status&lt;a class="anchor" href="#status"&gt;#&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;Currently in foundational stage, with reference implementations available for both plugin types.&lt;/p&gt;
 &lt;h2 id="see-also"&gt;See Also&lt;a class="anchor" href="#see-also"&gt;#&lt;/a&gt;&lt;/h2&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href="https://imforster.github.io/llm-wiki/docs/entities/scion/"&gt;scion&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://imforster.github.io/llm-wiki/docs/concepts/harness/"&gt;harness&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://blog.imfsoftware.com/llm-wiki/docs/entities/scion/"&gt;scion&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://blog.imfsoftware.com/llm-wiki/docs/concepts/harness/"&gt;harness&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;</description></item></channel></rss>

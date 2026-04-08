@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Integration on LLM Wiki — Agentic AI Landscape</title><link>https://imforster.github.io/llm-wiki/tags/integration/</link><description>Recent content in Integration on LLM Wiki — Agentic AI Landscape</description><generator>Hugo</generator><language>en-us</language><atom:link href="https://imforster.github.io/llm-wiki/tags/integration/index.xml" rel="self" type="application/rss+xml"/><item><title/><link>https://imforster.github.io/llm-wiki/docs/concepts/harness/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://imforster.github.io/llm-wiki/docs/concepts/harness/</guid><description>&lt;h1 id="harness"&gt;Harness&lt;a class="anchor" href="#harness"&gt;#&lt;/a&gt;&lt;/h1&gt;
-&lt;p&gt;In &lt;a href="https://imforster.github.io/llm-wiki/docs/entities/scion/"&gt;scion&lt;/a&gt;, a Harness is an adapter that allows a specific LLM tool to run within the Scion orchestration layer. It handles provisioning, configuration, and execution for that tool inside an OCI container.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Integration on LLM Wiki — Agentic AI Landscape</title><link>https://blog.imfsoftware.com/llm-wiki/tags/integration/</link><description>Recent content in Integration on LLM Wiki — Agentic AI Landscape</description><generator>Hugo</generator><language>en-us</language><atom:link href="https://blog.imfsoftware.com/llm-wiki/tags/integration/index.xml" rel="self" type="application/rss+xml"/><item><title/><link>https://blog.imfsoftware.com/llm-wiki/docs/concepts/harness/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://blog.imfsoftware.com/llm-wiki/docs/concepts/harness/</guid><description>&lt;h1 id="harness"&gt;Harness&lt;a class="anchor" href="#harness"&gt;#&lt;/a&gt;&lt;/h1&gt;
+&lt;p&gt;In &lt;a href="https://blog.imfsoftware.com/llm-wiki/docs/entities/scion/"&gt;scion&lt;/a&gt;, a Harness is an adapter that allows a specific LLM tool to run within the Scion orchestration layer. It handles provisioning, configuration, and execution for that tool inside an OCI container.&lt;/p&gt;
 &lt;h2 id="purpose"&gt;Purpose&lt;a class="anchor" href="#purpose"&gt;#&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;The harness ensures that generic Scion commands (&lt;code&gt;start&lt;/code&gt;, &lt;code&gt;stop&lt;/code&gt;, &lt;code&gt;attach&lt;/code&gt;, &lt;code&gt;resume&lt;/code&gt;) work consistently regardless of the underlying agent software.&lt;/p&gt;
 &lt;h2 id="interface"&gt;Interface&lt;a class="anchor" href="#interface"&gt;#&lt;/a&gt;&lt;/h2&gt;
@@ -29,8 +29,8 @@
  &lt;/tr&gt;
  &lt;tr&gt;
  &lt;td&gt;&lt;code&gt;claude&lt;/code&gt;&lt;/td&gt;
- &lt;td&gt;&lt;a href="https://imforster.github.io/llm-wiki/docs/entities/claude-code/"&gt;claude-code&lt;/a&gt;&lt;/td&gt;
- &lt;td&gt;Anthropic API key / Vertex AI auth. See &lt;a href="https://imforster.github.io/llm-wiki/docs/entities/claude-code/"&gt;claude-code&lt;/a&gt; for full capabilities.&lt;/td&gt;
+ &lt;td&gt;&lt;a href="https://blog.imfsoftware.com/llm-wiki/docs/entities/claude-code/"&gt;claude-code&lt;/a&gt;&lt;/td&gt;
+ &lt;td&gt;Anthropic API key / Vertex AI auth. See &lt;a href="https://blog.imfsoftware.com/llm-wiki/docs/entities/claude-code/"&gt;claude-code&lt;/a&gt; for full capabilities.&lt;/td&gt;
  &lt;/tr&gt;
  &lt;tr&gt;
  &lt;td&gt;&lt;code&gt;opencode&lt;/code&gt;&lt;/td&gt;
@@ -99,10 +99,10 @@
  &lt;/tbody&gt;
 &lt;/table&gt;
 &lt;h2 id="extensibility"&gt;Extensibility&lt;a class="anchor" href="#extensibility"&gt;#&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;New harnesses can be added via the &lt;a href="https://imforster.github.io/llm-wiki/docs/concepts/plugin-system/"&gt;plugin-system&lt;/a&gt; (hashicorp/go-plugin over gRPC) without modifying the core codebase.&lt;/p&gt;</description></item><item><title/><link>https://imforster.github.io/llm-wiki/docs/concepts/mcp-protocol/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://imforster.github.io/llm-wiki/docs/concepts/mcp-protocol/</guid><description>&lt;h1 id="mcp-model-context-protocol"&gt;MCP (Model Context Protocol)&lt;a class="anchor" href="#mcp-model-context-protocol"&gt;#&lt;/a&gt;&lt;/h1&gt;
+&lt;p&gt;New harnesses can be added via the &lt;a href="https://blog.imfsoftware.com/llm-wiki/docs/concepts/plugin-system/"&gt;plugin-system&lt;/a&gt; (hashicorp/go-plugin over gRPC) without modifying the core codebase.&lt;/p&gt;</description></item><item><title/><link>https://blog.imfsoftware.com/llm-wiki/docs/concepts/mcp-protocol/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://blog.imfsoftware.com/llm-wiki/docs/concepts/mcp-protocol/</guid><description>&lt;h1 id="mcp-model-context-protocol"&gt;MCP (Model Context Protocol)&lt;a class="anchor" href="#mcp-model-context-protocol"&gt;#&lt;/a&gt;&lt;/h1&gt;
 &lt;p&gt;An open protocol that standardizes how applications provide context and tools to LLMs. Enables communication between AI agents and external services.&lt;/p&gt;
 &lt;h2 id="how-claude-code-uses-mcp"&gt;How Claude Code Uses MCP&lt;a class="anchor" href="#how-claude-code-uses-mcp"&gt;#&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;&lt;a href="https://imforster.github.io/llm-wiki/docs/entities/claude-code/"&gt;claude-code&lt;/a&gt; uses MCP as its primary tool integration mechanism:&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://blog.imfsoftware.com/llm-wiki/docs/entities/claude-code/"&gt;claude-code&lt;/a&gt; uses MCP as its primary tool integration mechanism:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Connect to external data sources (Google Drive, Jira, Slack, custom tooling)&lt;/li&gt;
 &lt;li&gt;Discover and install prebuilt plugins&lt;/li&gt;
@@ -111,9 +111,9 @@
 &lt;/ul&gt;
 &lt;h2 id="usage-across-the-ecosystem"&gt;Usage Across the Ecosystem&lt;a class="anchor" href="#usage-across-the-ecosystem"&gt;#&lt;/a&gt;&lt;/h2&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;&lt;a href="https://imforster.github.io/llm-wiki/docs/entities/claude-code/"&gt;claude-code&lt;/a&gt;&lt;/strong&gt;: Primary tool integration. Supports prebuilt and custom plugins.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;&lt;a href="https://imforster.github.io/llm-wiki/docs/entities/kiro/"&gt;kiro&lt;/a&gt;&lt;/strong&gt;: &lt;a href="https://imforster.github.io/llm-wiki/docs/concepts/kiro-powers/"&gt;kiro-powers&lt;/a&gt; contain curated MCP servers as part of expertise packages.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;&lt;a href="https://imforster.github.io/llm-wiki/docs/entities/scion/"&gt;scion&lt;/a&gt;&lt;/strong&gt;: Not directly mentioned, but the &lt;a href="https://imforster.github.io/llm-wiki/docs/concepts/plugin-system/"&gt;plugin-system&lt;/a&gt; (hashicorp/go-plugin over gRPC) serves a similar role.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;&lt;a href="https://blog.imfsoftware.com/llm-wiki/docs/entities/claude-code/"&gt;claude-code&lt;/a&gt;&lt;/strong&gt;: Primary tool integration. Supports prebuilt and custom plugins.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;&lt;a href="https://blog.imfsoftware.com/llm-wiki/docs/entities/kiro/"&gt;kiro&lt;/a&gt;&lt;/strong&gt;: &lt;a href="https://blog.imfsoftware.com/llm-wiki/docs/concepts/kiro-powers/"&gt;kiro-powers&lt;/a&gt; contain curated MCP servers as part of expertise packages.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;&lt;a href="https://blog.imfsoftware.com/llm-wiki/docs/entities/scion/"&gt;scion&lt;/a&gt;&lt;/strong&gt;: Not directly mentioned, but the &lt;a href="https://blog.imfsoftware.com/llm-wiki/docs/concepts/plugin-system/"&gt;plugin-system&lt;/a&gt; (hashicorp/go-plugin over gRPC) serves a similar role.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id="significance"&gt;Significance&lt;a class="anchor" href="#significance"&gt;#&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;MCP is emerging as a shared standard across the coding agent ecosystem. Both Anthropic (Claude Code) and AWS (Kiro) use it, making it a potential interoperability layer between different agent tools. The &lt;a href="https://imforster.github.io/llm-wiki/docs/concepts/agent-skills-standard/"&gt;agent-skills-standard&lt;/a&gt; (agentskills.io) is a complementary open standard: skills teach agents &lt;em&gt;how&lt;/em&gt; to do things; MCP connects agents to external &lt;em&gt;tools and data&lt;/em&gt;.&lt;/p&gt;</description></item></channel></rss>
+&lt;p&gt;MCP is emerging as a shared standard across the coding agent ecosystem. Both Anthropic (Claude Code) and AWS (Kiro) use it, making it a potential interoperability layer between different agent tools. The &lt;a href="https://blog.imfsoftware.com/llm-wiki/docs/concepts/agent-skills-standard/"&gt;agent-skills-standard&lt;/a&gt; (agentskills.io) is a complementary open standard: skills teach agents &lt;em&gt;how&lt;/em&gt; to do things; MCP connects agents to external &lt;em&gt;tools and data&lt;/em&gt;.&lt;/p&gt;</description></item></channel></rss>
