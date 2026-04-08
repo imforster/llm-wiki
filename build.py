@@ -134,7 +134,7 @@ total += 1
 meta_dir = os.path.join(CONTENT_DIR, "meta")
 os.makedirs(meta_dir, exist_ok=True)
 with open(os.path.join(meta_dir, "_index.md"), "w") as f:
-    f.write("---\ntitle: \"📋 Meta\"\nweight: 5\nbookCollapseSection: true\n---\n\n# Meta\n")
+    f.write("---\ntitle: \"📋 Meta\"\nweight: 5\nbookCollapseSection: true\nbookHidden: true\n---\n\n# Meta\n")
 total += 1
 
 log_content = open(os.path.join(WIKI_DIR, "log.md")).read()
