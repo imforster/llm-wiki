@@ -1,4 +1,4 @@
-baseURL = 'https://iforster.github.io/llm-wiki/'
+baseURL = 'https://imforster.github.io/llm-wiki/'
 languageCode = 'en-us'
 title = 'LLM Wiki — Agentic AI Landscape'
 theme = 'hugo-book'
@@ -7,7 +7,7 @@ theme = 'hugo-book'
   BookTheme = 'auto'
   BookToC = true
   BookSection = 'docs'
-  BookRepo = 'https://github.com/iforster/llm-wiki'
+  BookRepo = 'https://github.com/imforster/llm-wiki'
   BookSearch = true
   BookDateFormat = 'January 2, 2006'
 
