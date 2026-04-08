@@ -19,7 +19,7 @@ theme = 'hugo-book'
 
 [[menu.before]]
   name = "🏠 Overview"
-  url = "/llm-wiki/docs/"
+  url = "/docs/"
   weight = 2
 
 [params.bookComments]
