@@ -24,15 +24,20 @@ for section in SECTIONS:
             slug_map[slug] = f"{section}/{slug}"
 
 
+REPO_URL = "https://github.com/imforster/llm-wiki/blob/main"
+
+
 def convert_wikilinks(text):
-    """Replace [[slug]] with plain relative Hugo links."""
+    """Replace [[slug]] with Hugo links, and fix raw/ relative paths."""
     def replace(m):
         slug = m.group(1)
         target = slug_map.get(slug)
         if target:
             return f'[{slug}]({{{{< ref "/docs/{target}" >}}}})'
         return f"**{slug}**"
-    return re.sub(r"\[\[([a-zA-Z0-9_-]+)\]\]", replace, text)
+    text = re.sub(r"\[\[([a-zA-Z0-9_-]+)\]\]", replace, text)
+    text = re.sub(r'\(\.\.\/\.\.\/raw\/([^)]+)\)', rf'({REPO_URL}/raw/\1)', text)
+    return text
 
 
 # --- Clean and create output ---
