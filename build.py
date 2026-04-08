@@ -61,8 +61,38 @@ for section in SECTIONS:
     weight, icon = section_meta[section]
     title = section.capitalize()
 
+    # Build page list for section index
+    pages = []
+    if os.path.isdir(src_dir):
+        for fname in sorted(os.listdir(src_dir)):
+            if not fname.endswith(".md"):
+                continue
+            slug = fname[:-3]
+            # Extract title from first markdown heading
+            content = open(os.path.join(src_dir, fname)).read()
+            heading = slug.replace("-", " ").title()
+            for line in content.split("\n"):
+                if line.startswith("# "):
+                    heading = line[2:].strip()
+                    break
+            # Extract description from frontmatter tags or first paragraph
+            desc = ""
+            if "---" in content:
+                parts = content.split("---", 2)
+                if len(parts) >= 3:
+                    for fmline in parts[1].split("\n"):
+                        if fmline.strip().startswith("type:"):
+                            desc = fmline.split(":", 1)[1].strip()
+                            break
+            pages.append((slug, heading, desc))
+
     with open(os.path.join(dest_dir, "_index.md"), "w") as f:
-        f.write(f"---\ntitle: \"{icon} {title}\"\nweight: {weight}\nbookCollapseSection: true\n---\n\n# {title}\n")
+        f.write(f"---\ntitle: \"{icon} {title}\"\nweight: {weight}\nbookCollapseSection: true\n---\n\n# {title}\n\n")
+        if pages:
+            f.write(f"| Page | Type |\n|------|------|\n")
+            for slug, heading, desc in pages:
+                f.write(f"| [{heading}]({{{{< ref \"/docs/{section}/{slug}\" >}}}}) | {desc} |\n")
+        f.write("\n")
     total += 1
 
     if not os.path.isdir(src_dir):
