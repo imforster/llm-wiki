@@ -118,11 +118,16 @@ for section in SECTIONS:
             f.write(converted)
         total += 1
 
-# --- Homepage from wiki/index.md ---
-index_content = open(os.path.join(WIKI_DIR, "index.md")).read()
+# --- Homepage from wiki/overview.md ---
+overview_content = open(os.path.join(WIKI_DIR, "overview.md")).read()
+if overview_content.startswith("---"):
+    parts = overview_content.split("---", 2)
+    overview_body = parts[2] if len(parts) >= 3 else overview_content
+else:
+    overview_body = overview_content
 with open(os.path.join(CONTENT_DIR, "_index.md"), "w") as f:
-    f.write("---\ntitle: \"Wiki Index\"\ntype: docs\nbookToc: true\n---\n\n")
-    f.write(convert_wikilinks(index_content))
+    f.write("---\ntitle: \"LLM Wiki\"\ntype: docs\nbookToc: true\n---\n\n")
+    f.write(convert_wikilinks(overview_body))
 total += 1
 
 # --- Log page ---
