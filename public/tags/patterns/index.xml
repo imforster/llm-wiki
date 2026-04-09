@@ -32,7 +32,7 @@ Observation: [result of the action]
 &lt;li&gt;And many more&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;Each pattern is a directory with a &lt;code&gt;system.md&lt;/code&gt; file. Markdown-based, clear instructions, System section focused.&lt;/p&gt;</description></item><item><title/><link>https://blog.imfsoftware.com/llm-wiki/docs/sources/fabric-github/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://blog.imfsoftware.com/llm-wiki/docs/sources/fabric-github/</guid><description>&lt;h1 id="fabric-github-repository"&gt;Fabric GitHub Repository&lt;a class="anchor" href="#fabric-github-repository"&gt;#&lt;/a&gt;&lt;/h1&gt;
-&lt;p&gt;&lt;a href="https://github.com/danielmiessler/fabric"&gt;Original&lt;/a&gt; | &lt;a href="https://github.com/imforster/llm-wiki/blob/main/raw/fabric-github.md"&gt;Raw&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://github.com/danielmiessler/fabric"&gt;Original&lt;/a&gt; | &lt;a href="https://github.com/imforster/llm-wiki/blob/main/raw/llm/fabric-github.md"&gt;Raw&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Author: &lt;a href="https://blog.imfsoftware.com/llm-wiki/docs/entities/daniel-miessler/"&gt;daniel-miessler&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id="summary"&gt;Summary&lt;a class="anchor" href="#summary"&gt;#&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;&lt;a href="https://blog.imfsoftware.com/llm-wiki/docs/entities/fabric/"&gt;fabric&lt;/a&gt; is an open-source framework (Go, MIT) for augmenting humans using AI. Its core contribution is &lt;strong&gt;Patterns&lt;/strong&gt; — 251+ curated, well-structured prompts organized by real-world task. Also implements composable &lt;strong&gt;prompt strategies&lt;/strong&gt; (CoT, ToT, Reflexion, etc.) as modifiers on top of patterns. Model-agnostic with 30+ provider integrations.&lt;/p&gt;
