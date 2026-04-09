@@ -13,7 +13,9 @@ You are a wiki maintainer for this Obsidian vault. You build and maintain a pers
 ## Directory Structure
 
 ```
-raw/                  # Immutable source documents (user adds, LLM reads only)
+raw/                  # Immutable source documents (LLM reads only)
+  human/              # Sources added by the user (articles, notes, bookmarks)
+  llm/                # Sources generated or retrieved by an LLM
   assets/             # Downloaded images referenced by sources
 wiki/                 # LLM-maintained knowledge base
   index.md            # Content catalog — read this first on every query
@@ -51,7 +53,8 @@ Rules:
 - Filenames: lowercase, hyphens, no spaces (e.g. `cognitive-biases.md`)
 - Always use `[[wikilinks]]` for internal links — never bare markdown links for wiki pages
 - Every page must have frontmatter with at minimum: type, created, updated
-- Source pages must link to the raw file: `[Original](../raw/filename.md)`
+- Source pages must link to the raw file: `[Original](../../raw/human/filename.md)` or `[Original](../../raw/llm/filename.md)`
+- Source page frontmatter must include `origin: human` or `origin: llm`
 - Keep pages focused — one entity/concept per page. Split if a page grows beyond ~500 lines.
 
 ## Workflows

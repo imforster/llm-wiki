@@ -3,12 +3,13 @@ type: source
 created: 2026-04-08
 updated: 2026-04-08
 sources: []
+origin: llm
 tags: [pai, personal-ai, infrastructure, claude-code, memory, skills]
 ---
 
 # Personal AI Infrastructure (PAI)
 
-[Original](https://github.com/danielmiessler/Personal_AI_Infrastructure) | [Raw](../../raw/personal-ai-infrastructure.md)
+[Original](https://github.com/danielmiessler/Personal_AI_Infrastructure) | [Raw](../../raw/llm/personal-ai-infrastructure.md)
 
 Author: [[daniel-miessler]]
 

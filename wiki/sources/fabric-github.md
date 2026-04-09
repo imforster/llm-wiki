@@ -3,12 +3,13 @@ type: source
 created: 2026-04-08
 updated: 2026-04-08
 sources: []
+origin: llm
 tags: [fabric, patterns, prompts, open-source, cli]
 ---
 
 # Fabric GitHub Repository
 
-[Original](https://github.com/danielmiessler/fabric) | [Raw](../../raw/fabric-github.md)
+[Original](https://github.com/danielmiessler/fabric) | [Raw](../../raw/llm/fabric-github.md)
 
 Author: [[daniel-miessler]]
 

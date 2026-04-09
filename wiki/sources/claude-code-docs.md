@@ -3,12 +3,13 @@ type: source
 created: 2026-04-07
 updated: 2026-04-07
 sources: []
+origin: llm
 tags: [claude-code, anthropic, coding-agent, cli, devtools]
 ---
 
 # Claude Code Documentation
 
-[Original](https://code.claude.com/docs/en) | [GitHub](https://github.com/anthropics/claude-code) | [Raw](../../raw/claude-code-docs.md)
+[Original](https://code.claude.com/docs/en) | [GitHub](https://github.com/anthropics/claude-code) | [Raw](../../raw/llm/claude-code-docs.md)
 
 ## Summary
 

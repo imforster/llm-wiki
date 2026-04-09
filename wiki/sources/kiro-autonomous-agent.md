@@ -3,12 +3,13 @@ type: source
 created: 2026-04-07
 updated: 2026-04-07
 sources: []
+origin: llm
 tags: [kiro, autonomous-agent, frontier-agent, aws, devtools]
 ---
 
 # Kiro Autonomous Agent Page
 
-[Original](https://kiro.dev/autonomous-agent/) | [Raw](../../raw/kiro-autonomous-agent.md)
+[Original](https://kiro.dev/autonomous-agent/) | [Raw](../../raw/llm/kiro-autonomous-agent.md)
 
 ## Summary
 

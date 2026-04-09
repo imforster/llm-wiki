@@ -36,7 +36,7 @@ def convert_wikilinks(text):
             return f'[{slug}]({{{{< ref "/docs/{target}" >}}}})'
         return f"**{slug}**"
     text = re.sub(r"\[\[([a-zA-Z0-9_-]+)\]\]", replace, text)
-    text = re.sub(r'\(\.\.\/\.\.\/raw\/([^)]+)\)', rf'({REPO_URL}/raw/\1)', text)
+    text = re.sub(r'\(\.\.\/\.\.\/raw\/((?:human|llm)\/[^)]+)\)', rf'({REPO_URL}/raw/\1)', text)
     return text
 
 

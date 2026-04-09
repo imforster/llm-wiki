@@ -3,12 +3,13 @@ type: source
 created: 2026-04-07
 updated: 2026-04-07
 sources: []
+origin: llm
 tags: [skills, agent-skills, anthropic, open-standard, specification]
 ---
 
 # Anthropic Skills Repository & Agent Skills Spec
 
-[Original](https://github.com/anthropics/skills) | [Spec](https://agentskills.io/specification) | [Raw](../../raw/anthropic-skills-repo.md)
+[Original](https://github.com/anthropics/skills) | [Spec](https://agentskills.io/specification) | [Raw](../../raw/llm/anthropic-skills-repo.md)
 
 ## Summary
 

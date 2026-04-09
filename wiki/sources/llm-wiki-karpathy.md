@@ -3,12 +3,13 @@ type: source
 created: 2026-04-08
 updated: 2026-04-08
 sources: []
+origin: llm
 tags: [llm-wiki, knowledge-management, pattern, methodology, meta]
 ---
 
 # LLM Wiki (Karpathy)
 
-[Original](https://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f) | [Raw](../../raw/llm-wiki-karpathy.md)
+[Original](https://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f) | [Raw](../../raw/llm/llm-wiki-karpathy.md)
 
 Author: [[andrej-karpathy]]
 

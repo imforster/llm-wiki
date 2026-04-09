@@ -3,12 +3,13 @@ type: source
 created: 2026-04-07
 updated: 2026-04-07
 sources: []
+origin: llm
 tags: [multi-agent, orchestration, llm, google, containers, devtools]
 ---
 
 # Scion Documentation
 
-[Original](https://googlecloudplatform.github.io/scion) | [Raw](../../raw/scion-docs.md)
+[Original](https://googlecloudplatform.github.io/scion) | [Raw](../../raw/llm/scion-docs.md)
 
 ## Summary
 

@@ -3,12 +3,13 @@ type: source
 created: 2026-04-08
 updated: 2026-04-08
 sources: []
+origin: llm
 tags: [skills, framework, best-practices, research, paper]
 ---
 
 # The Ten Pillars of Agentic Skill Design
 
-[Original](../../raw/ten-pillars-agentic-skill-design.md)
+[Original](../../raw/llm/ten-pillars-agentic-skill-design.md)
 
 Author: Ian Forster (with support of Kiro)
 Version: 2.0 | November 2024
