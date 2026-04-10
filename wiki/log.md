@@ -90,3 +90,6 @@ Source: https://github.com/Sleestk/Skills-Pipeline — chained skill pipelines f
 
 ## [2026-04-09] query | Ten Pillars Evidence Map
 Synthesized evidence from all 11 wiki sources supporting each pillar of the Ten Pillars framework. Filed as analysis: [[ten-pillars-evidence-map]]. Strongest pillars: Scope (SRP), Modularity, Context Management. Weakest: Versioning, Testing. Identified 4 gaps for v3.
+
+## [2026-04-09] query | Cross-Source Theme Analysis
+Identified 8 common themes across all 11 sources with evidence tables and strength rankings. Filed as analysis: [[cross-source-themes]]. Strongest: "Context is king" (9/11), "Composition over monoliths" (8/11). Weakest: "Evaluation is weakest link" (4/11 — but universally acknowledged as a gap).
