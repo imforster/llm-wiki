@@ -59,3 +59,4 @@
 | Page | Summary | Date |
 |------|---------|------|
 | [[key-insights-agentic-landscape]] | 10 key insights synthesized across all 8 sources — architectural philosophies, design tensions, emerging standards, and gaps | 2026-04-08 |
+| [[ten-pillars-evidence-map]] | Evidence map: how 11 wiki sources validate each of the Ten Pillars, with strength rankings and v3 recommendations | 2026-04-09 |

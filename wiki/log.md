@@ -87,3 +87,6 @@ Updated overview.md with current stats (10 sources, 18 concepts, 10 entities), a
 Source: https://github.com/Sleestk/Skills-Pipeline — chained skill pipelines for YouTube production, SaaS development, and Obsidian. Created 1 wiki page:
 - Source: [[skills-pipeline-sleestk]]
 - Key insight: Skills as pipelines — each stage's output is the next stage's input. Concrete implementation of progressive disclosure and context management recipes. Ships with inline test prompts.
+
+## [2026-04-09] query | Ten Pillars Evidence Map
+Synthesized evidence from all 11 wiki sources supporting each pillar of the Ten Pillars framework. Filed as analysis: [[ten-pillars-evidence-map]]. Strongest pillars: Scope (SRP), Modularity, Context Management. Weakest: Versioning, Testing. Identified 4 gaps for v3.
