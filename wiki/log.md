@@ -102,3 +102,9 @@ Two eval resources ingested. Created 3 wiki pages:
 - Source: [[anthropic-eval-guide]] — canonical eval methodology (SMART criteria, eval types, "volume over quality")
 - Source: [[promptfoo]] — open-source eval CLI (YAML test cases, CI/CD, red teaming)
 - Entity: [[promptfoo]] — the closest existing tool to a turnkey skill eval pipeline
+
+## [2026-04-09] ingest | Paperclip
+Source: https://github.com/paperclipai/paperclip — open-source orchestration for zero-human companies. Created 2 wiki pages, updated 1:
+- Source: [[paperclip]]
+- Entity: [[paperclip]]
+- Updated: [[multi-agent-orchestration]] — added Paperclip as fourth approach (company-level orchestration above infrastructure, product, and tool layers)

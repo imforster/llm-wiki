@@ -15,6 +15,7 @@
 | [[skills-pipeline-sleestk]] | Skills Pipeline — chained skill pipelines for YouTube, SaaS, and Obsidian (Sleestk) | 2026-04-09 |
 | [[anthropic-eval-guide]] | Anthropic's canonical eval guide — success criteria, eval types, design principles | 2026-04-09 |
 | [[promptfoo]] | Promptfoo: open-source LLM eval CLI — YAML test cases, CI/CD, red teaming (now OpenAI) | 2026-04-09 |
+| [[paperclip]] | Paperclip: open-source orchestration for zero-human companies — org charts, budgets, governance | 2026-04-09 |
 | [[fabric-github]] | Fabric: open-source framework with 251+ curated AI prompt patterns (Miessler) | 2026-04-08 |
 | [[personal-ai-infrastructure]] | PAI: personalized AI platform built on Claude Code — memory, skills, goals (Miessler) | 2026-04-08 |
 
@@ -30,6 +31,7 @@
 | [[fabric]] | tool | Open-source framework with 251+ curated prompt patterns and composable strategies |
 | [[pai]] | tool | Personal AI Infrastructure — persistent memory, skills, goals on Claude Code |
 | [[promptfoo]] | tool | Open-source LLM eval CLI — YAML test cases, CI/CD, red teaming (now OpenAI) |
+| [[paperclip]] | tool | Open-source orchestration for zero-human companies — org charts, budgets, governance |
 | [[google-cloud-platform]] | organization | Cloud platform by Google, hosts the Scion project |
 | [[aws]] | organization | Amazon Web Services, behind Kiro and the frontier agent concept |
 | [[anthropic]] | organization | AI safety company, builds Claude models and Claude Code |

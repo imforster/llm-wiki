@@ -24,6 +24,10 @@ The practice of coordinating multiple LLM-based [[agent]]s to work on tasks conc
 
 [[claude-code]] approaches multi-agent from the individual tool outward — custom subagents, agent teams, and a rich extensibility stack (MCP, plugins, skills, hooks). Terminal-native, multi-platform. The agent itself can spawn and coordinate other agents.
 
+### Company-first: Paperclip
+
+[[paperclip]] operates above all three — orchestrating agents into companies with org charts, budgets, goals, governance, and accountability. Agent-agnostic (works with Claude Code, Codex, Cursor, etc.). Not an agent framework — it's the organizational layer. "Manage business goals, not pull requests."
+
 ## Shared Patterns
 
 All three share:
