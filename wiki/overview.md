@@ -17,39 +17,48 @@ The human curates sources, directs analysis, and asks questions. The LLM does ev
 
 ## What's Inside
 
-This wiki tracks the emerging agentic AI landscape across tools, standards, methodologies, and practitioner insights:
+14 sources across tools, standards, methodologies, evaluation, and practitioner insights:
 
-**Tools**: [[scion]] (GCP), [[kiro]] (AWS), [[claude-code]] (Anthropic), [[fabric]] (Miessler), [[pai]] (Miessler)
+**Tools**: [[scion]] (GCP), [[kiro]] (AWS), [[claude-code]] (Anthropic), [[fabric]] (Miessler), [[pai]] (Miessler), [[paperclip]] (company-level orchestration), [[promptfoo]] (eval tooling)
 
 **Standards**: [[agent-skills-standard]] (agentskills.io), [[mcp-protocol]] (Model Context Protocol)
 
 **Methodologies**: [[ten-pillars-agentic-skill-design]] (Forster), [[skill-evaluation]] (Caparas), [[prompt-engineering-patterns]], [[context-management]]
 
-**Practitioner Insights**: [[ai-technique-podcast]] — AI as workflow replacement layer, context documents, daily prompts
+**Evaluation**: [[anthropic-eval-guide]], [[evaluating-agent-skills-caparas]], [[promptfoo]] — from methodology to tooling
 
-**Synthesis**: [[key-insights-agentic-landscape]] — 10 key insights across all sources
+**Practitioner Insights**: [[ai-technique-podcast]], [[skills-pipeline-sleestk]] — real-world patterns and skill pipelines
 
 ## Key Themes
 
-Across 10 sources, several themes keep surfacing:
+Across 14 sources, eight themes keep surfacing (see [[cross-source-themes]] for the full analysis):
 
-- **Context beats clever prompting** — From the [[agent-skills-standard]]'s progressive disclosure to [[pai]]'s TELOS to the [[ai-technique-podcast]]'s "context document technique," the consensus is clear: loading the right context matters more than crafting the perfect prompt.
-- **Three architectural philosophies competing** — Infrastructure ([[scion]]), Product ([[kiro]]), Tool ([[claude-code]]). No winner yet. See [[multi-agent-orchestration]].
-- **Two open standards emerging** — [[mcp-protocol]] (tools/data) and [[agent-skills-standard]] (capabilities). Complementary, not competing.
-- **Memory is the unsolved frontier** — From no memory (Scion) to structured self-knowledge (PAI's TELOS). Persistent context compounds value *and* errors.
-- **The personal AI vision is bigger than coding** — [[llm-wiki-pattern]], [[pai]], and the [[ai-technique-podcast]] all point to persistent, personalized AI infrastructure that compounds across all domains.
+- **Context beats clever prompting** (9/14 sources) — Progressive disclosure, context documents, selective loading. The strongest consensus in the wiki.
+- **Composition over monoliths** (8/14) — Every tool chose small, focused, composable units. No one builds monolithic agents or skills.
+- **The human stays in the loop — but how much?** (7/14) — A spectrum from "always interactive" ([[scion]]) to "days of autonomy" ([[kiro]]) to "self-modifying" ([[pai]]). No consensus.
+- **Four orchestration layers emerging** — Company ([[paperclip]]), Infrastructure ([[scion]]), Product ([[kiro]]), Tool ([[claude-code]]). See [[multi-agent-orchestration]].
+- **Skills evolving into a standard** — Fabric Patterns → Agent Skills Spec → Claude Code Skills → Pipelines + Evaluation. Clear trajectory.
+- **Memory is the unsolved frontier** — Persistent context compounds value *and* errors. No one has solved memory hygiene.
+- **Open standards winning** — [[mcp-protocol]] + [[agent-skills-standard]] as two-layer open substrate.
+- **Evaluation is the weakest link** — Everyone knows it matters. Almost no one does it rigorously. See [[how-to-eval-a-skill]] for a practical framework.
+
+## Analyses
+
+- **[[key-insights-agentic-landscape]]** — 10 key insights across the landscape
+- **[[cross-source-themes]]** — 8 common themes with evidence tables from all sources
+- **[[ten-pillars-evidence-map]]** — How the wiki validates (and challenges) the Ten Pillars framework
+- **[[how-to-eval-a-skill]]** — Practical guide: 5 surfaces, 3 tiers, pass@k, CI/CD integration
 
 ## How It Works
 
 Three operations:
-- **Ingest**: Drop a source → LLM processes it → creates/updates 10-15 wiki pages → updates index and log
-- **Query**: Ask a question → LLM reads index, finds relevant pages, synthesizes answer → optionally files back as analysis
+- **Ingest**: Drop a source → LLM processes it → creates/updates wiki pages → updates index and log
+- **Query**: Ask a question → LLM reads index, synthesizes answer → optionally files back as analysis
 - **Lint**: Health-check for contradictions, orphan pages, stale claims, missing cross-references
 
 ## Browse
 
-- **[[key-insights-agentic-landscape]]** — Start here for the big picture
-- **Sources** — 10 raw sources that feed this wiki
+- **Sources** — 14 raw sources that feed this wiki
 - **Concepts** — 18 concept pages covering patterns, standards, and architectural ideas
-- **Entities** — 10 pages for tools, people, and organizations
-- **Analyses** — Synthesized insights filed back into the wiki
+- **Entities** — 12 pages for tools, people, and organizations
+- **Analyses** — 4 synthesized analyses filed back into the wiki
