@@ -79,3 +79,6 @@ Source: Podcast notes from raw/human/ai-technique-podcast.md — Amazon employee
 - Source: [[ai-technique-podcast]]
 - Cross-referenced: [[pai]], [[fabric]], [[llm-wiki-pattern]], [[context-management]], [[prompt-engineering-patterns]]
 - Key insight: "context beats clever prompting" — validates the progressive disclosure and context document approaches seen across the wiki
+
+## [2026-04-09] update | Overview
+Updated overview.md with current stats (10 sources, 18 concepts, 10 entities), added "Key Themes" section synthesizing cross-cutting patterns, added [[ai-technique-podcast]] to practitioner insights.
