@@ -73,3 +73,9 @@ Source: Article by JP Caparas — practical guide to skill evaluation with three
 - Source: [[evaluating-agent-skills-caparas]]
 - Concepts: [[skill-evaluation]]
 - Updated: [[key-insights-agentic-landscape]] — enriched evaluation gap (insight #10) with reference to this framework
+
+## [2026-04-09] ingest | strAIght talk: AI Tips for Amazonians
+Source: Podcast notes from raw/human/ai-technique-podcast.md — Amazon employees sharing AI workflow tactics. Created 1 wiki page:
+- Source: [[ai-technique-podcast]]
+- Cross-referenced: [[pai]], [[fabric]], [[llm-wiki-pattern]], [[context-management]], [[prompt-engineering-patterns]]
+- Key insight: "context beats clever prompting" — validates the progressive disclosure and context document approaches seen across the wiki
