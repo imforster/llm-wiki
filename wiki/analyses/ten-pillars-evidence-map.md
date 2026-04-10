@@ -200,6 +200,108 @@ This analysis maps each pillar from [[ten-pillars-agentic-skill-design]] against
 3. **The autonomy spectrum**: Claude Code's 6 permission modes show that security (Pillar 6) isn't binary — it's a configurable dial
 4. **Skills as pipelines**: The YouTube pipeline pattern (each stage's output → next stage's input) deserves its own recipe in Pillar 9
 
+---
+
+## Tensions and Disagreements
+
+Not all wiki sources align with the Ten Pillars. Several create genuine friction with the framework's assumptions.
+
+---
+
+### Tension 1: PAI's "Code Before Prompts" Challenges the Entire Premise
+
+**The pillar**: The framework assumes skills files (prompt-based) are the primary unit of agent capability.
+
+**The challenge**: [[pai]]'s Principle #6 is explicit: "If you can solve it with a bash script, don't use AI." PAI's hierarchy is CODE → CLI → PROMPT → SKILL — skills are the *last resort*, not the first tool. This inverts the Ten Pillars' assumption that skills are the fundamental building block.
+
+**Implication**: The paper may overweight the importance of prompt-based skills relative to deterministic code. PAI suggests the best "skill" is often not a skill at all — it's a script. The framework could acknowledge a hierarchy of solution types, with skills reserved for genuinely probabilistic tasks.
+
+---
+
+### Tension 2: Scion's "Interaction is Imperative" vs. Autonomous Skill Execution
+
+**The pillar**: The framework assumes skills execute autonomously — the agent runs the skill, follows the workflow, produces output.
+
+**The challenge**: [[scion]]'s philosophy explicitly rejects this: "Expecting agents and workflows to proceed to completion without interaction is unreasonable." Scion designs for human interruption at every step.
+
+**Counterpoint**: [[kiro]] takes the opposite view — frontier agents work "for hours or days without intervention." [[claude-code]]'s `auto` mode also favors autonomy.
+
+**Implication**: The framework doesn't address the autonomy spectrum. A skill designed for Kiro's autonomous mode needs different error handling, checkpointing, and recovery patterns than one designed for Scion's interactive model.
+
+---
+
+### Tension 3: The Agent Skills Spec Is Simpler Than the Framework Recommends
+
+**The pillar**: Pillar 1 recommends rich structure — metadata, interfaces, core logic, workflows, configuration, error handling, observability.
+
+**The challenge**: The [[agent-skills-standard]] requires only TWO fields: `name` and `description`. Everything else is optional. The spec recommends SKILL.md under 500 lines and <5000 tokens. The paper's Appendix A template includes input_schema, output_schema, tools, workflows, examples, error_handling, and observability — far more than the spec endorses.
+
+**Implication**: The ecosystem voted for simplicity. The Agent Skills spec succeeded because of its low barrier to entry. The framework's comprehensive template risks discouraging adoption. Consider a tiered approach: minimal (spec-compliant), standard (add testing + error handling), and production (full template).
+
+---
+
+### Tension 4: Fabric's Composable Strategies Expose a Missing Abstraction
+
+**The pillar**: Pillar 5 treats prompt engineering as embedded within each skill — CoT, ReAct, Reflexion are techniques to use inside skill prompts.
+
+**The challenge**: [[fabric]] separates the reasoning strategy from the skill entirely. Any strategy can be applied to any pattern via `--strategy cot -p analyze_code`. The strategy is orthogonal to the skill.
+
+**Implication**: The framework conflates two concerns: *what* to do (the skill) and *how* to reason (the strategy). Fabric proves these can and should be separated. A skill that hardcodes CoT can't benefit from a better strategy later. Pillar 5 should recommend externalizing reasoning strategies rather than embedding them.
+
+---
+
+### Tension 5: Memory Challenges the "Stateless Skill" Assumption
+
+**The pillar**: The framework treats skills as stateless — receive input, produce output, done.
+
+**The challenge**: Multiple sources show skills operating in stateful contexts:
+- **[[pai]]**: Three-tier memory (hot/warm/cold). The system modifies itself based on feedback.
+- **[[claude-code]]**: Auto memory persists learnings across sessions. Subagents can maintain their own persistent memory.
+- **[[kiro]]**: "Maintains persistent context between sessions, learns from code review feedback."
+- **[[llm-wiki-pattern]]**: The wiki itself is persistent state that the agent reads and writes.
+
+**Implication**: The framework doesn't address how skills should interact with persistent memory. Should a skill read from memory? Write to it? A skill that behaves differently based on accumulated memory is harder to test deterministically (Pillar 7 conflict).
+
+---
+
+### Tension 6: The Evaluation Gap Is Worse Than Acknowledged
+
+**The pillar**: Pillar 7 recommends testing and observability.
+
+**The challenge**: [[evaluating-agent-skills-caparas]] makes the gap concrete: even LLM-as-judge only achieves 70-85% agreement with humans. The economics are brutal — at scale, evaluation costs can exceed the value of the skill. The [[skills-pipeline-sleestk]] ships inline test prompts, but these are happy-path only. No skill in the wiki implements negative controls or pass@k metrics.
+
+**Implication**: Pillar 7 needs more prescription. Consider requiring: (1) at least 5 negative control prompts, (2) pass@k with k≥3, (3) deterministic checks before any LLM-as-judge evaluation.
+
+---
+
+### Tension 7: Security Philosophies Are Irreconcilable
+
+**The pillar**: Pillar 6 recommends defense-in-depth inside the skill.
+
+**The challenge**: The ecosystem has split into fundamentally different models:
+- **[[scion]]**: Security *outside* the agent. `--yolo` mode + container isolation.
+- **[[claude-code]]**: Security *inside* the agent. Permission modes + classifier.
+- **[[pai]]**: Security as *deterministic rules*. Allowlists, policy hooks.
+- **[[kiro]]**: Security at the *output layer*. Sandbox + PR-only.
+
+**Implication**: The paper recommends all five defense layers, but these are philosophical choices, not a checklist. Security requirements depend on execution context. A skill in Scion's container doesn't need the same internal security as one in Claude Code's `auto` mode.
+
+---
+
+### Tension Severity Summary
+
+| Tension | Severity | Impact |
+|---------|----------|--------|
+| Code before prompts (PAI) | 🔴 High | Challenges the fundamental premise |
+| Autonomy spectrum (Scion vs. Kiro) | 🟡 Medium | Missing dimension in Pillars 6-7 |
+| Spec simplicity vs. framework richness | 🟡 Medium | Adoption barrier risk |
+| Composable strategies (Fabric) | 🟡 Medium | Missing abstraction in Pillar 5 |
+| Stateful skills / memory | 🟡 Medium | Unaddressed in all pillars |
+| Evaluation gap depth | 🟡 Medium | Pillar 7 needs more prescription |
+| Irreconcilable security models | 🟠 Low-Medium | Context-dependent, not universal |
+
+The highest-severity tension — PAI's "code before prompts" — doesn't invalidate the framework but reframes it. The Ten Pillars are excellent guidance for *when you need a skill*. The missing piece is guidance for *when you don't*.
+
 ## See Also
 - [[ten-pillars-agentic-skill-design]]
 - [[key-insights-agentic-landscape]]
