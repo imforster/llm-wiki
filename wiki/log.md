@@ -96,3 +96,9 @@ Identified 8 common themes across all 11 sources with evidence tables and streng
 
 ## [2026-04-09] query | How to Eval a Skill
 Practical guide mapping Anthropic's prompt eval methodology onto skills. Filed as analysis: [[how-to-eval-a-skill]]. Covers: 5 testable surfaces (routing, tool selection, process, side effects, output quality), 3 tiers, pass@k, eval.yaml format, Claude Code hook integration, CI/CD pipeline.
+
+## [2026-04-09] ingest | Anthropic Eval Guide + Promptfoo
+Two eval resources ingested. Created 3 wiki pages:
+- Source: [[anthropic-eval-guide]] — canonical eval methodology (SMART criteria, eval types, "volume over quality")
+- Source: [[promptfoo]] — open-source eval CLI (YAML test cases, CI/CD, red teaming)
+- Entity: [[promptfoo]] — the closest existing tool to a turnkey skill eval pipeline

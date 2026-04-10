@@ -13,6 +13,8 @@
 | [[evaluating-agent-skills-caparas]] | Practical guide to skill evaluation — three-tier framework with economics (Caparas) | 2026-04-08 |
 | [[ai-technique-podcast]] | strAIght talk podcast — AI as workflow replacement layer, daily prompts, context documents | 2026-04-09 |
 | [[skills-pipeline-sleestk]] | Skills Pipeline — chained skill pipelines for YouTube, SaaS, and Obsidian (Sleestk) | 2026-04-09 |
+| [[anthropic-eval-guide]] | Anthropic's canonical eval guide — success criteria, eval types, design principles | 2026-04-09 |
+| [[promptfoo]] | Promptfoo: open-source LLM eval CLI — YAML test cases, CI/CD, red teaming (now OpenAI) | 2026-04-09 |
 | [[fabric-github]] | Fabric: open-source framework with 251+ curated AI prompt patterns (Miessler) | 2026-04-08 |
 | [[personal-ai-infrastructure]] | PAI: personalized AI platform built on Claude Code — memory, skills, goals (Miessler) | 2026-04-08 |
 
@@ -27,6 +29,7 @@
 | [[claude-code]] | tool | Agentic coding tool by Anthropic — terminal, IDE, web, Slack, GitHub |
 | [[fabric]] | tool | Open-source framework with 251+ curated prompt patterns and composable strategies |
 | [[pai]] | tool | Personal AI Infrastructure — persistent memory, skills, goals on Claude Code |
+| [[promptfoo]] | tool | Open-source LLM eval CLI — YAML test cases, CI/CD, red teaming (now OpenAI) |
 | [[google-cloud-platform]] | organization | Cloud platform by Google, hosts the Scion project |
 | [[aws]] | organization | Amazon Web Services, behind Kiro and the frontier agent concept |
 | [[anthropic]] | organization | AI safety company, builds Claude models and Claude Code |
