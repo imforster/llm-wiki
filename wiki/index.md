@@ -61,3 +61,4 @@
 | [[key-insights-agentic-landscape]] | 10 key insights synthesized across all 8 sources — architectural philosophies, design tensions, emerging standards, and gaps | 2026-04-08 |
 | [[ten-pillars-evidence-map]] | Evidence map: how 11 wiki sources validate each of the Ten Pillars, with strength rankings and v3 recommendations | 2026-04-09 |
 | [[cross-source-themes]] | 8 common themes across 11 sources — context is king, composition over monoliths, memory frontier, evaluation gap | 2026-04-09 |
+| [[how-to-eval-a-skill]] | Practical guide: how to eval a skill like a prompt eval — 5 surfaces, 3 tiers, pass@k, CI/CD integration | 2026-04-09 |

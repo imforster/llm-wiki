@@ -93,3 +93,6 @@ Synthesized evidence from all 11 wiki sources supporting each pillar of the Ten 
 
 ## [2026-04-09] query | Cross-Source Theme Analysis
 Identified 8 common themes across all 11 sources with evidence tables and strength rankings. Filed as analysis: [[cross-source-themes]]. Strongest: "Context is king" (9/11), "Composition over monoliths" (8/11). Weakest: "Evaluation is weakest link" (4/11 — but universally acknowledged as a gap).
+
+## [2026-04-09] query | How to Eval a Skill
+Practical guide mapping Anthropic's prompt eval methodology onto skills. Filed as analysis: [[how-to-eval-a-skill]]. Covers: 5 testable surfaces (routing, tool selection, process, side effects, output quality), 3 tiers, pass@k, eval.yaml format, Claude Code hook integration, CI/CD pipeline.
