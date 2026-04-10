@@ -82,3 +82,8 @@ Source: Podcast notes from raw/human/ai-technique-podcast.md — Amazon employee
 
 ## [2026-04-09] update | Overview
 Updated overview.md with current stats (10 sources, 18 concepts, 10 entities), added "Key Themes" section synthesizing cross-cutting patterns, added [[ai-technique-podcast]] to practitioner insights.
+
+## [2026-04-09] ingest | Skills Pipeline (Sleestk)
+Source: https://github.com/Sleestk/Skills-Pipeline — chained skill pipelines for YouTube production, SaaS development, and Obsidian. Created 1 wiki page:
+- Source: [[skills-pipeline-sleestk]]
+- Key insight: Skills as pipelines — each stage's output is the next stage's input. Concrete implementation of progressive disclosure and context management recipes. Ships with inline test prompts.

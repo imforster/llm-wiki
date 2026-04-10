@@ -12,6 +12,7 @@
 | [[ten-pillars-agentic-skill-design]] | Research paper: ten-pillar framework for agentic skill design (Forster) | 2026-04-08 |
 | [[evaluating-agent-skills-caparas]] | Practical guide to skill evaluation — three-tier framework with economics (Caparas) | 2026-04-08 |
 | [[ai-technique-podcast]] | strAIght talk podcast — AI as workflow replacement layer, daily prompts, context documents | 2026-04-09 |
+| [[skills-pipeline-sleestk]] | Skills Pipeline — chained skill pipelines for YouTube, SaaS, and Obsidian (Sleestk) | 2026-04-09 |
 | [[fabric-github]] | Fabric: open-source framework with 251+ curated AI prompt patterns (Miessler) | 2026-04-08 |
 | [[personal-ai-infrastructure]] | PAI: personalized AI platform built on Claude Code — memory, skills, goals (Miessler) | 2026-04-08 |
 
