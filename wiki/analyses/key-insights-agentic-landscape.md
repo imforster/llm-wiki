@@ -1,28 +1,30 @@
 ---
 type: analysis
 created: 2026-04-08
-updated: 2026-04-08
-sources: ["[[scion-docs]]", "[[kiro-autonomous-agent]]", "[[claude-code-docs]]", "[[anthropic-skills-repo]]", "[[ten-pillars-agentic-skill-design]]", "[[llm-wiki-karpathy]]", "[[fabric-github]]", "[[personal-ai-infrastructure]]"]
+updated: 2026-04-10
+sources: ["[[scion-docs]]", "[[kiro-autonomous-agent]]", "[[claude-code-docs]]", "[[anthropic-skills-repo]]", "[[ten-pillars-agentic-skill-design]]", "[[llm-wiki-karpathy]]", "[[fabric-github]]", "[[personal-ai-infrastructure]]", "[[evaluating-agent-skills-caparas]]", "[[ai-technique-podcast]]", "[[skills-pipeline-sleestk]]", "[[anthropic-eval-guide]]", "[[promptfoo]]", "[[paperclip]]", "[[spec-kit]]", "[[bmad-method]]"]
 tags: [synthesis, landscape, insights, agentic-ai]
 ---
 
 # Key Insights: The Agentic AI Landscape (April 2026)
 
-Synthesized from 8 sources across this wiki. This analysis captures the patterns, tensions, and emerging consensus visible when you look across the entire landscape rather than at any single tool.
+Synthesized from 16 sources across this wiki. This analysis captures the patterns, tensions, and emerging consensus visible when you look across the entire landscape rather than at any single tool.
 
 ---
 
-## 1. Three Architectural Philosophies Are Competing
+## 1. Five Layers Are Emerging
 
-The landscape has split into three distinct approaches to the same problem — making LLM agents useful for real work:
+The landscape has organized into five distinct layers:
 
-| Philosophy | Representative | Core Bet |
-|-----------|---------------|----------|
+| Layer | Representative | Core Bet |
+|-------|---------------|----------|
+| **Company** | [[paperclip]] | Orchestrate agents into companies with org charts, budgets, governance. |
+| **Methodology** | [[spec-kit]], [[bmad-method]] | Structure the development process. Specs before code, or adaptive agile workflows. |
 | **Infrastructure** | [[scion]] (GCP) | The agent runtime is the hard problem. Be a hypervisor. Stay agnostic. |
 | **Product** | [[kiro]] (AWS) | Ship an opinionated end-to-end agent. Autonomy and scale matter most. |
-| **Tool** | [[claude-code]] (Anthropic) | Make the individual agent excellent. Let users compose upward. |
+| **Tool** | [[claude-code]] (Anthropic), [[fabric]] | Make the individual agent excellent. Let users compose upward. |
 
-None has won. Each makes a different bet on where the value accrues. Scion bets on infrastructure (the "Kubernetes of agents"). Kiro bets on the product layer (the "GitHub Copilot of agents"). Claude Code bets on the tool layer (the "VS Code of agents"). The right answer probably involves all three layers, which is why Scion can orchestrate Claude Code as a harness.
+The methodology layer is new — [[spec-kit]] ("specs before code") and [[bmad-method]] ("expert collaboration over autopilot") represent two competing philosophies for structuring AI-assisted development. [[paperclip]] adds the company layer above everything, orchestrating agents into organizations with budgets and governance.
 
 ## 2. The Autonomy–Interaction Spectrum Is the Central Design Tension
 
@@ -132,7 +134,7 @@ The coding agent landscape may be a proving ground for a broader pattern: **pers
 
 Gaps visible across the entire wiki:
 
-- **Evaluation**: No standard way to measure whether a skill, pattern, or agent configuration actually works better than alternatives. The [[ten-pillars-agentic-skill-design]] paper explicitly acknowledges this — its benefits are "anticipated, not proven." The [[evaluating-agent-skills-caparas]] article proposes a three-tier framework (deterministic → LLM-as-judge → human review) with concrete economics, but no tool in this wiki has fully implemented it yet.
+- **Evaluation**: No standard way to measure whether a skill, pattern, or agent configuration actually works better than alternatives. The [[ten-pillars-agentic-skill-design]] paper explicitly acknowledges this — its benefits are "anticipated, not proven." The [[evaluating-agent-skills-caparas]] article proposes a three-tier framework (deterministic → LLM-as-judge → human review) with concrete economics. [[promptfoo]] (now part of OpenAI) provides the closest turnkey tooling. [[spec-kit]]'s `/speckit.checklist` and `/speckit.analyze` commands show built-in quality gates emerging. But no tool has an integrated end-to-end skill eval pipeline yet.
 - **Conflict resolution**: When multiple agents make conflicting changes, or when memory contradicts new information, there's no standard resolution mechanism.
 - **Cost modeling**: No tool provides clear cost-per-task estimates. PAI tracks signals but doesn't model costs. The Ten Pillars framework notes this gap.
 - **Non-code domains**: Almost everything is optimized for software development. The [[llm-wiki-pattern]] and [[pai]] gesture toward broader applications, but tooling lags.
@@ -140,7 +142,7 @@ Gaps visible across the entire wiki:
 
 ---
 
-*Analysis based on 8 sources ingested into this wiki between 2026-04-07 and 2026-04-08. Represents the state of the landscape as observed from public documentation and open-source repositories.*
+*Analysis based on 16 sources ingested into this wiki between 2026-04-07 and 2026-04-10. Represents the state of the landscape as observed from public documentation and open-source repositories.*
 
 ## See Also
 - [[multi-agent-orchestration]]

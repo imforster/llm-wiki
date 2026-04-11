@@ -8,7 +8,9 @@ tags: [analysis, themes, cross-source, synthesis]
 
 # Cross-Source Theme Analysis
 
-11 sources, 5 tools, 2 standards, 2 methodologies, 1 practitioner account, 1 skill library. Here are the themes that appear across 3+ sources independently — not because they reference each other, but because they converged on the same ideas.
+16 sources, 8 tools, 2 standards, 3 methodologies, 1 practitioner account, 2 skill/eval resources. Here are the themes that appear across 3+ sources independently — not because they reference each other, but because they converged on the same ideas.
+
+> **Note**: This analysis was originally written against 11 sources. The 5 newest sources (Paperclip, Spec Kit, BMad Method, Anthropic Eval Guide, Promptfoo) strengthen existing themes — particularly Theme 3 (human-in-the-loop spectrum) and Theme 7 (evaluation). A full refresh is recommended when the wiki reaches 20+ sources.
 
 ---
 

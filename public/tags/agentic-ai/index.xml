@@ -1,17 +1,27 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Agentic-Ai on LLM Wiki — Agentic AI Landscape</title><link>https://blog.imfsoftware.com/llm-wiki/tags/agentic-ai/</link><description>Recent content in Agentic-Ai on LLM Wiki — Agentic AI Landscape</description><generator>Hugo</generator><language>en-us</language><atom:link href="https://blog.imfsoftware.com/llm-wiki/tags/agentic-ai/index.xml" rel="self" type="application/rss+xml"/><item><title/><link>https://blog.imfsoftware.com/llm-wiki/docs/analyses/key-insights-agentic-landscape/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://blog.imfsoftware.com/llm-wiki/docs/analyses/key-insights-agentic-landscape/</guid><description>&lt;h1 id="key-insights-the-agentic-ai-landscape-april-2026"&gt;Key Insights: The Agentic AI Landscape (April 2026)&lt;a class="anchor" href="#key-insights-the-agentic-ai-landscape-april-2026"&gt;#&lt;/a&gt;&lt;/h1&gt;
-&lt;p&gt;Synthesized from 8 sources across this wiki. This analysis captures the patterns, tensions, and emerging consensus visible when you look across the entire landscape rather than at any single tool.&lt;/p&gt;
+&lt;p&gt;Synthesized from 16 sources across this wiki. This analysis captures the patterns, tensions, and emerging consensus visible when you look across the entire landscape rather than at any single tool.&lt;/p&gt;
 &lt;hr&gt;
-&lt;h2 id="1-three-architectural-philosophies-are-competing"&gt;1. Three Architectural Philosophies Are Competing&lt;a class="anchor" href="#1-three-architectural-philosophies-are-competing"&gt;#&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;The landscape has split into three distinct approaches to the same problem — making LLM agents useful for real work:&lt;/p&gt;
+&lt;h2 id="1-five-layers-are-emerging"&gt;1. Five Layers Are Emerging&lt;a class="anchor" href="#1-five-layers-are-emerging"&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;The landscape has organized into five distinct layers:&lt;/p&gt;
 &lt;table&gt;
  &lt;thead&gt;
  &lt;tr&gt;
- &lt;th&gt;Philosophy&lt;/th&gt;
+ &lt;th&gt;Layer&lt;/th&gt;
  &lt;th&gt;Representative&lt;/th&gt;
  &lt;th&gt;Core Bet&lt;/th&gt;
  &lt;/tr&gt;
  &lt;/thead&gt;
  &lt;tbody&gt;
+ &lt;tr&gt;
+ &lt;td&gt;&lt;strong&gt;Company&lt;/strong&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;a href="https://blog.imfsoftware.com/llm-wiki/docs/entities/paperclip/"&gt;paperclip&lt;/a&gt;&lt;/td&gt;
+ &lt;td&gt;Orchestrate agents into companies with org charts, budgets, governance.&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;&lt;strong&gt;Methodology&lt;/strong&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;a href="https://blog.imfsoftware.com/llm-wiki/docs/entities/spec-kit/"&gt;spec-kit&lt;/a&gt;, &lt;a href="https://blog.imfsoftware.com/llm-wiki/docs/entities/bmad-method/"&gt;bmad-method&lt;/a&gt;&lt;/td&gt;
+ &lt;td&gt;Structure the development process. Specs before code, or adaptive agile workflows.&lt;/td&gt;
+ &lt;/tr&gt;
  &lt;tr&gt;
  &lt;td&gt;&lt;strong&gt;Infrastructure&lt;/strong&gt;&lt;/td&gt;
  &lt;td&gt;&lt;a href="https://blog.imfsoftware.com/llm-wiki/docs/entities/scion/"&gt;scion&lt;/a&gt; (GCP)&lt;/td&gt;
@@ -24,9 +34,9 @@
  &lt;/tr&gt;
  &lt;tr&gt;
  &lt;td&gt;&lt;strong&gt;Tool&lt;/strong&gt;&lt;/td&gt;
- &lt;td&gt;&lt;a href="https://blog.imfsoftware.com/llm-wiki/docs/entities/claude-code/"&gt;claude-code&lt;/a&gt; (Anthropic)&lt;/td&gt;
+ &lt;td&gt;&lt;a href="https://blog.imfsoftware.com/llm-wiki/docs/entities/claude-code/"&gt;claude-code&lt;/a&gt; (Anthropic), &lt;a href="https://blog.imfsoftware.com/llm-wiki/docs/entities/fabric/"&gt;fabric&lt;/a&gt;&lt;/td&gt;
  &lt;td&gt;Make the individual agent excellent. Let users compose upward.&lt;/td&gt;
  &lt;/tr&gt;
  &lt;/tbody&gt;
 &lt;/table&gt;
-&lt;p&gt;None has won. Each makes a different bet on where the value accrues. Scion bets on infrastructure (the &amp;ldquo;Kubernetes of agents&amp;rdquo;). Kiro bets on the product layer (the &amp;ldquo;GitHub Copilot of agents&amp;rdquo;). Claude Code bets on the tool layer (the &amp;ldquo;VS Code of agents&amp;rdquo;). The right answer probably involves all three layers, which is why Scion can orchestrate Claude Code as a harness.&lt;/p&gt;</description></item></channel></rss>
+&lt;p&gt;The methodology layer is new — &lt;a href="https://blog.imfsoftware.com/llm-wiki/docs/entities/spec-kit/"&gt;spec-kit&lt;/a&gt; (&amp;ldquo;specs before code&amp;rdquo;) and &lt;a href="https://blog.imfsoftware.com/llm-wiki/docs/entities/bmad-method/"&gt;bmad-method&lt;/a&gt; (&amp;ldquo;expert collaboration over autopilot&amp;rdquo;) represent two competing philosophies for structuring AI-assisted development. &lt;a href="https://blog.imfsoftware.com/llm-wiki/docs/entities/paperclip/"&gt;paperclip&lt;/a&gt; adds the company layer above everything, orchestrating agents into organizations with budgets and governance.&lt;/p&gt;</description></item></channel></rss>
