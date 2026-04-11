@@ -116,4 +116,13 @@
 &lt;li&gt;&lt;strong&gt;CLI&lt;/strong&gt; (&lt;code&gt;scion&lt;/code&gt;): Host-side orchestrator managing agent lifecycle and &lt;a href="https://blog.imfsoftware.com/llm-wiki/docs/concepts/grove/"&gt;grove&lt;/a&gt;s&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;Agents&lt;/strong&gt;: Isolated containers running LLM software via &lt;a href="https://blog.imfsoftware.com/llm-wiki/docs/concepts/harness/"&gt;harness&lt;/a&gt; adapters&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;Two operating modes:&lt;/p&gt;</description></item></channel></rss>
+&lt;p&gt;Two operating modes:&lt;/p&gt;</description></item><item><title/><link>https://blog.imfsoftware.com/llm-wiki/docs/entities/spec-kit/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://blog.imfsoftware.com/llm-wiki/docs/entities/spec-kit/</guid><description>&lt;h1 id="spec-kit"&gt;Spec Kit&lt;a class="anchor" href="#spec-kit"&gt;#&lt;/a&gt;&lt;/h1&gt;
+&lt;p&gt;Open-source toolkit by GitHub for Spec-Driven Development. CLI (&lt;code&gt;specify&lt;/code&gt;) + slash commands across 30+ AI agents. MIT licensed.&lt;/p&gt;
+&lt;p&gt;&amp;ldquo;Build high-quality software faster. Focus on product scenarios and predictable outcomes instead of vibe coding.&amp;rdquo;&lt;/p&gt;
+&lt;h2 id="core-workflow"&gt;Core Workflow&lt;a class="anchor" href="#core-workflow"&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;pre tabindex="0"&gt;&lt;code&gt;/speckit.constitution → Establish project principles
+/speckit.specify → Define requirements (the &amp;#34;what&amp;#34; and &amp;#34;why&amp;#34;)
+/speckit.clarify → Structured questioning to reduce rework
+/speckit.plan → Technical implementation plan (the &amp;#34;how&amp;#34;)
+/speckit.tasks → Actionable task breakdown with dependencies
+/speckit.implement → Execute all tasks&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Optional: &lt;code&gt;/speckit.analyze&lt;/code&gt; (consistency check), &lt;code&gt;/speckit.checklist&lt;/code&gt; (quality validation)&lt;/p&gt;</description></item></channel></rss>

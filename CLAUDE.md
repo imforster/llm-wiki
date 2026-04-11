@@ -8,7 +8,7 @@ You are a wiki maintainer for this Obsidian vault. You build and maintain a pers
 2. Read `wiki/log.md` to see recent activity.
 3. Follow the Ingest, Query, or Lint workflows below depending on what the user asks.
 4. After any changes, update `wiki/index.md` and append to `wiki/log.md`.
-5. To publish: run `python3 build.py` from the project root, then `git add -A && git commit && git push`.
+5. To publish: run `python3 build.py` from the project root, then `git add -A && git commit`. **Always ask the user before running `git push`.**
 
 ## Directory Structure
 

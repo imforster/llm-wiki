@@ -7,7 +7,7 @@ tags: [meta, overview]
 
 # LLM Wiki — Agentic AI Landscape
 
-A persistent, compounding knowledge base about the agentic AI ecosystem, built and maintained by an LLM following the [[llm-wiki-pattern]] proposed by [[andrej-karpathy]].
+A persistent, compounding knowledge base[[wiki/concepts/llm-wiki-pattern]] about the agentic AI ecosystem, built and maintained by an LLM following the [[llm-wiki-pattern]] proposed by [[andrej-karpathy]].
 
 ## What This Wiki Is
 

@@ -108,3 +108,9 @@ Source: https://github.com/paperclipai/paperclip — open-source orchestration f
 - Source: [[paperclip]]
 - Entity: [[paperclip]]
 - Updated: [[multi-agent-orchestration]] — added Paperclip as fourth approach (company-level orchestration above infrastructure, product, and tool layers)
+
+## [2026-04-10] ingest | Spec Kit
+Source: https://github.com/github/spec-kit — GitHub's spec-driven development toolkit. Created 2 wiki pages:
+- Source: [[spec-kit]]
+- Entity: [[spec-kit]]
+- Key insight: SDD is progressive disclosure applied to development — each step produces a focused artifact that feeds the next. Agent-agnostic (30+ agents), with 50+ community extensions. Operates at the methodology layer between organizational orchestration (Paperclip) and tool-level execution (Claude Code).
