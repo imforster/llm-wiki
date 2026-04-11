@@ -17,6 +17,7 @@
 | [[promptfoo]] | Promptfoo: open-source LLM eval CLI — YAML test cases, CI/CD, red teaming (now OpenAI) | 2026-04-09 |
 | [[paperclip]] | Paperclip: open-source orchestration for zero-human companies — org charts, budgets, governance | 2026-04-09 |
 | [[spec-kit]] | Spec Kit: GitHub's spec-driven development toolkit — 30+ agents, 50+ extensions, 7-step workflow | 2026-04-10 |
+| [[bmad-method]] | BMad Method: AI-driven agile framework — 12+ agent personas, scale-adaptive, Party Mode | 2026-04-10 |
 | [[fabric-github]] | Fabric: open-source framework with 251+ curated AI prompt patterns (Miessler) | 2026-04-08 |
 | [[personal-ai-infrastructure]] | PAI: personalized AI platform built on Claude Code — memory, skills, goals (Miessler) | 2026-04-08 |
 
@@ -34,6 +35,7 @@
 | [[promptfoo]] | tool | Open-source LLM eval CLI — YAML test cases, CI/CD, red teaming (now OpenAI) |
 | [[paperclip]] | tool | Open-source orchestration for zero-human companies — org charts, budgets, governance |
 | [[spec-kit]] | tool | GitHub's spec-driven development toolkit — 30+ agents, 50+ extensions |
+| [[bmad-method]] | tool | AI-driven agile framework — 12+ agent personas, scale-adaptive, Party Mode |
 | [[google-cloud-platform]] | organization | Cloud platform by Google, hosts the Scion project |
 | [[aws]] | organization | Amazon Web Services, behind Kiro and the frontier agent concept |
 | [[anthropic]] | organization | AI safety company, builds Claude models and Claude Code |

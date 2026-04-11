@@ -114,3 +114,9 @@ Source: https://github.com/github/spec-kit — GitHub's spec-driven development 
 - Source: [[spec-kit]]
 - Entity: [[spec-kit]]
 - Key insight: SDD is progressive disclosure applied to development — each step produces a focused artifact that feeds the next. Agent-agnostic (30+ agents), with 50+ community extensions. Operates at the methodology layer between organizational orchestration (Paperclip) and tool-level execution (Claude Code).
+
+## [2026-04-10] ingest | BMad Method
+Source: https://github.com/bmad-code-org/BMAD-METHOD — AI-driven agile framework with scale-adaptive intelligence. Created 2 wiki pages:
+- Source: [[bmad-method]]
+- Entity: [[bmad-method]]
+- Key insight: "Expert collaboration over autopilot" — agents guide your thinking rather than replacing it. Scale-adaptive planning adjusts depth to project complexity. Party Mode enables multi-persona dialogue in a single session.
