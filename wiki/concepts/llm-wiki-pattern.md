@@ -1,8 +1,8 @@
 ---
 type: concept
 created: 2026-04-08
-updated: 2026-04-08
-sources: ["[[llm-wiki-karpathy]]"]
+updated: 2026-04-11
+sources: ["[[llm-wiki-karpathy]]", "[[notebooklm-notes-guide]]"]
 tags: [knowledge-management, pattern, methodology, wiki, meta]
 ---
 
@@ -54,9 +54,20 @@ Related to Vannevar Bush's **Memex** (1945) — a personal, curated knowledge st
 - Could scale to **[[multi-agent-orchestration]]**: separate agents for ingest, query, lint, with the wiki as shared state
 - **[[claude-code]]**'s CLAUDE.md and auto memory are the native implementation substrate
 
+## Contrast: NotebookLM
+
+[[notebooklm]] shares the "human curates sources, AI processes them" principle but takes a different path:
+
+- **Session-oriented** vs. **cumulative**: NotebookLM notes live within a session/notebook; the LLM Wiki compounds knowledge permanently across all sources.
+- **Interactive exploration** vs. **structured ingest**: NotebookLM encourages open-ended conversation then pinning; the wiki follows a defined ingest → entity → concept → cross-reference workflow.
+- **Manual cross-reference** vs. **automatic wikilinks**: NotebookLM's "Suggest Related Ideas" is on-demand; the wiki maintains links as a structural invariant.
+
+Both validate the core insight: grounding AI in curated sources produces better knowledge work than open-ended generation.
+
 ## See Also
 - [[andrej-karpathy]]
 - [[context-management]]
 - [[agent-skills-standard]]
 - [[claude-code]]
 - [[multi-agent-orchestration]]
+- [[notebooklm]]

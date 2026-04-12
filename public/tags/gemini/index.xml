@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Gemini on LLM Wiki — Agentic AI Landscape</title><link>https://blog.imfsoftware.com/llm-wiki/tags/gemini/</link><description>Recent content in Gemini on LLM Wiki — Agentic AI Landscape</description><generator>Hugo</generator><language>en-us</language><atom:link href="https://blog.imfsoftware.com/llm-wiki/tags/gemini/index.xml" rel="self" type="application/rss+xml"/><item><title/><link>https://blog.imfsoftware.com/llm-wiki/docs/entities/notebooklm/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://blog.imfsoftware.com/llm-wiki/docs/entities/notebooklm/</guid><description>&lt;h1 id="notebooklm"&gt;NotebookLM&lt;a class="anchor" href="#notebooklm"&gt;#&lt;/a&gt;&lt;/h1&gt;
+&lt;p&gt;A Gemini-powered writing and research tool from Google Labs. Co-founded by &lt;a href="https://blog.imfsoftware.com/llm-wiki/docs/entities/steven-johnson/"&gt;steven-johnson&lt;/a&gt;. Designed for AI-assisted knowledge work grounded in user-curated sources.&lt;/p&gt;
+&lt;h2 id="core-design"&gt;Core Design&lt;a class="anchor" href="#core-design"&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Users upload sources (documents, articles, notes) — the AI only reasons over those sources, not the open web&lt;/li&gt;
+&lt;li&gt;Two note types: Written Notes (user-authored, editable) and Saved Responses (AI-generated, immutable)&lt;/li&gt;
+&lt;li&gt;Provenance tracking built in: clear separation between human-written and AI-generated content&lt;/li&gt;
+&lt;li&gt;Source-integrated reading with AI actions (summarize, explain, find related ideas)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="relationship-to-the-wiki-landscape"&gt;Relationship to the Wiki Landscape&lt;a class="anchor" href="#relationship-to-the-wiki-landscape"&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;NotebookLM occupies a different point in the AI knowledge management space than the tools tracked elsewhere in this wiki:&lt;/p&gt;</description></item></channel></rss>

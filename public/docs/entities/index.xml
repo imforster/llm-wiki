@@ -118,7 +118,17 @@
 &lt;h2 id="kiro-cli"&gt;Kiro CLI&lt;a class="anchor" href="#kiro-cli"&gt;#&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;Custom agents as configuration files that customize Kiro&amp;rsquo;s behavior for specific workflows. Define tool access, permissions, and context. Pre-approve tools, reduce interruptions, optimize for specific tasks. Interactive, runs on your local machine.&lt;/p&gt;
 &lt;h2 id="kiro-autonomous-agent"&gt;Kiro Autonomous Agent&lt;a class="anchor" href="#kiro-autonomous-agent"&gt;#&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;A &lt;a href="https://blog.imfsoftware.com/llm-wiki/docs/concepts/frontier-agent/"&gt;frontier-agent&lt;/a&gt; that works asynchronously in the background on complex, multi-step development tasks. Key capabilities:&lt;/p&gt;</description></item><item><title/><link>https://blog.imfsoftware.com/llm-wiki/docs/entities/pai/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://blog.imfsoftware.com/llm-wiki/docs/entities/pai/</guid><description>&lt;h1 id="pai-personal-ai-infrastructure"&gt;PAI (Personal AI Infrastructure)&lt;a class="anchor" href="#pai-personal-ai-infrastructure"&gt;#&lt;/a&gt;&lt;/h1&gt;
+&lt;p&gt;A &lt;a href="https://blog.imfsoftware.com/llm-wiki/docs/concepts/frontier-agent/"&gt;frontier-agent&lt;/a&gt; that works asynchronously in the background on complex, multi-step development tasks. Key capabilities:&lt;/p&gt;</description></item><item><title/><link>https://blog.imfsoftware.com/llm-wiki/docs/entities/notebooklm/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://blog.imfsoftware.com/llm-wiki/docs/entities/notebooklm/</guid><description>&lt;h1 id="notebooklm"&gt;NotebookLM&lt;a class="anchor" href="#notebooklm"&gt;#&lt;/a&gt;&lt;/h1&gt;
+&lt;p&gt;A Gemini-powered writing and research tool from Google Labs. Co-founded by &lt;a href="https://blog.imfsoftware.com/llm-wiki/docs/entities/steven-johnson/"&gt;steven-johnson&lt;/a&gt;. Designed for AI-assisted knowledge work grounded in user-curated sources.&lt;/p&gt;
+&lt;h2 id="core-design"&gt;Core Design&lt;a class="anchor" href="#core-design"&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Users upload sources (documents, articles, notes) — the AI only reasons over those sources, not the open web&lt;/li&gt;
+&lt;li&gt;Two note types: Written Notes (user-authored, editable) and Saved Responses (AI-generated, immutable)&lt;/li&gt;
+&lt;li&gt;Provenance tracking built in: clear separation between human-written and AI-generated content&lt;/li&gt;
+&lt;li&gt;Source-integrated reading with AI actions (summarize, explain, find related ideas)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="relationship-to-the-wiki-landscape"&gt;Relationship to the Wiki Landscape&lt;a class="anchor" href="#relationship-to-the-wiki-landscape"&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;NotebookLM occupies a different point in the AI knowledge management space than the tools tracked elsewhere in this wiki:&lt;/p&gt;</description></item><item><title/><link>https://blog.imfsoftware.com/llm-wiki/docs/entities/pai/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://blog.imfsoftware.com/llm-wiki/docs/entities/pai/</guid><description>&lt;h1 id="pai-personal-ai-infrastructure"&gt;PAI (Personal AI Infrastructure)&lt;a class="anchor" href="#pai-personal-ai-infrastructure"&gt;#&lt;/a&gt;&lt;/h1&gt;
 &lt;p&gt;An open-source personalized AI platform by &lt;a href="https://blog.imfsoftware.com/llm-wiki/docs/entities/daniel-miessler/"&gt;daniel-miessler&lt;/a&gt;, built natively on &lt;a href="https://blog.imfsoftware.com/llm-wiki/docs/entities/claude-code/"&gt;claude-code&lt;/a&gt;. Turns Claude Code from a stateless tool into a persistent assistant that knows your goals, preferences, and history.&lt;/p&gt;
 &lt;p&gt;Mission: &amp;ldquo;AI should magnify everyone — not just the top 1%.&amp;rdquo;&lt;/p&gt;
 &lt;h2 id="three-levels-of-ai"&gt;Three Levels of AI&lt;a class="anchor" href="#three-levels-of-ai"&gt;#&lt;/a&gt;&lt;/h2&gt;
@@ -169,4 +179,12 @@
 /speckit.clarify → Structured questioning to reduce rework
 /speckit.plan → Technical implementation plan (the &amp;#34;how&amp;#34;)
 /speckit.tasks → Actionable task breakdown with dependencies
-/speckit.implement → Execute all tasks&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Optional: &lt;code&gt;/speckit.analyze&lt;/code&gt; (consistency check), &lt;code&gt;/speckit.checklist&lt;/code&gt; (quality validation)&lt;/p&gt;</description></item></channel></rss>
+/speckit.implement → Execute all tasks&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Optional: &lt;code&gt;/speckit.analyze&lt;/code&gt; (consistency check), &lt;code&gt;/speckit.checklist&lt;/code&gt; (quality validation)&lt;/p&gt;</description></item><item><title/><link>https://blog.imfsoftware.com/llm-wiki/docs/entities/steven-johnson/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://blog.imfsoftware.com/llm-wiki/docs/entities/steven-johnson/</guid><description>&lt;h1 id="steven-johnson"&gt;Steven Johnson&lt;a class="anchor" href="#steven-johnson"&gt;#&lt;/a&gt;&lt;/h1&gt;
+&lt;p&gt;Editorial Director and Co-Founder of &lt;a href="https://blog.imfsoftware.com/llm-wiki/docs/entities/notebooklm/"&gt;notebooklm&lt;/a&gt;. Author of 14 books (latest: &lt;em&gt;The Infernal Machine&lt;/em&gt;). Writes how-to guides and thought pieces on using NotebookLM for research and writing workflows.&lt;/p&gt;
+&lt;h2 id="role-in-the-wiki"&gt;Role in the Wiki&lt;a class="anchor" href="#role-in-the-wiki"&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Johnson is the primary voice explaining NotebookLM&amp;rsquo;s design philosophy — particularly the &amp;ldquo;pin → organize → structure&amp;rdquo; workflow and the deliberate separation of human-written vs. AI-generated notes for provenance tracking.&lt;/p&gt;
+&lt;h2 id="see-also"&gt;See Also&lt;a class="anchor" href="#see-also"&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://blog.imfsoftware.com/llm-wiki/docs/entities/notebooklm/"&gt;notebooklm&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://blog.imfsoftware.com/llm-wiki/docs/sources/notebooklm-notes-guide/"&gt;notebooklm-notes-guide&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</description></item></channel></rss>

@@ -120,3 +120,11 @@ Source: https://github.com/bmad-code-org/BMAD-METHOD — AI-driven agile framewo
 - Source: [[bmad-method]]
 - Entity: [[bmad-method]]
 - Key insight: "Expert collaboration over autopilot" — agents guide your thinking rather than replacing it. Scale-adaptive planning adjusts depth to project complexity. Party Mode enables multi-persona dialogue in a single session.
+
+## [2026-04-11] ingest | NotebookLM Notes Guide
+Source: https://medium.com/@stevenbjohnson/getting-the-most-out-of-notes-in-notebooklm-d9d70316b780 — how-to guide by Steven Johnson on NotebookLM's notes system. Created 3 wiki pages, updated 2:
+- Source: [[notebooklm-notes-guide]]
+- Entities: [[notebooklm]], [[steven-johnson]]
+- Updated: [[context-management]] — added provenance-as-context-metadata section, NotebookLM's 5K word limit as concrete context constraint
+- Updated: [[llm-wiki-pattern]] — added contrast section comparing NotebookLM's session-oriented approach to the cumulative wiki pattern
+- Key insight: NotebookLM validates the "human curates, AI processes" principle from a different angle — interactive exploration with provenance tracking vs. structured ingest with automatic cross-references.

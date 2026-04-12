@@ -18,8 +18,10 @@
 | [[paperclip]] | Paperclip: open-source orchestration for zero-human companies — org charts, budgets, governance | 2026-04-09 |
 | [[spec-kit]] | Spec Kit: GitHub's spec-driven development toolkit — 30+ agents, 50+ extensions, 7-step workflow | 2026-04-10 |
 | [[bmad-method]] | BMad Method: AI-driven agile framework — 12+ agent personas, scale-adaptive, Party Mode | 2026-04-10 |
+| [[bmad-method]] | BMad Method: AI-driven agile framework — 12+ agent personas, scale-adaptive, Party Mode | 2026-04-10 |
 | [[fabric-github]] | Fabric: open-source framework with 251+ curated AI prompt patterns (Miessler) | 2026-04-08 |
 | [[personal-ai-infrastructure]] | PAI: personalized AI platform built on Claude Code — memory, skills, goals (Miessler) | 2026-04-08 |
+| [[notebooklm-notes-guide]] | NotebookLM notes guide — two note types, pin-then-organize workflow, provenance tracking (Steven Johnson) | 2026-04-11 |
 
 ## Entities
 
@@ -39,16 +41,18 @@
 | [[google-cloud-platform]] | organization | Cloud platform by Google, hosts the Scion project |
 | [[aws]] | organization | Amazon Web Services, behind Kiro and the frontier agent concept |
 | [[anthropic]] | organization | AI safety company, builds Claude models and Claude Code |
+| [[notebooklm]] | tool | Gemini-powered writing and research tool from Google Labs — source-grounded AI notes |
+| [[steven-johnson]] | person | Co-founder and editorial director of NotebookLM, author of 14 books |
 
 ## Concepts
 
 | Page | Summary | Source Count |
 |------|---------|--------------|
-| [[llm-wiki-pattern]] | Pattern for LLM-maintained personal knowledge bases — the methodology behind this wiki | 1 |
+| [[llm-wiki-pattern]] | Pattern for LLM-maintained personal knowledge bases — the methodology behind this wiki | 2 |
 | [[agent]] | Isolated process running an LLM + harness loop against a task | 1 |
 | [[agent-state-model]] | Three-dimensional state tracking: Phase, Activity, Detail | 1 |
 | [[agent-skills-standard]] | Open standard (agentskills.io) for packaging reusable agent capabilities | 2 |
-| [[context-management]] | Strategies for managing limited context windows in multi-skill pipelines | 2 |
+| [[context-management]] | Strategies for managing limited context windows in multi-skill pipelines | 3 |
 | [[prompt-engineering-patterns]] | CoT, ReAct, Reflexion, composable strategies, and other prompting techniques | 2 |
 | [[skill-evaluation]] | Three-tier framework for measuring agent skill quality (deterministic → LLM-judge → human) | 2 |
 | [[grove]] | Project workspace where agents live (.scion directory) | 1 |

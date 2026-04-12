@@ -1,8 +1,8 @@
 ---
 type: concept
 created: 2026-04-08
-updated: 2026-04-08
-sources: ["[[ten-pillars-agentic-skill-design]]", "[[claude-code-docs]]"]
+updated: 2026-04-11
+sources: ["[[ten-pillars-agentic-skill-design]]", "[[claude-code-docs]]", "[[notebooklm-notes-guide]]"]
 tags: [context, tokens, optimization, multi-agent, patterns]
 ---
 
@@ -51,8 +51,13 @@ Minimal context handoff between agent personas. Define required vs. optional fie
 - **Fresh context** (Scion, Claude Code sessions): Each task starts clean. Risk: re-discovering known information.
 - **Selective loading** (Ten Pillars recipes): Middle ground — load only what's relevant per skill/task.
 
+## Provenance as Context Metadata
+
+[[notebooklm]] takes a different approach to context management: rather than token budgets and progressive disclosure, it separates context by *authorship*. Written Notes (human) and Saved Responses (AI) are distinct types, making provenance visible. This is a lightweight form of context metadata — knowing *who produced* a piece of context, not just *what* it contains. The 5,000-word note query limit is a concrete example of context window constraints surfacing in a consumer product.
+
 ## See Also
 - [[ten-pillars-agentic-skill-design]]
 - [[agent-skills-standard]]
 - [[claude-code]]
 - [[multi-agent-orchestration]]
+- [[notebooklm]]

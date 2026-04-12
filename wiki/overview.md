@@ -1,7 +1,7 @@
 ---
 type: overview
 created: 2026-04-07
-updated: 2026-04-10
+updated: 2026-04-11
 tags: [meta, overview]
 ---
 
@@ -17,9 +17,9 @@ The human curates sources, directs analysis, and asks questions. The LLM does ev
 
 ## What's Inside
 
-16 sources across tools, standards, methodologies, evaluation, and practitioner insights:
+17 sources across tools, standards, methodologies, evaluation, and practitioner insights:
 
-**Tools**: [[scion]] (GCP), [[kiro]] (AWS), [[claude-code]] (Anthropic), [[fabric]] (Miessler), [[pai]] (Miessler), [[paperclip]] (company-level orchestration), [[promptfoo]] (eval tooling)
+**Tools**: [[scion]] (GCP), [[kiro]] (AWS), [[claude-code]] (Anthropic), [[fabric]] (Miessler), [[pai]] (Miessler), [[paperclip]] (company-level orchestration), [[promptfoo]] (eval tooling), [[notebooklm]] (Google Labs)
 
 **Methodologies**: [[spec-kit]] (GitHub, spec-driven development), [[bmad-method]] (agile AI-driven development), [[ten-pillars-agentic-skill-design]] (Forster)
 
@@ -70,7 +70,7 @@ Three operations:
 
 ## Browse
 
-- **Sources** — 16 raw sources that feed this wiki
+- **Sources** — 17 raw sources that feed this wiki
 - **Concepts** — 18 concept pages covering patterns, standards, and architectural ideas
-- **Entities** — 14 pages for tools, people, and organizations
+- **Entities** — 16 pages for tools, people, and organizations
 - **Analyses** — 4 synthesized analyses filed back into the wiki
