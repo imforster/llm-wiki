@@ -1,9 +1,9 @@
 ---
 type: concept
 created: 2026-04-08
-updated: 2026-04-08
-sources: ["[[evaluating-agent-skills-caparas]]", "[[ten-pillars-agentic-skill-design]]"]
-tags: [evaluation, testing, methodology, economics]
+updated: 2026-04-14
+sources: ["[[evaluating-agent-skills-caparas]]", "[[ten-pillars-agentic-skill-design]]", "[[humaneval-benchmark]]", "[[swe-bench]]", "[[gaia-benchmark]]", "[[agentbench]]"]
+tags: [evaluation, testing, methodology, economics, benchmarks]
 ---
 
 # Skill Evaluation
@@ -57,3 +57,5 @@ The [[ten-pillars-agentic-skill-design]] paper explicitly acknowledged "no origi
 - [[agent-skills-standard]]
 - [[prompt-engineering-patterns]]
 - [[key-insights-agentic-landscape]]
+- [[agent-benchmarks]]
+- [[promptfoo]]

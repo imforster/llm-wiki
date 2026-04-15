@@ -149,3 +149,20 @@ New pages created:
 Updated pages:
 - `wiki/concepts/context-management.md` — added memory architecture cross-references, linked to [[agent-memory-persistence]]
 - `wiki/index.md` — added 4 sources, 1 entity, 1 concept
+
+## [2026-04-14] ingest | Batch 2: Evaluation Benchmarks (4 sources)
+
+Ingested four benchmark sources addressing the wiki's "evaluation is the weakest link" gap:
+
+- **[[humaneval-benchmark]]** — OpenAI (Chen et al., 2021): 164 Python problems, pass@k metric, 0% → 96.3% in 3 years. EvalPlus reveals 7-8 point robustness gap.
+- **[[swe-bench]]** — Princeton (Jimenez et al., 2023): 2,294 real GitHub issues, top 74.4% resolved. SWE-bench Verified (500 tasks) is the standard.
+- **[[gaia-benchmark]]** — Meta/HF (Mialon et al., 2023): 466 questions requiring reasoning + tools + multimodality. Humans 92%, AI <50%. Inverse of most benchmarks.
+- **[[agentbench]]** — Tsinghua (Liu et al., ICLR 2024): 8 interactive environments, multi-turn. Commercial >> open-source. General AgentBench shows narrow-to-broad degradation.
+
+New pages created:
+- `wiki/sources/humaneval-benchmark.md`, `wiki/sources/swe-bench.md`, `wiki/sources/gaia-benchmark.md`, `wiki/sources/agentbench.md`
+- `wiki/concepts/agent-benchmarks.md`
+
+Updated pages:
+- `wiki/concepts/skill-evaluation.md` — added benchmark cross-references
+- `wiki/index.md` — added 4 sources, 1 concept

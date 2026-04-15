@@ -26,6 +26,10 @@
 | [[continuum-memory-architectures]] | CMA: formal requirements for agent memory — six necessary conditions, 82/92 wins vs RAG (Logan, arXiv) | 2026-04-14 |
 | [[agent-memory-systems-2026]] | Four memory architecture patterns compared — vector, graph+vector, file+DB, hierarchical (Bswen) | 2026-04-14 |
 | [[efficient-memory-architectures]] | Memory architecture design guide — H-MEM, MemGPT, GraphRAG, selective forgetting (Towards AI) | 2026-04-14 |
+| [[humaneval-benchmark]] | HumanEval: 164 Python problems, pass@k metric, 0% → 96.3% in 3 years (OpenAI, Chen et al.) | 2026-04-14 |
+| [[swe-bench]] | SWE-bench: real-world GitHub issue resolution — 2,294 tasks, top 74.4% resolved (Princeton) | 2026-04-14 |
+| [[gaia-benchmark]] | GAIA: general AI assistant benchmark — 466 questions, reasoning + tools + multimodality (Meta/HF) | 2026-04-14 |
+| [[agentbench]] | AgentBench: LLM-as-Agent across 8 interactive environments — multi-turn decision-making (ICLR 2024) | 2026-04-14 |
 
 ## Entities
 
@@ -59,7 +63,7 @@
 | [[agent-skills-standard]] | Open standard (agentskills.io) for packaging reusable agent capabilities | 2 |
 | [[context-management]] | Strategies for managing limited context windows in multi-skill pipelines | 7 |
 | [[prompt-engineering-patterns]] | CoT, ReAct, Reflexion, composable strategies, and other prompting techniques | 2 |
-| [[skill-evaluation]] | Three-tier framework for measuring agent skill quality (deterministic → LLM-judge → human) | 2 |
+| [[skill-evaluation]] | Three-tier framework for measuring agent skill quality (deterministic → LLM-judge → human) | 6 |
 | [[grove]] | Project workspace where agents live (.scion directory) | 1 |
 | [[harness]] | Adapter for LLM tools (Gemini, Claude, OpenCode, Codex) into Scion | 1 |
 | [[hub]] | Central control plane for hosted/distributed Scion deployments | 1 |
@@ -72,6 +76,7 @@
 | [[kiro-powers]] | Specialized packages enhancing Kiro agents with domain expertise | 1 |
 | [[mcp-protocol]] | Open protocol for connecting LLMs to external tools — shared by Claude Code and Kiro | 2 |
 | [[agent-memory-persistence]] | How agents retain knowledge across sessions — four patterns, CMA requirements, forgetting, benchmarks | 4 |
+| [[agent-benchmarks]] | Standardized benchmarks for LLM/agent capabilities — HumanEval, SWE-bench, GAIA, AgentBench | 4 |
 
 ## Analyses
 
