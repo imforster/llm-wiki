@@ -34,6 +34,10 @@
 | [[crewai-multi-agent]] | CrewAI: role-based multi-agent orchestration — role+goal+backstory, sequential/hierarchical, built-in memory | 2026-04-14 |
 | [[langgraph-agent-orchestration]] | LangGraph: stateful graph-based agent orchestration — checkpointing, human-in-loop, most production-ready OSS | 2026-04-14 |
 | [[openai-swarm]] | OpenAI Swarm: lightweight handoff-based multi-agent — educational, two primitives (routines + handoffs) | 2026-04-14 |
+| [[agent-cost-economics]] | Agent token costs + $5T macro economics — five waste vectors, optimization playbook, ROI scenarios (Cloudstar/Vogel) | 2026-04-14 |
+| [[agentic-ai-governance]] | Agentic AI governance — five pillars, Shadow AI, NIST/EU AI Act/OWASP, prompt injection (ITECS) | 2026-04-14 |
+| [[agentic-ai-non-code-domains]] | Agentic AI beyond coding — finance, healthcare, legal, manufacturing, SaaS disruption (Curious Compass) | 2026-04-14 |
+| [[agentic-ux-patterns]] | UX patterns for agentic AI — six patterns for control/consent/accountability, autonomy dial (IDE) | 2026-04-14 |
 
 ## Entities
 

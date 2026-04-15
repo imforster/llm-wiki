@@ -180,3 +180,23 @@ Convergence signal: both AutoGen (MAF) and LangGraph moving to graph-based workf
 
 New pages: 4 source pages
 Updated: [[multi-agent-orchestration]] concept (added open-source frameworks comparison table), index
+
+## [2026-04-14] ingest | Batch 4: Gaps 4-7 (cost, governance, non-code, UX)
+
+Ingested four sources covering the remaining wiki gaps:
+
+- **[[agent-cost-economics]]** — Token costs ($80-1500/mo by profile), five waste vectors (60-80% waste), optimization playbook, $5T macro investment thesis, ROI scenarios (3.2% base vs 14.6% optimistic)
+- **[[agentic-ai-governance]]** — Five-pillar governance framework, Shadow AI ($412K/yr), NIST AI Agent Standards Initiative (Jan 2026), EU AI Act, OWASP AIVSS, prompt injection, kill switches
+- **[[agentic-ai-non-code-domains]]** — Six industries (finance 40-60% compliance reduction, legal existential disruption, healthcare, manufacturing, telecoms, transport), SaaS disruption, agent maturity levels 0-4
+- **[[agentic-ux-patterns]]** — Six UX patterns (Intent Preview, Autonomy Dial, Explainable Rationale, Confidence Signal, Audit & Undo, Escalation), phased adoption, service recovery paradox
+
+New pages: 4 source pages
+Updated: index
+
+## [2026-04-14] update | Overview rewrite for 33 sources
+
+Rewrote `wiki/overview.md` to reflect expanded wiki:
+- 33 sources (up from 17), 22 concepts (up from 18), 17 entities (up from 16)
+- Six-layer stack (added Memory layer)
+- Four new themes: graph convergence, token economics, governance frontier, beyond-code expansion
+- Original themes strengthened with new evidence (memory no longer "unsolved", eval no longer "weakest link")
