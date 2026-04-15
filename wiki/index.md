@@ -22,6 +22,10 @@
 | [[fabric-github]] | Fabric: open-source framework with 251+ curated AI prompt patterns (Miessler) | 2026-04-08 |
 | [[personal-ai-infrastructure]] | PAI: personalized AI platform built on Claude Code — memory, skills, goals (Miessler) | 2026-04-08 |
 | [[notebooklm-notes-guide]] | NotebookLM notes guide — two note types, pin-then-organize workflow, provenance tracking (Steven Johnson) | 2026-04-11 |
+| [[mem0-memory-management]] | Mem0: AI memory management — four layers, extraction pipeline, ADD/UPDATE/DELETE/NOOP, LOCOMO benchmarks | 2026-04-14 |
+| [[continuum-memory-architectures]] | CMA: formal requirements for agent memory — six necessary conditions, 82/92 wins vs RAG (Logan, arXiv) | 2026-04-14 |
+| [[agent-memory-systems-2026]] | Four memory architecture patterns compared — vector, graph+vector, file+DB, hierarchical (Bswen) | 2026-04-14 |
+| [[efficient-memory-architectures]] | Memory architecture design guide — H-MEM, MemGPT, GraphRAG, selective forgetting (Towards AI) | 2026-04-14 |
 
 ## Entities
 
@@ -43,6 +47,7 @@
 | [[anthropic]] | organization | AI safety company, builds Claude models and Claude Code |
 | [[notebooklm]] | tool | Gemini-powered writing and research tool from Google Labs — source-grounded AI notes |
 | [[steven-johnson]] | person | Co-founder and editorial director of NotebookLM, author of 14 books |
+| [[mem0]] | tool | Open-source memory management platform — graph+vector, four layers, five scopes, LOCOMO benchmarks |
 
 ## Concepts
 
@@ -52,7 +57,7 @@
 | [[agent]] | Isolated process running an LLM + harness loop against a task | 1 |
 | [[agent-state-model]] | Three-dimensional state tracking: Phase, Activity, Detail | 1 |
 | [[agent-skills-standard]] | Open standard (agentskills.io) for packaging reusable agent capabilities | 2 |
-| [[context-management]] | Strategies for managing limited context windows in multi-skill pipelines | 3 |
+| [[context-management]] | Strategies for managing limited context windows in multi-skill pipelines | 7 |
 | [[prompt-engineering-patterns]] | CoT, ReAct, Reflexion, composable strategies, and other prompting techniques | 2 |
 | [[skill-evaluation]] | Three-tier framework for measuring agent skill quality (deterministic → LLM-judge → human) | 2 |
 | [[grove]] | Project workspace where agents live (.scion directory) | 1 |
@@ -66,6 +71,7 @@
 | [[frontier-agent]] | AWS term for autonomous, scalable, independently-operating AI agents | 1 |
 | [[kiro-powers]] | Specialized packages enhancing Kiro agents with domain expertise | 1 |
 | [[mcp-protocol]] | Open protocol for connecting LLMs to external tools — shared by Claude Code and Kiro | 2 |
+| [[agent-memory-persistence]] | How agents retain knowledge across sessions — four patterns, CMA requirements, forgetting, benchmarks | 4 |
 
 ## Analyses
 

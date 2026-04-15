@@ -128,3 +128,24 @@ Source: https://medium.com/@stevenbjohnson/getting-the-most-out-of-notes-in-note
 - Updated: [[context-management]] — added provenance-as-context-metadata section, NotebookLM's 5K word limit as concrete context constraint
 - Updated: [[llm-wiki-pattern]] — added contrast section comparing NotebookLM's session-oriented approach to the cumulative wiki pattern
 - Key insight: NotebookLM validates the "human curates, AI processes" principle from a different angle — interactive exploration with provenance tracking vs. structured ingest with automatic cross-references.
+
+## [2026-04-14] ingest | Batch 1: Agent Memory & Persistence (4 sources)
+
+Ingested four sources addressing the wiki's "memory is the unsolved frontier" gap:
+
+- **[[mem0-memory-management]]** — Mem0 engineering team: four memory layers, two-phase extraction pipeline (ADD/UPDATE/DELETE/NOOP), LOCOMO benchmarks (93% token reduction), graph-enhanced retrieval
+- **[[continuum-memory-architectures]]** — CMA paper (Logan, arXiv): six formal requirements for agent memory (persistence, selective retention, retrieval-driven mutation, associative routing, temporal continuity, consolidation). CMA won 82/92 trials vs RAG.
+- **[[agent-memory-systems-2026]]** — Bswen practitioner comparison: four patterns (vector-only, graph+vector, file+DB, hierarchical) with cost estimates and decision framework
+- **[[efficient-memory-architectures]]** — Towards AI guide: four failure modes of flat vector storage, H-MEM, MemGPT (90% token savings), GraphRAG, selective forgetting (RIF formula)
+
+New pages created:
+- `wiki/sources/mem0-memory-management.md`
+- `wiki/sources/continuum-memory-architectures.md`
+- `wiki/sources/agent-memory-systems-2026.md`
+- `wiki/sources/efficient-memory-architectures.md`
+- `wiki/concepts/agent-memory-persistence.md`
+- `wiki/entities/mem0.md`
+
+Updated pages:
+- `wiki/concepts/context-management.md` — added memory architecture cross-references, linked to [[agent-memory-persistence]]
+- `wiki/index.md` — added 4 sources, 1 entity, 1 concept
