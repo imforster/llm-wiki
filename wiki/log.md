@@ -166,3 +166,17 @@ New pages created:
 Updated pages:
 - `wiki/concepts/skill-evaluation.md` — added benchmark cross-references
 - `wiki/index.md` — added 4 sources, 1 concept
+
+## [2026-04-14] ingest | Batch 3: Multi-Agent Frameworks (4 sources)
+
+Ingested four open-source multi-agent framework sources, filling the gap where only product-level tools (Scion, Kiro, Claude Code) were represented:
+
+- **[[autogen-multi-agent]]** — Microsoft Research (56.8K stars): conversation-based coordination, transitioning to graph-based Microsoft Agent Framework. Magentic-One generalist team.
+- **[[crewai-multi-agent]]** — João Moura: role+goal+backstory agents, sequential/hierarchical processes, built-in short/long/entity memory.
+- **[[langgraph-agent-orchestration]]** — LangChain: state-machine graphs, checkpointing (pause/resume), human-in-loop at any node. Most production-ready OSS framework.
+- **[[openai-swarm]]** — OpenAI: educational, radically minimal. Two primitives (routines + handoffs). Not for production but pattern is production-ready.
+
+Convergence signal: both AutoGen (MAF) and LangGraph moving to graph-based workflows — graphs becoming consensus architecture.
+
+New pages: 4 source pages
+Updated: [[multi-agent-orchestration]] concept (added open-source frameworks comparison table), index

@@ -30,6 +30,10 @@
 | [[swe-bench]] | SWE-bench: real-world GitHub issue resolution — 2,294 tasks, top 74.4% resolved (Princeton) | 2026-04-14 |
 | [[gaia-benchmark]] | GAIA: general AI assistant benchmark — 466 questions, reasoning + tools + multimodality (Meta/HF) | 2026-04-14 |
 | [[agentbench]] | AgentBench: LLM-as-Agent across 8 interactive environments — multi-turn decision-making (ICLR 2024) | 2026-04-14 |
+| [[autogen-multi-agent]] | AutoGen: Microsoft's multi-agent framework — conversation-based, transitioning to graph-based MAF (56.8K stars) | 2026-04-14 |
+| [[crewai-multi-agent]] | CrewAI: role-based multi-agent orchestration — role+goal+backstory, sequential/hierarchical, built-in memory | 2026-04-14 |
+| [[langgraph-agent-orchestration]] | LangGraph: stateful graph-based agent orchestration — checkpointing, human-in-loop, most production-ready OSS | 2026-04-14 |
+| [[openai-swarm]] | OpenAI Swarm: lightweight handoff-based multi-agent — educational, two primitives (routines + handoffs) | 2026-04-14 |
 
 ## Entities
 
@@ -71,7 +75,7 @@
 | [[runtime]] | Infrastructure layer for executing agent containers | 1 |
 | [[runtime-broker]] | Compute node providing execution capacity to the Hub | 1 |
 | [[plugin-system]] | Extension architecture via hashicorp/go-plugin over gRPC | 1 |
-| [[multi-agent-orchestration]] | Coordinating multiple LLM agents — comparing Scion, Kiro, and Claude Code | 3 |
+| [[multi-agent-orchestration]] | Coordinating multiple LLM agents — comparing Scion, Kiro, Claude Code + open-source frameworks | 7 |
 | [[frontier-agent]] | AWS term for autonomous, scalable, independently-operating AI agents | 1 |
 | [[kiro-powers]] | Specialized packages enhancing Kiro agents with domain expertise | 1 |
 | [[mcp-protocol]] | Open protocol for connecting LLMs to external tools — shared by Claude Code and Kiro | 2 |

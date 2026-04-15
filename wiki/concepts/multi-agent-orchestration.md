@@ -1,8 +1,8 @@
 ---
 type: concept
 created: 2026-04-07
-updated: 2026-04-07
-sources: ["[[scion-docs]]", "[[kiro-autonomous-agent]]", "[[claude-code-docs]]"]
+updated: 2026-04-14
+sources: ["[[scion-docs]]", "[[kiro-autonomous-agent]]", "[[claude-code-docs]]", "[[autogen-multi-agent]]", "[[crewai-multi-agent]]", "[[langgraph-agent-orchestration]]", "[[openai-swarm]]"]
 tags: [multi-agent, orchestration, ai, architecture]
 ---
 
@@ -43,6 +43,19 @@ All three share:
 - **Opinionated vs. agnostic**: Kiro is a specific agent product; Scion is infrastructure for any agent; Claude Code is a specific tool that Scion can orchestrate
 - **Isolation model**: Scion uses containers + `--yolo` mode; Kiro uses sandboxes; Claude Code uses permission modes within the tool itself
 
+## Open-Source Multi-Agent Frameworks
+
+Four open-source frameworks represent different coordination philosophies:
+
+| Framework | Core Metaphor | Coordination | State | Best For |
+|-----------|--------------|-------------|-------|----------|
+| [[autogen-multi-agent]] | Conversation | Multi-turn dialogue | Conversation history | Research, prototyping |
+| [[crewai-multi-agent]] | Team of experts | Sequential/hierarchical process | Short/long/entity memory | Complex research tasks |
+| [[langgraph-agent-orchestration]] | State machine | Graph edges + conditions | Checkpointed, persistent | Production workflows |
+| [[openai-swarm]] | Handoffs | Function returns | Context variables (ephemeral) | Simple routing |
+
+**Convergence signal**: Both AutoGen (via Microsoft Agent Framework) and LangGraph are moving toward graph-based workflows with typed nodes and edges. This suggests graphs are becoming the consensus architecture for production multi-agent systems.
+
 ## Open Questions
 
 - How should agents coordinate on shared state beyond git?
@@ -59,3 +72,5 @@ All three share:
 - [[frontier-agent]]
 - [[agent]]
 - [[mcp-protocol]]
+- [[agent-memory-persistence]]
+- [[paperclip]]
