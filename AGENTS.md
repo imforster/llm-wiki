@@ -29,7 +29,7 @@ wiki/                 # LLM-maintained knowledge base
   sources/            # One summary page per ingested source
   entities/           # People, organizations, tools, products
   concepts/           # Ideas, themes, theories, frameworks
-  analyses/           # Filed query results, comparisons, deep dives
+  analysis/           # Filed query results, comparisons, deep dives
 site/                 # Hugo site configuration (do not edit wiki content here)
 build.py              # Converts wiki/ → Hugo content/ and builds the site
 ```
@@ -85,7 +85,7 @@ When the user asks a question:
 1. Read `wiki/index.md` to find relevant pages
 2. Read those pages
 3. Synthesize an answer with `[[wikilink]]` citations
-4. Offer to file substantive answers as `wiki/analyses/` pages
+4. Offer to file substantive answers as `wiki/analysis/` pages
 5. If filed, update index and log
 
 ### Lint

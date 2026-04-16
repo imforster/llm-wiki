@@ -24,7 +24,7 @@ wiki/                 # LLM-maintained knowledge base
   sources/            # One summary page per ingested source
   entities/           # People, organizations, places, products
   concepts/           # Ideas, themes, theories, frameworks
-  analyses/           # Filed query results, comparisons, deep dives
+  analysis/           # Filed query results, comparisons, deep dives
 ```
 
 ## Page Format
@@ -83,7 +83,7 @@ Triggered when the user asks a question.
 1. **Read** `wiki/index.md` to find relevant pages
 2. **Read** the relevant pages
 3. **Synthesize** an answer with `[[wikilinks]]` citations
-4. **Offer to file** the answer as a new page in `wiki/analyses/` if it's substantive
+4. **Offer to file** the answer as a new page in `wiki/analysis/` if it's substantive
 5. If filed, **update** `wiki/index.md` and **append** to `wiki/log.md`
 
 ### Lint
@@ -123,7 +123,7 @@ Report findings and offer to fix them.
 |------|---------|--------------|
 | [[concept-slug]] | One-line summary | N |
 
-## Analyses
+## Analysis
 | Page | Summary | Date |
 |------|---------|------|
 | [[analysis-slug]] | One-line summary | YYYY-MM-DD |

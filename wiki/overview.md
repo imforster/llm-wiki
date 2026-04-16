@@ -72,7 +72,7 @@ Across 39 sources, twelve themes have been identified (see [[cross-source-themes
 - **Governance is the next frontier** (4/33) — 68% use AI without IT approval ([[agentic-ai-governance]])
 - **Agentic AI expanding beyond code** (3/33) — six industries, SaaS disruption ([[agentic-ai-non-code-domains]])
 
-## Analyses
+## Analysis
 
 11 synthesized analyses filed back into the wiki:
 
@@ -102,4 +102,4 @@ Three operations:
 - **Sources** — 39 raw sources that feed this wiki
 - **Concepts** — 20 concept pages covering patterns, standards, and architectural ideas
 - **Entities** — 17 pages for tools, people, and organizations
-- **Analyses** — 11 synthesized analyses filed back into the wiki
+- **Analysis** — 12 synthesized analyses filed back into the wiki
