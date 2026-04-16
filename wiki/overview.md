@@ -29,7 +29,7 @@ The human curates sources, directs analysis, and asks questions. The LLM does ev
 
 **Memory & Persistence**: [[mem0-memory-management]] (LOCOMO benchmarks), [[continuum-memory-architectures]] (CMA formal requirements), [[agent-memory-systems-2026]] (four patterns), [[efficient-memory-architectures]] (H-MEM, MemGPT, GraphRAG), [[memory-lifecycle-drift]] (decay, contradiction, confidence, compression, expiry), [[langgraph-mem0-integration]] (LangGraph + Mem0 tutorial), [[shared-agent-memory]] (multi-agent shared memory patterns)
 
-**Multi-Agent Frameworks**: [[autogen-multi-agent]] (Microsoft, 56.8K stars), [[crewai-multi-agent]] (role-based teams), [[langgraph-agent-orchestration]] (stateful graphs), [[openai-swarm]] (minimal handoffs), [[crewai-production-guide]] (production patterns and deployment)
+**Multi-Agent Frameworks**: [[autogen-multi-agent]] ([Microsoft](https://github.com/microsoft/autogen), 56.8K stars), [[crewai-multi-agent]] ([CrewAI](https://github.com/crewAIInc/crewAI), role-based teams), [[langgraph-agent-orchestration]] ([LangGraph](https://github.com/langchain-ai/langgraph), stateful graphs), [[openai-swarm]] ([Swarm](https://github.com/openai/swarm), minimal handoffs), [[crewai-production-guide]] (production patterns and deployment)
 
 **Observability**: [[multi-agent-observability]] (OpenTelemetry tracing, debugging patterns)
 
