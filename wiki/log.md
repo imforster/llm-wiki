@@ -231,3 +231,16 @@ Synthesizes 8 sources (4 OSS frameworks + 4 product tools) into a comprehensive 
 - Progression path: Swarm (learn) → CrewAI (prototype) → LangGraph (production) → MAF/Paperclip (enterprise)
 
 Second of five planned analyses. Blog post candidate: "Choosing a Multi-Agent Framework in 2026"
+
+## [2026-04-15] create | Analysis: Cost Optimization Guide
+
+Created `wiki/analyses/cost-optimization-guide.md` — "Why Your AI Agent Costs 10× More Than It Should"
+
+Synthesizes 6 sources connecting token economics to architectural decisions:
+- Five waste vectors (60-80% of tokens wasted) with specific fixes
+- Architecture-cost connections: memory choice → token cost, multi-agent → cost multiplication, context management → direct savings
+- Three-tier optimization playbook ordered by ROI (caching → routing → memory architecture)
+- Macro picture: $5T capex, 3.2% base ROI, token explosion, three historical analogies
+- Cost-Quality-Speed triangle: best optimizations improve two dimensions simultaneously
+
+Third of five planned analyses. Blog post candidate: "Why Your AI Agent Costs 10× More Than It Should"
