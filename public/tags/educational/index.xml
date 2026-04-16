@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Educational on LLM Wiki — Agentic AI Landscape</title><link>https://blog.imfsoftware.com/llm-wiki/tags/educational/</link><description>Recent content in Educational on LLM Wiki — Agentic AI Landscape</description><generator>Hugo</generator><language>en-us</language><atom:link href="https://blog.imfsoftware.com/llm-wiki/tags/educational/index.xml" rel="self" type="application/rss+xml"/><item><title/><link>https://blog.imfsoftware.com/llm-wiki/docs/sources/openai-swarm/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://blog.imfsoftware.com/llm-wiki/docs/sources/openai-swarm/</guid><description>&lt;h1 id="openai-swarm-lightweight-multi-agent-orchestration"&gt;OpenAI Swarm: Lightweight Multi-Agent Orchestration&lt;a class="anchor" href="#openai-swarm-lightweight-multi-agent-orchestration"&gt;#&lt;/a&gt;&lt;/h1&gt;
+&lt;p&gt;&lt;a href="https://kindatechnical.com/agentic-ai/openai-swarm-and-handoff-patterns.html"&gt;Original&lt;/a&gt; | &lt;a href="https://github.com/imforster/llm-wiki/blob/main/raw/llm/openai-swarm.md"&gt;Raw&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;OpenAI&amp;rsquo;s experimental/educational framework (October 2024). Radically minimal: agents are system prompts with functions, handoffs are functions that return another agent. Explicitly NOT for production — demonstrates patterns implementable with any LLM SDK.&lt;/p&gt;
+&lt;h2 id="two-primitives"&gt;Two Primitives&lt;a class="anchor" href="#two-primitives"&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;Routines&lt;/strong&gt; — system prompt + callable functions&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Handoffs&lt;/strong&gt; — functions that return another Agent, transferring control&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;That&amp;rsquo;s the entire framework on top of Chat Completions API.&lt;/p&gt;
+&lt;h2 id="context-variables"&gt;Context Variables&lt;a class="anchor" href="#context-variables"&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Shared state between agents without putting it in conversation history. Keeps sensitive data out of messages. Passed at runtime.&lt;/p&gt;</description></item></channel></rss>

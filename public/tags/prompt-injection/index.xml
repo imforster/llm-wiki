@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Prompt-Injection on LLM Wiki — Agentic AI Landscape</title><link>https://blog.imfsoftware.com/llm-wiki/tags/prompt-injection/</link><description>Recent content in Prompt-Injection on LLM Wiki — Agentic AI Landscape</description><generator>Hugo</generator><language>en-us</language><atom:link href="https://blog.imfsoftware.com/llm-wiki/tags/prompt-injection/index.xml" rel="self" type="application/rss+xml"/><item><title/><link>https://blog.imfsoftware.com/llm-wiki/docs/sources/agentic-ai-governance/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://blog.imfsoftware.com/llm-wiki/docs/sources/agentic-ai-governance/</guid><description>&lt;h1 id="agentic-ai-governance-safety-alignment--regulatory-landscape"&gt;Agentic AI Governance: Safety, Alignment &amp;amp; Regulatory Landscape&lt;a class="anchor" href="#agentic-ai-governance-safety-alignment--regulatory-landscape"&gt;#&lt;/a&gt;&lt;/h1&gt;
+&lt;p&gt;&lt;a href="https://itecsonline.com/post/agentic-ai-governance-2026-guide"&gt;Original&lt;/a&gt; | &lt;a href="https://github.com/imforster/llm-wiki/blob/main/raw/llm/agentic-ai-governance-safety.md"&gt;Raw&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Enterprise governance framework (ITECS, March 2026) covering the five pillars of agentic AI governance, Shadow AI risks, and the emerging regulatory landscape (NIST, EU AI Act, OWASP).&lt;/p&gt;
+&lt;h2 id="shadow-ai-problem"&gt;Shadow AI Problem&lt;a class="anchor" href="#shadow-ai-problem"&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;40% of enterprise apps will integrate AI agents by end of 2026 (Gartner)&lt;/li&gt;
+&lt;li&gt;68% of employees use AI tools without IT approval&lt;/li&gt;
+&lt;li&gt;80% of orgs have experienced risky AI agent behaviors&lt;/li&gt;
+&lt;li&gt;Shadow AI costs $412K/year average; ungoverned environments face $670K higher breach costs&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="why-legacy-security-fails"&gt;Why Legacy Security Fails&lt;a class="anchor" href="#why-legacy-security-fails"&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Traditional IT assumes human-in-the-loop. Agents violate every assumption: identity (sub-agents with delegated credentials), permissions (dynamic not static), behavior (unpredictable reasoning chains), speed (attack chain completes before detection).&lt;/p&gt;</description></item></channel></rss>

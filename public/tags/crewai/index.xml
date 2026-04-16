@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Crewai on LLM Wiki — Agentic AI Landscape</title><link>https://blog.imfsoftware.com/llm-wiki/tags/crewai/</link><description>Recent content in Crewai on LLM Wiki — Agentic AI Landscape</description><generator>Hugo</generator><language>en-us</language><atom:link href="https://blog.imfsoftware.com/llm-wiki/tags/crewai/index.xml" rel="self" type="application/rss+xml"/><item><title/><link>https://blog.imfsoftware.com/llm-wiki/docs/sources/crewai-production-guide/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://blog.imfsoftware.com/llm-wiki/docs/sources/crewai-production-guide/</guid><description>&lt;h1 id="crewai-in-production--building-multi-agent-teams-that-actually-deliver"&gt;CrewAI in Production — Building Multi-Agent Teams That Actually Deliver&lt;a class="anchor" href="#crewai-in-production--building-multi-agent-teams-that-actually-deliver"&gt;#&lt;/a&gt;&lt;/h1&gt;
+&lt;p&gt;&lt;a href="https://webcoderspeed.com/blog/scaling/crewai-production-guide"&gt;Original&lt;/a&gt; | &lt;a href="https://github.com/imforster/llm-wiki/blob/main/raw/llm/crewai-production-guide.md"&gt;Raw&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Production guide (Sharma, March 2026) with practical crew patterns, memory configuration, cost optimization, and deployment. Fills gap #9 (CrewAI practical examples) and #11 (role design patterns).&lt;/p&gt;
+&lt;h2 id="practical-patterns"&gt;Practical Patterns&lt;a class="anchor" href="#practical-patterns"&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Content Pipeline&lt;/strong&gt; (sequential): Researcher → Writer → Reviewer&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Customer Support&lt;/strong&gt; (hierarchical): Manager → Analyzer → Handler&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Event-Driven&lt;/strong&gt; (flows): states + transitions + event listeners for complex routing&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="production-essentials"&gt;Production Essentials&lt;a class="anchor" href="#production-essentials"&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Per-agent model selection (cheap for simple, expensive for reasoning)&lt;/li&gt;
+&lt;li&gt;Async execution with job queues&lt;/li&gt;
+&lt;li&gt;Retry with exponential backoff&lt;/li&gt;
+&lt;li&gt;REST API for crew-as-a-service&lt;/li&gt;
+&lt;li&gt;Cost tracking per crew run&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="see-also"&gt;See Also&lt;a class="anchor" href="#see-also"&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://blog.imfsoftware.com/llm-wiki/docs/sources/crewai-multi-agent/"&gt;crewai-multi-agent&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;multi-agent-framework-guide&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;cost-optimization-guide&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;</description></item></channel></rss>

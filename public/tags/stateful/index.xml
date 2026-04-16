@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Stateful on LLM Wiki — Agentic AI Landscape</title><link>https://blog.imfsoftware.com/llm-wiki/tags/stateful/</link><description>Recent content in Stateful on LLM Wiki — Agentic AI Landscape</description><generator>Hugo</generator><language>en-us</language><atom:link href="https://blog.imfsoftware.com/llm-wiki/tags/stateful/index.xml" rel="self" type="application/rss+xml"/><item><title/><link>https://blog.imfsoftware.com/llm-wiki/docs/sources/langgraph-agent-orchestration/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://blog.imfsoftware.com/llm-wiki/docs/sources/langgraph-agent-orchestration/</guid><description>&lt;h1 id="langgraph-stateful-agent-orchestration-as-graphs"&gt;LangGraph: Stateful Agent Orchestration as Graphs&lt;a class="anchor" href="#langgraph-stateful-agent-orchestration-as-graphs"&gt;#&lt;/a&gt;&lt;/h1&gt;
+&lt;p&gt;&lt;a href="https://sider.ai/blog/ai-tools/langgraph-review-is-the-agentic-state-machine-worth-your-stack-in-2025"&gt;Original&lt;/a&gt; | &lt;a href="https://github.com/imforster/llm-wiki/blob/main/raw/llm/langgraph-agent-orchestration.md"&gt;Raw&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Production-grade framework from the LangChain ecosystem. Models agent workflows as explicit state-machine graphs — nodes are LLM calls or tools, edges define transitions. The most production-ready open-source multi-agent framework.&lt;/p&gt;
+&lt;h2 id="core-architecture"&gt;Core Architecture&lt;a class="anchor" href="#core-architecture"&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Directed finite graphs&lt;/strong&gt; with conditional edges and cycle support&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Checkpointing&lt;/strong&gt;: pause/resume at any point, survive restarts&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Human-in-the-loop&lt;/strong&gt; at any node (first-class, not bolted on)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Streaming&lt;/strong&gt; intermediate results&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Stateful execution&lt;/strong&gt; with persistent state across steps&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="key-differentiator-checkpointing"&gt;Key Differentiator: Checkpointing&lt;a class="anchor" href="#key-differentiator-checkpointing"&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Workflows can pause mid-execution, resume later, survive process restarts, and support human review at any node. This is what makes it production-ready where others are research-grade.&lt;/p&gt;</description></item></channel></rss>

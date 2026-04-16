@@ -118,7 +118,18 @@
 &lt;h2 id="kiro-cli"&gt;Kiro CLI&lt;a class="anchor" href="#kiro-cli"&gt;#&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;Custom agents as configuration files that customize Kiro&amp;rsquo;s behavior for specific workflows. Define tool access, permissions, and context. Pre-approve tools, reduce interruptions, optimize for specific tasks. Interactive, runs on your local machine.&lt;/p&gt;
 &lt;h2 id="kiro-autonomous-agent"&gt;Kiro Autonomous Agent&lt;a class="anchor" href="#kiro-autonomous-agent"&gt;#&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;A &lt;a href="https://blog.imfsoftware.com/llm-wiki/docs/concepts/frontier-agent/"&gt;frontier-agent&lt;/a&gt; that works asynchronously in the background on complex, multi-step development tasks. Key capabilities:&lt;/p&gt;</description></item><item><title/><link>https://blog.imfsoftware.com/llm-wiki/docs/entities/notebooklm/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://blog.imfsoftware.com/llm-wiki/docs/entities/notebooklm/</guid><description>&lt;h1 id="notebooklm"&gt;NotebookLM&lt;a class="anchor" href="#notebooklm"&gt;#&lt;/a&gt;&lt;/h1&gt;
+&lt;p&gt;A &lt;a href="https://blog.imfsoftware.com/llm-wiki/docs/concepts/frontier-agent/"&gt;frontier-agent&lt;/a&gt; that works asynchronously in the background on complex, multi-step development tasks. Key capabilities:&lt;/p&gt;</description></item><item><title/><link>https://blog.imfsoftware.com/llm-wiki/docs/entities/mem0/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://blog.imfsoftware.com/llm-wiki/docs/entities/mem0/</guid><description>&lt;h1 id="mem0"&gt;Mem0&lt;a class="anchor" href="#mem0"&gt;#&lt;/a&gt;&lt;/h1&gt;
+&lt;p&gt;Open-source memory management platform for LLM agents. Provides selective memory extraction, graph-enhanced retrieval (Mem0g), and multi-scope memory (user, session, agent, run, org). The most benchmarked memory system in the wiki.&lt;/p&gt;
+&lt;h2 id="key-features"&gt;Key Features&lt;a class="anchor" href="#key-features"&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Two-phase pipeline&lt;/strong&gt;: extraction (discrete facts, not summaries) → update (ADD/UPDATE/DELETE/NOOP)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Graph-enhanced retrieval&lt;/strong&gt; (Mem0g): entities as nodes, relationships as edges. 68.4% accuracy vs 66.9% vector-only.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Five scoping dimensions&lt;/strong&gt;: user_id, session_id, agent_id, run_id, org_id&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Forgetting&lt;/strong&gt;: active decay based on Bjork&amp;rsquo;s Theory of Disuse&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;93% token reduction&lt;/strong&gt; vs full-context approach (1,800 vs 26,000 tokens)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="benchmark-locomo"&gt;Benchmark (LOCOMO)&lt;a class="anchor" href="#benchmark-locomo"&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Best-in-class among memory systems: Mem0g 68.4%, A-Mem 68.6%, full-context 72.9% (but at 14× token cost and 7× latency).&lt;/p&gt;</description></item><item><title/><link>https://blog.imfsoftware.com/llm-wiki/docs/entities/notebooklm/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://blog.imfsoftware.com/llm-wiki/docs/entities/notebooklm/</guid><description>&lt;h1 id="notebooklm"&gt;NotebookLM&lt;a class="anchor" href="#notebooklm"&gt;#&lt;/a&gt;&lt;/h1&gt;
 &lt;p&gt;A Gemini-powered writing and research tool from Google Labs. Co-founded by &lt;a href="https://blog.imfsoftware.com/llm-wiki/docs/entities/steven-johnson/"&gt;steven-johnson&lt;/a&gt;. Designed for AI-assisted knowledge work grounded in user-curated sources.&lt;/p&gt;
 &lt;h2 id="core-design"&gt;Core Design&lt;a class="anchor" href="#core-design"&gt;#&lt;/a&gt;&lt;/h2&gt;
 &lt;ul&gt;
@@ -159,7 +170,7 @@
 &lt;h2 id="see-also"&gt;See Also&lt;a class="anchor" href="#see-also"&gt;#&lt;/a&gt;&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="https://blog.imfsoftware.com/llm-wiki/docs/concepts/skill-evaluation/"&gt;skill-evaluation&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://blog.imfsoftware.com/llm-wiki/docs/analyses/how-to-eval-a-skill/"&gt;how-to-eval-a-skill&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;how-to-eval-a-skill&lt;/strong&gt;&lt;/li&gt;
 &lt;/ul&gt;</description></item><item><title/><link>https://blog.imfsoftware.com/llm-wiki/docs/entities/scion/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://blog.imfsoftware.com/llm-wiki/docs/entities/scion/</guid><description>&lt;h1 id="scion"&gt;Scion&lt;a class="anchor" href="#scion"&gt;#&lt;/a&gt;&lt;/h1&gt;
 &lt;p&gt;Scion is an experimental multi-agent orchestration testbed by &lt;a href="https://blog.imfsoftware.com/llm-wiki/docs/entities/google-cloud-platform/"&gt;google-cloud-platform&lt;/a&gt;. It manages concurrent LLM-based &lt;a href="https://blog.imfsoftware.com/llm-wiki/docs/concepts/agent/"&gt;agent&lt;/a&gt;s running in &lt;strong&gt;container&lt;/strong&gt;s across local machines and remote clusters.&lt;/p&gt;
 &lt;h2 id="what-it-is"&gt;What It Is&lt;a class="anchor" href="#what-it-is"&gt;#&lt;/a&gt;&lt;/h2&gt;

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Carbon on LLM Wiki — Agentic AI Landscape</title><link>https://blog.imfsoftware.com/llm-wiki/tags/carbon/</link><description>Recent content in Carbon on LLM Wiki — Agentic AI Landscape</description><generator>Hugo</generator><language>en-us</language><atom:link href="https://blog.imfsoftware.com/llm-wiki/tags/carbon/index.xml" rel="self" type="application/rss+xml"/><item><title/><link>https://blog.imfsoftware.com/llm-wiki/docs/sources/ai-environmental-impact/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://blog.imfsoftware.com/llm-wiki/docs/sources/ai-environmental-impact/</guid><description>&lt;h1 id="how-hungry-is-ai-energy-water-and-carbon-footprint-of-llm-inference"&gt;How Hungry is AI? Energy, Water, and Carbon Footprint of LLM Inference&lt;a class="anchor" href="#how-hungry-is-ai-energy-water-and-carbon-footprint-of-llm-inference"&gt;#&lt;/a&gt;&lt;/h1&gt;
+&lt;p&gt;&lt;a href="https://arxiv.org/html/2505.09598v1"&gt;Original&lt;/a&gt; | &lt;a href="https://github.com/imforster/llm-wiki/blob/main/raw/llm/ai-environmental-impact.md"&gt;Raw&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Academic paper (Jegham et al., University of Rhode Island, May 2025) benchmarking environmental footprint across 30 models. First infrastructure-aware, prompt-level sustainability benchmark. Fills the wiki&amp;rsquo;s environmental impact gap.&lt;/p&gt;
+&lt;h2 id="key-numbers"&gt;Key Numbers&lt;a class="anchor" href="#key-numbers"&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;o3/DeepSeek-R1: &amp;gt;33 Wh per long prompt — 70× GPT-4.1 nano&lt;/li&gt;
+&lt;li&gt;Claude 3.7 Sonnet: highest eco-efficiency (DEA 0.886)&lt;/li&gt;
+&lt;li&gt;GPT-4o annual (2025): electricity of 35,000 US homes, water for 1.2M people, Chicago-sized forest to offset carbon&lt;/li&gt;
+&lt;li&gt;Inference = up to 90% of model&amp;rsquo;s lifetime energy (not training)&lt;/li&gt;
+&lt;li&gt;Reasoning models use 8× more tokens → 8× more energy&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="infrastructure--model-size"&gt;Infrastructure &amp;gt; Model Size&lt;a class="anchor" href="#infrastructure--model-size"&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;GPT-4o mini (smaller) consumes ~20% MORE energy than GPT-4o on long queries — runs on older A100 vs H100/H200. Deployment infrastructure can overshadow model size.&lt;/p&gt;</description></item></channel></rss>

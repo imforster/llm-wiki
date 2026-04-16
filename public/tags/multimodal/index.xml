@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Multimodal on LLM Wiki — Agentic AI Landscape</title><link>https://blog.imfsoftware.com/llm-wiki/tags/multimodal/</link><description>Recent content in Multimodal on LLM Wiki — Agentic AI Landscape</description><generator>Hugo</generator><language>en-us</language><atom:link href="https://blog.imfsoftware.com/llm-wiki/tags/multimodal/index.xml" rel="self" type="application/rss+xml"/><item><title/><link>https://blog.imfsoftware.com/llm-wiki/docs/sources/gaia-benchmark/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://blog.imfsoftware.com/llm-wiki/docs/sources/gaia-benchmark/</guid><description>&lt;h1 id="gaia-a-benchmark-for-general-ai-assistants"&gt;GAIA: A Benchmark for General AI Assistants&lt;a class="anchor" href="#gaia-a-benchmark-for-general-ai-assistants"&gt;#&lt;/a&gt;&lt;/h1&gt;
+&lt;p&gt;&lt;a href="https://arxiv.org/abs/2311.12983"&gt;Original&lt;/a&gt; | &lt;a href="https://github.com/imforster/llm-wiki/blob/main/raw/llm/gaia-benchmark.md"&gt;Raw&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Benchmark by Mialon et al. (Meta, Hugging Face) for evaluating AI assistants on real-world tasks requiring reasoning, tool use, web browsing, and multimodal understanding. Unlike code-focused benchmarks, GAIA measures generalized intelligence.&lt;/p&gt;
+&lt;h2 id="dataset"&gt;Dataset&lt;a class="anchor" href="#dataset"&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;466 human-annotated questions across three difficulty levels:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Level 1&lt;/strong&gt;: ≤5 steps, generally no tools&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Level 2&lt;/strong&gt;: moderate tool use, multiple steps&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Level 3&lt;/strong&gt;: arbitrarily long action sequences, any number of tools&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Evaluation via exact string match — cheap and unambiguous.&lt;/p&gt;</description></item></channel></rss>

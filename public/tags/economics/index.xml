@@ -37,4 +37,34 @@
  &lt;/tr&gt;
  &lt;/tbody&gt;
 &lt;/table&gt;
-&lt;p&gt;&amp;ldquo;The best eval is one that actually gets run.&amp;rdquo; — Anthropic&lt;/p&gt;</description></item></channel></rss>
+&lt;p&gt;&amp;ldquo;The best eval is one that actually gets run.&amp;rdquo; — Anthropic&lt;/p&gt;</description></item><item><title/><link>https://blog.imfsoftware.com/llm-wiki/docs/sources/agent-cost-economics/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://blog.imfsoftware.com/llm-wiki/docs/sources/agent-cost-economics/</guid><description>&lt;h1 id="agent-cost-economics-token-costs-and-the-5-trillion-bet"&gt;Agent Cost Economics: Token Costs and the $5 Trillion Bet&lt;a class="anchor" href="#agent-cost-economics-token-costs-and-the-5-trillion-bet"&gt;#&lt;/a&gt;&lt;/h1&gt;
+&lt;p&gt;&lt;a href="https://www.alexcloudstar.com/blog/ai-agent-token-costs-developer-guide-2026/"&gt;Original (dev guide)&lt;/a&gt; | &lt;a href="https://curiouscompass.substack.com/p/the-agentic-ai-tipping-point"&gt;Original (macro)&lt;/a&gt; | &lt;a href="https://github.com/imforster/llm-wiki/blob/main/raw/llm/agent-cost-economics.md"&gt;Raw&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Combined developer-level cost analysis (Cloudstar) and macro investment thesis (Vogel, Curious Compass). Fills the wiki&amp;rsquo;s identified gap on cost modeling.&lt;/p&gt;
+&lt;h2 id="developer-costs-post-optimization"&gt;Developer Costs (Post-Optimization)&lt;a class="anchor" href="#developer-costs-post-optimization"&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;table&gt;
+ &lt;thead&gt;
+ &lt;tr&gt;
+ &lt;th&gt;Profile&lt;/th&gt;
+ &lt;th&gt;Monthly Cost&lt;/th&gt;
+ &lt;/tr&gt;
+ &lt;/thead&gt;
+ &lt;tbody&gt;
+ &lt;tr&gt;
+ &lt;td&gt;Solo dev, daily Claude Code&lt;/td&gt;
+ &lt;td&gt;$80-150&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;Indie hacker + AI SaaS&lt;/td&gt;
+ &lt;td&gt;$200-500&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;Small team (3-5), production agents&lt;/td&gt;
+ &lt;td&gt;$500-1,500&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;Multi-agent builder&lt;/td&gt;
+ &lt;td&gt;Variable ($50-100 per bad session)&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;Without optimization: 2-3× these figures.&lt;/p&gt;</description></item></channel></rss>

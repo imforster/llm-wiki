@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Graph on LLM Wiki — Agentic AI Landscape</title><link>https://blog.imfsoftware.com/llm-wiki/tags/graph/</link><description>Recent content in Graph on LLM Wiki — Agentic AI Landscape</description><generator>Hugo</generator><language>en-us</language><atom:link href="https://blog.imfsoftware.com/llm-wiki/tags/graph/index.xml" rel="self" type="application/rss+xml"/><item><title/><link>https://blog.imfsoftware.com/llm-wiki/docs/entities/mem0/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://blog.imfsoftware.com/llm-wiki/docs/entities/mem0/</guid><description>&lt;h1 id="mem0"&gt;Mem0&lt;a class="anchor" href="#mem0"&gt;#&lt;/a&gt;&lt;/h1&gt;
+&lt;p&gt;Open-source memory management platform for LLM agents. Provides selective memory extraction, graph-enhanced retrieval (Mem0g), and multi-scope memory (user, session, agent, run, org). The most benchmarked memory system in the wiki.&lt;/p&gt;
+&lt;h2 id="key-features"&gt;Key Features&lt;a class="anchor" href="#key-features"&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Two-phase pipeline&lt;/strong&gt;: extraction (discrete facts, not summaries) → update (ADD/UPDATE/DELETE/NOOP)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Graph-enhanced retrieval&lt;/strong&gt; (Mem0g): entities as nodes, relationships as edges. 68.4% accuracy vs 66.9% vector-only.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Five scoping dimensions&lt;/strong&gt;: user_id, session_id, agent_id, run_id, org_id&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Forgetting&lt;/strong&gt;: active decay based on Bjork&amp;rsquo;s Theory of Disuse&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;93% token reduction&lt;/strong&gt; vs full-context approach (1,800 vs 26,000 tokens)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="benchmark-locomo"&gt;Benchmark (LOCOMO)&lt;a class="anchor" href="#benchmark-locomo"&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Best-in-class among memory systems: Mem0g 68.4%, A-Mem 68.6%, full-context 72.9% (but at 14× token cost and 7× latency).&lt;/p&gt;</description></item><item><title/><link>https://blog.imfsoftware.com/llm-wiki/docs/sources/langgraph-agent-orchestration/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://blog.imfsoftware.com/llm-wiki/docs/sources/langgraph-agent-orchestration/</guid><description>&lt;h1 id="langgraph-stateful-agent-orchestration-as-graphs"&gt;LangGraph: Stateful Agent Orchestration as Graphs&lt;a class="anchor" href="#langgraph-stateful-agent-orchestration-as-graphs"&gt;#&lt;/a&gt;&lt;/h1&gt;
+&lt;p&gt;&lt;a href="https://sider.ai/blog/ai-tools/langgraph-review-is-the-agentic-state-machine-worth-your-stack-in-2025"&gt;Original&lt;/a&gt; | &lt;a href="https://github.com/imforster/llm-wiki/blob/main/raw/llm/langgraph-agent-orchestration.md"&gt;Raw&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Production-grade framework from the LangChain ecosystem. Models agent workflows as explicit state-machine graphs — nodes are LLM calls or tools, edges define transitions. The most production-ready open-source multi-agent framework.&lt;/p&gt;
+&lt;h2 id="core-architecture"&gt;Core Architecture&lt;a class="anchor" href="#core-architecture"&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Directed finite graphs&lt;/strong&gt; with conditional edges and cycle support&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Checkpointing&lt;/strong&gt;: pause/resume at any point, survive restarts&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Human-in-the-loop&lt;/strong&gt; at any node (first-class, not bolted on)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Streaming&lt;/strong&gt; intermediate results&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Stateful execution&lt;/strong&gt; with persistent state across steps&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="key-differentiator-checkpointing"&gt;Key Differentiator: Checkpointing&lt;a class="anchor" href="#key-differentiator-checkpointing"&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Workflows can pause mid-execution, resume later, survive process restarts, and support human review at any node. This is what makes it production-ready where others are research-grade.&lt;/p&gt;</description></item></channel></rss>

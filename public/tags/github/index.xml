@@ -42,4 +42,8 @@
 &lt;li&gt;&lt;a href="https://blog.imfsoftware.com/llm-wiki/docs/entities/claude-code/"&gt;claude-code&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://blog.imfsoftware.com/llm-wiki/docs/concepts/multi-agent-orchestration/"&gt;multi-agent-orchestration&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://blog.imfsoftware.com/llm-wiki/docs/concepts/context-management/"&gt;context-management&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</description></item></channel></rss>
+&lt;/ul&gt;</description></item><item><title/><link>https://blog.imfsoftware.com/llm-wiki/docs/sources/swe-bench/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://blog.imfsoftware.com/llm-wiki/docs/sources/swe-bench/</guid><description>&lt;h1 id="swe-bench-can-language-models-resolve-real-world-github-issues"&gt;SWE-bench: Can Language Models Resolve Real-World GitHub Issues?&lt;a class="anchor" href="#swe-bench-can-language-models-resolve-real-world-github-issues"&gt;#&lt;/a&gt;&lt;/h1&gt;
+&lt;p&gt;&lt;a href="https://arxiv.org/abs/2310.06770"&gt;Original&lt;/a&gt; | &lt;a href="https://github.com/imforster/llm-wiki/blob/main/raw/llm/swe-bench.md"&gt;Raw&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Benchmark by Jimenez et al. (Princeton) evaluating whether AI models can solve real-world software engineering tasks — actual GitHub issues from popular Python repositories. The most meaningful benchmark for practical coding ability in the wiki.&lt;/p&gt;
+&lt;h2 id="how-it-works"&gt;How It Works&lt;a class="anchor" href="#how-it-works"&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Each task: GitHub issue description + codebase snapshot + gold patch and test suite. Models scored on &lt;strong&gt;% resolved&lt;/strong&gt; — fraction where generated patch passes the full test suite.&lt;/p&gt;</description></item></channel></rss>

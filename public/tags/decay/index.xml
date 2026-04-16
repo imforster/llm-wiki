@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Decay on LLM Wiki — Agentic AI Landscape</title><link>https://blog.imfsoftware.com/llm-wiki/tags/decay/</link><description>Recent content in Decay on LLM Wiki — Agentic AI Landscape</description><generator>Hugo</generator><language>en-us</language><atom:link href="https://blog.imfsoftware.com/llm-wiki/tags/decay/index.xml" rel="self" type="application/rss+xml"/><item><title/><link>https://blog.imfsoftware.com/llm-wiki/docs/sources/memory-lifecycle-drift/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://blog.imfsoftware.com/llm-wiki/docs/sources/memory-lifecycle-drift/</guid><description>&lt;h1 id="stop-treating-ai-memory-like-a-search-problem"&gt;Stop Treating AI Memory Like a Search Problem&lt;a class="anchor" href="#stop-treating-ai-memory-like-a-search-problem"&gt;#&lt;/a&gt;&lt;/h1&gt;
+&lt;p&gt;&lt;a href="https://towardsdatascience.com/stop-treating-ai-memory-like-a-search-problem/"&gt;Original&lt;/a&gt; | &lt;a href="https://github.com/imforster/llm-wiki/blob/main/raw/llm/memory-lifecycle-drift.md"&gt;Raw&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Deep-dive by Benjamin Nweke (TDS, April 2026) on memory lifecycle management. Provides the implementation missing from the wiki&amp;rsquo;s memory architecture analysis — not storing and retrieving, but what happens in between.&lt;/p&gt;
+&lt;h2 id="five-lifecycle-components"&gt;Five Lifecycle Components&lt;a class="anchor" href="#five-lifecycle-components"&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;Decay&lt;/strong&gt; — score 0-1, exponential decay based on idle time, half-life tunable (30-90 days). Below 0.1 → archived.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Contradiction Detection&lt;/strong&gt; — LLM checks new memories against existing store at write time. Superseded memories linked via &lt;code&gt;contradicted_by&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Confidence Scoring&lt;/strong&gt; — LLM rates 0.0-1.0 at write time (explicit=1.0, inference=0.5, speculation=0.1).&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Compression&lt;/strong&gt; — weekly, find duplicate clusters, merge N→1 via LLM synthesis. Merged confidence=0.85.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Expiry&lt;/strong&gt; — LLM detects natural end dates (deadlines, temporary states). Daily purge.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id="retrieval-ranking"&gt;Retrieval Ranking&lt;a class="anchor" href="#retrieval-ranking"&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Sort by: importance × confidence × decay_score. All five lifecycle concepts converge into one composite score.&lt;/p&gt;</description></item></channel></rss>

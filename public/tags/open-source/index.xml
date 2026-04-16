@@ -85,7 +85,7 @@
 &lt;h2 id="see-also"&gt;See Also&lt;a class="anchor" href="#see-also"&gt;#&lt;/a&gt;&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="https://blog.imfsoftware.com/llm-wiki/docs/concepts/skill-evaluation/"&gt;skill-evaluation&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://blog.imfsoftware.com/llm-wiki/docs/analyses/how-to-eval-a-skill/"&gt;how-to-eval-a-skill&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;how-to-eval-a-skill&lt;/strong&gt;&lt;/li&gt;
 &lt;/ul&gt;</description></item><item><title/><link>https://blog.imfsoftware.com/llm-wiki/docs/entities/spec-kit/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://blog.imfsoftware.com/llm-wiki/docs/entities/spec-kit/</guid><description>&lt;h1 id="spec-kit"&gt;Spec Kit&lt;a class="anchor" href="#spec-kit"&gt;#&lt;/a&gt;&lt;/h1&gt;
 &lt;p&gt;Open-source toolkit by GitHub for Spec-Driven Development. CLI (&lt;code&gt;specify&lt;/code&gt;) + slash commands across 30+ AI agents. MIT licensed.&lt;/p&gt;
 &lt;p&gt;&amp;ldquo;Build high-quality software faster. Focus on product scenarios and predictable outcomes instead of vibe coding.&amp;rdquo;&lt;/p&gt;
@@ -95,7 +95,17 @@
 /speckit.clarify → Structured questioning to reduce rework
 /speckit.plan → Technical implementation plan (the &amp;#34;how&amp;#34;)
 /speckit.tasks → Actionable task breakdown with dependencies
-/speckit.implement → Execute all tasks&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Optional: &lt;code&gt;/speckit.analyze&lt;/code&gt; (consistency check), &lt;code&gt;/speckit.checklist&lt;/code&gt; (quality validation)&lt;/p&gt;</description></item><item><title/><link>https://blog.imfsoftware.com/llm-wiki/docs/sources/bmad-method/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://blog.imfsoftware.com/llm-wiki/docs/sources/bmad-method/</guid><description>&lt;h1 id="bmad-method-ai-driven-agile-development"&gt;BMad Method: AI-Driven Agile Development&lt;a class="anchor" href="#bmad-method-ai-driven-agile-development"&gt;#&lt;/a&gt;&lt;/h1&gt;
+/speckit.implement → Execute all tasks&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Optional: &lt;code&gt;/speckit.analyze&lt;/code&gt; (consistency check), &lt;code&gt;/speckit.checklist&lt;/code&gt; (quality validation)&lt;/p&gt;</description></item><item><title/><link>https://blog.imfsoftware.com/llm-wiki/docs/sources/autogen-multi-agent/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://blog.imfsoftware.com/llm-wiki/docs/sources/autogen-multi-agent/</guid><description>&lt;h1 id="autogen-microsofts-multi-agent-framework"&gt;AutoGen: Microsoft&amp;rsquo;s Multi-Agent Framework&lt;a class="anchor" href="#autogen-microsofts-multi-agent-framework"&gt;#&lt;/a&gt;&lt;/h1&gt;
+&lt;p&gt;&lt;a href="https://sanj.dev/post/autogen-microsoft-multi-agent-framework/"&gt;Original&lt;/a&gt; | &lt;a href="https://github.com/imforster/llm-wiki/blob/main/raw/llm/autogen-multi-agent.md"&gt;Raw&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Microsoft Research&amp;rsquo;s pioneering open-source framework (56.8K GitHub stars) for multi-agent collaboration. Agents communicate through structured multi-turn conversations. Now transitioning to Microsoft Agent Framework (MAF).&lt;/p&gt;
+&lt;h2 id="current-state-2026-three-paths"&gt;Current State (2026): Three Paths&lt;a class="anchor" href="#current-state-2026-three-paths"&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;Microsoft Agent Framework (MAF)&lt;/strong&gt; — production successor. Merges AutoGen + Semantic Kernel. Graph-based workflows, checkpointing, Azure AI Foundry integration.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;AutoGen v0.7.x&lt;/strong&gt; — maintenance line. Async actor-model. Research/prototyping. Home of Magentic-One.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;AG2&lt;/strong&gt; — community fork. Backward-compatible with v0.2 GroupChat.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id="key-transition-groupchat--graph-workflows"&gt;Key Transition: GroupChat → Graph Workflows&lt;a class="anchor" href="#key-transition-groupchat--graph-workflows"&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Old: implicit GroupChat where Manager Agent decides who speaks next. New (MAF): explicit Workflow with typed nodes and edges. This convergence toward graph-based orchestration mirrors &lt;a href="https://blog.imfsoftware.com/llm-wiki/docs/sources/langgraph-agent-orchestration/"&gt;langgraph-agent-orchestration&lt;/a&gt;.&lt;/p&gt;</description></item><item><title/><link>https://blog.imfsoftware.com/llm-wiki/docs/sources/bmad-method/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://blog.imfsoftware.com/llm-wiki/docs/sources/bmad-method/</guid><description>&lt;h1 id="bmad-method-ai-driven-agile-development"&gt;BMad Method: AI-Driven Agile Development&lt;a class="anchor" href="#bmad-method-ai-driven-agile-development"&gt;#&lt;/a&gt;&lt;/h1&gt;
 &lt;p&gt;&lt;a href="https://github.com/bmad-code-org/BMAD-METHOD"&gt;Original&lt;/a&gt; | &lt;a href="https://docs.bmad-method.org"&gt;Docs&lt;/a&gt; | &lt;a href="https://github.com/imforster/llm-wiki/blob/main/raw/llm/bmad-method-readme.md"&gt;Raw&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id="summary"&gt;Summary&lt;a class="anchor" href="#summary"&gt;#&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;&lt;a href="https://blog.imfsoftware.com/llm-wiki/docs/entities/bmad-method/"&gt;bmad-method&lt;/a&gt; is an AI-driven agile development framework with scale-adaptive intelligence — it adjusts planning depth from bug fixes to enterprise systems. Uses 12+ specialized agent personas (PM, Architect, Developer, UX, etc.) with structured workflows grounded in agile best practices. Modular ecosystem with official modules for testing, game dev, creative intelligence, and custom agent building. MIT licensed.&lt;/p&gt;
@@ -152,7 +162,23 @@
  &lt;/tr&gt;
  &lt;/tbody&gt;
 &lt;/table&gt;
-&lt;p&gt;Both operate at the methodology layer. Spec Kit is more prescriptive (seven fixed steps). BMad is more adaptive (adjusts to project scale).&lt;/p&gt;</description></item><item><title/><link>https://blog.imfsoftware.com/llm-wiki/docs/sources/fabric-github/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://blog.imfsoftware.com/llm-wiki/docs/sources/fabric-github/</guid><description>&lt;h1 id="fabric-github-repository"&gt;Fabric GitHub Repository&lt;a class="anchor" href="#fabric-github-repository"&gt;#&lt;/a&gt;&lt;/h1&gt;
+&lt;p&gt;Both operate at the methodology layer. Spec Kit is more prescriptive (seven fixed steps). BMad is more adaptive (adjusts to project scale).&lt;/p&gt;</description></item><item><title/><link>https://blog.imfsoftware.com/llm-wiki/docs/sources/crewai-multi-agent/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://blog.imfsoftware.com/llm-wiki/docs/sources/crewai-multi-agent/</guid><description>&lt;h1 id="crewai-role-based-multi-agent-orchestration"&gt;CrewAI: Role-Based Multi-Agent Orchestration&lt;a class="anchor" href="#crewai-role-based-multi-agent-orchestration"&gt;#&lt;/a&gt;&lt;/h1&gt;
+&lt;p&gt;&lt;a href="https://kindatechnical.com/agentic-ai/crewai-role-based-multi-agent-orchestration.html"&gt;Original&lt;/a&gt; | &lt;a href="https://github.com/imforster/llm-wiki/blob/main/raw/llm/crewai-multi-agent.md"&gt;Raw&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Open-source Python framework by João Moura for role-based multi-agent systems. Agents defined by role + goal + backstory, organized into &amp;ldquo;crews&amp;rdquo; with sequential or hierarchical process strategies.&lt;/p&gt;
+&lt;h2 id="four-core-abstractions"&gt;Four Core Abstractions&lt;a class="anchor" href="#four-core-abstractions"&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;Agent&lt;/strong&gt; — role, goal, backstory, tools. Backstory shapes personality.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Task&lt;/strong&gt; — work assigned to agent, with dependencies via &lt;code&gt;context&lt;/code&gt; parameter.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Crew&lt;/strong&gt; — collection of agents + tasks + process strategy.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Process&lt;/strong&gt; — sequential (ordered) or hierarchical (manager delegates).&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id="memory-system"&gt;Memory System&lt;a class="anchor" href="#memory-system"&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Short-term&lt;/strong&gt; — context within current crew execution&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Long-term&lt;/strong&gt; — lessons learned across executions&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Entity memory&lt;/strong&gt; — info about specific entities encountered&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Cross-agent knowledge sharing and stateful execution built in.&lt;/p&gt;</description></item><item><title/><link>https://blog.imfsoftware.com/llm-wiki/docs/sources/fabric-github/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://blog.imfsoftware.com/llm-wiki/docs/sources/fabric-github/</guid><description>&lt;h1 id="fabric-github-repository"&gt;Fabric GitHub Repository&lt;a class="anchor" href="#fabric-github-repository"&gt;#&lt;/a&gt;&lt;/h1&gt;
 &lt;p&gt;&lt;a href="https://github.com/danielmiessler/fabric"&gt;Original&lt;/a&gt; | &lt;a href="https://github.com/imforster/llm-wiki/blob/main/raw/llm/fabric-github.md"&gt;Raw&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Author: &lt;a href="https://blog.imfsoftware.com/llm-wiki/docs/entities/daniel-miessler/"&gt;daniel-miessler&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id="summary"&gt;Summary&lt;a class="anchor" href="#summary"&gt;#&lt;/a&gt;&lt;/h2&gt;
@@ -228,7 +254,7 @@
 &lt;h2 id="key-takeaways"&gt;Key Takeaways&lt;a class="anchor" href="#key-takeaways"&gt;#&lt;/a&gt;&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;Developer-first&lt;/strong&gt;: Fast, with live reload and caching. Runs 100% locally — prompts never leave your machine.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;YAML-based test cases&lt;/strong&gt;: Define inputs, expected outputs, and grading criteria in YAML. Directly maps to the &lt;code&gt;eval.yaml&lt;/code&gt; format proposed in &lt;a href="https://blog.imfsoftware.com/llm-wiki/docs/analyses/how-to-eval-a-skill/"&gt;how-to-eval-a-skill&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;YAML-based test cases&lt;/strong&gt;: Define inputs, expected outputs, and grading criteria in YAML. Directly maps to the &lt;code&gt;eval.yaml&lt;/code&gt; format proposed in &lt;strong&gt;how-to-eval-a-skill&lt;/strong&gt;.&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;Multiple grading methods&lt;/strong&gt;: Exact match, contains, regex, LLM-as-judge, custom functions. Covers both deterministic (Tier 1) and LLM-graded (Tier 2) evaluation.&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;CI/CD integration&lt;/strong&gt;: Run evals in GitHub Actions, block merges on failures. This is the &amp;ldquo;eval on every commit&amp;rdquo; pattern from &lt;a href="https://blog.imfsoftware.com/llm-wiki/docs/sources/evaluating-agent-skills-caparas/"&gt;evaluating-agent-skills-caparas&lt;/a&gt;.&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;Red teaming&lt;/strong&gt;: Vulnerability scanning for prompt injection, jailbreaks, and other attacks. Relevant to &lt;a href="https://blog.imfsoftware.com/llm-wiki/docs/sources/ten-pillars-agentic-skill-design/"&gt;ten-pillars-agentic-skill-design&lt;/a&gt; Pillar 6 (security).&lt;/li&gt;
@@ -238,13 +264,13 @@
 &lt;h2 id="connections"&gt;Connections&lt;a class="anchor" href="#connections"&gt;#&lt;/a&gt;&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;&lt;a href="https://blog.imfsoftware.com/llm-wiki/docs/concepts/skill-evaluation/"&gt;skill-evaluation&lt;/a&gt;&lt;/strong&gt;: Promptfoo is the most practical tool for implementing the three-tier eval framework. Its YAML test cases + CI/CD integration + LLM-as-judge support covers Tiers 1 and 2.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;&lt;a href="https://blog.imfsoftware.com/llm-wiki/docs/analyses/how-to-eval-a-skill/"&gt;how-to-eval-a-skill&lt;/a&gt;&lt;/strong&gt;: The &lt;code&gt;eval.yaml&lt;/code&gt; format we proposed could be implemented directly in Promptfoo&amp;rsquo;s YAML config format.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;&lt;strong&gt;how-to-eval-a-skill&lt;/strong&gt;&lt;/strong&gt;: The &lt;code&gt;eval.yaml&lt;/code&gt; format we proposed could be implemented directly in Promptfoo&amp;rsquo;s YAML config format.&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;&lt;a href="https://blog.imfsoftware.com/llm-wiki/docs/concepts/agent-skills-standard/"&gt;agent-skills-standard&lt;/a&gt;&lt;/strong&gt;: An &lt;code&gt;evals/&lt;/code&gt; directory in the skill structure could contain Promptfoo config files, making skills self-evaluating.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id="see-also"&gt;See Also&lt;a class="anchor" href="#see-also"&gt;#&lt;/a&gt;&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="https://blog.imfsoftware.com/llm-wiki/docs/concepts/skill-evaluation/"&gt;skill-evaluation&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://blog.imfsoftware.com/llm-wiki/docs/analyses/how-to-eval-a-skill/"&gt;how-to-eval-a-skill&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;how-to-eval-a-skill&lt;/strong&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://blog.imfsoftware.com/llm-wiki/docs/sources/evaluating-agent-skills-caparas/"&gt;evaluating-agent-skills-caparas&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://blog.imfsoftware.com/llm-wiki/docs/concepts/agent-skills-standard/"&gt;agent-skills-standard&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;</description></item><item><title/><link>https://blog.imfsoftware.com/llm-wiki/docs/sources/spec-kit/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://blog.imfsoftware.com/llm-wiki/docs/sources/spec-kit/</guid><description>&lt;h1 id="spec-kit-spec-driven-development-toolkit"&gt;Spec Kit: Spec-Driven Development Toolkit&lt;a class="anchor" href="#spec-kit-spec-driven-development-toolkit"&gt;#&lt;/a&gt;&lt;/h1&gt;
