@@ -332,3 +332,10 @@ Five-phase guide synthesizing wiki's consensus recommendations:
 
 Includes cost budgets per phase ($80-500/mo), common mistakes, and what's still not covered.
 Fills gap #1 from wiki-gap-analysis. Wiki now has 11 analyses.
+
+## [2026-04-15] ingest | Multi-agent advanced gaps: 2 sources
+
+- **[[crewai-production-guide]]** — Practical crew patterns (content pipeline, customer support, event-driven), production deployment, cost tracking. Fills gaps #9 (CrewAI examples), #11 (role design patterns).
+- **[[shared-agent-memory]]** — Shared memory layer pattern (solution store + write hook + retrieval step + threshold), conflict resolution status (implicit via recency, explicit remains unsolved), partial/failed solution storage. Fills gaps #14, #15, #16.
+
+Wiki now has 39 sources. Multi-agent advanced gaps: 5/5 addressed (though explicit conflict resolution confirmed as open problem across all sources).

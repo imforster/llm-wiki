@@ -41,6 +41,8 @@
 | [[langgraph-mem0-integration]] | LangGraph + Mem0 integration tutorial — step-by-step, production considerations (DigitalOcean) | 2026-04-15 |
 | [[multi-agent-observability]] | Multi-agent tracing and debugging — OpenTelemetry spans, failure patterns, key metrics (Future AGI) | 2026-04-15 |
 | [[ai-environmental-impact]] | AI energy/carbon/water benchmarks — 30 models, o3 = 70× nano, Jevons Paradox, eco-efficiency rankings (arXiv) | 2026-04-15 |
+| [[crewai-production-guide]] | CrewAI in production — practical crew patterns, memory config, cost optimization, deployment (webcoderspeed) | 2026-04-15 |
+| [[shared-agent-memory]] | Shared agent memory layer — deduplication pattern, conflict resolution status, partial/failed solution storage (RoboRhythms) | 2026-04-15 |
 
 ## Entities
 
