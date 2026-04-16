@@ -1,7 +1,7 @@
 ---
 type: overview
 created: 2026-04-07
-updated: 2026-04-14
+updated: 2026-04-15
 tags: [meta, overview]
 ---
 
@@ -17,7 +17,7 @@ The human curates sources, directs analysis, and asks questions. The LLM does ev
 
 ## What's Inside
 
-33 sources across tools, standards, methodologies, evaluation, memory, multi-agent frameworks, economics, governance, and industry analysis:
+39 sources across tools, standards, methodologies, evaluation, memory, multi-agent frameworks, economics, governance, industry analysis, and production guides:
 
 **Tools**: [[scion]] (GCP), [[kiro]] (AWS), [[claude-code]] (Anthropic), [[fabric]] (Miessler), [[pai]] (Miessler), [[paperclip]] (company-level orchestration), [[promptfoo]] (eval tooling), [[notebooklm]] (Google Labs), [[mem0]] (memory management)
 
@@ -27,17 +27,19 @@ The human curates sources, directs analysis, and asks questions. The LLM does ev
 
 **Evaluation & Benchmarks**: [[anthropic-eval-guide]], [[evaluating-agent-skills-caparas]], [[promptfoo]], [[humaneval-benchmark]] (code gen, 96.3%), [[swe-bench]] (real-world SE, 74.4%), [[gaia-benchmark]] (general AI, humans 92% vs AI <50%), [[agentbench]] (8 interactive environments)
 
-**Memory & Persistence**: [[mem0-memory-management]] (LOCOMO benchmarks), [[continuum-memory-architectures]] (CMA formal requirements), [[agent-memory-systems-2026]] (four patterns), [[efficient-memory-architectures]] (H-MEM, MemGPT, GraphRAG)
+**Memory & Persistence**: [[mem0-memory-management]] (LOCOMO benchmarks), [[continuum-memory-architectures]] (CMA formal requirements), [[agent-memory-systems-2026]] (four patterns), [[efficient-memory-architectures]] (H-MEM, MemGPT, GraphRAG), [[memory-lifecycle-drift]] (decay, contradiction, confidence, compression, expiry), [[langgraph-mem0-integration]] (LangGraph + Mem0 tutorial), [[shared-agent-memory]] (multi-agent shared memory patterns)
 
-**Multi-Agent Frameworks**: [[autogen-multi-agent]] (Microsoft, 56.8K stars), [[crewai-multi-agent]] (role-based teams), [[langgraph-agent-orchestration]] (stateful graphs), [[openai-swarm]] (minimal handoffs)
+**Multi-Agent Frameworks**: [[autogen-multi-agent]] (Microsoft, 56.8K stars), [[crewai-multi-agent]] (role-based teams), [[langgraph-agent-orchestration]] (stateful graphs), [[openai-swarm]] (minimal handoffs), [[crewai-production-guide]] (production patterns and deployment)
 
-**Economics, Governance & Industry**: [[agent-cost-economics]] ($5T bet, token optimization), [[agentic-ai-governance]] (five pillars, NIST/EU AI Act), [[agentic-ai-non-code-domains]] (6 industries), [[agentic-ux-patterns]] (6 UX patterns for trust)
+**Observability**: [[multi-agent-observability]] (OpenTelemetry tracing, debugging patterns)
+
+**Economics, Governance & Industry**: [[agent-cost-economics]] ($5T bet, token optimization), [[agentic-ai-governance]] (five pillars, NIST/EU AI Act), [[agentic-ai-non-code-domains]] (6 industries), [[agentic-ux-patterns]] (6 UX patterns for trust), [[ai-environmental-impact]] (energy/carbon/water benchmarks, Jevons Paradox)
 
 **Practitioner Insights**: [[ai-technique-podcast]], [[skills-pipeline-sleestk]]
 
 ## The Emerging Stack
 
-Six distinct layers have emerged across 33 sources:
+Six distinct layers have emerged across 39 sources:
 
 | Layer | Representatives | Focus |
 |-------|----------------|-------|
@@ -50,27 +52,43 @@ Six distinct layers have emerged across 33 sources:
 
 ## Key Themes
 
-Across 33 sources, the original eight themes have deepened and four new ones have emerged:
+Across 39 sources, twelve themes have been identified (see [[cross-source-themes]] for full evidence tables):
 
-**Original themes (strengthened):**
-- **Context beats clever prompting** — now backed by memory architecture research showing 93% token reduction with selective retrieval ([[mem0-memory-management]])
-- **Composition over monoliths** — validated across all four open-source frameworks (AutoGen, CrewAI, LangGraph, Swarm)
-- **The human stays in the loop — but how much?** — now formalized as six UX patterns with measurable metrics ([[agentic-ux-patterns]])
-- **Memory is the unsolved frontier** — no longer unsolved: CMA defines six formal requirements, Mem0 provides benchmarks, four architecture patterns documented ([[agent-memory-persistence]])
-- **Evaluation is the weakest link** — now covered from code generation (96.3%) through real-world SE (74.4%) to general reasoning (humans 92% vs AI <50%) ([[agent-benchmarks]])
+**Strongest themes (10+ sources):**
+- **Context beats clever prompting** (15/33) — 93% token reduction with selective retrieval ([[mem0-memory-management]])
+- **Composition over monoliths** (14/33) — validated across all OSS frameworks and product tools
+- **The human stays in the loop — but how much?** (13/33) — formalized as six UX patterns with metrics ([[agentic-ux-patterns]])
+- **Memory architectures are understood** (10/33) — CMA defines six formal requirements, four patterns documented, forgetting is a design requirement ([[agent-memory-persistence]])
 
-**New themes from expanded coverage:**
-- **Graphs are becoming the consensus orchestration architecture** — both AutoGen (MAF) and LangGraph converging on graph-based workflows
-- **Token economics drive architecture decisions** — 60-80% of agent tokens are waste; optimization is an architectural concern, not just a billing one ([[agent-cost-economics]])
-- **Governance is the next frontier** — 68% of employees use AI without IT approval; five-pillar governance framework emerging alongside NIST/EU AI Act ([[agentic-ai-governance]])
-- **Agentic AI is expanding beyond code** — finance (40-60% compliance reduction), legal (existential SaaS disruption), healthcare, manufacturing ([[agentic-ai-non-code-domains]])
+**Established themes (5-9 sources):**
+- **Evaluation has a framework** (8/33) — from code gen (96.3%) to general reasoning (humans 92% vs AI <50%) ([[agent-benchmarks]])
+- **Skills evolving into a standard** (6/33) — Fabric Patterns → Agent Skills Standard → Claude Code Skills
+- **Git as universal substrate** (6/33) — every tool uses git for coordination
+- **Open standards winning** (5/33) — MCP + Agent Skills as two-layer open substrate
+- **Token economics drive architecture** (5/33) — 60-80% of tokens are waste ([[agent-cost-economics]])
+
+**Emerging themes (3-4 sources):**
+- **Graphs are the consensus orchestration architecture** (4/33) — AutoGen and LangGraph converging
+- **Governance is the next frontier** (4/33) — 68% use AI without IT approval ([[agentic-ai-governance]])
+- **Agentic AI expanding beyond code** (3/33) — six industries, SaaS disruption ([[agentic-ai-non-code-domains]])
 
 ## Analyses
 
-- **[[key-insights-agentic-landscape]]** — 10 key insights across the landscape
-- **[[cross-source-themes]]** — 8 common themes with evidence tables from all sources
-- **[[ten-pillars-evidence-map]]** — How the wiki validates (and challenges) the Ten Pillars framework
-- **[[how-to-eval-a-skill]]** — Practical guide: 5 surfaces, 3 tiers, pass@k, CI/CD integration
+11 synthesized analyses filed back into the wiki:
+
+| Analysis | Focus |
+|----------|-------|
+| [[key-insights-agentic-landscape]] | 14 key insights across the landscape (refreshed for 33 sources) |
+| [[cross-source-themes]] | 12 themes with evidence tables (refreshed for 33 sources) |
+| [[ten-pillars-evidence-map]] | How the wiki validates the Ten Pillars framework |
+| [[how-to-eval-a-skill]] | Practical eval guide: 5 surfaces, 3 tiers, pass@k |
+| [[memory-architecture-comparison]] | Four memory patterns compared, CMA requirements, benchmarks, decision framework |
+| [[multi-agent-framework-guide]] | Eight approaches compared (4 OSS + 4 product), graph convergence thesis |
+| [[cost-optimization-guide]] | Five waste vectors, optimization playbook, architecture-cost connections |
+| [[governance-safety-overview]] | Five governance pillars, regulatory landscape, UX as governance layer |
+| [[beyond-code-industry-impact]] | Six industries, wiki themes generalization test, SaaS disruption |
+| [[wiki-gap-analysis-apr-2026]] | 20 gaps identified via conversational query testing, 15 addressed |
+| [[getting-started-guide]] | Five-phase guide from single agent to multi-agent, cost budgets |
 
 ## How It Works
 
@@ -81,7 +99,7 @@ Three operations:
 
 ## Browse
 
-- **Sources** — 33 raw sources that feed this wiki
+- **Sources** — 39 raw sources that feed this wiki
 - **Concepts** — 20 concept pages covering patterns, standards, and architectural ideas
 - **Entities** — 17 pages for tools, people, and organizations
-- **Analyses** — 4 synthesized analyses filed back into the wiki
+- **Analyses** — 11 synthesized analyses filed back into the wiki
