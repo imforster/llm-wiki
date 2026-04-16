@@ -244,3 +244,21 @@ Synthesizes 6 sources connecting token economics to architectural decisions:
 - Cost-Quality-Speed triangle: best optimizations improve two dimensions simultaneously
 
 Third of five planned analyses. Blog post candidate: "Why Your AI Agent Costs 10× More Than It Should"
+
+## [2026-04-15] create | Analysis: Governance & Safety Overview
+
+Created `wiki/analyses/governance-safety-overview.md` — "The Shadow AI Problem: Governing Agents You Don't Know About"
+
+Connects governance gap to wiki's existing security models. Five pillars mapped to six UX patterns as user-facing governance layer. Regulatory landscape (NIST, EU AI Act, OWASP, Singapore). Implementation roadmap (4 phases). Key finding: Autonomy Dial = Claude Code permission modes at different layers.
+
+Fourth of five planned analyses. Blog post candidate: "The Shadow AI Problem: Governing Agents You Don't Know About"
+
+## [2026-04-15] create | Analysis: Beyond Code Industry Impact
+
+Created `wiki/analyses/beyond-code-industry-impact.md` — "Agentic AI Beyond Software: Six Industries Being Transformed"
+
+Tests whether wiki's eight themes generalize beyond software development. Six industries analyzed (finance, healthcare, legal, manufacturing, telecoms, transport). Verdict: all themes are universal, but stakes are higher outside code. SaaS disruption thesis. Agent maturity levels 0-4.
+
+Fifth of five planned analyses. Blog post candidate: "Agentic AI Beyond Software: Six Industries Being Transformed"
+
+All five planned analyses from Six Thinking Hats session now complete. Wiki has 9 analyses total (up from 4).

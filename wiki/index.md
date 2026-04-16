@@ -97,3 +97,5 @@
 | [[memory-architecture-comparison]] | How AI agents remember — four patterns compared, CMA requirements, benchmarks, decision framework, forgetting | 2026-04-15 |
 | [[multi-agent-framework-guide]] | Choosing a multi-agent framework in 2026 — four OSS + four product tools, decision matrix, graph convergence | 2026-04-15 |
 | [[cost-optimization-guide]] | Why your AI agent costs 10× more than it should — five waste vectors, optimization playbook, architecture-cost connections | 2026-04-15 |
+| [[governance-safety-overview]] | The Shadow AI problem — five governance pillars, regulatory landscape, UX as governance layer, implementation roadmap | 2026-04-15 |
+| [[beyond-code-industry-impact]] | Agentic AI beyond software — six industries, wiki themes generalization test, SaaS disruption, maturity levels | 2026-04-15 |
