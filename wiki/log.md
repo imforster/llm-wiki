@@ -200,3 +200,20 @@ Rewrote `wiki/overview.md` to reflect expanded wiki:
 - Six-layer stack (added Memory layer)
 - Four new themes: graph convergence, token economics, governance frontier, beyond-code expansion
 - Original themes strengthened with new evidence (memory no longer "unsolved", eval no longer "weakest link")
+
+## [2026-04-15] create | Analysis: Memory Architecture Comparison
+
+Created `wiki/analyses/memory-architecture-comparison.md` — "How AI Agents Remember: Four Patterns for Persistent Memory"
+
+Synthesizes 8 sources into a comprehensive comparison:
+- Four architecture patterns (vector-only, graph+vector, file+DB, hierarchical) with decision matrix
+- CMA's six formal requirements mapped against each pattern
+- Four failure modes of flat vector storage
+- Cognitive science memory types (working, episodic, semantic, procedural)
+- Forgetting as design requirement (Bjork, Ebbinghaus, RIF scoring)
+- Benchmark landscape (full-context 72.9% vs Mem0g 68.4% at 93% fewer tokens)
+- Tool comparison (Scion 0/6 CMA → PAI 5/6 CMA)
+- Progression path: start vector-only → add graph → add hierarchy → add forgetting
+- Five open questions for future research
+
+First of five planned analyses from Six Thinking Hats session. Blog post candidate: "How AI Agents Remember: Four Patterns for Persistent Memory"

@@ -94,3 +94,4 @@
 | [[ten-pillars-evidence-map]] | Evidence map: how 11 wiki sources validate each of the Ten Pillars, with strength rankings and v3 recommendations | 2026-04-09 |
 | [[cross-source-themes]] | 8 common themes across 11 sources — context is king, composition over monoliths, memory frontier, evaluation gap | 2026-04-09 |
 | [[how-to-eval-a-skill]] | Practical guide: how to eval a skill like a prompt eval — 5 surfaces, 3 tiers, pass@k, CI/CD integration | 2026-04-09 |
+| [[memory-architecture-comparison]] | How AI agents remember — four patterns compared, CMA requirements, benchmarks, decision framework, forgetting | 2026-04-15 |
