@@ -106,3 +106,4 @@
 | [[beyond-code-industry-impact]] | Agentic AI beyond software — six industries, wiki themes generalization test, SaaS disruption, maturity levels | 2026-04-15 |
 | [[wiki-gap-analysis-apr-2026]] | Five gaps exposed by conversational query — getting started guide, LangGraph+Mem0, team knowledge agents, quality eval, observability | 2026-04-15 |
 | [[getting-started-guide]] | Building your first long-running agent — 5 phases from single agent to multi-agent, cost budgets, common mistakes | 2026-04-15 |
+| [[hybrid-memory-architecture]] | Combining Wiki + Mem0 — three-layer hybrid (fast/deep/bridge), 5/6 CMA compliance, implementation steps | 2026-04-15 |

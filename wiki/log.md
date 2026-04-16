@@ -339,3 +339,17 @@ Fills gap #1 from wiki-gap-analysis. Wiki now has 11 analyses.
 - **[[shared-agent-memory]]** — Shared memory layer pattern (solution store + write hook + retrieval step + threshold), conflict resolution status (implicit via recency, explicit remains unsolved), partial/failed solution storage. Fills gaps #14, #15, #16.
 
 Wiki now has 39 sources. Multi-agent advanced gaps: 5/5 addressed (though explicit conflict resolution confirmed as open problem across all sources).
+
+## [2026-04-15] create | Analysis: Hybrid Memory Architecture (Wiki + Mem0)
+
+Created `wiki/analyses/hybrid-memory-architecture.md` — "Combining Wiki + Mem0"
+
+Novel architecture synthesized from 7 wiki sources (not documented in any single source):
+- Layer 1: Mem0 as fast memory (working + session + user) — sub-second retrieval, automatic forgetting
+- Layer 2: Wiki as deep memory (semantic + organizational) — synthesis, provenance, git history
+- Layer 3: Bridge — bidirectional sync (wiki→Mem0 index extraction, Mem0→wiki consolidation)
+- Achieves 5/6 CMA compliance (matching PAI) with full transparency
+- Implementation in 5 phases, $1-55/month cost estimate
+- Directly supports content pipeline goal (interactions → Mem0 → wiki → blog posts)
+
+Wiki now has 12 analyses.
