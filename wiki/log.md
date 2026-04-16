@@ -307,3 +307,14 @@ Exposed 5 gaps filed as `wiki/analyses/wiki-gap-analysis-apr-2026.md`:
 3. No team-level knowledge management agent sources
 4. No knowledge quality evaluation metrics
 5. No agent observability tooling sources
+
+## [2026-04-15] ingest | Gap-filling batch: 4 sources addressing high-priority gaps
+
+Researched and ingested 4 sources addressing gaps identified by conversational query testing:
+
+- **[[memory-lifecycle-drift]]** — TDS (Nweke, Apr 2026): five lifecycle components (decay, contradiction detection, confidence scoring, compression, expiry). Fills gaps #6-7 (memory quality metrics, regression).
+- **[[langgraph-mem0-integration]]** — DigitalOcean (Payong, Mar 2026): step-by-step LangGraph + Mem0 integration with production considerations. Fills gap #2.
+- **[[multi-agent-observability]]** — Future AGI (Mar 2026): OpenTelemetry spans, debugging patterns, key metrics for multi-agent systems. Fills gaps #5, #10.
+- **[[ai-environmental-impact]]** — arXiv (Jegham et al., May 2025): energy/carbon/water benchmarks across 30 models. o3 = 70× GPT-4.1 nano. Claude 3.7 Sonnet most eco-efficient. Fills gaps #12-13.
+
+Wiki now has 37 sources. Gaps addressed: #2, #5, #6, #7, #10, #12, #13.

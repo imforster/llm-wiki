@@ -37,6 +37,10 @@
 | [[agentic-ai-governance]] | Agentic AI governance — five pillars, Shadow AI, NIST/EU AI Act/OWASP, prompt injection (ITECS) | 2026-04-14 |
 | [[agentic-ai-non-code-domains]] | Agentic AI beyond coding — finance, healthcare, legal, manufacturing, SaaS disruption (Curious Compass) | 2026-04-14 |
 | [[agentic-ux-patterns]] | UX patterns for agentic AI — six patterns for control/consent/accountability, autonomy dial (IDE) | 2026-04-14 |
+| [[memory-lifecycle-drift]] | Memory lifecycle management — decay, contradiction detection, confidence scoring, compression, expiry (TDS) | 2026-04-15 |
+| [[langgraph-mem0-integration]] | LangGraph + Mem0 integration tutorial — step-by-step, production considerations (DigitalOcean) | 2026-04-15 |
+| [[multi-agent-observability]] | Multi-agent tracing and debugging — OpenTelemetry spans, failure patterns, key metrics (Future AGI) | 2026-04-15 |
+| [[ai-environmental-impact]] | AI energy/carbon/water benchmarks — 30 models, o3 = 70× nano, Jevons Paradox, eco-efficiency rankings (arXiv) | 2026-04-15 |
 
 ## Entities
 
