@@ -276,3 +276,21 @@ All five planned analyses from Six Thinking Hats session now complete. Wiki has 
 **Info noted:**
 - 9 thin Scion-specific concept pages (grove, harness, hub, template, runtime, runtime-broker, plugin-system, agent-state-model, kiro-powers) — 1 source each, few inbound links
 - Missing entity pages for Microsoft, OpenAI, LangChain, Princeton, Meta — minor, referenced but not deeply analyzed
+
+## [2026-04-15] update | Refreshed cross-source-themes and key-insights for 33 sources
+
+**cross-source-themes.md**: Refreshed from 11 → 33 sources.
+- Original 8 themes retained and strengthened with new evidence
+- Theme 1 (Context): now quantified (93% token reduction)
+- Theme 3 (Human-in-loop): formalized as 6 UX patterns
+- Theme 5 (Memory): upgraded from "unsolved" to "understood with clear tradeoffs"
+- Theme 7 (Evaluation): upgraded from "weakest link" to "framework exists"
+- 4 new themes added: graph convergence, token economics, governance, beyond-code
+
+**key-insights-agentic-landscape.md**: Refreshed from 16 → 33 sources.
+- 6 layers (was 5, added Memory layer)
+- Autonomy spectrum formalized with UX patterns and metrics
+- Memory upgraded from "unsolved frontier" to "understood"
+- Evaluation upgraded with 4 benchmarks
+- 4 new insights: token economics, multi-agent philosophies, governance pillars, remaining gaps
+- "What's Still Missing" section updated for current state

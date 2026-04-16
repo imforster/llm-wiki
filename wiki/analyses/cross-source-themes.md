@@ -1,175 +1,228 @@
 ---
 type: analysis
 created: 2026-04-09
-updated: 2026-04-09
-sources: ["[[scion-docs]]", "[[kiro-autonomous-agent]]", "[[claude-code-docs]]", "[[anthropic-skills-repo]]", "[[ten-pillars-agentic-skill-design]]", "[[llm-wiki-karpathy]]", "[[fabric-github]]", "[[personal-ai-infrastructure]]", "[[evaluating-agent-skills-caparas]]", "[[ai-technique-podcast]]", "[[skills-pipeline-sleestk]]"]
+updated: 2026-04-15
+sources: ["[[scion-docs]]", "[[kiro-autonomous-agent]]", "[[claude-code-docs]]", "[[anthropic-skills-repo]]", "[[ten-pillars-agentic-skill-design]]", "[[llm-wiki-karpathy]]", "[[fabric-github]]", "[[personal-ai-infrastructure]]", "[[evaluating-agent-skills-caparas]]", "[[ai-technique-podcast]]", "[[skills-pipeline-sleestk]]", "[[anthropic-eval-guide]]", "[[promptfoo]]", "[[paperclip]]", "[[spec-kit]]", "[[bmad-method]]", "[[notebooklm-notes-guide]]", "[[mem0-memory-management]]", "[[continuum-memory-architectures]]", "[[agent-memory-systems-2026]]", "[[efficient-memory-architectures]]", "[[humaneval-benchmark]]", "[[swe-bench]]", "[[gaia-benchmark]]", "[[agentbench]]", "[[autogen-multi-agent]]", "[[crewai-multi-agent]]", "[[langgraph-agent-orchestration]]", "[[openai-swarm]]", "[[agent-cost-economics]]", "[[agentic-ai-governance]]", "[[agentic-ai-non-code-domains]]", "[[agentic-ux-patterns]]"]
 tags: [analysis, themes, cross-source, synthesis]
 ---
 
 # Cross-Source Theme Analysis
 
-16 sources, 8 tools, 2 standards, 3 methodologies, 1 practitioner account, 2 skill/eval resources. Here are the themes that appear across 3+ sources independently — not because they reference each other, but because they converged on the same ideas.
+33 sources, 9 tools, 4 OSS frameworks, 4 benchmarks, 2 standards, 3 methodologies, 4 memory systems, and sources covering cost, governance, UX, and industry impact. Here are the themes that appear across 3+ sources independently.
 
-> **Note**: This analysis was originally written against 11 sources. The 5 newest sources (Paperclip, Spec Kit, BMad Method, Anthropic Eval Guide, Promptfoo) strengthen existing themes — particularly Theme 3 (human-in-the-loop spectrum) and Theme 7 (evaluation). A full refresh is recommended when the wiki reaches 20+ sources.
+> **Refresh history**: Originally written against 11 sources (Apr 9). Refreshed Apr 15 against all 33 sources. Original 8 themes retained and strengthened; 4 new themes added.
 
 ---
 
-## Theme 1: Context Is King (9/11 sources)
+## Theme 1: Context Is King (15/33 sources) ⭐⭐⭐⭐⭐
 
-The single most repeated idea across the wiki. Almost every source says some version of "getting the right context loaded matters more than anything else."
+The single most repeated idea. Now backed by quantitative evidence from memory research.
 
 | Source | How it appears |
 |--------|---------------|
 | [[agent-skills-standard]] | Progressive disclosure: ~100 tokens at startup, full content only when activated |
 | [[claude-code]] | MCP tools deferred, skills load on demand, subagent context isolation, CLAUDE.md under 200 lines |
-| [[ten-pillars-agentic-skill-design]] | Pillar 9: four context management recipes (chunking, summarization, selective loading, persona templates) |
-| [[pai]] | TELOS (10 files about you), three-tier memory (hot/warm/cold), "context document" as core primitive |
-| [[fabric]] | Per-pattern model mapping, composable strategies applied on top of patterns |
-| [[ai-technique-podcast]] | "Context beats clever prompting." Maintain a context document. Daily prompt anchored around priorities/constraints. |
-| [[skills-pipeline-sleestk]] | Reference files loaded on demand, pipeline stages pass minimal structured context forward |
-| [[llm-wiki-pattern]] | Index-first navigation — read the catalog, drill into relevant pages only |
-| [[scion]] | Each agent gets its own container with its own context. No shared context pollution. |
+| [[ten-pillars-agentic-skill-design]] | Pillar 9: four context management recipes |
+| [[pai]] | TELOS (10 files), three-tier memory, "context document" as core primitive |
+| [[fabric]] | Per-pattern model mapping, composable strategies |
+| [[ai-technique-podcast]] | "Context beats clever prompting." |
+| [[skills-pipeline-sleestk]] | Reference files loaded on demand, minimal structured context forward |
+| [[llm-wiki-pattern]] | Index-first navigation — read catalog, drill into relevant pages only |
+| [[scion]] | Each agent gets own container with own context. No shared pollution. |
+| [[mem0-memory-management]] | Four memory layers. 93% token reduction with selective retrieval vs full-context. |
+| [[continuum-memory-architectures]] | Six formal requirements for context persistence. CMA won 82/92 vs RAG. |
+| [[efficient-memory-architectures]] | Four failure modes of flat vector storage. MemGPT: 90% token savings. |
+| [[agent-cost-economics]] | Five waste vectors — 60-80% of tokens wasted on wrong context. |
+| [[crewai-multi-agent]] | Role + backstory as persona-based context management |
+| [[langgraph-agent-orchestration]] | Checkpointed state as persistent context across workflow steps |
 
-**The consensus**: Don't load everything. Load the right thing at the right time. Every tool that scales has independently arrived at some form of progressive disclosure.
+**Strengthened consensus**: Not just "load the right thing" but now quantified: selective retrieval = 93% fewer tokens for ~5% accuracy tradeoff ([[mem0-memory-management]]). Context management is simultaneously a quality strategy AND a cost strategy ([[agent-cost-economics]]).
 
 ---
 
-## Theme 2: Composition Over Monoliths (8/11 sources)
+## Theme 2: Composition Over Monoliths (14/33 sources) ⭐⭐⭐⭐⭐
 
-No one builds monolithic agents or skills. Everyone decomposes.
+Validated across every framework — product-level and open-source alike.
 
 | Source | How it appears |
 |--------|---------------|
-| [[fabric]] | 251 focused patterns, each doing one thing. Unix philosophy: pipe and compose. |
-| [[skills-pipeline-sleestk]] | 6-stage YouTube pipeline. 4-skill SaaS stack. Each skill is one domain. |
-| [[claude-code]] | Subagents (Explore, Plan, General-purpose). Skills per task. MCP per service. |
+| [[fabric]] | 251 focused patterns. Unix philosophy: pipe and compose. |
+| [[skills-pipeline-sleestk]] | 6-stage YouTube pipeline. Each skill is one domain. |
+| [[claude-code]] | Subagents (Explore, Plan, General-purpose). Skills per task. |
 | [[scion]] | Harness per tool. Template per agent. Grove per project. |
-| [[agent-skills-standard]] | One skill per directory. "Keep SKILL.md under 500 lines." |
-| [[ten-pillars-agentic-skill-design]] | Pillar 3 (SRP), Pillar 4 (modularity). Anti-pattern: monolithic skills. |
+| [[agent-skills-standard]] | One skill per directory. Under 500 lines. |
+| [[ten-pillars-agentic-skill-design]] | Pillar 3 (SRP), Pillar 4 (modularity). |
 | [[pai]] | 63 skills, 21 hooks, 14 agents, 12 standalone packs. |
 | [[kiro]] | Powers as modular packages. Sub-agents for coordination. |
+| [[autogen-multi-agent]] | Specialized agents communicate through dialogue |
+| [[crewai-multi-agent]] | Crew of role-specialized agents with task dependencies |
+| [[langgraph-agent-orchestration]] | Nodes as composable units in a graph |
+| [[openai-swarm]] | Agents as system prompts + functions. Minimal units. |
+| [[paperclip]] | Agents organized into companies with specialized roles |
+| [[spec-kit]] | 30+ agents, 50+ extensions, each with focused scope |
 
-**The consensus**: Small, focused, composable. The YouTube pipeline (6 stages) vs. a single "make a video" skill is the clearest illustration. This is the strongest convergence in the wiki.
+**Strongest convergence in the wiki.** Every single multi-agent framework chose small, focused, composable units. No exceptions.
 
 ---
 
-## Theme 3: The Human Stays in the Loop — But How Much? (7/11 sources)
+## Theme 3: The Human Stays in the Loop — But How Much? (13/33 sources) ⭐⭐⭐⭐⭐
 
-Every source addresses the human-agent boundary, but they disagree on where to draw it.
+Now formalized with measurable UX patterns and a phased adoption framework.
 
 | Source | Position |
 |--------|----------|
-| [[scion]] | "Interaction is imperative." Humans must be involved. |
-| [[kiro]] | Frontier agents work independently for hours/days. PR-only output for review. |
-| [[claude-code]] | 6 permission modes — a configurable dial from full control to full autonomy. |
-| [[pai]] | Agent learns and self-modifies, but human sets goals (TELOS) and reviews. |
-| [[evaluating-agent-skills-caparas]] | Human review is Tier 3 evaluation — expensive, use sparingly. |
-| [[ai-technique-podcast]] | "AI as thinking partner, not executor only." Let AI ask YOU questions back. |
-| [[llm-wiki-pattern]] | Human curates sources and asks questions. LLM does everything else. |
+| [[scion]] | "Interaction is imperative." |
+| [[kiro]] | Frontier agents: hours/days of autonomy. PR-only output. |
+| [[claude-code]] | 6 permission modes — configurable dial. |
+| [[pai]] | Self-modifying, but human sets goals (TELOS). |
+| [[evaluating-agent-skills-caparas]] | Human review is Tier 3 — expensive, use sparingly. |
+| [[ai-technique-podcast]] | "AI as thinking partner, not executor only." |
+| [[llm-wiki-pattern]] | Human curates sources. LLM does everything else. |
+| [[agentic-ux-patterns]] | **Six UX patterns** with metrics: Intent Preview (>85% acceptance), Autonomy Dial (4 levels), Confidence Signal, Audit & Undo (<5% reversion), Escalation (>90% recovery). |
+| [[agentic-ai-governance]] | Kill switches, dynamic least privilege, continuous observability. |
+| [[autogen-multi-agent]] | Configurable human participation in agent conversations. |
+| [[crewai-multi-agent]] | Delegation: agents can ask humans or other agents for help. |
+| [[langgraph-agent-orchestration]] | Human-in-the-loop at any node (first-class). |
+| [[agentic-ai-non-code-domains]] | Healthcare demands human oversight; finance requires compliance gates. |
 
-**The spectrum**: From Scion (always interactive) to Kiro (hours of autonomy) to PAI (self-modifying). No consensus. Claude Code's approach — making it a configurable dial — may be the most pragmatic.
-
----
-
-## Theme 4: Skills Are Evolving Into a Standard (6/11 sources)
-
-The concept of "a reusable unit of agent capability" is converging on a common format.
-
-| Source | Stage of evolution |
-|--------|-------------------|
-| [[fabric]] | **Patterns** (2023): system.md only. No metadata, no progressive disclosure. |
-| [[agent-skills-standard]] | **Spec** (2025): SKILL.md + frontmatter + scripts/references/assets. Open standard. |
-| [[claude-code]] | **Implementation** (2026): Extends spec with invocation control, subagent execution, MCP integration. |
-| [[skills-pipeline-sleestk]] | **Production** (2026): Follows spec exactly. Chains skills into pipelines. Ships with test prompts. |
-| [[ten-pillars-agentic-skill-design]] | **Methodology** (2024): Design principles for building effective skills. |
-| [[evaluating-agent-skills-caparas]] | **Evaluation** (2026): How to measure whether skills actually work. |
-
-**The evolution**: Fabric Patterns → Agent Skills Standard → Claude Code Skills → Pipelines + Evaluation. The trajectory is clear: from simple prompt files to a full lifecycle (design → build → test → deploy → evaluate).
+**New**: The [[agentic-ux-patterns]] source formalizes this spectrum into six measurable patterns. The Autonomy Dial (Observe → Propose → Confirm → Autonomous) maps directly to Claude Code's permission modes. Phased adoption: safety first → calibrated autonomy → proactive delegation.
 
 ---
 
-## Theme 5: Memory Is the Next Frontier (6/11 sources)
+## Theme 4: Skills Are Evolving Into a Standard (6/33 sources) ⭐⭐⭐⭐
 
-How agents persist and accumulate knowledge is the most actively divergent area.
+Unchanged from original analysis. The evolution trajectory remains clear.
+
+Fabric Patterns (2023) → Agent Skills Standard (2025) → Claude Code Skills (2026) → Pipelines + Evaluation. From simple prompt files to a full lifecycle.
+
+---
+
+## Theme 5: Memory Is No Longer the Unsolved Frontier (10/33 sources) ⭐⭐⭐⭐⭐
+
+**Upgraded from "unsolved" to "understood with clear tradeoffs."** Four new memory sources provide formal requirements, benchmarks, and architecture patterns.
 
 | Source | Memory approach |
 |--------|---------------|
-| [[pai]] | Three-tier (hot/warm/cold). Continuous signal capture. Self-modification. Most sophisticated. |
-| [[claude-code]] | Dual system: CLAUDE.md (human-written) + auto memory (agent-written). Per working tree. |
-| [[kiro]] | Persistent context across tasks/repos/sessions. Learns from code reviews. |
-| [[llm-wiki-pattern]] | The wiki IS the memory — compiled, interlinked, maintained by the LLM. |
-| [[ai-technique-podcast]] | "Context document technique." Maintain a persistent document about your role, goals, constraints. |
-| [[scion]] | No shared memory. Each agent starts fresh in its own container. |
+| [[pai]] | Three-tier hot/warm/cold. Self-modification. Most sophisticated product. |
+| [[claude-code]] | CLAUDE.md + auto memory. Per working tree. |
+| [[kiro]] | Persistent context. Learns from code reviews. |
+| [[llm-wiki-pattern]] | The wiki IS the memory. File + Database pattern. |
+| [[scion]] | No memory. Each agent starts fresh. |
+| [[mem0-memory-management]] | Graph+vector, four layers, five scopes. LOCOMO benchmarks. |
+| [[continuum-memory-architectures]] | Six formal CMA requirements. 82/92 wins vs RAG. |
+| [[agent-memory-systems-2026]] | Four patterns: vector-only, graph+vector, file+DB, hierarchical. |
+| [[efficient-memory-architectures]] | H-MEM, MemGPT (90% savings), GraphRAG, selective forgetting. |
+| [[crewai-multi-agent]] | Built-in short/long/entity memory across agents. |
 
-**The tension**: Persistent memory compounds value (PAI, Kiro, wiki pattern) but also compounds errors (stale learnings, wrong memories). Scion's fresh-start approach avoids this but wastes re-discovery. No one has solved the "memory hygiene" problem — how to keep accumulated knowledge accurate over time. The [[llm-wiki-pattern]]'s "lint" operation (health-check for contradictions) is the closest thing to a solution.
-
----
-
-## Theme 6: Git as Universal Substrate (6/11 sources)
-
-Git isn't just version control — it's the coordination layer, isolation mechanism, and review process.
-
-| Source | Git usage |
-|--------|-----------|
-| [[scion]] | Git worktrees per agent (local), git init+fetch (hosted). Branches as isolation. |
-| [[claude-code]] | Git worktrees for parallel sessions. PRs as output. Checkpointing via git. |
-| [[kiro]] | Creates coordinated PRs across multiple repos. |
-| [[pai]] | "The wiki is just a git repo." Version control everything, roll back when needed. |
-| [[llm-wiki-pattern]] | "You get version history, branching, and collaboration for free." |
-| [[skills-pipeline-sleestk]] | Skills stored in git. Versioned, shareable, forkable. |
-
-**The consensus**: Git is the one coordination mechanism everyone agrees on. No one is building a custom protocol. But git only works for text-shaped artifacts — the open question is what coordinates non-code knowledge.
+**Key advances**: CMA defines six necessary conditions (RAG meets none). Mem0 provides production benchmarks (93% token reduction). Forgetting is now recognized as a design requirement, not a failure. See [[memory-architecture-comparison]] for the full analysis.
 
 ---
 
-## Theme 7: Evaluation Is the Weakest Link (4/11 sources)
+## Theme 6: Git as Universal Substrate (6/33 sources) ⭐⭐⭐⭐
 
-The gap between "building agents" and "knowing if they work" is acknowledged but unsolved.
+Unchanged. Git remains the one coordination mechanism everyone agrees on.
 
-| Source | What it says |
+---
+
+## Theme 7: Evaluation Has a Framework Now (8/33 sources) ⭐⭐⭐⭐
+
+**Upgraded from "weakest link" to "framework exists, adoption lags."**
+
+| Source | Contribution |
 |--------|-------------|
-| [[evaluating-agent-skills-caparas]] | Three-tier framework. "It feels better isn't good enough." LLM-as-judge only 70-85% agreement with humans. |
-| [[ten-pillars-agentic-skill-design]] | Pillar 7. But explicitly acknowledges "no original controlled study." Benefits are "anticipated, not proven." |
-| [[skills-pipeline-sleestk]] | Ships 10 inline test prompts — but happy-path only. No negative controls. |
-| [[claude-code]] | 25+ hook events provide observability infrastructure, but no built-in eval framework. |
+| [[evaluating-agent-skills-caparas]] | Three-tier framework (deterministic → LLM-judge → human) |
+| [[ten-pillars-agentic-skill-design]] | Pillar 7. Acknowledged "no controlled study." |
+| [[anthropic-eval-guide]] | Success criteria, eval types, design principles |
+| [[promptfoo]] | Open-source eval CLI, YAML test cases, CI/CD |
+| [[humaneval-benchmark]] | Code generation: 164 problems, pass@k, 0% → 96.3% |
+| [[swe-bench]] | Real-world SE: 2,294 GitHub issues, top 74.4% resolved |
+| [[gaia-benchmark]] | General AI: 466 questions, humans 92% vs AI <50% |
+| [[agentbench]] | Agent decision-making: 8 environments, multi-turn |
 
-**The gap**: Everyone knows evaluation matters. Almost no one does it rigorously. The Caparas article provides the methodology; the Skills Pipeline shows inline testing; but no tool has an integrated eval pipeline. This is the biggest opportunity in the ecosystem.
-
----
-
-## Theme 8: Open Standards Are Winning (5/11 sources)
-
-Proprietary approaches are losing to open protocols.
-
-| Source | Standard |
-|--------|----------|
-| [[mcp-protocol]] | Open protocol for tool integration. Used by Claude Code and Kiro. |
-| [[agent-skills-standard]] | Open spec at agentskills.io. Used by Claude Code. |
-| [[fabric]] | MIT licensed. 251 open patterns. Community-driven. |
-| [[claude-code]] | Follows Agent Skills standard. MCP for tools. AGENTS.md import for cross-tool compatibility. |
-| [[scion]] | Harness-agnostic. Supports any LLM tool via adapter pattern. |
-
-**The trend**: MCP (tools/data) and Agent Skills (capabilities) are emerging as the two-layer open substrate. Fabric's patterns are the community-driven content layer. Proprietary approaches (Kiro Powers) exist but are converging toward open standards.
+**Key advance**: The benchmark landscape now covers code generation (solved at 96%), real-world SE (rapidly improving at 74%), general reasoning (far from human at <50%), and interactive agents (commercial >> open-source). See [[agent-benchmarks]] for the full comparison. Still missing: skill-level eval, multi-agent coordination quality, memory quality benchmarks.
 
 ---
 
-## Theme Matrix
+## Theme 8: Open Standards Are Winning (5/33 sources) ⭐⭐⭐
 
-How many sources support each theme:
+Unchanged. MCP + Agent Skills as two-layer open substrate.
 
-| Theme | Sources | Strength |
-|-------|---------|----------|
-| Context is king | 9/11 | ⭐⭐⭐⭐⭐ |
-| Composition over monoliths | 8/11 | ⭐⭐⭐⭐⭐ |
-| Human in the loop (spectrum) | 7/11 | ⭐⭐⭐⭐ |
-| Skills evolving into standard | 6/11 | ⭐⭐⭐⭐ |
-| Memory as next frontier | 6/11 | ⭐⭐⭐⭐ |
-| Git as universal substrate | 6/11 | ⭐⭐⭐⭐ |
-| Open standards winning | 5/11 | ⭐⭐⭐ |
-| Evaluation is weakest link | 4/11 | ⭐⭐⭐ |
+---
+
+## NEW Theme 9: Graphs Are Becoming the Consensus Orchestration Architecture (4/33 sources) ⭐⭐⭐
+
+| Source | Evidence |
+|--------|---------|
+| [[langgraph-agent-orchestration]] | Built on graphs from day one. Most production-ready OSS. |
+| [[autogen-multi-agent]] | Transitioning from GroupChat to graph-based MAF. |
+| [[scion]] | Directed workflows for agent coordination. |
+| [[kiro]] | Sub-agents coordinated through structured task graphs. |
+
+Both AutoGen (via MAF) and LangGraph converging on typed nodes + edges. The conversation-based approach (AutoGen v0.2 GroupChat) is being abandoned by its own creators. See [[multi-agent-framework-guide]].
+
+---
+
+## NEW Theme 10: Token Economics Drive Architecture (5/33 sources) ⭐⭐⭐
+
+| Source | Evidence |
+|--------|---------|
+| [[agent-cost-economics]] | 60-80% of tokens wasted. Five waste vectors. $5T infrastructure bet. |
+| [[mem0-memory-management]] | 93% token reduction with selective retrieval. |
+| [[efficient-memory-architectures]] | MemGPT: 90% token savings via OS-style paging. |
+| [[context-management]] | Progressive disclosure, scoped instructions, deferred tools. |
+| [[agent-memory-systems-2026]] | Cost comparison across four memory patterns. |
+
+Cost optimization is not a billing concern — it's an architectural concern. Every memory, context, and orchestration decision has a direct token cost implication. See [[cost-optimization-guide]].
+
+---
+
+## NEW Theme 11: Governance Is the Next Frontier (4/33 sources) ⭐⭐⭐
+
+| Source | Evidence |
+|--------|---------|
+| [[agentic-ai-governance]] | Five pillars. Shadow AI ($412K/yr). NIST AI Agent Standards Initiative. |
+| [[agentic-ux-patterns]] | Six UX patterns as user-facing governance layer. |
+| [[agentic-ai-non-code-domains]] | Regulated industries (healthcare, finance) demand governance for deployment. |
+| [[agent-cost-economics]] | 68% of employees use AI without IT approval. |
+
+Legacy security models fail for agents (speed, identity, permissions all different). Regulatory landscape crystallizing: NIST, EU AI Act, OWASP, Singapore framework. See [[governance-safety-overview]].
+
+---
+
+## NEW Theme 12: Agentic AI Is Expanding Beyond Code (3/33 sources) ⭐⭐⭐
+
+| Source | Evidence |
+|--------|---------|
+| [[agentic-ai-non-code-domains]] | Six industries: finance (40-60% compliance reduction), healthcare, legal, manufacturing, telecoms, transport. |
+| [[agent-cost-economics]] | Enterprise ARPU $450-500/mo. SaaS disruption. $24.2B raised in 2025. |
+| [[llm-wiki-pattern]] | Applies to research, reading, business — anywhere knowledge accumulates. |
+
+The wiki's themes generalize across all industries. Main difference: non-code domains have higher stakes (healthcare hallucinations, legal liability). See [[beyond-code-industry-impact]].
+
+---
+
+## Theme Matrix (Updated)
+
+| Theme | Sources | Strength | Change |
+|-------|---------|----------|--------|
+| Context is king | 15/33 | ⭐⭐⭐⭐⭐ | ↑ Now quantified (93% token reduction) |
+| Composition over monoliths | 14/33 | ⭐⭐⭐⭐⭐ | ↑ Validated across all OSS frameworks |
+| Human in the loop (spectrum) | 13/33 | ⭐⭐⭐⭐⭐ | ↑ Formalized as 6 UX patterns |
+| Memory architectures | 10/33 | ⭐⭐⭐⭐⭐ | ↑↑ From "unsolved" to "understood" |
+| Evaluation frameworks | 8/33 | ⭐⭐⭐⭐ | ↑ From "weakest link" to "framework exists" |
+| Skills evolving into standard | 6/33 | ⭐⭐⭐⭐ | → Unchanged |
+| Git as universal substrate | 6/33 | ⭐⭐⭐⭐ | → Unchanged |
+| Open standards winning | 5/33 | ⭐⭐⭐ | → Unchanged |
+| Token economics drive architecture | 5/33 | ⭐⭐⭐ | 🆕 New |
+| Graph orchestration convergence | 4/33 | ⭐⭐⭐ | 🆕 New |
+| Governance is next frontier | 4/33 | ⭐⭐⭐ | 🆕 New |
+| Expanding beyond code | 3/33 | ⭐⭐⭐ | 🆕 New |
 
 ## See Also
 - [[key-insights-agentic-landscape]]
-- [[ten-pillars-evidence-map]]
-- [[multi-agent-orchestration]]
-- [[context-management]]
+- [[memory-architecture-comparison]]
+- [[multi-agent-framework-guide]]
+- [[cost-optimization-guide]]
+- [[governance-safety-overview]]
+- [[beyond-code-industry-impact]]
+- [[agent-benchmarks]]
