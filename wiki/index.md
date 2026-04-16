@@ -49,61 +49,61 @@
 | Page | Type | Summary |
 |------|------|---------|
 | [[andrej-karpathy]] | person | AI researcher, author of the LLM Wiki pattern |
-| [[daniel-miessler]] | person | Security researcher, creator of Fabric and PAI |
-| [[scion]] | tool | Experimental multi-agent orchestration testbed — hypervisor for LLM agents |
-| [[kiro]] | tool | Agentic IDE by AWS with autonomous agent, CLI, and IDE surfaces |
-| [[claude-code]] | tool | Agentic coding tool by Anthropic — terminal, IDE, web, Slack, GitHub |
-| [[fabric]] | tool | Open-source framework with 251+ curated prompt patterns and composable strategies |
-| [[pai]] | tool | Personal AI Infrastructure — persistent memory, skills, goals on Claude Code |
-| [[promptfoo]] | tool | Open-source LLM eval CLI — YAML test cases, CI/CD, red teaming (now OpenAI) |
-| [[paperclip]] | tool | Open-source orchestration for zero-human companies — org charts, budgets, governance |
-| [[spec-kit]] | tool | GitHub's spec-driven development toolkit — 30+ agents, 50+ extensions |
-| [[bmad-method]] | tool | AI-driven agile framework — 12+ agent personas, scale-adaptive, Party Mode |
-| [[google-cloud-platform]] | organization | Cloud platform by Google, hosts the Scion project |
-| [[aws]] | organization | Amazon Web Services, behind Kiro and the frontier agent concept |
 | [[anthropic]] | organization | AI safety company, builds Claude models and Claude Code |
-| [[notebooklm]] | tool | Gemini-powered writing and research tool from Google Labs — source-grounded AI notes |
-| [[steven-johnson]] | person | Co-founder and editorial director of NotebookLM, author of 14 books |
+| [[aws]] | organization | Amazon Web Services, behind Kiro and the frontier agent concept |
+| [[bmad-method]] | tool | AI-driven agile framework — 12+ agent personas, scale-adaptive, Party Mode |
+| [[claude-code]] | tool | Agentic coding tool by Anthropic — terminal, IDE, web, Slack, GitHub |
+| [[daniel-miessler]] | person | Security researcher, creator of Fabric and PAI |
+| [[fabric]] | tool | Open-source framework with 251+ curated prompt patterns and composable strategies |
+| [[google-cloud-platform]] | organization | Cloud platform by Google, hosts the Scion project |
+| [[kiro]] | tool | Agentic IDE by AWS with autonomous agent, CLI, and IDE surfaces |
 | [[mem0]] | tool | Open-source memory management platform — graph+vector, four layers, five scopes, LOCOMO benchmarks |
+| [[notebooklm]] | tool | Gemini-powered writing and research tool from Google Labs — source-grounded AI notes |
+| [[pai]] | tool | Personal AI Infrastructure — persistent memory, skills, goals on Claude Code |
+| [[paperclip]] | tool | Open-source orchestration for zero-human companies — org charts, budgets, governance |
+| [[promptfoo]] | tool | Open-source LLM eval CLI — YAML test cases, CI/CD, red teaming (now OpenAI) |
+| [[scion]] | tool | Experimental multi-agent orchestration testbed — hypervisor for LLM agents |
+| [[spec-kit]] | tool | GitHub's spec-driven development toolkit — 30+ agents, 50+ extensions |
+| [[steven-johnson]] | person | Co-founder and editorial director of NotebookLM, author of 14 books |
 
 ## Concepts
 
 | Page | Summary | Source Count |
 |------|---------|--------------|
-| [[llm-wiki-pattern]] | Pattern for LLM-maintained personal knowledge bases — the methodology behind this wiki | 2 |
 | [[agent]] | Isolated process running an LLM + harness loop against a task | 1 |
-| [[agent-state-model]] | Three-dimensional state tracking: Phase, Activity, Detail | 1 |
+| [[agent-benchmarks]] | Standardized benchmarks for LLM/agent capabilities — HumanEval, SWE-bench, GAIA, AgentBench | 4 |
+| [[agent-memory-persistence]] | How agents retain knowledge across sessions — four patterns, CMA requirements, forgetting, benchmarks | 4 |
 | [[agent-skills-standard]] | Open standard (agentskills.io) for packaging reusable agent capabilities | 2 |
+| [[agent-state-model]] | Three-dimensional state tracking: Phase, Activity, Detail | 1 |
 | [[context-management]] | Strategies for managing limited context windows in multi-skill pipelines | 7 |
-| [[prompt-engineering-patterns]] | CoT, ReAct, Reflexion, composable strategies, and other prompting techniques | 2 |
-| [[skill-evaluation]] | Three-tier framework for measuring agent skill quality (deterministic → LLM-judge → human) | 6 |
+| [[frontier-agent]] | AWS term for autonomous, scalable, independently-operating AI agents | 1 |
 | [[grove]] | Project workspace where agents live (.scion directory) | 1 |
 | [[harness]] | Adapter for LLM tools (Gemini, Claude, OpenCode, Codex) into Scion | 1 |
 | [[hub]] | Central control plane for hosted/distributed Scion deployments | 1 |
-| [[template]] | Versioned blueprint for creating agents | 1 |
+| [[kiro-powers]] | Specialized packages enhancing Kiro agents with domain expertise | 1 |
+| [[llm-wiki-pattern]] | Pattern for LLM-maintained personal knowledge bases — the methodology behind this wiki | 2 |
+| [[mcp-protocol]] | Open protocol for connecting LLMs to external tools — shared by Claude Code and Kiro | 2 |
+| [[multi-agent-orchestration]] | Coordinating multiple LLM agents — comparing Scion, Kiro, Claude Code + open-source frameworks | 7 |
+| [[plugin-system]] | Extension architecture via hashicorp/go-plugin over gRPC | 1 |
+| [[prompt-engineering-patterns]] | CoT, ReAct, Reflexion, composable strategies, and other prompting techniques | 2 |
 | [[runtime]] | Infrastructure layer for executing agent containers | 1 |
 | [[runtime-broker]] | Compute node providing execution capacity to the Hub | 1 |
-| [[plugin-system]] | Extension architecture via hashicorp/go-plugin over gRPC | 1 |
-| [[multi-agent-orchestration]] | Coordinating multiple LLM agents — comparing Scion, Kiro, Claude Code + open-source frameworks | 7 |
-| [[frontier-agent]] | AWS term for autonomous, scalable, independently-operating AI agents | 1 |
-| [[kiro-powers]] | Specialized packages enhancing Kiro agents with domain expertise | 1 |
-| [[mcp-protocol]] | Open protocol for connecting LLMs to external tools — shared by Claude Code and Kiro | 2 |
-| [[agent-memory-persistence]] | How agents retain knowledge across sessions — four patterns, CMA requirements, forgetting, benchmarks | 4 |
-| [[agent-benchmarks]] | Standardized benchmarks for LLM/agent capabilities — HumanEval, SWE-bench, GAIA, AgentBench | 4 |
+| [[skill-evaluation]] | Three-tier framework for measuring agent skill quality (deterministic → LLM-judge → human) | 6 |
+| [[template]] | Versioned blueprint for creating agents | 1 |
 
-## Analyses
+## Analysis
 
 | Page | Summary | Date |
 |------|---------|------|
-| [[key-insights-agentic-landscape]] | 10 key insights synthesized across all 8 sources — architectural philosophies, design tensions, emerging standards, and gaps | 2026-04-08 |
-| [[ten-pillars-evidence-map]] | Evidence map: how 11 wiki sources validate each of the Ten Pillars, with strength rankings and v3 recommendations | 2026-04-09 |
-| [[cross-source-themes]] | 8 common themes across 11 sources — context is king, composition over monoliths, memory frontier, evaluation gap | 2026-04-09 |
+| [[beyond-code-industry-impact]] | Agentic AI beyond software — six industries, wiki themes generalization test, SaaS disruption, maturity levels | 2026-04-15 |
+| [[cost-optimization-guide]] | Why your AI agent costs 10× more than it should — five waste vectors, optimization playbook, architecture-cost connections | 2026-04-15 |
+| [[cross-source-themes]] | 12 themes across 33 sources — context is king, composition over monoliths, memory, evaluation, governance | 2026-04-15 |
+| [[getting-started-guide]] | Building your first long-running agent — 5 phases from single agent to multi-agent, cost budgets, common mistakes | 2026-04-15 |
+| [[governance-safety-overview]] | The Shadow AI problem — five governance pillars, regulatory landscape, UX as governance layer, implementation roadmap | 2026-04-15 |
 | [[how-to-eval-a-skill]] | Practical guide: how to eval a skill like a prompt eval — 5 surfaces, 3 tiers, pass@k, CI/CD integration | 2026-04-09 |
+| [[hybrid-memory-architecture]] | Combining Wiki + Mem0 — three-layer hybrid (fast/deep/bridge), 5/6 CMA compliance, implementation steps | 2026-04-15 |
+| [[key-insights-agentic-landscape]] | 14 key insights across the landscape — architectural philosophies, design tensions, emerging standards, gaps | 2026-04-15 |
 | [[memory-architecture-comparison]] | How AI agents remember — four patterns compared, CMA requirements, benchmarks, decision framework, forgetting | 2026-04-15 |
 | [[multi-agent-framework-guide]] | Choosing a multi-agent framework in 2026 — four OSS + four product tools, decision matrix, graph convergence | 2026-04-15 |
-| [[cost-optimization-guide]] | Why your AI agent costs 10× more than it should — five waste vectors, optimization playbook, architecture-cost connections | 2026-04-15 |
-| [[governance-safety-overview]] | The Shadow AI problem — five governance pillars, regulatory landscape, UX as governance layer, implementation roadmap | 2026-04-15 |
-| [[beyond-code-industry-impact]] | Agentic AI beyond software — six industries, wiki themes generalization test, SaaS disruption, maturity levels | 2026-04-15 |
-| [[wiki-gap-analysis-apr-2026]] | Five gaps exposed by conversational query — getting started guide, LangGraph+Mem0, team knowledge agents, quality eval, observability | 2026-04-15 |
-| [[getting-started-guide]] | Building your first long-running agent — 5 phases from single agent to multi-agent, cost budgets, common mistakes | 2026-04-15 |
-| [[hybrid-memory-architecture]] | Combining Wiki + Mem0 — three-layer hybrid (fast/deep/bridge), 5/6 CMA compliance, implementation steps | 2026-04-15 |
+| [[ten-pillars-evidence-map]] | Evidence map: how 11 wiki sources validate each of the Ten Pillars, with strength rankings and v3 recommendations | 2026-04-09 |
+| [[wiki-gap-analysis-apr-2026]] | 20 gaps identified, 15 addressed — status tracker with remaining open items | 2026-04-15 |
