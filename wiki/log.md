@@ -262,3 +262,17 @@ Tests whether wiki's eight themes generalize beyond software development. Six in
 Fifth of five planned analyses. Blog post candidate: "Agentic AI Beyond Software: Six Industries Being Transformed"
 
 All five planned analyses from Six Thinking Hats session now complete. Wiki has 9 analyses total (up from 4).
+
+## [2026-04-15] lint | Wiki health check
+
+**Fixed:**
+- Removed duplicate [[bmad-method]] entry in index (was listed twice)
+- Corrected overview concept count: 22 → 20
+
+**Stale analyses flagged for refresh (future task):**
+- [[cross-source-themes]] — written against 11 sources, wiki now has 33. File itself recommends refresh at 20+.
+- [[key-insights-agentic-landscape]] — written against 16 sources. Doesn't reflect memory, eval, multi-agent, cost, governance, or industry sources.
+
+**Info noted:**
+- 9 thin Scion-specific concept pages (grove, harness, hub, template, runtime, runtime-broker, plugin-system, agent-state-model, kiro-powers) — 1 source each, few inbound links
+- Missing entity pages for Microsoft, OpenAI, LangChain, Princeton, Meta — minor, referenced but not deeply analyzed

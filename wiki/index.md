@@ -18,7 +18,6 @@
 | [[paperclip]] | Paperclip: open-source orchestration for zero-human companies — org charts, budgets, governance | 2026-04-09 |
 | [[spec-kit]] | Spec Kit: GitHub's spec-driven development toolkit — 30+ agents, 50+ extensions, 7-step workflow | 2026-04-10 |
 | [[bmad-method]] | BMad Method: AI-driven agile framework — 12+ agent personas, scale-adaptive, Party Mode | 2026-04-10 |
-| [[bmad-method]] | BMad Method: AI-driven agile framework — 12+ agent personas, scale-adaptive, Party Mode | 2026-04-10 |
 | [[fabric-github]] | Fabric: open-source framework with 251+ curated AI prompt patterns (Miessler) | 2026-04-08 |
 | [[personal-ai-infrastructure]] | PAI: personalized AI platform built on Claude Code — memory, skills, goals (Miessler) | 2026-04-08 |
 | [[notebooklm-notes-guide]] | NotebookLM notes guide — two note types, pin-then-organize workflow, provenance tracking (Steven Johnson) | 2026-04-11 |

@@ -82,6 +82,6 @@ Three operations:
 ## Browse
 
 - **Sources** — 33 raw sources that feed this wiki
-- **Concepts** — 22 concept pages covering patterns, standards, and architectural ideas
+- **Concepts** — 20 concept pages covering patterns, standards, and architectural ideas
 - **Entities** — 17 pages for tools, people, and organizations
 - **Analyses** — 4 synthesized analyses filed back into the wiki
