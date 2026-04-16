@@ -95,3 +95,4 @@
 | [[cross-source-themes]] | 8 common themes across 11 sources — context is king, composition over monoliths, memory frontier, evaluation gap | 2026-04-09 |
 | [[how-to-eval-a-skill]] | Practical guide: how to eval a skill like a prompt eval — 5 surfaces, 3 tiers, pass@k, CI/CD integration | 2026-04-09 |
 | [[memory-architecture-comparison]] | How AI agents remember — four patterns compared, CMA requirements, benchmarks, decision framework, forgetting | 2026-04-15 |
+| [[multi-agent-framework-guide]] | Choosing a multi-agent framework in 2026 — four OSS + four product tools, decision matrix, graph convergence | 2026-04-15 |

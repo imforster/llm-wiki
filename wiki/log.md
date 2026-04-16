@@ -217,3 +217,17 @@ Synthesizes 8 sources into a comprehensive comparison:
 - Five open questions for future research
 
 First of five planned analyses from Six Thinking Hats session. Blog post candidate: "How AI Agents Remember: Four Patterns for Persistent Memory"
+
+## [2026-04-15] create | Analysis: Multi-Agent Framework Guide
+
+Created `wiki/analyses/multi-agent-framework-guide.md` — "Choosing a Multi-Agent Framework in 2026"
+
+Synthesizes 8 sources (4 OSS frameworks + 4 product tools) into a comprehensive guide:
+- Two-tier landscape: product-level (Scion, Kiro, Claude Code, Paperclip) + open-source (AutoGen, CrewAI, LangGraph, Swarm)
+- Decision matrix across 8 factors (production readiness, control, state, memory, debugging, etc.)
+- Graph convergence thesis: AutoGen and LangGraph both moving to graphs as consensus architecture
+- Emerging stack: Paperclip → LangGraph/MAF → Claude Code/Kiro → Scion
+- Multi-agent memory problem: shared memory, conflicting memories, cascading permissions, cost multiplication
+- Progression path: Swarm (learn) → CrewAI (prototype) → LangGraph (production) → MAF/Paperclip (enterprise)
+
+Second of five planned analyses. Blog post candidate: "Choosing a Multi-Agent Framework in 2026"
