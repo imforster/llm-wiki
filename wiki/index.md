@@ -103,3 +103,4 @@
 | [[governance-safety-overview]] | The Shadow AI problem — five governance pillars, regulatory landscape, UX as governance layer, implementation roadmap | 2026-04-15 |
 | [[beyond-code-industry-impact]] | Agentic AI beyond software — six industries, wiki themes generalization test, SaaS disruption, maturity levels | 2026-04-15 |
 | [[wiki-gap-analysis-apr-2026]] | Five gaps exposed by conversational query — getting started guide, LangGraph+Mem0, team knowledge agents, quality eval, observability | 2026-04-15 |
+| [[getting-started-guide]] | Building your first long-running agent — 5 phases from single agent to multi-agent, cost budgets, common mistakes | 2026-04-15 |

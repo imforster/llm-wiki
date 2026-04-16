@@ -318,3 +318,17 @@ Researched and ingested 4 sources addressing gaps identified by conversational q
 - **[[ai-environmental-impact]]** — arXiv (Jegham et al., May 2025): energy/carbon/water benchmarks across 30 models. o3 = 70× GPT-4.1 nano. Claude 3.7 Sonnet most eco-efficient. Fills gaps #12-13.
 
 Wiki now has 37 sources. Gaps addressed: #2, #5, #6, #7, #10, #12, #13.
+
+## [2026-04-15] create | Analysis: Getting Started Guide
+
+Created `wiki/analyses/getting-started-guide.md` — "Building Your First Long-Running Agent"
+
+Five-phase guide synthesizing wiki's consensus recommendations:
+1. Single agent + Mem0 memory (Week 1)
+2. Memory lifecycle: decay, contradiction, confidence, compression, expiry (Week 2)
+3. Human-in-the-loop: Plan & Propose → Act with Confirmation (Week 3)
+4. Observability: OpenTelemetry spans + key metrics (Week 4)
+5. Scale to multi-agent (Month 2+)
+
+Includes cost budgets per phase ($80-500/mo), common mistakes, and what's still not covered.
+Fills gap #1 from wiki-gap-analysis. Wiki now has 11 analyses.
