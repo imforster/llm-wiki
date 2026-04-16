@@ -98,3 +98,4 @@
 | [[cost-optimization-guide]] | Why your AI agent costs 10× more than it should — five waste vectors, optimization playbook, architecture-cost connections | 2026-04-15 |
 | [[governance-safety-overview]] | The Shadow AI problem — five governance pillars, regulatory landscape, UX as governance layer, implementation roadmap | 2026-04-15 |
 | [[beyond-code-industry-impact]] | Agentic AI beyond software — six industries, wiki themes generalization test, SaaS disruption, maturity levels | 2026-04-15 |
+| [[wiki-gap-analysis-apr-2026]] | Five gaps exposed by conversational query — getting started guide, LangGraph+Mem0, team knowledge agents, quality eval, observability | 2026-04-15 |

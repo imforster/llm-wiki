@@ -294,3 +294,16 @@ All five planned analyses from Six Thinking Hats session now complete. Wiki has 
 - Evaluation upgraded with 4 benchmarks
 - 4 new insights: token economics, multi-agent philosophies, governance pillars, remaining gaps
 - "What's Still Missing" section updated for current state
+
+## [2026-04-15] query + create | Conversational query test → gap analysis
+
+Tested wiki with cross-cutting query: "Build a long-running knowledge management agent — what does the wiki recommend?"
+
+Wiki provided strong architectural guidance across memory (Graph+Vector), coordination (LangGraph), cost ($200-500/mo), trust (Autonomy Dial), and non-code considerations.
+
+Exposed 5 gaps filed as `wiki/analyses/wiki-gap-analysis-apr-2026.md`:
+1. No "getting started" tutorial (what to choose vs how to wire it)
+2. No LangGraph + Mem0 integration source
+3. No team-level knowledge management agent sources
+4. No knowledge quality evaluation metrics
+5. No agent observability tooling sources
