@@ -20,14 +20,14 @@
 &lt;h2 id="connections"&gt;Connections&lt;a class="anchor" href="#connections"&gt;#&lt;/a&gt;&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;&lt;a href="https://blog.imfsoftware.com/llm-wiki/docs/concepts/skill-evaluation/"&gt;skill-evaluation&lt;/a&gt;&lt;/strong&gt;: This guide provides the foundational methodology. The three-tier framework (deterministic → LLM-judge → human) from &lt;a href="https://blog.imfsoftware.com/llm-wiki/docs/sources/evaluating-agent-skills-caparas/"&gt;evaluating-agent-skills-caparas&lt;/a&gt; is a direct application of these principles to skills specifically.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;&lt;strong&gt;how-to-eval-a-skill&lt;/strong&gt;&lt;/strong&gt;: Our practical guide extends Anthropic&amp;rsquo;s prompt eval methodology to the five surfaces of skill evaluation (routing, tool selection, process, side effects, output quality).&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;&lt;a href="https://blog.imfsoftware.com/llm-wiki/docs/analysis/how-to-eval-a-skill/"&gt;how-to-eval-a-skill&lt;/a&gt;&lt;/strong&gt;: Our practical guide extends Anthropic&amp;rsquo;s prompt eval methodology to the five surfaces of skill evaluation (routing, tool selection, process, side effects, output quality).&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;&lt;a href="https://blog.imfsoftware.com/llm-wiki/docs/sources/ten-pillars-agentic-skill-design/"&gt;ten-pillars-agentic-skill-design&lt;/a&gt;&lt;/strong&gt;: Pillar 7 (Testing and Validation) is operationalized by this guide&amp;rsquo;s methodology.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id="see-also"&gt;See Also&lt;a class="anchor" href="#see-also"&gt;#&lt;/a&gt;&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="https://blog.imfsoftware.com/llm-wiki/docs/concepts/skill-evaluation/"&gt;skill-evaluation&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://blog.imfsoftware.com/llm-wiki/docs/sources/evaluating-agent-skills-caparas/"&gt;evaluating-agent-skills-caparas&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;how-to-eval-a-skill&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://blog.imfsoftware.com/llm-wiki/docs/analysis/how-to-eval-a-skill/"&gt;how-to-eval-a-skill&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://blog.imfsoftware.com/llm-wiki/docs/entities/anthropic/"&gt;anthropic&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;</description></item><item><title/><link>https://blog.imfsoftware.com/llm-wiki/docs/sources/evaluating-agent-skills-caparas/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://blog.imfsoftware.com/llm-wiki/docs/sources/evaluating-agent-skills-caparas/</guid><description>&lt;h1 id="how-to-evaluate-ai-agent-skills-without-relying-on-vibes"&gt;How to Evaluate AI Agent Skills Without Relying on Vibes&lt;a class="anchor" href="#how-to-evaluate-ai-agent-skills-without-relying-on-vibes"&gt;#&lt;/a&gt;&lt;/h1&gt;
 &lt;p&gt;&lt;a href="https://pub.towardsai.net/how-to-evaluate-ai-agent-skills-without-relying-on-vibes-9a5764ad18c4"&gt;Original&lt;/a&gt; | &lt;a href="https://github.com/imforster/llm-wiki/blob/main/raw/llm/evaluating-agent-skills-caparas.md"&gt;Raw&lt;/a&gt;&lt;/p&gt;

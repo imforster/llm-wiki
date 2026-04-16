@@ -10,7 +10,7 @@ import sys
 WIKI_DIR = "wiki"
 SITE_DIR = "site"
 CONTENT_DIR = os.path.join(SITE_DIR, "content", "docs")
-SECTIONS = ["sources", "entities", "concepts", "analyses"]
+SECTIONS = ["sources", "entities", "concepts", "analysis"]
 
 # --- Build slug→section lookup ---
 slug_map = {}
@@ -46,7 +46,7 @@ if os.path.exists(CONTENT_DIR):
 os.makedirs(CONTENT_DIR)
 
 section_meta = {
-    "analyses": (1, "💡"),
+    "analysis": (1, "💡"),
     "concepts": (2, "🧠"),
     "entities": (3, "📦"),
     "sources":  (4, "📄"),

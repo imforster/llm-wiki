@@ -5,7 +5,7 @@
 &lt;h2 id="see-also"&gt;See Also&lt;a class="anchor" href="#see-also"&gt;#&lt;/a&gt;&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="https://blog.imfsoftware.com/llm-wiki/docs/concepts/skill-evaluation/"&gt;skill-evaluation&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;how-to-eval-a-skill&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://blog.imfsoftware.com/llm-wiki/docs/analysis/how-to-eval-a-skill/"&gt;how-to-eval-a-skill&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;</description></item><item><title/><link>https://blog.imfsoftware.com/llm-wiki/docs/sources/promptfoo/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://blog.imfsoftware.com/llm-wiki/docs/sources/promptfoo/</guid><description>&lt;h1 id="promptfoo-llm-evals--red-teaming"&gt;Promptfoo: LLM Evals &amp;amp; Red Teaming&lt;a class="anchor" href="#promptfoo-llm-evals--red-teaming"&gt;#&lt;/a&gt;&lt;/h1&gt;
 &lt;p&gt;&lt;a href="https://github.com/promptfoo/promptfoo"&gt;Original&lt;/a&gt; | &lt;a href="https://www.promptfoo.dev/docs/"&gt;Docs&lt;/a&gt; | &lt;a href="https://github.com/imforster/llm-wiki/blob/main/raw/llm/promptfoo-readme.md"&gt;Raw&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id="summary"&gt;Summary&lt;a class="anchor" href="#summary"&gt;#&lt;/a&gt;&lt;/h2&gt;
@@ -13,7 +13,7 @@
 &lt;h2 id="key-takeaways"&gt;Key Takeaways&lt;a class="anchor" href="#key-takeaways"&gt;#&lt;/a&gt;&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;Developer-first&lt;/strong&gt;: Fast, with live reload and caching. Runs 100% locally — prompts never leave your machine.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;YAML-based test cases&lt;/strong&gt;: Define inputs, expected outputs, and grading criteria in YAML. Directly maps to the &lt;code&gt;eval.yaml&lt;/code&gt; format proposed in &lt;strong&gt;how-to-eval-a-skill&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;YAML-based test cases&lt;/strong&gt;: Define inputs, expected outputs, and grading criteria in YAML. Directly maps to the &lt;code&gt;eval.yaml&lt;/code&gt; format proposed in &lt;a href="https://blog.imfsoftware.com/llm-wiki/docs/analysis/how-to-eval-a-skill/"&gt;how-to-eval-a-skill&lt;/a&gt;.&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;Multiple grading methods&lt;/strong&gt;: Exact match, contains, regex, LLM-as-judge, custom functions. Covers both deterministic (Tier 1) and LLM-graded (Tier 2) evaluation.&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;CI/CD integration&lt;/strong&gt;: Run evals in GitHub Actions, block merges on failures. This is the &amp;ldquo;eval on every commit&amp;rdquo; pattern from &lt;a href="https://blog.imfsoftware.com/llm-wiki/docs/sources/evaluating-agent-skills-caparas/"&gt;evaluating-agent-skills-caparas&lt;/a&gt;.&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;Red teaming&lt;/strong&gt;: Vulnerability scanning for prompt injection, jailbreaks, and other attacks. Relevant to &lt;a href="https://blog.imfsoftware.com/llm-wiki/docs/sources/ten-pillars-agentic-skill-design/"&gt;ten-pillars-agentic-skill-design&lt;/a&gt; Pillar 6 (security).&lt;/li&gt;
@@ -23,13 +23,13 @@
 &lt;h2 id="connections"&gt;Connections&lt;a class="anchor" href="#connections"&gt;#&lt;/a&gt;&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;&lt;a href="https://blog.imfsoftware.com/llm-wiki/docs/concepts/skill-evaluation/"&gt;skill-evaluation&lt;/a&gt;&lt;/strong&gt;: Promptfoo is the most practical tool for implementing the three-tier eval framework. Its YAML test cases + CI/CD integration + LLM-as-judge support covers Tiers 1 and 2.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;&lt;strong&gt;how-to-eval-a-skill&lt;/strong&gt;&lt;/strong&gt;: The &lt;code&gt;eval.yaml&lt;/code&gt; format we proposed could be implemented directly in Promptfoo&amp;rsquo;s YAML config format.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;&lt;a href="https://blog.imfsoftware.com/llm-wiki/docs/analysis/how-to-eval-a-skill/"&gt;how-to-eval-a-skill&lt;/a&gt;&lt;/strong&gt;: The &lt;code&gt;eval.yaml&lt;/code&gt; format we proposed could be implemented directly in Promptfoo&amp;rsquo;s YAML config format.&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;&lt;a href="https://blog.imfsoftware.com/llm-wiki/docs/concepts/agent-skills-standard/"&gt;agent-skills-standard&lt;/a&gt;&lt;/strong&gt;: An &lt;code&gt;evals/&lt;/code&gt; directory in the skill structure could contain Promptfoo config files, making skills self-evaluating.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id="see-also"&gt;See Also&lt;a class="anchor" href="#see-also"&gt;#&lt;/a&gt;&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="https://blog.imfsoftware.com/llm-wiki/docs/concepts/skill-evaluation/"&gt;skill-evaluation&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;how-to-eval-a-skill&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://blog.imfsoftware.com/llm-wiki/docs/analysis/how-to-eval-a-skill/"&gt;how-to-eval-a-skill&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://blog.imfsoftware.com/llm-wiki/docs/sources/evaluating-agent-skills-caparas/"&gt;evaluating-agent-skills-caparas&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://blog.imfsoftware.com/llm-wiki/docs/concepts/agent-skills-standard/"&gt;agent-skills-standard&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;</description></item></channel></rss>
