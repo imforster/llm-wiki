@@ -423,3 +423,17 @@ Updated `wiki/analysis/multi-agent-framework-guide.md` from 8 → 11 sources:
 - Added 4 new open questions
 - Updated emerging stack diagram
 - Cross-referenced [[orchestration-tools-compared]] analysis
+
+## [2026-05-09] update | Refreshed cross-source-themes and key-insights for 42 sources
+
+**cross-source-themes.md**: Refreshed from 33 → 42 sources.
+- Theme 2 (Composition): 14/33 → 17/42. Added Gas Town (7 roles, molecules), Symphony (WORKFLOW.md, isolated workspaces), Multica (compounding skills).
+- Theme 6 (Git): 6/33 → 9/42. Upgraded to ⭐⭐⭐⭐⭐. Gas Town is most git-native tool in wiki (worktrees + Dolt + merge queue + federation).
+- Theme 9 (Graphs): Added nuance — Gas Town's process-model proves graphs aren't the only path to scale.
+- Theme matrix updated with new counts.
+
+**key-insights-agentic-landscape.md**: Refreshed from 33 → 42 sources.
+- Insight 1: Six layers → Seven layers. Added Orchestration layer (Gas Town, Symphony, Multica).
+- Insight 12: Four philosophies → Seven philosophies. Split into frameworks + orchestration tools. Added architectural split finding.
+- Insight 14: Added 3 new gaps (harness engineering, cross-model review, content pipeline).
+- Updated emerging stack diagram.

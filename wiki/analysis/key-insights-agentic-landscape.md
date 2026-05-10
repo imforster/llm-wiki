@@ -1,31 +1,32 @@
 ---
 type: analysis
 created: 2026-04-08
-updated: 2026-04-15
-sources: ["[[scion-docs]]", "[[kiro-autonomous-agent]]", "[[claude-code-docs]]", "[[anthropic-skills-repo]]", "[[ten-pillars-agentic-skill-design]]", "[[llm-wiki-karpathy]]", "[[fabric-github]]", "[[personal-ai-infrastructure]]", "[[evaluating-agent-skills-caparas]]", "[[ai-technique-podcast]]", "[[skills-pipeline-sleestk]]", "[[anthropic-eval-guide]]", "[[promptfoo]]", "[[paperclip]]", "[[spec-kit]]", "[[bmad-method]]", "[[notebooklm-notes-guide]]", "[[mem0-memory-management]]", "[[continuum-memory-architectures]]", "[[agent-memory-systems-2026]]", "[[efficient-memory-architectures]]", "[[humaneval-benchmark]]", "[[swe-bench]]", "[[gaia-benchmark]]", "[[agentbench]]", "[[autogen-multi-agent]]", "[[crewai-multi-agent]]", "[[langgraph-agent-orchestration]]", "[[openai-swarm]]", "[[agent-cost-economics]]", "[[agentic-ai-governance]]", "[[agentic-ai-non-code-domains]]", "[[agentic-ux-patterns]]"]
+updated: 2026-05-09
+sources: ["[[scion-docs]]", "[[kiro-autonomous-agent]]", "[[claude-code-docs]]", "[[anthropic-skills-repo]]", "[[ten-pillars-agentic-skill-design]]", "[[llm-wiki-karpathy]]", "[[fabric-github]]", "[[personal-ai-infrastructure]]", "[[evaluating-agent-skills-caparas]]", "[[ai-technique-podcast]]", "[[skills-pipeline-sleestk]]", "[[anthropic-eval-guide]]", "[[promptfoo]]", "[[paperclip]]", "[[spec-kit]]", "[[bmad-method]]", "[[notebooklm-notes-guide]]", "[[mem0-memory-management]]", "[[continuum-memory-architectures]]", "[[agent-memory-systems-2026]]", "[[efficient-memory-architectures]]", "[[humaneval-benchmark]]", "[[swe-bench]]", "[[gaia-benchmark]]", "[[agentbench]]", "[[autogen-multi-agent]]", "[[crewai-multi-agent]]", "[[langgraph-agent-orchestration]]", "[[openai-swarm]]", "[[agent-cost-economics]]", "[[agentic-ai-governance]]", "[[agentic-ai-non-code-domains]]", "[[agentic-ux-patterns]]", "[[gastown]]", "[[symphony]]", "[[multica]]"]
 tags: [synthesis, landscape, insights, agentic-ai]
 ---
 
-# Key Insights: The Agentic AI Landscape (April 2026)
+# Key Insights: The Agentic AI Landscape (May 2026)
 
-Synthesized from 33 sources across this wiki. This analysis captures the patterns, tensions, and emerging consensus visible when you look across the entire landscape.
+Synthesized from 42 sources across this wiki. This analysis captures the patterns, tensions, and emerging consensus visible when you look across the entire landscape.
 
-> **Refresh history**: Originally written against 16 sources (Apr 8-10). Refreshed Apr 15 against all 33 sources. Original 10 insights updated; 4 new insights added.
+> **Refresh history**: Originally written against 16 sources (Apr 8-10). Refreshed Apr 15 against 33 sources. Refreshed May 9 against 42 sources — added Gas Town, Symphony, Multica; updated layers, multi-agent philosophies, and "What's Still Missing."
 
 ---
 
-## 1. Six Layers Have Emerged (was Five)
+## 1. Seven Layers Have Emerged (was Six)
 
 | Layer | Representatives | Core Bet |
 |-------|----------------|----------|
 | **Company** | [[paperclip]] | Org charts, budgets, governance, goal alignment |
 | **Methodology** | [[spec-kit]], [[bmad-method]] | Specs, plans, tasks, quality gates |
+| **Orchestration** | [[gastown]], [[symphony]], [[multica]] | Workspace coordination, issue-to-agent automation, team collaboration |
 | **Infrastructure** | [[scion]], [[langgraph-agent-orchestration]], [[autogen-multi-agent]] | Containers, runtimes, graph orchestration |
 | **Tool** | [[claude-code]], [[kiro]], [[crewai-multi-agent]] | Agentic loop, skills, hooks, MCP |
 | **Pattern** | [[fabric]], [[agent-skills-standard]], [[openai-swarm]] | Curated prompts, composable strategies, handoffs |
 | **Memory** | [[mem0]], [[agent-memory-persistence]] | Persistence, retrieval, forgetting, knowledge graphs |
 
-**New**: Memory is now its own layer. The infrastructure layer expanded to include open-source orchestration frameworks (LangGraph, AutoGen/MAF). The emerging stack: Paperclip → LangGraph/MAF → Claude Code/Kiro → Scion → Mem0.
+**New (May 2026)**: Orchestration is now its own layer between Methodology and Infrastructure. Gas Town (workspace/process-model), Symphony (spec/scheduler), and Multica (platform/teammates) represent three distinct approaches at this layer. The emerging stack: Paperclip → Multica → Gas Town → LangGraph/MAF → Claude Code/Kiro → Scion → Mem0.
 
 ## 2. The Autonomy–Interaction Spectrum Is Formalized
 
@@ -132,7 +133,9 @@ $5T infrastructure bet with base case 3.2% ROI. Per-token costs falling 85% but 
 
 Optimization is architecture: model routing (5-8× savings), prompt caching (90% discount), session discipline, selective retrieval (93% reduction). See [[cost-optimization-guide]].
 
-## 12. Multi-Agent Frameworks Have Four Philosophies (NEW)
+## 12. Multi-Agent Has Seven Philosophies Now (was Four) (NEW → EXPANDED)
+
+**Frameworks** (composable, bring-your-own-model):
 
 | Framework | Philosophy | Best For |
 |-----------|-----------|----------|
@@ -141,7 +144,15 @@ Optimization is architecture: model routing (5-8× savings), prompt caching (90%
 | [[langgraph-agent-orchestration]] | State machine graphs | Production workflows |
 | [[openai-swarm]] | Minimal handoffs | Simple routing, learning |
 
-Progression: Swarm (learn) → CrewAI (prototype) → LangGraph (production) → MAF/Paperclip (enterprise). See [[multi-agent-framework-guide]].
+**Orchestration tools** (workspace/platform-level):
+
+| Tool | Philosophy | Best For |
+|------|-----------|----------|
+| [[gastown]] | Process-model (GUPP) | 20-30 parallel agents, crash-surviving state |
+| [[symphony]] | Spec/protocol (WORKFLOW.md) | Issue-tracker-driven automation, minimal infra |
+| [[multica]] | Platform (agents as teammates) | Team collaboration, compounding skills |
+
+**Key architectural split**: Conversation-as-control (3-5 agents) vs process-model (20-30 agents). Gas Town is the only tool using deterministic routing via external state rather than LLM conversation for coordination. See [[orchestration-tools-compared]] and [[multi-agent-framework-guide]].
 
 ## 13. Governance Requires Five Pillars (NEW)
 
@@ -149,22 +160,26 @@ From [[agentic-ai-governance]]: Agent Inventory → Agent Identity (NHI) → Dyn
 
 ## 14. What's Still Missing
 
-Gaps visible across 33 sources:
+Gaps visible across 42 sources:
 - **Skill-level evaluation**: benchmarks test whole models, not individual skills
 - **Multi-agent coordination quality**: no benchmark for how well agents work together
 - **Memory quality benchmarks**: LOCOMO is closest, but no standard for long-term memory accuracy
 - **Conflict resolution**: when agents or memories contradict, no standard mechanism
 - **Cross-framework interoperability**: MCP connects tools, but no standard for agent-to-agent handoff across frameworks
-- **Environmental impact**: $5T infrastructure has energy implications no source quantifies
+- **Environmental impact**: $5T infrastructure has energy implications (partially addressed by [[ai-environmental-impact]])
+- **Harness engineering practices**: Symphony/OpenAI coined the term but no comprehensive guide exists
+- **Cross-model adversarial review**: Metaswarm pattern (writer ≠ reviewer) is promising but not yet in wiki as a source
+- **Content pipeline**: turning wiki/agent knowledge into publishable content (the user's stated goal)
 
 ---
 
-*Analysis based on 33 sources ingested between 2026-04-07 and 2026-04-14. Refreshed 2026-04-15.*
+*Analysis based on 42 sources ingested between 2026-04-07 and 2026-05-09. Refreshed 2026-05-09.*
 
 ## See Also
 - [[cross-source-themes]]
-- [[memory-architecture-comparison]]
+- [[orchestration-tools-compared]]
 - [[multi-agent-framework-guide]]
+- [[memory-architecture-comparison]]
 - [[cost-optimization-guide]]
 - [[governance-safety-overview]]
 - [[beyond-code-industry-impact]]

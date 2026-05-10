@@ -1,16 +1,16 @@
 ---
 type: analysis
 created: 2026-04-09
-updated: 2026-04-15
-sources: ["[[scion-docs]]", "[[kiro-autonomous-agent]]", "[[claude-code-docs]]", "[[anthropic-skills-repo]]", "[[ten-pillars-agentic-skill-design]]", "[[llm-wiki-karpathy]]", "[[fabric-github]]", "[[personal-ai-infrastructure]]", "[[evaluating-agent-skills-caparas]]", "[[ai-technique-podcast]]", "[[skills-pipeline-sleestk]]", "[[anthropic-eval-guide]]", "[[promptfoo]]", "[[paperclip]]", "[[spec-kit]]", "[[bmad-method]]", "[[notebooklm-notes-guide]]", "[[mem0-memory-management]]", "[[continuum-memory-architectures]]", "[[agent-memory-systems-2026]]", "[[efficient-memory-architectures]]", "[[humaneval-benchmark]]", "[[swe-bench]]", "[[gaia-benchmark]]", "[[agentbench]]", "[[autogen-multi-agent]]", "[[crewai-multi-agent]]", "[[langgraph-agent-orchestration]]", "[[openai-swarm]]", "[[agent-cost-economics]]", "[[agentic-ai-governance]]", "[[agentic-ai-non-code-domains]]", "[[agentic-ux-patterns]]"]
+updated: 2026-05-09
+sources: ["[[scion-docs]]", "[[kiro-autonomous-agent]]", "[[claude-code-docs]]", "[[anthropic-skills-repo]]", "[[ten-pillars-agentic-skill-design]]", "[[llm-wiki-karpathy]]", "[[fabric-github]]", "[[personal-ai-infrastructure]]", "[[evaluating-agent-skills-caparas]]", "[[ai-technique-podcast]]", "[[skills-pipeline-sleestk]]", "[[anthropic-eval-guide]]", "[[promptfoo]]", "[[paperclip]]", "[[spec-kit]]", "[[bmad-method]]", "[[notebooklm-notes-guide]]", "[[mem0-memory-management]]", "[[continuum-memory-architectures]]", "[[agent-memory-systems-2026]]", "[[efficient-memory-architectures]]", "[[humaneval-benchmark]]", "[[swe-bench]]", "[[gaia-benchmark]]", "[[agentbench]]", "[[autogen-multi-agent]]", "[[crewai-multi-agent]]", "[[langgraph-agent-orchestration]]", "[[openai-swarm]]", "[[agent-cost-economics]]", "[[agentic-ai-governance]]", "[[agentic-ai-non-code-domains]]", "[[agentic-ux-patterns]]", "[[gastown]]", "[[symphony]]", "[[multica]]"]
 tags: [analysis, themes, cross-source, synthesis]
 ---
 
 # Cross-Source Theme Analysis
 
-33 sources, 9 tools, 4 OSS frameworks, 4 benchmarks, 2 standards, 3 methodologies, 4 memory systems, and sources covering cost, governance, UX, and industry impact. Here are the themes that appear across 3+ sources independently.
+42 sources, 12 tools, 4 OSS frameworks, 4 benchmarks, 2 standards, 3 methodologies, 4 memory systems, and sources covering cost, governance, UX, and industry impact. Here are the themes that appear across 3+ sources independently.
 
-> **Refresh history**: Originally written against 11 sources (Apr 9). Refreshed Apr 15 against all 33 sources. Original 8 themes retained and strengthened; 4 new themes added.
+> **Refresh history**: Originally written against 11 sources (Apr 9). Refreshed Apr 15 against 33 sources. Refreshed May 9 against 42 sources — added Gas Town, Symphony, Multica evidence to existing themes.
 
 ---
 
@@ -40,7 +40,7 @@ The single most repeated idea. Now backed by quantitative evidence from memory r
 
 ---
 
-## Theme 2: Composition Over Monoliths (14/33 sources) ⭐⭐⭐⭐⭐
+## Theme 2: Composition Over Monoliths (17/42 sources) ⭐⭐⭐⭐⭐
 
 Validated across every framework — product-level and open-source alike.
 
@@ -60,6 +60,9 @@ Validated across every framework — product-level and open-source alike.
 | [[openai-swarm]] | Agents as system prompts + functions. Minimal units. |
 | [[paperclip]] | Agents organized into companies with specialized roles |
 | [[spec-kit]] | 30+ agents, 50+ extensions, each with focused scope |
+| [[gastown]] | Seven specialized roles (Mayor, Polecats, Refinery, Witness, Deacon, Dogs). Molecules as composable workflow units. |
+| [[symphony]] | WORKFLOW.md per repo. Each issue gets isolated workspace + agent session. Separation of scheduler from agent. |
+| [[multica]] | Reusable skills that compound. Each agent is a focused teammate with a specific runtime. |
 
 **Strongest convergence in the wiki.** Every single multi-agent framework chose small, focused, composable units. No exceptions.
 
@@ -118,9 +121,23 @@ Fabric Patterns (2023) → Agent Skills Standard (2025) → Claude Code Skills (
 
 ---
 
-## Theme 6: Git as Universal Substrate (6/33 sources) ⭐⭐⭐⭐
+## Theme 6: Git as Universal Substrate (9/42 sources) ⭐⭐⭐⭐⭐
 
-Unchanged. Git remains the one coordination mechanism everyone agrees on.
+**Upgraded from ⭐⭐⭐⭐ to ⭐⭐⭐⭐⭐.** Gas Town and Symphony provide the strongest evidence yet that git is the coordination primitive for multi-agent systems.
+
+| Source | How it appears |
+|--------|---------------|
+| [[scion]] | Git worktrees per agent |
+| [[kiro]] | Git branches, PR output |
+| [[claude-code]] | Git-based workspaces |
+| [[gastown]] | Git worktrees for every polecat. Dolt (git-for-data) for beads. Merge queue (Refinery). Wasteland federation via DoltHub. **Most git-native tool in the wiki.** |
+| [[symphony]] | Per-issue workspace directories. Workspaces persist across runs. WORKFLOW.md version-controlled with the codebase. |
+| [[multica]] | Git-based workspace isolation per agent task |
+| [[paperclip]] | Agent-agnostic but assumes git-based code output |
+| [[spec-kit]] | Spec-driven development with git-versioned artifacts |
+| [[llm-wiki-pattern]] | The wiki itself is git-backed |
+
+**Key advance (May 2026)**: Gas Town takes git further than any other tool — worktrees for isolation, Dolt for cell-level merge of concurrent agent writes, and a Bors-style merge queue for quality gates. Symphony uses git implicitly (workspaces are filesystem directories that can be git repos via hooks). The pattern is universal.
 
 ---
 
@@ -159,6 +176,8 @@ Unchanged. MCP + Agent Skills as two-layer open substrate.
 | [[kiro]] | Sub-agents coordinated through structured task graphs. |
 
 Both AutoGen (via MAF) and LangGraph converging on typed nodes + edges. The conversation-based approach (AutoGen v0.2 GroupChat) is being abandoned by its own creators. See [[multi-agent-framework-guide]].
+
+**May 2026 nuance**: [[gastown]] proves graphs aren't the only path to production scale. Gas Town's process-model (deterministic routing via external state, GUPP pull-based execution) scales to 20-30 agents without graphs. The graph convergence applies to *framework-level* orchestration; workspace-level orchestration may use different primitives entirely.
 
 ---
 
@@ -201,22 +220,22 @@ The wiki's themes generalize across all industries. Main difference: non-code do
 
 ---
 
-## Theme Matrix (Updated)
+## Theme Matrix (Updated May 2026)
 
 | Theme | Sources | Strength | Change |
 |-------|---------|----------|--------|
-| Context is king | 15/33 | ⭐⭐⭐⭐⭐ | ↑ Now quantified (93% token reduction) |
-| Composition over monoliths | 14/33 | ⭐⭐⭐⭐⭐ | ↑ Validated across all OSS frameworks |
-| Human in the loop (spectrum) | 13/33 | ⭐⭐⭐⭐⭐ | ↑ Formalized as 6 UX patterns |
-| Memory architectures | 10/33 | ⭐⭐⭐⭐⭐ | ↑↑ From "unsolved" to "understood" |
-| Evaluation frameworks | 8/33 | ⭐⭐⭐⭐ | ↑ From "weakest link" to "framework exists" |
-| Skills evolving into standard | 6/33 | ⭐⭐⭐⭐ | → Unchanged |
-| Git as universal substrate | 6/33 | ⭐⭐⭐⭐ | → Unchanged |
-| Open standards winning | 5/33 | ⭐⭐⭐ | → Unchanged |
-| Token economics drive architecture | 5/33 | ⭐⭐⭐ | 🆕 New |
-| Graph orchestration convergence | 4/33 | ⭐⭐⭐ | 🆕 New |
-| Governance is next frontier | 4/33 | ⭐⭐⭐ | 🆕 New |
-| Expanding beyond code | 3/33 | ⭐⭐⭐ | 🆕 New |
+| Context is king | 15/42 | ⭐⭐⭐⭐⭐ | → Quantified (93% token reduction) |
+| Composition over monoliths | 17/42 | ⭐⭐⭐⭐⭐ | ↑ Gas Town, Symphony, Multica all validate |
+| Human in the loop (spectrum) | 13/42 | ⭐⭐⭐⭐⭐ | → Formalized as 6 UX patterns |
+| Memory architectures | 10/42 | ⭐⭐⭐⭐⭐ | → "Understood" |
+| Git as universal substrate | 9/42 | ⭐⭐⭐⭐⭐ | ↑↑ Gas Town is most git-native tool ever |
+| Evaluation frameworks | 8/42 | ⭐⭐⭐⭐ | → "Framework exists" |
+| Skills evolving into standard | 6/42 | ⭐⭐⭐⭐ | → Unchanged |
+| Open standards winning | 5/42 | ⭐⭐⭐ | → Unchanged |
+| Token economics drive architecture | 5/42 | ⭐⭐⭐ | → |
+| Graph orchestration convergence | 4/42 | ⭐⭐⭐ | ~ Gas Town proves alternative path |
+| Governance is next frontier | 4/42 | ⭐⭐⭐ | → |
+| Expanding beyond code | 3/42 | ⭐⭐⭐ | → |
 
 ## See Also
 - [[key-insights-agentic-landscape]]
