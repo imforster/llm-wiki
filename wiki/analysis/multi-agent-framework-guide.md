@@ -1,20 +1,20 @@
 ---
 type: analysis
 created: 2026-04-15
-updated: 2026-04-15
-sources: ["[[autogen-multi-agent]]", "[[crewai-multi-agent]]", "[[langgraph-agent-orchestration]]", "[[openai-swarm]]", "[[scion-docs]]", "[[kiro-autonomous-agent]]", "[[claude-code-docs]]", "[[paperclip]]"]
+updated: 2026-05-09
+sources: ["[[autogen-multi-agent]]", "[[crewai-multi-agent]]", "[[langgraph-agent-orchestration]]", "[[openai-swarm]]", "[[scion-docs]]", "[[kiro-autonomous-agent]]", "[[claude-code-docs]]", "[[paperclip]]", "[[gastown]]", "[[symphony]]", "[[multica]]"]
 tags: [analysis, multi-agent, orchestration, frameworks, comparison]
 ---
 
 # Choosing a Multi-Agent Framework in 2026
 
-Synthesized from 8 sources across this wiki. This analysis compares the four open-source multi-agent frameworks alongside the four product-level approaches already in the wiki, maps their coordination philosophies, and provides a practical decision framework.
+Synthesized from 11 sources across this wiki (updated May 2026 with Gas Town, Symphony, and Multica). This analysis compares the open-source multi-agent frameworks and orchestration tools, maps their coordination philosophies, and provides a practical decision framework.
 
 ---
 
 ## The Landscape: Two Tiers
 
-The wiki now covers eight distinct approaches to multi-agent orchestration, split across two tiers:
+The wiki now covers eleven distinct approaches to multi-agent orchestration, split across three tiers:
 
 **Product-level** (opinionated, integrated):
 
@@ -25,6 +25,14 @@ The wiki now covers eight distinct approaches to multi-agent orchestration, spli
 | [[claude-code]] | Tool-first. Subagents, MCP, skills, permission modes. | Tool |
 | [[paperclip]] | Company-first. Org charts, budgets, governance above agents. | Company |
 
+**Orchestration tools** (workspace/platform-level, agent-agnostic):
+
+| Tool | Philosophy | Core Metaphor |
+|------|-----------|---------------|
+| [[gastown]] | Workspace-first. Git worktrees, merge queue, 20-30 agents. Process model. | Town with Mayor, Polecats, Refinery |
+| [[symphony]] | Spec-first. Language-agnostic protocol. WORKFLOW.md. Per-issue workspaces. | Scheduler/runner daemon |
+| [[multica]] | Platform-first. Agents as teammates. Compounding skills. Cloud-first. | Team collaboration board |
+
 **Open-source frameworks** (composable, bring-your-own-model):
 
 | Framework | Philosophy | Core Metaphor |
@@ -34,7 +42,7 @@ The wiki now covers eight distinct approaches to multi-agent orchestration, spli
 | [[langgraph-agent-orchestration]] | Explicit state machines | Graph nodes + edges + checkpoints |
 | [[openai-swarm]] | Minimal handoffs | Functions that return agents |
 
-These aren't competing — they operate at different levels. You might use LangGraph to orchestrate agents that run inside Claude Code, coordinated by Paperclip at the company level.
+These aren't competing — they operate at different levels. You might use LangGraph to orchestrate agents that run inside Claude Code, coordinated by Gas Town at the workspace level, with Paperclip managing company goals above.
 
 ---
 
@@ -163,28 +171,57 @@ The conversation-based approach (AutoGen v0.2 GroupChat) is being abandoned by i
 
 The open-source frameworks don't replace the product-level tools — they complement them:
 
-| Product Tool | What It Provides | Framework Complement |
-|-------------|-----------------|---------------------|
+| Tool | What It Provides | Framework Complement |
+|------|-----------------|---------------------|
 | [[claude-code]] | The agent itself (LLM + tools + skills) | LangGraph/CrewAI orchestrate multiple Claude Code instances |
 | [[kiro]] | Autonomous frontier agent | Could be a node in a LangGraph workflow |
 | [[scion]] | Container isolation + lifecycle | Provides the runtime for any framework's agents |
+| [[gastown]] | Workspace orchestration + merge queue | Coordinates Claude Code/Codex/Copilot with persistent state (20-30 agents) |
+| [[symphony]] | Issue-to-agent automation | Reads Linear, spawns Codex sessions per issue with WORKFLOW.md policy |
+| [[multica]] | Team collaboration platform | Assigns issues to agents, tracks progress, compounds skills (11 runtimes) |
 | [[paperclip]] | Company-level governance | Sits above frameworks, manages goals and budgets |
 
-The emerging stack: **Paperclip** (company goals) → **LangGraph/MAF** (workflow orchestration) → **Claude Code/Kiro** (individual agents) → **Scion** (infrastructure isolation)
+The emerging stack (updated May 2026):
+
+```
+Paperclip (company goals/governance)
+    → Multica (team collaboration + skill compounding)
+        → Gas Town (workspace orchestration + merge queue)
+            → LangGraph/MAF (workflow graphs)
+                → Claude Code/Kiro/Codex (individual agents)
+                    → Scion (infrastructure isolation)
+```
+
+### The Architectural Split (May 2026 Update)
+
+External comparison sources reveal a fundamental split in how multi-agent systems coordinate:
+
+| Architecture | Control Plane | Scale | Tools |
+|---|---|---|---|
+| **Conversation-as-control** | LLM routes via messages | 3-5 agents | AutoGen, CrewAI, Swarm |
+| **Graph-as-control** | Explicit edges + conditions | 5-15 agents | LangGraph, MAF |
+| **Process-model** | Deterministic routing via external state | 20-30 agents | Gas Town |
+| **Issue-tracker-driven** | Tracker polls + workspace isolation | Bounded (default 10) | Symphony |
+| **Platform-driven** | Web UI + daemon dispatch | Runtime-bound | Multica |
+
+Gas Town is the only tool using a **process model** — agents coordinate via external state (Dolt/Git), not via LLM conversation. This is why it scales to 20-30 parallel agents while conversation-based frameworks struggle beyond 3-5.
 
 ---
 
-## Coordination Patterns Across All Eight Approaches
+## Coordination Patterns Across All Eleven Approaches
 
 | Pattern | Who Uses It | How |
 |---------|------------|-----|
-| **Git-based coordination** | Scion, Kiro, Claude Code | Worktrees/branches per agent, PRs as output |
+| **Git-based coordination** | Scion, Kiro, Claude Code, Gas Town, Symphony | Worktrees/branches per agent, PRs as output |
 | **Conversation-based** | AutoGen, Claude Code (subagents) | Agents negotiate through dialogue |
 | **Graph-based** | LangGraph, MAF, Scion | Explicit nodes + edges + conditions |
-| **Role-based delegation** | CrewAI, Paperclip | Specialized agents with defined responsibilities |
+| **Role-based delegation** | CrewAI, Paperclip, Gas Town | Specialized agents with defined responsibilities |
 | **Function handoffs** | Swarm, Claude Code (tool use) | Functions transfer control between agents |
+| **Process-model (GUPP)** | Gas Town | Pull-based: work on hook → agent executes immediately |
+| **Issue-tracker polling** | Symphony, Multica | Daemon reads issues, dispatches agents per task |
 | **Container isolation** | Scion | Each agent in its own container, no shared context |
 | **Permission modes** | Claude Code | Configurable dial from full control to full autonomy |
+| **Compounding skills** | Multica | Solutions become reusable team capabilities |
 
 ---
 
@@ -221,7 +258,25 @@ Multi-agent systems multiply the [[agent-memory-persistence]] challenge:
 
 5. **If you need company-level orchestration**: [[paperclip]] above whatever framework you choose. It manages goals and budgets, not agent internals.
 
-6. **For everyone**: Plan for the graph convergence. Even if you start with CrewAI or Swarm, your production system will likely end up as a graph.
+6. **If you need 20-30 parallel agents**: [[gastown]]. Process-model architecture with crash-surviving state, merge queue, and three-tier monitoring. Requires tmux comfort.
+
+7. **If you want issue-tracker-driven automation**: [[symphony]]. Minimal infrastructure (no DB, no UI), WORKFLOW.md as policy-as-code. Currently Linear-only, Codex-only.
+
+8. **If you want agents as teammates on a team board**: [[multica]]. Cloud-first platform with compounding skills, 11 runtime support, multi-user collaboration.
+
+9. **For everyone**: Plan for the graph convergence. Even if you start with CrewAI or Swarm, your production system will likely end up as a graph. But note: Gas Town's process-model proves graphs aren't the only path to scale.
+
+---
+
+## Progression Path (Updated May 2026)
+
+1. **Learn**: Build a Swarm-style handoff system to understand the patterns
+2. **Prototype**: Use CrewAI for quick multi-agent prototypes (intuitive team metaphor)
+3. **Automate**: Use Symphony to turn issue tracker work into autonomous agent runs
+4. **Production**: Move to LangGraph when you need checkpointing, human-in-the-loop, or error recovery
+5. **Scale**: Gas Town for 20-30 parallel agents with merge queue and monitoring
+6. **Collaborate**: Multica when your team (humans + agents) needs shared visibility
+7. **Govern**: Paperclip for company-level orchestration with budgets and accountability
 
 ---
 
@@ -232,13 +287,21 @@ Multi-agent systems multiply the [[agent-memory-persistence]] challenge:
 - How should multi-agent memory be shared without cascading errors?
 - What's the right granularity for task decomposition across agents?
 - Will the product-level tools (Claude Code, Kiro) eventually embed framework-level orchestration natively?
+- Will Symphony expand beyond Linear? The spec mentions pluggable tracker adapters as future work.
+- Will Gas Town's process-model be adopted by others, or remain unique?
+- Will cross-model adversarial review (Metaswarm pattern) become standard for trust?
+- Can Multica's compounding skills scale to large teams?
 
 ---
 
-*Analysis based on 8 sources ingested into this wiki between 2026-04-07 and 2026-04-14. Represents the state of multi-agent orchestration as of April 2026.*
+*Analysis based on 11 sources ingested into this wiki between 2026-04-07 and 2026-05-09. Updated May 2026 with Gas Town, Symphony, and Multica. See [[orchestration-tools-compared]] for the detailed head-to-head analysis.*
 
 ## See Also
 - [[multi-agent-orchestration]]
+- [[orchestration-tools-compared]]
+- [[gastown]]
+- [[symphony]]
+- [[multica]]
 - [[agent-memory-persistence]]
 - [[memory-architecture-comparison]]
 - [[agent-cost-economics]]

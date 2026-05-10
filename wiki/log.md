@@ -411,3 +411,15 @@ New gaps: 6 identified from orchestration ingests (harness engineering, cross-mo
 
 Strengths: Multi-agent orchestration coverage now comprehensive (10 sources, 7 approaches, external validation).
 Weaknesses: Content pipeline stalled, no new concepts, overview.md stale, orchestration-heavy month.
+
+## [2026-05-09] update | Multi-Agent Framework Guide refreshed for 11 sources
+
+Updated `wiki/analysis/multi-agent-framework-guide.md` from 8 → 11 sources:
+- Added Gas Town, Symphony, Multica to landscape (now three tiers: product, orchestration, framework)
+- Added "Architectural Split" section (conversation vs graph vs process-model vs issue-tracker vs platform)
+- Expanded coordination patterns table (7 → 10 patterns)
+- Updated recommendations (#6-8 for Gas Town, Symphony, Multica)
+- Updated progression path (7 steps from Learn → Govern)
+- Added 4 new open questions
+- Updated emerging stack diagram
+- Cross-referenced [[orchestration-tools-compared]] analysis
