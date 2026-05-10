@@ -353,3 +353,31 @@ Novel architecture synthesized from 7 wiki sources (not documented in any single
 - Directly supports content pipeline goal (interactions → Mem0 → wiki → blog posts)
 
 Wiki now has 12 analyses.
+
+## [2026-05-08] ingest | Gas Town
+
+Source: https://github.com/gastownhall/gastown — open-source multi-agent workspace orchestration system (Go). Coordinates 20-30+ AI coding agents with git-worktree persistence, Bors-style merge queue, three-tier health monitoring, and federated cross-workspace coordination.
+
+Created 2 wiki pages, updated 2:
+- Source: [[gastown]]
+- Entity: [[gastown]]
+- Updated: [[multi-agent-orchestration]] — added Gas Town as fifth approach ("Workspace-first"), source count now 8
+- Updated: [[index]] — added source and entity entries
+
+Key insight: Gas Town represents the most complete implementation of "git as universal coordination" in the wiki — git worktrees for persistence, git-backed issue tracking (beads), and a merge queue that enforces quality gates. Fills the gap between tool-level orchestration (Claude Code) and organizational orchestration (Paperclip) with a practical workspace layer.
+
+## [2026-05-09] ingest | Symphony + Multica
+
+Two multi-agent orchestration tools ingested:
+
+- **[[symphony]]** — OpenAI's spec-first orchestration (23K stars). A 78KB language-agnostic specification (SPEC.md) that teams implement in their own language. Elixir reference implementation. Reads Linear issues, creates per-issue isolated workspaces, runs Codex app-server. WORKFLOW.md as single source of truth. No database, no UI — intentionally minimal scheduler/runner.
+
+- **[[multica]]** — Open-source managed agents platform (26.6K stars). Agents as first-class teammates with profiles, board presence, comments, blocker reporting. Reusable skills that compound. Cloud-first (Next.js + Go + PostgreSQL). Most vendor-neutral: 11 agent CLIs supported. Lighter than Paperclip, heavier than Symphony.
+
+Created 4 wiki pages, updated 2:
+- Sources: [[symphony]], [[multica]]
+- Entities: [[symphony]], [[multica]]
+- Updated: [[multi-agent-orchestration]] — added Symphony (Spec-first) and Multica (Platform-first) as 6th and 7th approaches, source count now 10
+- Updated: [[index]] — added source and entity entries
+
+Key insight: The multi-agent orchestration space now has a clear spectrum of approaches in the wiki — from minimal spec/protocol (Symphony) through workspace CLI (Gas Town) to full SaaS platform (Multica) to company simulator (Paperclip). Symphony's "spec-first" approach is unique: publish a protocol, let teams implement it. Multica's "agents as teammates" metaphor is the most human-centric UX framing.

@@ -1,8 +1,8 @@
 ---
 type: concept
 created: 2026-04-07
-updated: 2026-04-14
-sources: ["[[scion-docs]]", "[[kiro-autonomous-agent]]", "[[claude-code-docs]]", "[[autogen-multi-agent]]", "[[crewai-multi-agent]]", "[[langgraph-agent-orchestration]]", "[[openai-swarm]]"]
+updated: 2026-05-08
+sources: ["[[scion-docs]]", "[[kiro-autonomous-agent]]", "[[claude-code-docs]]", "[[autogen-multi-agent]]", "[[crewai-multi-agent]]", "[[langgraph-agent-orchestration]]", "[[openai-swarm]]", "[[gastown]]", "[[symphony]]", "[[multica]]"]
 tags: [multi-agent, orchestration, ai, architecture]
 ---
 
@@ -27,6 +27,18 @@ The practice of coordinating multiple LLM-based [[agent]]s to work on tasks conc
 ### Company-first: Paperclip
 
 [[paperclip]] operates above all three — orchestrating agents into companies with org charts, budgets, goals, governance, and accountability. Agent-agnostic (works with Claude Code, Codex, Cursor, etc.). Not an agent framework — it's the organizational layer. "Manage business goals, not pull requests."
+
+### Workspace-first: Gas Town
+
+[[gastown]] is a workspace manager that coordinates 20-30+ AI coding agents with persistent work tracking via git worktrees. A "Mayor" (Claude Code instance) orchestrates "Polecats" (worker agents) across project "Rigs." Uniquely combines: git-worktree persistence, Bors-style merge queue, three-tier agent health monitoring, session discovery (Seance), and federated cross-workspace coordination (Wasteland). Agent-agnostic — supports Claude, Codex, Copilot, Gemini, Cursor, and others as runtimes.
+
+### Spec-first: Symphony
+
+[[symphony]] is OpenAI's orchestration service published as a language-agnostic specification (78KB SPEC.md). Teams implement the protocol in their own language. Reads issues from Linear, creates per-issue isolated workspaces, runs Codex app-server sessions. WORKFLOW.md as single source of truth for prompt + config. Intentionally minimal: no database, no UI, scheduler/runner only. The coding agent handles all tracker mutations.
+
+### Platform-first: Multica
+
+[[multica]] treats coding agents as first-class teammates on a managed platform. Agents have profiles, show up on boards, post comments, report blockers, and compound reusable skills. Cloud-first (Next.js + Go + PostgreSQL) with self-hosting. Most vendor-neutral: supports 11 agent CLIs. Lighter governance than [[paperclip]] — Issues/Projects/Labels vs org charts/budgets. Thesis: two engineers + agent fleet = twenty.
 
 ## Shared Patterns
 
@@ -69,6 +81,9 @@ Four open-source frameworks represent different coordination philosophies:
 - [[scion]]
 - [[kiro]]
 - [[claude-code]]
+- [[gastown]]
+- [[symphony]]
+- [[multica]]
 - [[frontier-agent]]
 - [[agent]]
 - [[mcp-protocol]]

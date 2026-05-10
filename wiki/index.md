@@ -43,6 +43,9 @@
 | [[ai-environmental-impact]] | AI energy/carbon/water benchmarks — 30 models, o3 = 70× nano, Jevons Paradox, eco-efficiency rankings (arXiv) | 2026-04-15 |
 | [[crewai-production-guide]] | CrewAI in production — practical crew patterns, memory config, cost optimization, deployment (webcoderspeed) | 2026-04-15 |
 | [[shared-agent-memory]] | Shared agent memory layer — deduplication pattern, conflict resolution status, partial/failed solution storage (RoboRhythms) | 2026-04-15 |
+| [[gastown]] | Gas Town: open-source multi-agent workspace orchestration — git-worktree persistence, 20-30 agents, merge queue, federation (Go) | 2026-05-08 |
+| [[symphony]] | Symphony: OpenAI's spec-first orchestration — language-agnostic protocol, WORKFLOW.md, per-issue workspaces, Codex app-server (Elixir ref) | 2026-05-09 |
+| [[multica]] | Multica: open-source managed agents platform — agents as teammates, reusable skills, 11 runtimes, cloud-first (Go + TypeScript) | 2026-05-09 |
 
 ## Entities
 
@@ -64,6 +67,9 @@
 | [[promptfoo]] | tool | Open-source LLM eval CLI — YAML test cases, CI/CD, red teaming (now OpenAI) |
 | [[scion]] | tool | Experimental multi-agent orchestration testbed — hypervisor for LLM agents |
 | [[spec-kit]] | tool | GitHub's spec-driven development toolkit — 30+ agents, 50+ extensions |
+| [[gastown]] | tool | Open-source multi-agent workspace orchestration — git-worktree persistence, merge queue, federation (Go) |
+| [[symphony]] | tool | OpenAI's spec-first orchestration service — language-agnostic protocol, WORKFLOW.md, Codex app-server |
+| [[multica]] | tool | Open-source managed agents platform — agents as teammates, reusable skills, 11 runtimes, cloud-first |
 | [[steven-johnson]] | person | Co-founder and editorial director of NotebookLM, author of 14 books |
 
 ## Concepts
@@ -83,7 +89,7 @@
 | [[kiro-powers]] | Specialized packages enhancing Kiro agents with domain expertise | 1 |
 | [[llm-wiki-pattern]] | Pattern for LLM-maintained personal knowledge bases — the methodology behind this wiki | 2 |
 | [[mcp-protocol]] | Open protocol for connecting LLMs to external tools — shared by Claude Code and Kiro | 2 |
-| [[multi-agent-orchestration]] | Coordinating multiple LLM agents — comparing Scion, Kiro, Claude Code + open-source frameworks | 7 |
+| [[multi-agent-orchestration]] | Coordinating multiple LLM agents — comparing Scion, Kiro, Claude Code + open-source frameworks | 10 |
 | [[plugin-system]] | Extension architecture via hashicorp/go-plugin over gRPC | 1 |
 | [[prompt-engineering-patterns]] | CoT, ReAct, Reflexion, composable strategies, and other prompting techniques | 2 |
 | [[runtime]] | Infrastructure layer for executing agent containers | 1 |
