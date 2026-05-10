@@ -113,3 +113,4 @@
 | [[multi-agent-framework-guide]] | Choosing a multi-agent framework in 2026 — four OSS + four product tools, decision matrix, graph convergence | 2026-04-15 |
 | [[ten-pillars-evidence-map]] | Evidence map: how 11 wiki sources validate each of the Ten Pillars, with strength rankings and v3 recommendations | 2026-04-09 |
 | [[wiki-gap-analysis-apr-2026]] | 20 gaps identified, 15 addressed — status tracker with remaining open items | 2026-04-15 |
+| [[orchestration-tools-compared]] | Gas Town vs Symphony vs Multica — architectural split, 7 approaches, decision framework, emerging patterns | 2026-05-09 |

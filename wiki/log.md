@@ -381,3 +381,21 @@ Created 4 wiki pages, updated 2:
 - Updated: [[index]] — added source and entity entries
 
 Key insight: The multi-agent orchestration space now has a clear spectrum of approaches in the wiki — from minimal spec/protocol (Symphony) through workspace CLI (Gas Town) to full SaaS platform (Multica) to company simulator (Paperclip). Symphony's "spec-first" approach is unique: publish a protocol, let teams implement it. Multica's "agents as teammates" metaphor is the most human-centric UX framing.
+
+## [2026-05-09] create | Analysis: Orchestration Tools Compared
+
+Created `wiki/analyses/orchestration-tools-compared.md` — "Agent Orchestration Tools Compared: The 2026 Landscape"
+
+Synthesizes wiki sources (Gas Town, Symphony, Multica, Paperclip, + 4 OSS frameworks) with 3 external comparison articles:
+- rywalker.com: 10-tool comparison (March 2026)
+- tmchow gist: Gas Town vs 7 frameworks deep survey (March 2026)
+- championswimmer gist: Agent stack from LLM call to orchestrator (Feb 2026)
+
+Key findings:
+- Fundamental architectural split: conversation-as-control (3-5 agents) vs process-model (20-30 agents)
+- Seven distinct orchestration philosophies from simple loop (Ralph) to company sim (Paperclip)
+- Gas Town's GUPP + Dolt cell-level merge is genuinely unique — no other framework has crash-surviving pull-based execution
+- Symphony's spec-first approach is unique — publish a protocol, not a product
+- Multica is the only tool designed for multi-user team collaboration with agents
+- Cross-model adversarial review (Metaswarm) emerging as strongest trust pattern
+- Prediction: by 2028, "autonomous agent" and "orchestrator" categories merge
