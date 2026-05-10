@@ -399,3 +399,15 @@ Key findings:
 - Multica is the only tool designed for multi-user team collaboration with agents
 - Cross-model adversarial review (Metaswarm) emerging as strongest trust pattern
 - Prediction: by 2028, "autonomous agent" and "orchestrator" categories merge
+
+## [2026-05-09] lint | Wiki Gap Analysis: May 2026
+
+Created `wiki/analysis/wiki-gap-analysis-may-2026.md` — monthly health check.
+
+Stats: 42 sources (+3), 20 entities (+3), 20 concepts (—), 13 analyses (+1).
+
+April gaps: 0/5 fully closed. Content pipeline (#17-19) remains top priority.
+New gaps: 6 identified from orchestration ingests (harness engineering, cross-model review, agent identity, workspace isolation, agent-native VCS, governance depth).
+
+Strengths: Multi-agent orchestration coverage now comprehensive (10 sources, 7 approaches, external validation).
+Weaknesses: Content pipeline stalled, no new concepts, overview.md stale, orchestration-heavy month.
