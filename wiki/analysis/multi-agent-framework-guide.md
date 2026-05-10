@@ -12,7 +12,7 @@ Synthesized from 11 sources across this wiki (updated May 2026 with Gas Town, Sy
 
 ---
 
-## The Landscape: Two Tiers
+## The Landscape: Three Tiers
 
 The wiki now covers eleven distinct approaches to multi-agent orchestration, split across three tiers:
 
