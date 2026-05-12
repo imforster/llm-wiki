@@ -1,7 +1,7 @@
 ---
 type: source
 created: 2026-04-14
-updated: 2026-04-14
+updated: 2026-05-11
 origin: llm
 tags: [multi-agent, orchestration, microsoft, open-source, conversation]
 ---
@@ -10,7 +10,9 @@ tags: [multi-agent, orchestration, microsoft, open-source, conversation]
 
 [Original](https://sanj.dev/post/autogen-microsoft-multi-agent-framework/) | [Raw](../../raw/llm/autogen-multi-agent.md)
 
-Microsoft Research's pioneering open-source framework (56.8K GitHub stars) for multi-agent collaboration. Agents communicate through structured multi-turn conversations. Now transitioning to Microsoft Agent Framework (MAF).
+Microsoft Research's pioneering open-source framework (56.8K GitHub stars) for multi-agent collaboration. Agents communicate through structured multi-turn conversations.
+
+> ⚠️ **Legacy (May 2026)**: AutoGen is now in maintenance mode. [[microsoft-agent-framework|Microsoft Agent Framework 1.0]] shipped GA on April 3, 2026, merging AutoGen + Semantic Kernel into a single production SDK. Plan migrations during 2026.
 
 ## Current State (2026): Three Paths
 

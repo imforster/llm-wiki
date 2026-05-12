@@ -9,7 +9,7 @@ tags: [multi-agent, orchestration, openai, codex, spec-driven]
 
 # Symphony
 
-[Original](https://github.com/openai/symphony) | [Raw](../../raw/human/symphony-readme.md)
+[Original](https://github.com/openai/symphony) | [Raw](symphony-readme.md)
 
 ## Summary
 

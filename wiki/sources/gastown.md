@@ -9,7 +9,7 @@ tags: [multi-agent, orchestration, go, cli, git-persistence]
 
 # Gas Town
 
-[Original](https://github.com/gastownhall/gastown) | [Raw](../../raw/human/gastown-readme.md)
+[Original](https://github.com/gastownhall/gastown) | [Raw](gastown-readme.md)
 
 ## Summary
 

@@ -9,7 +9,7 @@ tags: [multi-agent, orchestration, platform, saas, open-source]
 
 # Multica
 
-[Original](https://github.com/multica-ai/multica) | [Raw](../../raw/human/multica-readme.md)
+[Original](https://github.com/multica-ai/multica) | [Raw](multica-readme.md)
 
 ## Summary
 

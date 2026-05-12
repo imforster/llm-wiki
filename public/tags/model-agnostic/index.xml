@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Model-Agnostic on LLM Wiki — Agentic AI Landscape</title><link>https://blog.imfsoftware.com/llm-wiki/tags/model-agnostic/</link><description>Recent content in Model-Agnostic on LLM Wiki — Agentic AI Landscape</description><generator>Hugo</generator><language>en-us</language><atom:link href="https://blog.imfsoftware.com/llm-wiki/tags/model-agnostic/index.xml" rel="self" type="application/rss+xml"/><item><title/><link>https://blog.imfsoftware.com/llm-wiki/docs/sources/google-adk/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://blog.imfsoftware.com/llm-wiki/docs/sources/google-adk/</guid><description>&lt;h1 id="google-agent-development-kit-adk"&gt;Google Agent Development Kit (ADK)&lt;a class="anchor" href="#google-agent-development-kit-adk"&gt;#&lt;/a&gt;&lt;/h1&gt;
+&lt;p&gt;&lt;a href="https://google.github.io/adk-docs/"&gt;Original&lt;/a&gt; | &lt;a href="https://github.com/imforster/llm-wiki/blob/main/raw/llm/google-adk.md"&gt;Raw&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id="summary"&gt;Summary&lt;a class="anchor" href="#summary"&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;ADK is Google&amp;rsquo;s open-source, model-agnostic framework for building AI agents. Available in Python, TypeScript, Go, and Java — the broadest language support of any agent framework. Features deterministic workflow agents (Sequential/Parallel/Loop), native A2A protocol for cross-framework interop, and native MCP for tools.&lt;/p&gt;
+&lt;h2 id="key-takeaways"&gt;Key Takeaways&lt;a class="anchor" href="#key-takeaways"&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Four languages&lt;/strong&gt;: Python, TypeScript, Go, Java — all first-class. Unique in the space.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Model-agnostic&lt;/strong&gt;: Supports Gemini, Claude, Ollama, vLLM, LiteLLM despite Google origin.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Workflow agents&lt;/strong&gt;: SequentialAgent, ParallelAgent, LoopAgent provide deterministic orchestration without LLM overhead. These are the ADK equivalent of &lt;a href="https://blog.imfsoftware.com/llm-wiki/docs/sources/langgraph-agent-orchestration/"&gt;langgraph-agent-orchestration&lt;/a&gt;&amp;rsquo;s graph nodes.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Three interaction mechanisms&lt;/strong&gt;: Shared session state, LLM-driven delegation (transfer_to_agent), and explicit invocation (AgentTool wrapping).&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Native A2A&lt;/strong&gt;: First-class Agent-to-Agent protocol support — expose ADK agents as A2A services or consume external A2A agents.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Native MCP&lt;/strong&gt;: Full Model Context Protocol support for tool integration.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;ADK 2.0 Beta&lt;/strong&gt;: Adding graph-based workflows, collaborative agents, and dynamic workflows — validating the &lt;a href="https://blog.imfsoftware.com/llm-wiki/docs/concepts/multi-agent-orchestration/"&gt;multi-agent-orchestration&lt;/a&gt; graph convergence thesis.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Built-in evaluation&lt;/strong&gt;: Multi-turn eval datasets, local evaluation via CLI/UI. Most frameworks lack this.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Deployment&lt;/strong&gt;: Cloud Run, GKE, Agent Runtime, Ambient Agents.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="architecture"&gt;Architecture&lt;a class="anchor" href="#architecture"&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Hierarchical agent composition:&lt;/p&gt;</description></item></channel></rss>

@@ -1,8 +1,8 @@
 ---
 type: concept
 created: 2026-04-07
-updated: 2026-05-08
-sources: ["[[scion-docs]]", "[[kiro-autonomous-agent]]", "[[claude-code-docs]]", "[[autogen-multi-agent]]", "[[crewai-multi-agent]]", "[[langgraph-agent-orchestration]]", "[[openai-swarm]]", "[[gastown]]", "[[symphony]]", "[[multica]]"]
+updated: 2026-05-11
+sources: ["[[scion-docs]]", "[[kiro-autonomous-agent]]", "[[claude-code-docs]]", "[[autogen-multi-agent]]", "[[crewai-multi-agent]]", "[[langgraph-agent-orchestration]]", "[[openai-swarm]]", "[[gastown]]", "[[symphony]]", "[[multica]]", "[[openai-agents-sdk]]", "[[google-adk]]", "[[microsoft-agent-framework]]"]
 tags: [multi-agent, orchestration, ai, architecture]
 ---
 
@@ -57,16 +57,19 @@ All three share:
 
 ## Open-Source Multi-Agent Frameworks
 
-Four open-source frameworks represent different coordination philosophies:
+Seven frameworks represent different coordination philosophies (updated May 2026):
 
 | Framework | Core Metaphor | Coordination | State | Best For |
 |-----------|--------------|-------------|-------|----------|
-| [[autogen-multi-agent]] | Conversation | Multi-turn dialogue | Conversation history | Research, prototyping |
+| [[autogen-multi-agent]] | Conversation | Multi-turn dialogue | Conversation history | ⚠️ Legacy — migrate to MAF |
 | [[crewai-multi-agent]] | Team of experts | Sequential/hierarchical process | Short/long/entity memory | Complex research tasks |
 | [[langgraph-agent-orchestration]] | State machine | Graph edges + conditions | Checkpointed, persistent | Production workflows |
-| [[openai-swarm]] | Handoffs | Function returns | Context variables (ephemeral) | Simple routing |
+| [[openai-swarm]] | Handoffs | Function returns | Context variables (ephemeral) | ⚠️ Legacy — see Agents SDK |
+| [[openai-agents-sdk]] | Handoffs + guardrails | Function returns + MCP | Session-based | OpenAI-model deployments |
+| [[google-adk]] | Workflow agents | Sequential/Parallel/Loop + transfer | Session state + memory | Multi-language, model-agnostic |
+| [[microsoft-agent-framework]] | Graph workflows | Typed nodes + edges | Agent state + session | Enterprise, Azure-centric |
 
-**Convergence signal**: Both AutoGen (via Microsoft Agent Framework) and LangGraph are moving toward graph-based workflows with typed nodes and edges. This suggests graphs are becoming the consensus architecture for production multi-agent systems.
+**Convergence signal**: AutoGen (→ MAF), LangGraph, Google ADK (2.0), and Microsoft Agent Framework all converge on graph-based workflows. The protocol layer (MCP for tools, A2A for agents) is standardizing interoperability.
 
 ## Open Questions
 

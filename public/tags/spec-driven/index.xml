@@ -7,7 +7,41 @@
 /speckit.clarify → Structured questioning to reduce rework
 /speckit.plan → Technical implementation plan (the &amp;#34;how&amp;#34;)
 /speckit.tasks → Actionable task breakdown with dependencies
-/speckit.implement → Execute all tasks&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Optional: &lt;code&gt;/speckit.analyze&lt;/code&gt; (consistency check), &lt;code&gt;/speckit.checklist&lt;/code&gt; (quality validation)&lt;/p&gt;</description></item><item><title/><link>https://blog.imfsoftware.com/llm-wiki/docs/sources/spec-kit/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://blog.imfsoftware.com/llm-wiki/docs/sources/spec-kit/</guid><description>&lt;h1 id="spec-kit-spec-driven-development-toolkit"&gt;Spec Kit: Spec-Driven Development Toolkit&lt;a class="anchor" href="#spec-kit-spec-driven-development-toolkit"&gt;#&lt;/a&gt;&lt;/h1&gt;
+/speckit.implement → Execute all tasks&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Optional: &lt;code&gt;/speckit.analyze&lt;/code&gt; (consistency check), &lt;code&gt;/speckit.checklist&lt;/code&gt; (quality validation)&lt;/p&gt;</description></item><item><title/><link>https://blog.imfsoftware.com/llm-wiki/docs/entities/symphony/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://blog.imfsoftware.com/llm-wiki/docs/entities/symphony/</guid><description>&lt;h1 id="symphony"&gt;Symphony&lt;a class="anchor" href="#symphony"&gt;#&lt;/a&gt;&lt;/h1&gt;
+&lt;p&gt;Open-source orchestration service by OpenAI that turns issue tracker work into isolated, autonomous coding agent runs. Published as a language-agnostic specification (SPEC.md) with an Elixir reference implementation.&lt;/p&gt;
+&lt;h2 id="key-facts"&gt;Key Facts&lt;a class="anchor" href="#key-facts"&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Repository&lt;/strong&gt;: &lt;a href="https://github.com/openai/symphony"&gt;https://github.com/openai/symphony&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Organization&lt;/strong&gt;: &lt;strong&gt;openai-org&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;License&lt;/strong&gt;: Apache 2.0&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Stars&lt;/strong&gt;: 23K&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Language&lt;/strong&gt;: Elixir (reference), spec is language-agnostic&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Agent runtime&lt;/strong&gt;: Codex app-server&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Issue tracker&lt;/strong&gt;: Linear (only, currently)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Approach&lt;/strong&gt;: Spec-first — teams implement the protocol in their own language&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="core-design"&gt;Core Design&lt;a class="anchor" href="#core-design"&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;WORKFLOW.md&lt;/strong&gt; — Single file containing prompt template (Markdown body) + runtime config (YAML front matter). Version-controlled with the codebase. Dynamic reload without restart.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Scheduler/runner only&lt;/strong&gt; — Reads issues, dispatches agents, tracks state. Does NOT write to the tracker. Clear separation of concerns.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Per-issue workspace isolation&lt;/strong&gt; — Sanitized paths, contained under root, lifecycle hooks&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;In-memory state&lt;/strong&gt; — No database. Recovery via tracker polling + preserved workspaces.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Multi-turn sessions&lt;/strong&gt; — Up to 20 turns per worker, continuation without re-sending prompt&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="differentiators"&gt;Differentiators&lt;a class="anchor" href="#differentiators"&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Only spec/protocol in the wiki (not a framework, library, or product)&lt;/li&gt;
+&lt;li&gt;Strongest &amp;ldquo;policy-as-code&amp;rdquo; implementation (everything in WORKFLOW.md)&lt;/li&gt;
+&lt;li&gt;Assumes &amp;ldquo;harness engineering&amp;rdquo; as prerequisite&lt;/li&gt;
+&lt;li&gt;Intentionally minimal — no UI, no database, no multi-tenant&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="see-also"&gt;See Also&lt;a class="anchor" href="#see-also"&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://blog.imfsoftware.com/llm-wiki/docs/concepts/multi-agent-orchestration/"&gt;multi-agent-orchestration&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://blog.imfsoftware.com/llm-wiki/docs/sources/openai-swarm/"&gt;openai-swarm&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://blog.imfsoftware.com/llm-wiki/docs/entities/gastown/"&gt;gastown&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://blog.imfsoftware.com/llm-wiki/docs/entities/multica/"&gt;multica&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</description></item><item><title/><link>https://blog.imfsoftware.com/llm-wiki/docs/sources/spec-kit/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://blog.imfsoftware.com/llm-wiki/docs/sources/spec-kit/</guid><description>&lt;h1 id="spec-kit-spec-driven-development-toolkit"&gt;Spec Kit: Spec-Driven Development Toolkit&lt;a class="anchor" href="#spec-kit-spec-driven-development-toolkit"&gt;#&lt;/a&gt;&lt;/h1&gt;
 &lt;p&gt;&lt;a href="https://github.com/github/spec-kit"&gt;Original&lt;/a&gt; | &lt;a href="https://github.com/imforster/llm-wiki/blob/main/raw/llm/spec-kit-readme.md"&gt;Raw&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id="summary"&gt;Summary&lt;a class="anchor" href="#summary"&gt;#&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;&lt;a href="https://blog.imfsoftware.com/llm-wiki/docs/entities/spec-kit/"&gt;spec-kit&lt;/a&gt; is an open-source toolkit by GitHub for Spec-Driven Development (SDD) — a methodology where specifications become executable, directly generating working implementations rather than just guiding them. Provides a CLI (&lt;code&gt;specify&lt;/code&gt;) and a set of slash commands that work across 30+ AI agents. MIT licensed.&lt;/p&gt;
@@ -42,4 +76,11 @@
 &lt;li&gt;&lt;a href="https://blog.imfsoftware.com/llm-wiki/docs/entities/claude-code/"&gt;claude-code&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://blog.imfsoftware.com/llm-wiki/docs/concepts/multi-agent-orchestration/"&gt;multi-agent-orchestration&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://blog.imfsoftware.com/llm-wiki/docs/concepts/context-management/"&gt;context-management&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</description></item></channel></rss>
+&lt;/ul&gt;</description></item><item><title/><link>https://blog.imfsoftware.com/llm-wiki/docs/sources/symphony/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://blog.imfsoftware.com/llm-wiki/docs/sources/symphony/</guid><description>&lt;h1 id="symphony"&gt;Symphony&lt;a class="anchor" href="#symphony"&gt;#&lt;/a&gt;&lt;/h1&gt;
+&lt;p&gt;&lt;a href="https://github.com/openai/symphony"&gt;Original&lt;/a&gt; | &lt;a href="symphony-readme.md"&gt;Raw&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id="summary"&gt;Summary&lt;a class="anchor" href="#summary"&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Symphony is OpenAI&amp;rsquo;s open-source orchestration service that turns issue tracker work (Linear) into isolated, autonomous coding agent runs. Rather than providing a framework or SDK, Symphony publishes a language-agnostic &lt;strong&gt;specification&lt;/strong&gt; (SPEC.md, 78KB) that any team can implement in their language of choice. The reference implementation is in Elixir. 23K stars, Apache 2.0.&lt;/p&gt;
+&lt;h2 id="key-takeaways"&gt;Key Takeaways&lt;a class="anchor" href="#key-takeaways"&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Spec-first, not framework-first&lt;/strong&gt; — Symphony is a 2,169-line specification document, not a library. Teams are expected to implement it in their own language. This is a radically different approach from every other tool in the wiki — it&amp;rsquo;s a protocol, not a product.&lt;/p&gt;</description></item></channel></rss>

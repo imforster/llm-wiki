@@ -437,3 +437,13 @@ Updated `wiki/analysis/multi-agent-framework-guide.md` from 8 → 11 sources:
 - Insight 12: Four philosophies → Seven philosophies. Split into frameworks + orchestration tools. Added architectural split finding.
 - Insight 14: Added 3 new gaps (harness engineering, cross-model review, content pipeline).
 - Updated emerging stack diagram.
+
+## [2026-05-11] ingest | OpenAI Agents SDK, Google ADK, Microsoft Agent Framework 1.0
+Three major multi-agent frameworks ingested to update the landscape analysis. Created:
+- Sources: [[openai-agents-sdk]], [[google-adk]], [[microsoft-agent-framework]]
+Updated:
+- [[autogen-multi-agent]] — added legacy/maintenance note (superseded by MAF)
+- [[openai-swarm]] — added superseded note (replaced by Agents SDK)
+- [[multi-agent-orchestration]] — expanded framework table from 4 to 7, updated convergence signal
+- [[multi-agent-framework-guide]] — full rewrite: 14 sources, 7 OSS frameworks (5 active + 2 legacy), protocol layer (MCP/A2A/AG-UI), confirmed graph convergence, updated decision matrix and recommendations
+- [[index]] — added three new source entries, updated analysis summary

@@ -33,6 +33,9 @@
 | [[crewai-multi-agent]] | CrewAI: role-based multi-agent orchestration — role+goal+backstory, sequential/hierarchical, built-in memory | 2026-04-14 |
 | [[langgraph-agent-orchestration]] | LangGraph: stateful graph-based agent orchestration — checkpointing, human-in-loop, most production-ready OSS | 2026-04-14 |
 | [[openai-swarm]] | OpenAI Swarm: lightweight handoff-based multi-agent — educational, two primitives (routines + handoffs) | 2026-04-14 |
+| [[openai-agents-sdk]] | OpenAI Agents SDK: production successor to Swarm — handoffs, guardrails, tracing, MCP, sandboxes (26.2K stars) | 2026-05-11 |
+| [[google-adk]] | Google ADK: open-source model-agnostic agent framework — Python/TS/Go/Java, workflow agents, native A2A+MCP | 2026-05-11 |
+| [[microsoft-agent-framework]] | Microsoft Agent Framework 1.0 GA: SK+AutoGen merged — .NET+Python, graph workflows, 6 providers, LTS | 2026-05-11 |
 | [[agent-cost-economics]] | Agent token costs + $5T macro economics — five waste vectors, optimization playbook, ROI scenarios (Cloudstar/Vogel) | 2026-04-14 |
 | [[agentic-ai-governance]] | Agentic AI governance — five pillars, Shadow AI, NIST/EU AI Act/OWASP, prompt injection (ITECS) | 2026-04-14 |
 | [[agentic-ai-non-code-domains]] | Agentic AI beyond coding — finance, healthcare, legal, manufacturing, SaaS disruption (Curious Compass) | 2026-04-14 |
@@ -110,7 +113,7 @@
 | [[hybrid-memory-architecture]] | Combining Wiki + Mem0 — three-layer hybrid (fast/deep/bridge), 5/6 CMA compliance, implementation steps | 2026-04-15 |
 | [[key-insights-agentic-landscape]] | 14 key insights across the landscape — architectural philosophies, design tensions, emerging standards, gaps | 2026-04-15 |
 | [[memory-architecture-comparison]] | How AI agents remember — four patterns compared, CMA requirements, benchmarks, decision framework, forgetting | 2026-04-15 |
-| [[multi-agent-framework-guide]] | Choosing a multi-agent framework in 2026 — four OSS + four product tools, decision matrix, graph convergence | 2026-04-15 |
+| [[multi-agent-framework-guide]] | Choosing a multi-agent framework in 2026 — seven OSS frameworks (5 active + 2 legacy), protocol layer (MCP/A2A/AG-UI), graph convergence confirmed | 2026-05-11 |
 | [[ten-pillars-evidence-map]] | Evidence map: how 11 wiki sources validate each of the Ten Pillars, with strength rankings and v3 recommendations | 2026-04-09 |
 | [[wiki-gap-analysis-apr-2026]] | 20 gaps identified, 15 addressed — status tracker with remaining open items | 2026-04-15 |
 | [[orchestration-tools-compared]] | Gas Town vs Symphony vs Multica — architectural split, 7 approaches, decision framework, emerging patterns | 2026-05-09 |

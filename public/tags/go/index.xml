@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Go on LLM Wiki — Agentic AI Landscape</title><link>https://blog.imfsoftware.com/llm-wiki/tags/go/</link><description>Recent content in Go on LLM Wiki — Agentic AI Landscape</description><generator>Hugo</generator><language>en-us</language><atom:link href="https://blog.imfsoftware.com/llm-wiki/tags/go/index.xml" rel="self" type="application/rss+xml"/><item><title/><link>https://blog.imfsoftware.com/llm-wiki/docs/entities/gastown/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://blog.imfsoftware.com/llm-wiki/docs/entities/gastown/</guid><description>&lt;h1 id="gas-town"&gt;Gas Town&lt;a class="anchor" href="#gas-town"&gt;#&lt;/a&gt;&lt;/h1&gt;
+&lt;p&gt;Open-source multi-agent orchestration system for AI coding agents. Written in Go, distributed as a single CLI binary (&lt;code&gt;gt&lt;/code&gt;). Coordinates 20-30+ concurrent agents with persistent work tracking via git worktrees.&lt;/p&gt;
+&lt;h2 id="key-facts"&gt;Key Facts&lt;a class="anchor" href="#key-facts"&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Repository&lt;/strong&gt;: &lt;a href="https://github.com/gastownhall/gastown"&gt;https://github.com/gastownhall/gastown&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Language&lt;/strong&gt;: Go 1.25+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;License&lt;/strong&gt;: MIT&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Install&lt;/strong&gt;: &lt;code&gt;brew install gastown&lt;/code&gt; / &lt;code&gt;npm install -g @gastown/gt&lt;/code&gt; / &lt;code&gt;go install&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Dependencies&lt;/strong&gt;: Git 2.25+, Dolt 1.82.4+, beads (bd) 0.55.4+, tmux 3.0+ (recommended)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Supported runtimes&lt;/strong&gt;: Claude Code, Codex, GitHub Copilot, Gemini, Cursor, Auggie, Amp, OpenCode, Pi, OMP&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="architecture"&gt;Architecture&lt;a class="anchor" href="#architecture"&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Hierarchical workspace model:&lt;/p&gt;</description></item><item><title/><link>https://blog.imfsoftware.com/llm-wiki/docs/sources/gastown/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://blog.imfsoftware.com/llm-wiki/docs/sources/gastown/</guid><description>&lt;h1 id="gas-town"&gt;Gas Town&lt;a class="anchor" href="#gas-town"&gt;#&lt;/a&gt;&lt;/h1&gt;
+&lt;p&gt;&lt;a href="https://github.com/gastownhall/gastown"&gt;Original&lt;/a&gt; | &lt;a href="gastown-readme.md"&gt;Raw&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id="summary"&gt;Summary&lt;a class="anchor" href="#summary"&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Gas Town is an open-source multi-agent orchestration system written in Go that coordinates AI coding agents (Claude Code, GitHub Copilot, Codex, Gemini, Cursor, and others) with persistent work tracking. It solves the problem of agents losing context on restart by persisting work state in git-backed worktrees (&amp;ldquo;hooks&amp;rdquo;), enabling reliable coordination of 20-30+ concurrent agents.&lt;/p&gt;
+&lt;h2 id="key-takeaways"&gt;Key Takeaways&lt;a class="anchor" href="#key-takeaways"&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Git worktrees as persistence primitive&lt;/strong&gt; — All agent state lives in git worktrees called &amp;ldquo;hooks.&amp;rdquo; Work survives crashes, restarts, and session loss. This is the same &amp;ldquo;git as universal coordination&amp;rdquo; pattern seen across the wiki, but taken further than any other tool.&lt;/p&gt;</description></item></channel></rss>

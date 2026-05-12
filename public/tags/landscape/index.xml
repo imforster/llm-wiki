@@ -1,9 +1,9 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Landscape on LLM Wiki — Agentic AI Landscape</title><link>https://blog.imfsoftware.com/llm-wiki/tags/landscape/</link><description>Recent content in Landscape on LLM Wiki — Agentic AI Landscape</description><generator>Hugo</generator><language>en-us</language><atom:link href="https://blog.imfsoftware.com/llm-wiki/tags/landscape/index.xml" rel="self" type="application/rss+xml"/><item><title/><link>https://blog.imfsoftware.com/llm-wiki/docs/analysis/key-insights-agentic-landscape/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://blog.imfsoftware.com/llm-wiki/docs/analysis/key-insights-agentic-landscape/</guid><description>&lt;h1 id="key-insights-the-agentic-ai-landscape-april-2026"&gt;Key Insights: The Agentic AI Landscape (April 2026)&lt;a class="anchor" href="#key-insights-the-agentic-ai-landscape-april-2026"&gt;#&lt;/a&gt;&lt;/h1&gt;
-&lt;p&gt;Synthesized from 33 sources across this wiki. This analysis captures the patterns, tensions, and emerging consensus visible when you look across the entire landscape.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Landscape on LLM Wiki — Agentic AI Landscape</title><link>https://blog.imfsoftware.com/llm-wiki/tags/landscape/</link><description>Recent content in Landscape on LLM Wiki — Agentic AI Landscape</description><generator>Hugo</generator><language>en-us</language><atom:link href="https://blog.imfsoftware.com/llm-wiki/tags/landscape/index.xml" rel="self" type="application/rss+xml"/><item><title/><link>https://blog.imfsoftware.com/llm-wiki/docs/analysis/key-insights-agentic-landscape/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://blog.imfsoftware.com/llm-wiki/docs/analysis/key-insights-agentic-landscape/</guid><description>&lt;h1 id="key-insights-the-agentic-ai-landscape-may-2026"&gt;Key Insights: The Agentic AI Landscape (May 2026)&lt;a class="anchor" href="#key-insights-the-agentic-ai-landscape-may-2026"&gt;#&lt;/a&gt;&lt;/h1&gt;
+&lt;p&gt;Synthesized from 42 sources across this wiki. This analysis captures the patterns, tensions, and emerging consensus visible when you look across the entire landscape.&lt;/p&gt;
 &lt;blockquote class='book-hint '&gt;
-&lt;p&gt;&lt;strong&gt;Refresh history&lt;/strong&gt;: Originally written against 16 sources (Apr 8-10). Refreshed Apr 15 against all 33 sources. Original 10 insights updated; 4 new insights added.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Refresh history&lt;/strong&gt;: Originally written against 16 sources (Apr 8-10). Refreshed Apr 15 against 33 sources. Refreshed May 9 against 42 sources — added Gas Town, Symphony, Multica; updated layers, multi-agent philosophies, and &amp;ldquo;What&amp;rsquo;s Still Missing.&amp;rdquo;&lt;/p&gt;
 &lt;/blockquote&gt;&lt;hr&gt;
-&lt;h2 id="1-six-layers-have-emerged-was-five"&gt;1. Six Layers Have Emerged (was Five)&lt;a class="anchor" href="#1-six-layers-have-emerged-was-five"&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;h2 id="1-seven-layers-have-emerged-was-six"&gt;1. Seven Layers Have Emerged (was Six)&lt;a class="anchor" href="#1-seven-layers-have-emerged-was-six"&gt;#&lt;/a&gt;&lt;/h2&gt;
 &lt;table&gt;
  &lt;thead&gt;
  &lt;tr&gt;
@@ -22,6 +22,11 @@
  &lt;td&gt;&lt;strong&gt;Methodology&lt;/strong&gt;&lt;/td&gt;
  &lt;td&gt;&lt;a href="https://blog.imfsoftware.com/llm-wiki/docs/entities/spec-kit/"&gt;spec-kit&lt;/a&gt;, &lt;a href="https://blog.imfsoftware.com/llm-wiki/docs/entities/bmad-method/"&gt;bmad-method&lt;/a&gt;&lt;/td&gt;
  &lt;td&gt;Specs, plans, tasks, quality gates&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;&lt;strong&gt;Orchestration&lt;/strong&gt;&lt;/td&gt;
+ &lt;td&gt;&lt;a href="https://blog.imfsoftware.com/llm-wiki/docs/entities/gastown/"&gt;gastown&lt;/a&gt;, &lt;a href="https://blog.imfsoftware.com/llm-wiki/docs/entities/symphony/"&gt;symphony&lt;/a&gt;, &lt;a href="https://blog.imfsoftware.com/llm-wiki/docs/entities/multica/"&gt;multica&lt;/a&gt;&lt;/td&gt;
+ &lt;td&gt;Workspace coordination, issue-to-agent automation, team collaboration&lt;/td&gt;
  &lt;/tr&gt;
  &lt;tr&gt;
  &lt;td&gt;&lt;strong&gt;Infrastructure&lt;/strong&gt;&lt;/td&gt;
@@ -45,4 +50,4 @@
  &lt;/tr&gt;
  &lt;/tbody&gt;
 &lt;/table&gt;
-&lt;p&gt;&lt;strong&gt;New&lt;/strong&gt;: Memory is now its own layer. The infrastructure layer expanded to include open-source orchestration frameworks (LangGraph, AutoGen/MAF). The emerging stack: Paperclip → LangGraph/MAF → Claude Code/Kiro → Scion → Mem0.&lt;/p&gt;</description></item></channel></rss>
+&lt;p&gt;&lt;strong&gt;New (May 2026)&lt;/strong&gt;: Orchestration is now its own layer between Methodology and Infrastructure. Gas Town (workspace/process-model), Symphony (spec/scheduler), and Multica (platform/teammates) represent three distinct approaches at this layer. The emerging stack: Paperclip → Multica → Gas Town → LangGraph/MAF → Claude Code/Kiro → Scion → Mem0.&lt;/p&gt;</description></item></channel></rss>

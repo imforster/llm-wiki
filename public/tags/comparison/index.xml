@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Comparison on LLM Wiki — Agentic AI Landscape</title><link>https://blog.imfsoftware.com/llm-wiki/tags/comparison/</link><description>Recent content in Comparison on LLM Wiki — Agentic AI Landscape</description><generator>Hugo</generator><language>en-us</language><atom:link href="https://blog.imfsoftware.com/llm-wiki/tags/comparison/index.xml" rel="self" type="application/rss+xml"/><item><title/><link>https://blog.imfsoftware.com/llm-wiki/docs/analysis/multi-agent-framework-guide/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://blog.imfsoftware.com/llm-wiki/docs/analysis/multi-agent-framework-guide/</guid><description>&lt;h1 id="choosing-a-multi-agent-framework-in-2026"&gt;Choosing a Multi-Agent Framework in 2026&lt;a class="anchor" href="#choosing-a-multi-agent-framework-in-2026"&gt;#&lt;/a&gt;&lt;/h1&gt;
-&lt;p&gt;Synthesized from 8 sources across this wiki. This analysis compares the four open-source multi-agent frameworks alongside the four product-level approaches already in the wiki, maps their coordination philosophies, and provides a practical decision framework.&lt;/p&gt;
+&lt;p&gt;Synthesized from 14 sources across this wiki (updated May 2026). This analysis compares multi-agent frameworks and orchestration tools, maps their coordination philosophies, and provides a practical decision framework.&lt;/p&gt;
 &lt;hr&gt;
-&lt;h2 id="the-landscape-two-tiers"&gt;The Landscape: Two Tiers&lt;a class="anchor" href="#the-landscape-two-tiers"&gt;#&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;The wiki now covers eight distinct approaches to multi-agent orchestration, split across two tiers:&lt;/p&gt;
+&lt;h2 id="the-landscape-three-tiers"&gt;The Landscape: Three Tiers&lt;a class="anchor" href="#the-landscape-three-tiers"&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;The wiki now covers fourteen distinct approaches to multi-agent orchestration, split across three tiers:&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Product-level&lt;/strong&gt; (opinionated, integrated):&lt;/p&gt;
 &lt;table&gt;
  &lt;thead&gt;
@@ -35,7 +35,7 @@
  &lt;/tr&gt;
  &lt;/tbody&gt;
 &lt;/table&gt;
-&lt;p&gt;&lt;strong&gt;Open-source frameworks&lt;/strong&gt; (composable, bring-your-own-model):&lt;/p&gt;</description></item><item><title/><link>https://blog.imfsoftware.com/llm-wiki/docs/sources/agent-memory-systems-2026/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://blog.imfsoftware.com/llm-wiki/docs/sources/agent-memory-systems-2026/</guid><description>&lt;h1 id="best-memory-system-for-ai-agents-in-2026"&gt;Best Memory System for AI Agents in 2026&lt;a class="anchor" href="#best-memory-system-for-ai-agents-in-2026"&gt;#&lt;/a&gt;&lt;/h1&gt;
+&lt;p&gt;&lt;strong&gt;Orchestration tools&lt;/strong&gt; (workspace/platform-level, agent-agnostic):&lt;/p&gt;</description></item><item><title/><link>https://blog.imfsoftware.com/llm-wiki/docs/sources/agent-memory-systems-2026/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://blog.imfsoftware.com/llm-wiki/docs/sources/agent-memory-systems-2026/</guid><description>&lt;h1 id="best-memory-system-for-ai-agents-in-2026"&gt;Best Memory System for AI Agents in 2026&lt;a class="anchor" href="#best-memory-system-for-ai-agents-in-2026"&gt;#&lt;/a&gt;&lt;/h1&gt;
 &lt;p&gt;&lt;a href="https://docs.bswen.com/blog/2026-03-11-ai-agent-memory-systems/"&gt;Original&lt;/a&gt; | &lt;a href="https://github.com/imforster/llm-wiki/blob/main/raw/llm/agent-memory-systems-2026.md"&gt;Raw&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Practitioner comparison of four memory architecture patterns by Cowrie (Bswen). Provides the decision framework for choosing between approaches, with cost estimates.&lt;/p&gt;
 &lt;h2 id="four-patterns"&gt;Four Patterns&lt;a class="anchor" href="#four-patterns"&gt;#&lt;/a&gt;&lt;/h2&gt;

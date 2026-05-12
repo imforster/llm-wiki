@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Frameworks on LLM Wiki — Agentic AI Landscape</title><link>https://blog.imfsoftware.com/llm-wiki/tags/frameworks/</link><description>Recent content in Frameworks on LLM Wiki — Agentic AI Landscape</description><generator>Hugo</generator><language>en-us</language><atom:link href="https://blog.imfsoftware.com/llm-wiki/tags/frameworks/index.xml" rel="self" type="application/rss+xml"/><item><title/><link>https://blog.imfsoftware.com/llm-wiki/docs/analysis/multi-agent-framework-guide/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://blog.imfsoftware.com/llm-wiki/docs/analysis/multi-agent-framework-guide/</guid><description>&lt;h1 id="choosing-a-multi-agent-framework-in-2026"&gt;Choosing a Multi-Agent Framework in 2026&lt;a class="anchor" href="#choosing-a-multi-agent-framework-in-2026"&gt;#&lt;/a&gt;&lt;/h1&gt;
-&lt;p&gt;Synthesized from 8 sources across this wiki. This analysis compares the four open-source multi-agent frameworks alongside the four product-level approaches already in the wiki, maps their coordination philosophies, and provides a practical decision framework.&lt;/p&gt;
+&lt;p&gt;Synthesized from 14 sources across this wiki (updated May 2026). This analysis compares multi-agent frameworks and orchestration tools, maps their coordination philosophies, and provides a practical decision framework.&lt;/p&gt;
 &lt;hr&gt;
-&lt;h2 id="the-landscape-two-tiers"&gt;The Landscape: Two Tiers&lt;a class="anchor" href="#the-landscape-two-tiers"&gt;#&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;The wiki now covers eight distinct approaches to multi-agent orchestration, split across two tiers:&lt;/p&gt;
+&lt;h2 id="the-landscape-three-tiers"&gt;The Landscape: Three Tiers&lt;a class="anchor" href="#the-landscape-three-tiers"&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;The wiki now covers fourteen distinct approaches to multi-agent orchestration, split across three tiers:&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Product-level&lt;/strong&gt; (opinionated, integrated):&lt;/p&gt;
 &lt;table&gt;
  &lt;thead&gt;
@@ -35,4 +35,4 @@
  &lt;/tr&gt;
  &lt;/tbody&gt;
 &lt;/table&gt;
-&lt;p&gt;&lt;strong&gt;Open-source frameworks&lt;/strong&gt; (composable, bring-your-own-model):&lt;/p&gt;</description></item></channel></rss>
+&lt;p&gt;&lt;strong&gt;Orchestration tools&lt;/strong&gt; (workspace/platform-level, agent-agnostic):&lt;/p&gt;</description></item></channel></rss>

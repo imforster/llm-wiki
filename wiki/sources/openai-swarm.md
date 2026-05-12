@@ -1,7 +1,7 @@
 ---
 type: source
 created: 2026-04-14
-updated: 2026-04-14
+updated: 2026-05-11
 origin: llm
 tags: [multi-agent, orchestration, lightweight, handoffs, educational]
 ---
@@ -11,6 +11,8 @@ tags: [multi-agent, orchestration, lightweight, handoffs, educational]
 [Original](https://kindatechnical.com/agentic-ai/openai-swarm-and-handoff-patterns.html) | [Raw](../../raw/llm/openai-swarm.md)
 
 OpenAI's experimental/educational framework (October 2024). Radically minimal: agents are system prompts with functions, handoffs are functions that return another agent. Explicitly NOT for production — demonstrates patterns implementable with any LLM SDK.
+
+> ⚠️ **Superseded (2025)**: The [[openai-agents-sdk|OpenAI Agents SDK]] (26.2K stars) is the production successor. Swarm remains useful as a learning tool but is no longer the recommended path for production systems.
 
 ## Two Primitives
 
