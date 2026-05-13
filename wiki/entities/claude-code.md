@@ -1,8 +1,8 @@
 ---
 type: entity
 created: 2026-04-07
-updated: 2026-04-07
-sources: ["[[claude-code-docs]]", "[[scion-docs]]"]
+updated: 2026-05-12
+sources: ["[[claude-code-docs]]", "[[scion-docs]]", "[[claude-code-token-optimization]]"]
 tags: [tool, coding-agent, cli, anthropic, devtools]
 ---
 
@@ -70,6 +70,18 @@ Sessions portable across all surfaces. Same CLAUDE.md and MCP servers everywhere
 - One of the [[harness]]es supported by [[scion]] (as `claude` harness)
 - Competes with / complements [[kiro]] (AWS), Gemini CLI (Google), Codex (OpenAI)
 - AGENTS.md import enables cross-tool instruction sharing
+
+## Token Optimization (from [[claude-code-token-optimization]])
+
+Key insight: **context architecture > prompt engineering**. You pay for the entire context window, not just the prompt.
+
+- Switch models by task (Haiku → Sonnet → Opus) and use `/effort` for thinking budget
+- CLAUDE.md costs tokens on every turn — keep under 200 lines, use as lookup table
+- Subagents isolate verbose work but have startup overhead — use for large tasks only
+- `/compact` proactively (before overload, not after)
+- `/context` to diagnose what's consuming the window
+- Point to exact files/lines to avoid expensive exploration
+- Plan mode (`Shift+Tab`) before expensive operations
 
 ## See Also
 - [[anthropic]]

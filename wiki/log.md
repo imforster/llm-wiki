@@ -447,3 +447,30 @@ Updated:
 - [[multi-agent-orchestration]] — expanded framework table from 4 to 7, updated convergence signal
 - [[multi-agent-framework-guide]] — full rewrite: 14 sources, 7 OSS frameworks (5 active + 2 legacy), protocol layer (MCP/A2A/AG-UI), confirmed graph convergence, updated decision matrix and recommendations
 - [[index]] — added three new source entries, updated analysis summary
+
+## [2026-05-12] ingest | Batch: Token Optimization, Vibe Coding, Rex, Kiro CLI 2.0
+
+Four sources ingested covering practical AI development patterns:
+
+- **[[claude-code-token-optimization]]** — KDNuggets (Mehreen, May 2026): 7 practical tactics for reducing Claude Code token waste. Core insight: "stop thinking about prompts, start thinking about context architecture." Model switching, CLAUDE.md sizing, subagent isolation, /compact timing, /context diagnostics.
+
+- **[[vibe-coding-lessons-k10s]]** — k10s.dev (shvbsle, May 2026): 7 months of vibe-coding a GPU Kubernetes TUI, archived and rewritten. Five tenets: AI builds features not architecture, god objects are the default AI artifact, velocity illusion widens scope, positional data is a time bomb, AI doesn't own state transitions. Key meta-insight: CLAUDE.md as architecture enforcement mechanism.
+
+- **[[trusted-remote-execution-rex]]** — AWS Open Source Blog (MacDonald/Brindle, May 2026): Rex — open-source policy-enforced scripting runtime. Rhai (sandboxed language) + Cedar (policy language). First concrete implementation of policy-enforced agent execution in the wiki. Host owner controls permissions regardless of agent behavior.
+
+- **[[kiro-cli-2.0]]** — Kiro Blog (April 2026): CLI 2.0 with headless mode (API key → CI/CD automation), Windows support, subagent monitoring (ctrl+g), task lists. Moves Kiro from interactive tool to agentic platform.
+
+New pages created:
+- Sources: [[claude-code-token-optimization]], [[vibe-coding-lessons-k10s]], [[trusted-remote-execution-rex]], [[kiro-cli-2.0]]
+- Entities: [[rex]], [[cedar]]
+- Concepts: [[vibe-coding]], [[policy-enforced-execution]]
+
+Updated pages:
+- [[kiro]] — added CLI 2.0 section (headless, subagents, task lists)
+- [[claude-code]] — added token optimization section
+- [[context-management]] — added CLAUDE.md as architecture enforcement + token optimization tactics (source count 7 → 9)
+- [[index]] — added 4 sources, 2 entities, 2 concepts
+
+## [2026-05-12] ingest | LYT Web Clipper Prompt
+
+- **[[lyt-web-clipper-prompt]]** — Nick Milo's Obsidian Web Clipper interpreter prompt: three-layer AI processing (summary, headlines, things). Model-agnostic. Lightweight complement to the LLM Wiki pattern — capture-time vs. ingest-time processing.

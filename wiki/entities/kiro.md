@@ -1,8 +1,8 @@
 ---
 type: entity
 created: 2026-04-07
-updated: 2026-04-07
-sources: ["[[kiro-autonomous-agent]]"]
+updated: 2026-05-12
+sources: ["[[kiro-autonomous-agent]]", "[[kiro-cli-2.0]]"]
 tags: [tool, ide, agent, aws, devtools]
 ---
 
@@ -16,7 +16,16 @@ Interactive, synchronous collaboration on your local machine. Pair programming, 
 
 ## Kiro CLI
 
-Custom agents as configuration files that customize Kiro's behavior for specific workflows. Define tool access, permissions, and context. Pre-approve tools, reduce interruptions, optimize for specific tasks. Interactive, runs on your local machine.
+Custom agents as configuration files that customize Kiro's behavior for specific workflows. Define tool access, permissions, and context. Pre-approve tools, reduce interruptions, optimize for specific tasks.
+
+### CLI 2.0 (April 2026)
+
+- **Headless mode**: API key + environment variable → programmatic access for CI/CD pipelines, build scripts, deployment automation. Full tool/agent/capability access without human presence.
+- **Windows support**: Native install, no WSL required.
+- **Subagent monitoring**: `ctrl+g` shows per-agent traces and status. Permission approvals visible in both agent monitor and main screen.
+- **Task lists**: Real-time progress tracking as agent works through steps. Auto-used on larger tasks.
+
+Headless mode moves Kiro from interactive tool to infrastructure component — the first wiki source showing a concrete "developer tool → CI/CD automation" path for an agentic coding tool.
 
 ## Kiro Autonomous Agent
 

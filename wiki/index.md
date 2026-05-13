@@ -36,6 +36,11 @@
 | [[openai-agents-sdk]] | OpenAI Agents SDK: production successor to Swarm — handoffs, guardrails, tracing, MCP, sandboxes (26.2K stars) | 2026-05-11 |
 | [[google-adk]] | Google ADK: open-source model-agnostic agent framework — Python/TS/Go/Java, workflow agents, native A2A+MCP | 2026-05-11 |
 | [[microsoft-agent-framework]] | Microsoft Agent Framework 1.0 GA: SK+AutoGen merged — .NET+Python, graph workflows, 6 providers, LTS | 2026-05-11 |
+| [[claude-code-token-optimization]] | 7 practical ways to reduce Claude Code token usage — context architecture over prompt engineering (KDNuggets) | 2026-05-12 |
+| [[vibe-coding-lessons-k10s]] | Five tenets from 7 months of vibe-coding failure — AI writes features not architecture, CLAUDE.md as enforcement (k10s.dev) | 2026-05-12 |
+| [[trusted-remote-execution-rex]] | Rex: AWS open-source policy-enforced scripting runtime — Rhai + Cedar, first concrete agent execution sandbox (AWS) | 2026-05-12 |
+| [[kiro-cli-2.0]] | Kiro CLI 2.0: headless CI/CD mode, Windows support, subagent monitoring, task lists (Kiro blog) | 2026-05-12 |
+| [[lyt-web-clipper-prompt]] | LYT web clipper prompt — three-layer AI processing (summary, headlines, things) for Obsidian captures (Nick Milo) | 2026-05-12 |
 | [[agent-cost-economics]] | Agent token costs + $5T macro economics — five waste vectors, optimization playbook, ROI scenarios (Cloudstar/Vogel) | 2026-04-14 |
 | [[agentic-ai-governance]] | Agentic AI governance — five pillars, Shadow AI, NIST/EU AI Act/OWASP, prompt injection (ITECS) | 2026-04-14 |
 | [[agentic-ai-non-code-domains]] | Agentic AI beyond coding — finance, healthcare, legal, manufacturing, SaaS disruption (Curious Compass) | 2026-04-14 |
@@ -74,6 +79,8 @@
 | [[symphony]] | tool | OpenAI's spec-first orchestration service — language-agnostic protocol, WORKFLOW.md, Codex app-server |
 | [[multica]] | tool | Open-source managed agents platform — agents as teammates, reusable skills, 11 runtimes, cloud-first |
 | [[steven-johnson]] | person | Co-founder and editorial director of NotebookLM, author of 14 books |
+| [[rex]] | tool | Open-source policy-enforced scripting runtime — Rhai + Cedar, system-call-level agent sandbox (AWS) |
+| [[cedar]] | tool | Open-source policy language for authorization — used by Rex for per-operation access control (AWS) |
 
 ## Concepts
 
@@ -84,7 +91,7 @@
 | [[agent-memory-persistence]] | How agents retain knowledge across sessions — four patterns, CMA requirements, forgetting, benchmarks | 4 |
 | [[agent-skills-standard]] | Open standard (agentskills.io) for packaging reusable agent capabilities | 2 |
 | [[agent-state-model]] | Three-dimensional state tracking: Phase, Activity, Detail | 1 |
-| [[context-management]] | Strategies for managing limited context windows in multi-skill pipelines | 7 |
+| [[context-management]] | Strategies for managing limited context windows in multi-skill pipelines | 9 |
 | [[frontier-agent]] | AWS term for autonomous, scalable, independently-operating AI agents | 1 |
 | [[grove]] | Project workspace where agents live (.scion directory) | 1 |
 | [[harness]] | Adapter for LLM tools (Gemini, Claude, OpenCode, Codex) into Scion | 1 |
@@ -99,6 +106,8 @@
 | [[runtime-broker]] | Compute node providing execution capacity to the Hub | 1 |
 | [[skill-evaluation]] | Three-tier framework for measuring agent skill quality (deterministic → LLM-judge → human) | 6 |
 | [[template]] | Versioned blueprint for creating agents | 1 |
+| [[vibe-coding]] | AI-first development practice and its failure modes — velocity illusion, god objects, scope creep | 2 |
+| [[policy-enforced-execution]] | Runtime model where every agent operation is authorized against an explicit policy before execution | 2 |
 
 ## Analysis
 
