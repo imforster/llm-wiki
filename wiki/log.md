@@ -474,3 +474,11 @@ Updated pages:
 ## [2026-05-12] ingest | LYT Web Clipper Prompt
 
 - **[[lyt-web-clipper-prompt]]** — Nick Milo's Obsidian Web Clipper interpreter prompt: three-layer AI processing (summary, headlines, things). Model-agnostic. Lightweight complement to the LLM Wiki pattern — capture-time vs. ingest-time processing.
+
+## [2026-05-12] ingest | ICM: Folder Structure as Agent Architecture
+
+- **[[icm-folder-structure]]** — Van Clief & McDermott (arXiv, March 2026): Interpretable Context Methodology. Replaces multi-agent framework orchestration with filesystem structure. Five-layer context hierarchy (identity → routing → contract → reference → working). Each stage gets 2,000-8,000 focused tokens vs. 30,000-50,000 monolithic. 52-member practitioner community. U-shaped intervention pattern. Non-technical users successfully operate workspaces. Open source (MIT).
+
+Key significance: Formalizes what the wiki has been circling — filesystem as orchestration, context as architecture — into a named methodology with academic backing and practitioner validation. The strongest articulation of "you don't need multi-agent for sequential workflows" in the wiki.
+
+Updated: [[context-management]] — added ICM section as architectural implementation of selective context loading (source count 9 → 10)

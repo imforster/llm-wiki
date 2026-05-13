@@ -41,6 +41,7 @@
 | [[trusted-remote-execution-rex]] | Rex: AWS open-source policy-enforced scripting runtime — Rhai + Cedar, first concrete agent execution sandbox (AWS) | 2026-05-12 |
 | [[kiro-cli-2.0]] | Kiro CLI 2.0: headless CI/CD mode, Windows support, subagent monitoring, task lists (Kiro blog) | 2026-05-12 |
 | [[lyt-web-clipper-prompt]] | LYT web clipper prompt — three-layer AI processing (summary, headlines, things) for Obsidian captures (Nick Milo) | 2026-05-12 |
+| [[icm-folder-structure]] | ICM: Interpretable Context Methodology — folder structure as agent architecture, five-layer context hierarchy, filesystem replaces frameworks (Van Clief/McDermott, arXiv) | 2026-05-12 |
 | [[agent-cost-economics]] | Agent token costs + $5T macro economics — five waste vectors, optimization playbook, ROI scenarios (Cloudstar/Vogel) | 2026-04-14 |
 | [[agentic-ai-governance]] | Agentic AI governance — five pillars, Shadow AI, NIST/EU AI Act/OWASP, prompt injection (ITECS) | 2026-04-14 |
 | [[agentic-ai-non-code-domains]] | Agentic AI beyond coding — finance, healthcare, legal, manufacturing, SaaS disruption (Curious Compass) | 2026-04-14 |
@@ -91,7 +92,7 @@
 | [[agent-memory-persistence]] | How agents retain knowledge across sessions — four patterns, CMA requirements, forgetting, benchmarks | 4 |
 | [[agent-skills-standard]] | Open standard (agentskills.io) for packaging reusable agent capabilities | 2 |
 | [[agent-state-model]] | Three-dimensional state tracking: Phase, Activity, Detail | 1 |
-| [[context-management]] | Strategies for managing limited context windows in multi-skill pipelines | 9 |
+| [[context-management]] | Strategies for managing limited context windows in multi-skill pipelines | 10 |
 | [[frontier-agent]] | AWS term for autonomous, scalable, independently-operating AI agents | 1 |
 | [[grove]] | Project workspace where agents live (.scion directory) | 1 |
 | [[harness]] | Adapter for LLM tools (Gemini, Claude, OpenCode, Codex) into Scion | 1 |

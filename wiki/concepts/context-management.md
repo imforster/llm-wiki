@@ -2,7 +2,7 @@
 type: concept
 created: 2026-04-08
 updated: 2026-05-12
-sources: ["[[ten-pillars-agentic-skill-design]]", "[[claude-code-docs]]", "[[notebooklm-notes-guide]]", "[[mem0-memory-management]]", "[[continuum-memory-architectures]]", "[[efficient-memory-architectures]]", "[[agent-memory-systems-2026]]", "[[claude-code-token-optimization]]", "[[vibe-coding-lessons-k10s]]"]
+sources: ["[[ten-pillars-agentic-skill-design]]", "[[claude-code-docs]]", "[[notebooklm-notes-guide]]", "[[mem0-memory-management]]", "[[continuum-memory-architectures]]", "[[efficient-memory-architectures]]", "[[agent-memory-systems-2026]]", "[[claude-code-token-optimization]]", "[[vibe-coding-lessons-k10s]]", "[[icm-folder-structure]]"]
 tags: [context, tokens, optimization, multi-agent, patterns]
 ---
 
@@ -82,6 +82,18 @@ The AI follows rules it can see — it just won't invent them. This creates a te
 
 Core insight: **"Stop thinking about prompts and start thinking about context architecture."**
 
+## Filesystem as Context Architecture (ICM)
+
+[[icm-folder-structure]] formalizes the most radical version of this principle: **the filesystem IS the context management layer**. No framework code needed.
+
+- Five-layer hierarchy: identity → routing → stage contract → reference material → working artifacts
+- Each stage receives 2,000-8,000 focused tokens vs. 30,000-50,000 monolithic
+- Avoids "lost in the middle" degradation **by construction** — irrelevant tokens never loaded
+- Layer 3 (reference: "internalize as constraints") vs. Layer 4 (working: "process as input") gives the model structural signals about how to use each piece of context
+- Stage contracts (CONTEXT.md) are simultaneously agent instructions AND human documentation
+
+ICM is the architectural pattern that implements selective context loading as a first-class design decision rather than an optimization applied after the fact.
+
 ## See Also
 - [[ten-pillars-agentic-skill-design]]
 - [[agent-skills-standard]]
@@ -92,3 +104,4 @@ Core insight: **"Stop thinking about prompts and start thinking about context ar
 - [[mem0]]
 - [[vibe-coding-lessons-k10s]]
 - [[claude-code-token-optimization]]
+- [[icm-folder-structure]]
