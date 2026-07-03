@@ -1,9 +1,9 @@
 ---
 type: concept
 created: 2026-04-08
-updated: 2026-04-11
-sources: ["[[llm-wiki-karpathy]]", "[[notebooklm-notes-guide]]"]
-tags: [knowledge-management, pattern, methodology, wiki, meta]
+updated: 2026-07-02
+sources: ["[[llm-wiki-karpathy]]", "[[notebooklm-notes-guide]]", "[[open-knowledge-format]]"]
+tags: [knowledge-management, pattern, methodology, wiki, meta, open-standard]
 ---
 
 # LLM Wiki Pattern
@@ -64,10 +64,24 @@ Related to Vannevar Bush's **Memex** (1945) — a personal, curated knowledge st
 
 Both validate the core insight: grounding AI in curated sources produces better knowledge work than open-ended generation.
 
+## Formalization: Open Knowledge Format (OKF)
+
+In June 2026, [[google-cloud-platform]] published the [[open-knowledge-format]] — an open specification that formalizes the LLM Wiki pattern into an interoperable standard. OKF takes what Karpathy described as a personal practice and provides the missing interoperability layer:
+
+- **Minimal contract**: Only `type` is required. Reserved filenames (`index.md`, `log.md`) provide navigation conventions.
+- **Producer/consumer independence**: Who writes the wiki and who consumes it are decoupled. One LLM's output can be queried by another LLM, browsed by a human, or ingested by a catalog.
+- **Format, not platform**: No SDK, no cloud account, no runtime required. Just files.
+
+OKF explicitly cites Karpathy's gist and the broader pattern convergence (Obsidian vaults, AGENTS.md, metadata-as-code repos) as prior art. The key observation: all these instances look alike but aren't designed to cooperate. OKF provides the agreed-upon conventions that make them interoperable.
+
+**This wiki vs. OKF**: Our schema already follows the OKF shape (markdown + YAML frontmatter + cross-links + index.md + log.md). The main delta is wikilinks (`[[page]]`) vs. standard markdown links (`[page](/path/to/page.md)`). We use a richer set of conventions (source/entity/concept/analysis types, strict ingest workflow, log format) that are compatible with but go beyond OKF's minimal spec.
+
 ## See Also
 - [[andrej-karpathy]]
+- [[open-knowledge-format]]
 - [[context-management]]
 - [[agent-skills-standard]]
 - [[claude-code]]
 - [[multi-agent-orchestration]]
 - [[notebooklm]]
+- [[icm-folder-structure]]

@@ -1,9 +1,9 @@
 ---
 type: concept
 created: 2026-04-08
-updated: 2026-05-12
-sources: ["[[ten-pillars-agentic-skill-design]]", "[[claude-code-docs]]", "[[notebooklm-notes-guide]]", "[[mem0-memory-management]]", "[[continuum-memory-architectures]]", "[[efficient-memory-architectures]]", "[[agent-memory-systems-2026]]", "[[claude-code-token-optimization]]", "[[vibe-coding-lessons-k10s]]", "[[icm-folder-structure]]"]
-tags: [context, tokens, optimization, multi-agent, patterns]
+updated: 2026-07-02
+sources: ["[[ten-pillars-agentic-skill-design]]", "[[claude-code-docs]]", "[[notebooklm-notes-guide]]", "[[mem0-memory-management]]", "[[continuum-memory-architectures]]", "[[efficient-memory-architectures]]", "[[agent-memory-systems-2026]]", "[[claude-code-token-optimization]]", "[[vibe-coding-lessons-k10s]]", "[[icm-folder-structure]]", "[[open-knowledge-format]]"]
+tags: [context, tokens, optimization, multi-agent, patterns, interoperability]
 ---
 
 # Context Management
@@ -94,6 +94,17 @@ Core insight: **"Stop thinking about prompts and start thinking about context ar
 
 ICM is the architectural pattern that implements selective context loading as a first-class design decision rather than an optimization applied after the fact.
 
+## Knowledge Interchange: Open Knowledge Format
+
+[[open-knowledge-format]] addresses context management at the *organizational interchange* level rather than the agent level. The core problem it solves: agents in different teams, tools, and organizations need the same contextual knowledge (table schemas, metric definitions, runbooks) but each system locks it in incompatible formats.
+
+OKF's contribution to context management:
+- **Progressive disclosure by construction**: `index.md` files at each directory level let agents navigate a bundle top-down, loading only what they need — the same pattern as selective context loading but standardized across producers.
+- **Producer/consumer decoupling**: Context producers (data teams, documentation pipelines) and consumers (agents, visualizers) don't need to agree on tooling — only on format.
+- **Filesystem as namespace**: File path = concept identity. No registry, no API, no token overhead for coordination.
+
+This complements [[icm-folder-structure]] (which uses filesystem as context architecture for a *single agent's workflow*) by providing the interoperability layer for *sharing knowledge between agents and teams*.
+
 ## See Also
 - [[ten-pillars-agentic-skill-design]]
 - [[agent-skills-standard]]
@@ -105,3 +116,4 @@ ICM is the architectural pattern that implements selective context loading as a 
 - [[vibe-coding-lessons-k10s]]
 - [[claude-code-token-optimization]]
 - [[icm-folder-structure]]
+- [[open-knowledge-format]]

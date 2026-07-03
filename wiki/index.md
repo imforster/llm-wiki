@@ -55,6 +55,7 @@
 | [[gastown]] | Gas Town: open-source multi-agent workspace orchestration — git-worktree persistence, 20-30 agents, merge queue, federation (Go) | 2026-05-08 |
 | [[symphony]] | Symphony: OpenAI's spec-first orchestration — language-agnostic protocol, WORKFLOW.md, per-issue workspaces, Codex app-server (Elixir ref) | 2026-05-09 |
 | [[multica]] | Multica: open-source managed agents platform — agents as teammates, reusable skills, 11 runtimes, cloud-first (Go + TypeScript) | 2026-05-09 |
+| [[open-knowledge-format]] | Open Knowledge Format (OKF): open spec formalizing the LLM-wiki pattern into portable, vendor-neutral knowledge interchange (Google Cloud) | 2026-07-02 |
 
 ## Entities
 
@@ -79,6 +80,7 @@
 | [[gastown]] | tool | Open-source multi-agent workspace orchestration — git-worktree persistence, merge queue, federation (Go) |
 | [[symphony]] | tool | OpenAI's spec-first orchestration service — language-agnostic protocol, WORKFLOW.md, Codex app-server |
 | [[multica]] | tool | Open-source managed agents platform — agents as teammates, reusable skills, 11 runtimes, cloud-first |
+| [[open-knowledge-format]] | standard | Open spec formalizing the LLM-wiki pattern into portable, interoperable knowledge format (Google Cloud, v0.1) |
 | [[steven-johnson]] | person | Co-founder and editorial director of NotebookLM, author of 14 books |
 | [[rex]] | tool | Open-source policy-enforced scripting runtime — Rhai + Cedar, system-call-level agent sandbox (AWS) |
 | [[cedar]] | tool | Open-source policy language for authorization — used by Rex for per-operation access control (AWS) |
@@ -92,13 +94,13 @@
 | [[agent-memory-persistence]] | How agents retain knowledge across sessions — four patterns, CMA requirements, forgetting, benchmarks | 4 |
 | [[agent-skills-standard]] | Open standard (agentskills.io) for packaging reusable agent capabilities | 2 |
 | [[agent-state-model]] | Three-dimensional state tracking: Phase, Activity, Detail | 1 |
-| [[context-management]] | Strategies for managing limited context windows in multi-skill pipelines | 10 |
+| [[context-management]] | Strategies for managing limited context windows in multi-skill pipelines | 11 |
 | [[frontier-agent]] | AWS term for autonomous, scalable, independently-operating AI agents | 1 |
 | [[grove]] | Project workspace where agents live (.scion directory) | 1 |
 | [[harness]] | Adapter for LLM tools (Gemini, Claude, OpenCode, Codex) into Scion | 1 |
 | [[hub]] | Central control plane for hosted/distributed Scion deployments | 1 |
 | [[kiro-powers]] | Specialized packages enhancing Kiro agents with domain expertise | 1 |
-| [[llm-wiki-pattern]] | Pattern for LLM-maintained personal knowledge bases — the methodology behind this wiki | 2 |
+| [[llm-wiki-pattern]] | Pattern for LLM-maintained personal knowledge bases — the methodology behind this wiki | 3 |
 | [[mcp-protocol]] | Open protocol for connecting LLMs to external tools — shared by Claude Code and Kiro | 2 |
 | [[multi-agent-orchestration]] | Coordinating multiple LLM agents — comparing Scion, Kiro, Claude Code + open-source frameworks | 10 |
 | [[plugin-system]] | Extension architecture via hashicorp/go-plugin over gRPC | 1 |

@@ -482,3 +482,16 @@ Updated pages:
 Key significance: Formalizes what the wiki has been circling — filesystem as orchestration, context as architecture — into a named methodology with academic backing and practitioner validation. The strongest articulation of "you don't need multi-agent for sequential workflows" in the wiki.
 
 Updated: [[context-management]] — added ICM section as architectural implementation of selective context loading (source count 9 → 10)
+
+## [2026-07-02] ingest | Open Knowledge Format (OKF)
+
+Source: https://cloud.google.com/blog/products/data-analytics/how-the-open-knowledge-format-can-improve-data-sharing — Google Cloud introduces OKF v0.1, an open spec formalizing the LLM-wiki pattern into a portable, vendor-neutral knowledge interchange format. Explicitly cites Karpathy's gist. Ships with enrichment agent, visualizer, and three sample bundles.
+
+Created 3 wiki pages, updated 3:
+- Source: [[open-knowledge-format]]
+- Entity: [[open-knowledge-format]]
+- Updated: [[llm-wiki-pattern]] — added "Formalization: OKF" section (pattern → interoperable standard, source count 2→3)
+- Updated: [[context-management]] — added "Knowledge Interchange: OKF" section (organizational-level context sharing, source count 10→11)
+- Updated: [[index]] — added source and entity entries
+
+Key significance: OKF is the first formal specification of the pattern this wiki implements. Our schema (markdown + YAML frontmatter + cross-links + index.md + log.md) is already OKF-shaped. The main delta is wikilinks vs. markdown links. Validates the wiki's architecture from an independent, corporate-backed direction.
