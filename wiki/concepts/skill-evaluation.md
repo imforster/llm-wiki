@@ -52,6 +52,30 @@ Every criterion must be binary and programmatically checkable.
 
 The [[ten-pillars-agentic-skill-design]] paper explicitly acknowledged "no original controlled study" as a limitation. The [[key-insights-agentic-landscape]] analysis identified evaluation as a top gap. This framework provides the methodology to fill that gap, but no tool in the wiki has fully implemented it yet.
 
+## Concrete Instances: Graph-Based Validation
+
+The three-tier framework applies to multiple domains of graph-based quality assurance:
+
+### Knowledge Graph Validation
+
+[[kg-validation-hybrid-workflows]] applies three-tier framework to fact-checking:
+- **Tier 1**: Automated transformer & ontology validators (deterministic graders)
+- **Tier 2**: LLM validators as second opinion (LLM-as-judge)
+- **Tier 3**: Human experts on disagreement (selective human review)
+
+Result: F1 score improved from 77% to 82% with <13% human effort.
+
+### Code Dependency Analysis
+
+[[ai-dependency-graph-analysis]] applies same framework to change impact assessment:
+- **Tier 1**: Static AST analysis for explicit dependencies (deterministic)
+- **Tier 2**: AI/ML scoring for breaking changes, semantic significance (85% accuracy)
+- **Tier 3**: Human approval on high-risk changes, canary → auto-rollback on anomalies
+
+Result: 40% reduction in production outages via tiered escalation + real-time monitoring.
+
+**Key insight**: Both domains demonstrate that tier-based escalation (human-only-on-disagreement) optimizes for quality without proportional labor increase.
+
 ## See Also
 - [[ten-pillars-agentic-skill-design]]
 - [[agent-skills-standard]]
@@ -59,3 +83,7 @@ The [[ten-pillars-agentic-skill-design]] paper explicitly acknowledged "no origi
 - [[key-insights-agentic-landscape]]
 - [[agent-benchmarks]]
 - [[promptfoo]]
+- [[kg-validation-hybrid-workflows]] (three-tier framework applied to knowledge graph validation)
+- [[ai-dependency-graph-analysis]] (three-tier framework applied to code impact analysis)
+- [[human-in-the-loop]] (escalation strategy unifies both instances)
+- [[dependency-graphs]] (related tool/concept)

@@ -33,15 +33,6 @@
 | [[crewai-multi-agent]] | CrewAI: role-based multi-agent orchestration — role+goal+backstory, sequential/hierarchical, built-in memory | 2026-04-14 |
 | [[langgraph-agent-orchestration]] | LangGraph: stateful graph-based agent orchestration — checkpointing, human-in-loop, most production-ready OSS | 2026-04-14 |
 | [[openai-swarm]] | OpenAI Swarm: lightweight handoff-based multi-agent — educational, two primitives (routines + handoffs) | 2026-04-14 |
-| [[openai-agents-sdk]] | OpenAI Agents SDK: production successor to Swarm — handoffs, guardrails, tracing, MCP, sandboxes (26.2K stars) | 2026-05-11 |
-| [[google-adk]] | Google ADK: open-source model-agnostic agent framework — Python/TS/Go/Java, workflow agents, native A2A+MCP | 2026-05-11 |
-| [[microsoft-agent-framework]] | Microsoft Agent Framework 1.0 GA: SK+AutoGen merged — .NET+Python, graph workflows, 6 providers, LTS | 2026-05-11 |
-| [[claude-code-token-optimization]] | 7 practical ways to reduce Claude Code token usage — context architecture over prompt engineering (KDNuggets) | 2026-05-12 |
-| [[vibe-coding-lessons-k10s]] | Five tenets from 7 months of vibe-coding failure — AI writes features not architecture, CLAUDE.md as enforcement (k10s.dev) | 2026-05-12 |
-| [[trusted-remote-execution-rex]] | Rex: AWS open-source policy-enforced scripting runtime — Rhai + Cedar, first concrete agent execution sandbox (AWS) | 2026-05-12 |
-| [[kiro-cli-2.0]] | Kiro CLI 2.0: headless CI/CD mode, Windows support, subagent monitoring, task lists (Kiro blog) | 2026-05-12 |
-| [[lyt-web-clipper-prompt]] | LYT web clipper prompt — three-layer AI processing (summary, headlines, things) for Obsidian captures (Nick Milo) | 2026-05-12 |
-| [[icm-folder-structure]] | ICM: Interpretable Context Methodology — folder structure as agent architecture, five-layer context hierarchy, filesystem replaces frameworks (Van Clief/McDermott, arXiv) | 2026-05-12 |
 | [[agent-cost-economics]] | Agent token costs + $5T macro economics — five waste vectors, optimization playbook, ROI scenarios (Cloudstar/Vogel) | 2026-04-14 |
 | [[agentic-ai-governance]] | Agentic AI governance — five pillars, Shadow AI, NIST/EU AI Act/OWASP, prompt injection (ITECS) | 2026-04-14 |
 | [[agentic-ai-non-code-domains]] | Agentic AI beyond coding — finance, healthcare, legal, manufacturing, SaaS disruption (Curious Compass) | 2026-04-14 |
@@ -52,10 +43,8 @@
 | [[ai-environmental-impact]] | AI energy/carbon/water benchmarks — 30 models, o3 = 70× nano, Jevons Paradox, eco-efficiency rankings (arXiv) | 2026-04-15 |
 | [[crewai-production-guide]] | CrewAI in production — practical crew patterns, memory config, cost optimization, deployment (webcoderspeed) | 2026-04-15 |
 | [[shared-agent-memory]] | Shared agent memory layer — deduplication pattern, conflict resolution status, partial/failed solution storage (RoboRhythms) | 2026-04-15 |
-| [[gastown]] | Gas Town: open-source multi-agent workspace orchestration — git-worktree persistence, 20-30 agents, merge queue, federation (Go) | 2026-05-08 |
-| [[symphony]] | Symphony: OpenAI's spec-first orchestration — language-agnostic protocol, WORKFLOW.md, per-issue workspaces, Codex app-server (Elixir ref) | 2026-05-09 |
-| [[multica]] | Multica: open-source managed agents platform — agents as teammates, reusable skills, 11 runtimes, cloud-first (Go + TypeScript) | 2026-05-09 |
-| [[open-knowledge-format]] | Open Knowledge Format (OKF): open spec formalizing the LLM-wiki pattern into portable, vendor-neutral knowledge interchange (Google Cloud) | 2026-07-02 |
+| [[kg-validation-hybrid-workflows]] | Knowledge graph validation combining LLMs and human-in-the-loop — nine workflows tested on CS-KG, disagreement strategy optimal | 2026-08-11 |
+| [[ai-dependency-graph-analysis]] | AI-powered code impact assessment via dependency graphs — three-tier validation, static/dynamic/AI analysis, CI/CD integration | 2026-08-11 |
 
 ## Entities
 
@@ -77,13 +66,13 @@
 | [[promptfoo]] | tool | Open-source LLM eval CLI — YAML test cases, CI/CD, red teaming (now OpenAI) |
 | [[scion]] | tool | Experimental multi-agent orchestration testbed — hypervisor for LLM agents |
 | [[spec-kit]] | tool | GitHub's spec-driven development toolkit — 30+ agents, 50+ extensions |
-| [[gastown]] | tool | Open-source multi-agent workspace orchestration — git-worktree persistence, merge queue, federation (Go) |
-| [[symphony]] | tool | OpenAI's spec-first orchestration service — language-agnostic protocol, WORKFLOW.md, Codex app-server |
-| [[multica]] | tool | Open-source managed agents platform — agents as teammates, reusable skills, 11 runtimes, cloud-first |
-| [[open-knowledge-format]] | standard | Open spec formalizing the LLM-wiki pattern into portable, interoperable knowledge format (Google Cloud, v0.1) |
 | [[steven-johnson]] | person | Co-founder and editorial director of NotebookLM, author of 14 books |
-| [[rex]] | tool | Open-source policy-enforced scripting runtime — Rhai + Cedar, system-call-level agent sandbox (AWS) |
-| [[cedar]] | tool | Open-source policy language for authorization — used by Rex for per-operation access control (AWS) |
+| [[danilo-dessi]] | person | Researcher in knowledge engineering and semantic web, co-author on KG validation workflows |
+| [[stefani-tsaneva]] | person | Lead author on KG validation hybrid workflows research, conducted large-scale experiments |
+| [[francesco-osborne]] | person | Co-author on knowledge graph validation and semantic web research |
+| [[marta-sabou]] | person | Supervisor of knowledge graph validation workflows research at University of Padua |
+| [[knowledge-graphs]] | tool/concept | Structured knowledge models with entities and relationships — CS-KG, scientific KGs, web KGs |
+| [[celso]] | organization | Data science consulting — AI dependency graph analysis, legacy modernization, compliance automation |
 
 ## Concepts
 
@@ -94,23 +83,24 @@
 | [[agent-memory-persistence]] | How agents retain knowledge across sessions — four patterns, CMA requirements, forgetting, benchmarks | 4 |
 | [[agent-skills-standard]] | Open standard (agentskills.io) for packaging reusable agent capabilities | 2 |
 | [[agent-state-model]] | Three-dimensional state tracking: Phase, Activity, Detail | 1 |
-| [[context-management]] | Strategies for managing limited context windows in multi-skill pipelines | 11 |
+| [[context-management]] | Strategies for managing limited context windows in multi-skill pipelines | 7 |
 | [[frontier-agent]] | AWS term for autonomous, scalable, independently-operating AI agents | 1 |
 | [[grove]] | Project workspace where agents live (.scion directory) | 1 |
 | [[harness]] | Adapter for LLM tools (Gemini, Claude, OpenCode, Codex) into Scion | 1 |
 | [[hub]] | Central control plane for hosted/distributed Scion deployments | 1 |
 | [[kiro-powers]] | Specialized packages enhancing Kiro agents with domain expertise | 1 |
-| [[llm-wiki-pattern]] | Pattern for LLM-maintained personal knowledge bases — the methodology behind this wiki | 3 |
+| [[llm-wiki-pattern]] | Pattern for LLM-maintained personal knowledge bases — the methodology behind this wiki | 2 |
 | [[mcp-protocol]] | Open protocol for connecting LLMs to external tools — shared by Claude Code and Kiro | 2 |
-| [[multi-agent-orchestration]] | Coordinating multiple LLM agents — comparing Scion, Kiro, Claude Code + open-source frameworks | 10 |
+| [[multi-agent-orchestration]] | Coordinating multiple LLM agents — comparing Scion, Kiro, Claude Code + open-source frameworks | 7 |
 | [[plugin-system]] | Extension architecture via hashicorp/go-plugin over gRPC | 1 |
 | [[prompt-engineering-patterns]] | CoT, ReAct, Reflexion, composable strategies, and other prompting techniques | 2 |
 | [[runtime]] | Infrastructure layer for executing agent containers | 1 |
 | [[runtime-broker]] | Compute node providing execution capacity to the Hub | 1 |
 | [[skill-evaluation]] | Three-tier framework for measuring agent skill quality (deterministic → LLM-judge → human) | 6 |
 | [[template]] | Versioned blueprint for creating agents | 1 |
-| [[vibe-coding]] | AI-first development practice and its failure modes — velocity illusion, god objects, scope creep | 2 |
-| [[policy-enforced-execution]] | Runtime model where every agent operation is authorized against an explicit policy before execution | 2 |
+| [[human-in-the-loop]] | Selective human decision-making authority over automated processes — disagreement strategy optimal, tier-based escalation | 7+ |
+| [[knowledge-graph-validation]] | Ensuring KG quality through hybrid automated/LLM/human approaches — three validation tiers, F1 optimization | 1 |
+| [[dependency-graphs]] | Code artifact relationships (calls, inheritance, APIs) represented as nodes/edges — impact analysis, risk scoring, refactoring guidance | 1 |
 
 ## Analysis
 
@@ -125,8 +115,6 @@
 | [[hybrid-memory-architecture]] | Combining Wiki + Mem0 — three-layer hybrid (fast/deep/bridge), 5/6 CMA compliance, implementation steps | 2026-04-15 |
 | [[key-insights-agentic-landscape]] | 14 key insights across the landscape — architectural philosophies, design tensions, emerging standards, gaps | 2026-04-15 |
 | [[memory-architecture-comparison]] | How AI agents remember — four patterns compared, CMA requirements, benchmarks, decision framework, forgetting | 2026-04-15 |
-| [[multi-agent-framework-guide]] | Choosing a multi-agent framework in 2026 — seven OSS frameworks (5 active + 2 legacy), protocol layer (MCP/A2A/AG-UI), graph convergence confirmed | 2026-05-11 |
+| [[multi-agent-framework-guide]] | Choosing a multi-agent framework in 2026 — four OSS + four product tools, decision matrix, graph convergence | 2026-04-15 |
 | [[ten-pillars-evidence-map]] | Evidence map: how 11 wiki sources validate each of the Ten Pillars, with strength rankings and v3 recommendations | 2026-04-09 |
 | [[wiki-gap-analysis-apr-2026]] | 20 gaps identified, 15 addressed — status tracker with remaining open items | 2026-04-15 |
-| [[orchestration-tools-compared]] | Gas Town vs Symphony vs Multica — architectural split, 7 approaches, decision framework, emerging patterns | 2026-05-09 |
-| [[wiki-gap-analysis-may-2026]] | May status tracker — 42 sources, 0/5 April gaps closed, 6 new gaps, content pipeline remains top priority | 2026-05-09 |

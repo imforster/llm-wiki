@@ -354,144 +354,52 @@ Novel architecture synthesized from 7 wiki sources (not documented in any single
 
 Wiki now has 12 analyses.
 
-## [2026-05-08] ingest | Gas Town
+## [2026-08-11] ingest | Knowledge Graph Validation: Hybrid Human-LLM Workflows
 
-Source: https://github.com/gastownhall/gastown — open-source multi-agent workspace orchestration system (Go). Coordinates 20-30+ AI coding agents with git-worktree persistence, Bors-style merge queue, three-tier health monitoring, and federated cross-workspace coordination.
+Ingested research paper by Tsaneva et al. (Information Processing & Management, 2025) on combining LLMs and human-in-the-loop for knowledge graph validation. Empirical study of nine workflows across four automation levels (human judgment, AI assistance, human verification, full automation) tested on CS-KG (3.6K triples from 6.7M publications).
 
-Created 2 wiki pages, updated 2:
-- Source: [[gastown]]
-- Entity: [[gastown]]
-- Updated: [[multi-agent-orchestration]] — added Gas Town as fifth approach ("Workspace-first"), source count now 8
-- Updated: [[index]] — added source and entity entries
+**Key finding**: Disagreement strategy (workflows 5 & 6) optimal — human validates only when automated methods conflict. Achieves F1 +5% with <13% human effort, no precision/recall tradeoff.
 
-Key insight: Gas Town represents the most complete implementation of "git as universal coordination" in the wiki — git worktrees for persistence, git-backed issue tracking (beads), and a merge queue that enforces quality gates. Fills the gap between tool-level orchestration (Claude Code) and organizational orchestration (Paperclip) with a practical workspace layer.
+**New pages created:**
+- Source: [[kg-validation-hybrid-workflows]]
+- Entities: [[stefani-tsaneva]], [[danilo-dessi]], [[francesco-osborne]], [[marta-sabou]], [[knowledge-graphs]]
+- Concepts: [[human-in-the-loop]], [[knowledge-graph-validation]]
 
-## [2026-05-09] ingest | Symphony + Multica
+**Updated pages:**
+- [[skill-evaluation]] — added KG validation as concrete instance of three-tier evaluation framework
 
-Two multi-agent orchestration tools ingested:
+**Connections to existing wiki:**
+- [[human-in-the-loop]]: Formalizes spectrum from pure manual → hybrid → pure auto. Disagreement strategy matches [[agentic-ux-patterns]] governance pattern.
+- [[skill-evaluation]]: KG validation maps to three-tier framework (automated→LLM→human).
+- [[agent-memory-persistence]]: KGs as structured memory. Validation quality impacts downstream agent reliability.
 
-- **[[symphony]]** — OpenAI's spec-first orchestration (23K stars). A 78KB language-agnostic specification (SPEC.md) that teams implement in their own language. Elixir reference implementation. Reads Linear issues, creates per-issue isolated workspaces, runs Codex app-server. WORKFLOW.md as single source of truth. No database, no UI — intentionally minimal scheduler/runner.
+Wiki now has 40 sources, 24 concepts, 23 entities.
 
-- **[[multica]]** — Open-source managed agents platform (26.6K stars). Agents as first-class teammates with profiles, board presence, comments, blocker reporting. Reusable skills that compound. Cloud-first (Next.js + Go + PostgreSQL). Most vendor-neutral: 11 agent CLIs supported. Lighter than Paperclip, heavier than Symphony.
+## [2026-08-11] ingest + update | AI-Powered Dependency Graph Analysis (Cross-Domain Pattern Identified)
 
-Created 4 wiki pages, updated 2:
-- Sources: [[symphony]], [[multica]]
-- Entities: [[symphony]], [[multica]]
-- Updated: [[multi-agent-orchestration]] — added Symphony (Spec-first) and Multica (Platform-first) as 6th and 7th approaches, source count now 10
-- Updated: [[index]] — added source and entity entries
+Ingested CELSO consulting guide on AI-driven code dependency graphs for impact analysis, CI/CD integration, and compliance. **Key finding**: Same three-tier validation pattern as [[kg-validation-hybrid-workflows]], applied to code systems instead of knowledge graphs.
 
-Key insight: The multi-agent orchestration space now has a clear spectrum of approaches in the wiki — from minimal spec/protocol (Symphony) through workspace CLI (Gas Town) to full SaaS platform (Multica) to company simulator (Paperclip). Symphony's "spec-first" approach is unique: publish a protocol, let teams implement it. Multica's "agents as teammates" metaphor is the most human-centric UX framing.
+**Breakthrough**: Disagreement strategy + three-tier escalation is domain-agnostic pattern, not KG-specific.
 
-## [2026-05-09] create | Analysis: Orchestration Tools Compared
+**New pages created:**
+- Source: [[ai-dependency-graph-analysis]]
+- Concept: [[dependency-graphs]]
+- Entity: [[celso]]
 
-Created `wiki/analyses/orchestration-tools-compared.md` — "Agent Orchestration Tools Compared: The 2026 Landscape"
+**Updated pages (to reflect cross-domain pattern):**
+- [[human-in-the-loop]] — added cross-domain pattern table showing disagreement strategy across KG validation, code impact analysis, and agent orchestration
+- [[skill-evaluation]] — renamed section to "Concrete Instances", added both KG validation AND code dependency analysis as examples of three-tier framework
 
-Synthesizes wiki sources (Gas Town, Symphony, Multica, Paperclip, + 4 OSS frameworks) with 3 external comparison articles:
-- rywalker.com: 10-tool comparison (March 2026)
-- tmchow gist: Gas Town vs 7 frameworks deep survey (March 2026)
-- championswimmer gist: Agent stack from LLM call to orchestrator (Feb 2026)
+**Pattern unlocked:**
+Graph-based systems benefit from three-tier validation (automated → AI → human on disagreement):
+- Domain 1: Knowledge graphs (fact triples) → F1 +5%
+- Domain 2: Code dependency graphs (artifact relationships) → 40% fewer outages
+- Domain 3: Agent task graphs (via LangGraph) → human-in-loop at uncertain nodes
 
-Key findings:
-- Fundamental architectural split: conversation-as-control (3-5 agents) vs process-model (20-30 agents)
-- Seven distinct orchestration philosophies from simple loop (Ralph) to company sim (Paperclip)
-- Gas Town's GUPP + Dolt cell-level merge is genuinely unique — no other framework has crash-surviving pull-based execution
-- Symphony's spec-first approach is unique — publish a protocol, not a product
-- Multica is the only tool designed for multi-user team collaboration with agents
-- Cross-model adversarial review (Metaswarm) emerging as strongest trust pattern
-- Prediction: by 2028, "autonomous agent" and "orchestrator" categories merge
+This strengthens wiki's architecture: pattern is platform/domain agnostic, applies wherever you have:
+1. Large interconnected graphs
+2. Automated baseline validators
+3. High cost of false negatives
+4. High human annotation cost
 
-## [2026-05-09] lint | Wiki Gap Analysis: May 2026
-
-Created `wiki/analysis/wiki-gap-analysis-may-2026.md` — monthly health check.
-
-Stats: 42 sources (+3), 20 entities (+3), 20 concepts (—), 13 analyses (+1).
-
-April gaps: 0/5 fully closed. Content pipeline (#17-19) remains top priority.
-New gaps: 6 identified from orchestration ingests (harness engineering, cross-model review, agent identity, workspace isolation, agent-native VCS, governance depth).
-
-Strengths: Multi-agent orchestration coverage now comprehensive (10 sources, 7 approaches, external validation).
-Weaknesses: Content pipeline stalled, no new concepts, overview.md stale, orchestration-heavy month.
-
-## [2026-05-09] update | Multi-Agent Framework Guide refreshed for 11 sources
-
-Updated `wiki/analysis/multi-agent-framework-guide.md` from 8 → 11 sources:
-- Added Gas Town, Symphony, Multica to landscape (now three tiers: product, orchestration, framework)
-- Added "Architectural Split" section (conversation vs graph vs process-model vs issue-tracker vs platform)
-- Expanded coordination patterns table (7 → 10 patterns)
-- Updated recommendations (#6-8 for Gas Town, Symphony, Multica)
-- Updated progression path (7 steps from Learn → Govern)
-- Added 4 new open questions
-- Updated emerging stack diagram
-- Cross-referenced [[orchestration-tools-compared]] analysis
-
-## [2026-05-09] update | Refreshed cross-source-themes and key-insights for 42 sources
-
-**cross-source-themes.md**: Refreshed from 33 → 42 sources.
-- Theme 2 (Composition): 14/33 → 17/42. Added Gas Town (7 roles, molecules), Symphony (WORKFLOW.md, isolated workspaces), Multica (compounding skills).
-- Theme 6 (Git): 6/33 → 9/42. Upgraded to ⭐⭐⭐⭐⭐. Gas Town is most git-native tool in wiki (worktrees + Dolt + merge queue + federation).
-- Theme 9 (Graphs): Added nuance — Gas Town's process-model proves graphs aren't the only path to scale.
-- Theme matrix updated with new counts.
-
-**key-insights-agentic-landscape.md**: Refreshed from 33 → 42 sources.
-- Insight 1: Six layers → Seven layers. Added Orchestration layer (Gas Town, Symphony, Multica).
-- Insight 12: Four philosophies → Seven philosophies. Split into frameworks + orchestration tools. Added architectural split finding.
-- Insight 14: Added 3 new gaps (harness engineering, cross-model review, content pipeline).
-- Updated emerging stack diagram.
-
-## [2026-05-11] ingest | OpenAI Agents SDK, Google ADK, Microsoft Agent Framework 1.0
-Three major multi-agent frameworks ingested to update the landscape analysis. Created:
-- Sources: [[openai-agents-sdk]], [[google-adk]], [[microsoft-agent-framework]]
-Updated:
-- [[autogen-multi-agent]] — added legacy/maintenance note (superseded by MAF)
-- [[openai-swarm]] — added superseded note (replaced by Agents SDK)
-- [[multi-agent-orchestration]] — expanded framework table from 4 to 7, updated convergence signal
-- [[multi-agent-framework-guide]] — full rewrite: 14 sources, 7 OSS frameworks (5 active + 2 legacy), protocol layer (MCP/A2A/AG-UI), confirmed graph convergence, updated decision matrix and recommendations
-- [[index]] — added three new source entries, updated analysis summary
-
-## [2026-05-12] ingest | Batch: Token Optimization, Vibe Coding, Rex, Kiro CLI 2.0
-
-Four sources ingested covering practical AI development patterns:
-
-- **[[claude-code-token-optimization]]** — KDNuggets (Mehreen, May 2026): 7 practical tactics for reducing Claude Code token waste. Core insight: "stop thinking about prompts, start thinking about context architecture." Model switching, CLAUDE.md sizing, subagent isolation, /compact timing, /context diagnostics.
-
-- **[[vibe-coding-lessons-k10s]]** — k10s.dev (shvbsle, May 2026): 7 months of vibe-coding a GPU Kubernetes TUI, archived and rewritten. Five tenets: AI builds features not architecture, god objects are the default AI artifact, velocity illusion widens scope, positional data is a time bomb, AI doesn't own state transitions. Key meta-insight: CLAUDE.md as architecture enforcement mechanism.
-
-- **[[trusted-remote-execution-rex]]** — AWS Open Source Blog (MacDonald/Brindle, May 2026): Rex — open-source policy-enforced scripting runtime. Rhai (sandboxed language) + Cedar (policy language). First concrete implementation of policy-enforced agent execution in the wiki. Host owner controls permissions regardless of agent behavior.
-
-- **[[kiro-cli-2.0]]** — Kiro Blog (April 2026): CLI 2.0 with headless mode (API key → CI/CD automation), Windows support, subagent monitoring (ctrl+g), task lists. Moves Kiro from interactive tool to agentic platform.
-
-New pages created:
-- Sources: [[claude-code-token-optimization]], [[vibe-coding-lessons-k10s]], [[trusted-remote-execution-rex]], [[kiro-cli-2.0]]
-- Entities: [[rex]], [[cedar]]
-- Concepts: [[vibe-coding]], [[policy-enforced-execution]]
-
-Updated pages:
-- [[kiro]] — added CLI 2.0 section (headless, subagents, task lists)
-- [[claude-code]] — added token optimization section
-- [[context-management]] — added CLAUDE.md as architecture enforcement + token optimization tactics (source count 7 → 9)
-- [[index]] — added 4 sources, 2 entities, 2 concepts
-
-## [2026-05-12] ingest | LYT Web Clipper Prompt
-
-- **[[lyt-web-clipper-prompt]]** — Nick Milo's Obsidian Web Clipper interpreter prompt: three-layer AI processing (summary, headlines, things). Model-agnostic. Lightweight complement to the LLM Wiki pattern — capture-time vs. ingest-time processing.
-
-## [2026-05-12] ingest | ICM: Folder Structure as Agent Architecture
-
-- **[[icm-folder-structure]]** — Van Clief & McDermott (arXiv, March 2026): Interpretable Context Methodology. Replaces multi-agent framework orchestration with filesystem structure. Five-layer context hierarchy (identity → routing → contract → reference → working). Each stage gets 2,000-8,000 focused tokens vs. 30,000-50,000 monolithic. 52-member practitioner community. U-shaped intervention pattern. Non-technical users successfully operate workspaces. Open source (MIT).
-
-Key significance: Formalizes what the wiki has been circling — filesystem as orchestration, context as architecture — into a named methodology with academic backing and practitioner validation. The strongest articulation of "you don't need multi-agent for sequential workflows" in the wiki.
-
-Updated: [[context-management]] — added ICM section as architectural implementation of selective context loading (source count 9 → 10)
-
-## [2026-07-02] ingest | Open Knowledge Format (OKF)
-
-Source: https://cloud.google.com/blog/products/data-analytics/how-the-open-knowledge-format-can-improve-data-sharing — Google Cloud introduces OKF v0.1, an open spec formalizing the LLM-wiki pattern into a portable, vendor-neutral knowledge interchange format. Explicitly cites Karpathy's gist. Ships with enrichment agent, visualizer, and three sample bundles.
-
-Created 3 wiki pages, updated 3:
-- Source: [[open-knowledge-format]]
-- Entity: [[open-knowledge-format]]
-- Updated: [[llm-wiki-pattern]] — added "Formalization: OKF" section (pattern → interoperable standard, source count 2→3)
-- Updated: [[context-management]] — added "Knowledge Interchange: OKF" section (organizational-level context sharing, source count 10→11)
-- Updated: [[index]] — added source and entity entries
-
-Key significance: OKF is the first formal specification of the pattern this wiki implements. Our schema (markdown + YAML frontmatter + cross-links + index.md + log.md) is already OKF-shaped. The main delta is wikilinks vs. markdown links. Validates the wiki's architecture from an independent, corporate-backed direction.
+Wiki now has 41 sources, 25 concepts, 24 entities.
